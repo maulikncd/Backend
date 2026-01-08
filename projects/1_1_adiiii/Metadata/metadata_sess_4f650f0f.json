@@ -1,0 +1,449 @@
+{
+  "user_id": 1,
+  "session_id": "sess_4f650f0f",
+  "project_id": 1,
+  "timestamp": "2026-01-07T09:20:59.049870Z",
+  "user_prompt": "Cafe website",
+  "questionnaire": {
+    "user_id": 1,
+    "prompt": "Cafe website",
+    "language": "English",
+    "business_type": "Based on the user's responses, it seems like they want to create a website for a cafe.",
+    "answers": {
+      "q1": "Foodie adda",
+      "q2": "Creative Orange - Energetic orange with dark accents",
+      "q3": "foodie@gmail.com",
+      "q4": "we are best from scratch",
+      "q5": "View Menu",
+      "q6": [
+        "Video Production",
+        "Social Media"
+      ],
+      "q7": "Professional photo",
+      "q8": "nothing",
+      "q9": [
+        "Sandwiches & Food",
+        "Desserts",
+        "Cold Drinks & Smoothies"
+      ]
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your agency name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Choose your color palette:",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Enter your information for 'Email':",
+        "type": "text",
+        "prop_key": "email",
+        "section": "footer"
+      },
+      {
+        "id": "q4",
+        "question": "Tell us your story (2-3 sentences):",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      },
+      {
+        "id": "q5",
+        "question": "Primary call-to-action:",
+        "type": "radio",
+        "prop_key": "cta",
+        "section": "hero",
+        "options": [
+          "View Menu",
+          "Shop Now",
+          "Learn More",
+          "Book Now",
+          "Contact Us",
+          "Get Started",
+          "Explore",
+          "Join Now"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "Select your core services:",
+        "type": "checkbox",
+        "prop_key": "services",
+        "section": "services",
+        "options": [
+          "Web Design/Development",
+          "SEO/Content",
+          "Branding & Identity",
+          "Video Production",
+          "Digital Marketing",
+          "Social Media",
+          "Consulting"
+        ]
+      },
+      {
+        "id": "q7",
+        "question": "What should the background show?",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Location/space",
+          "Abstract/artistic",
+          "Product showcase",
+          "Team/people",
+          "Auto-select for me"
+        ]
+      },
+      {
+        "id": "q8",
+        "question": "What would you like to say for 'Sectiontitle'?",
+        "type": "text",
+        "prop_key": "sectionTitle",
+        "section": "about"
+      },
+      {
+        "id": "q9",
+        "question": "What do you serve?",
+        "type": "checkbox",
+        "prop_key": "menuItems",
+        "section": "menu",
+        "options": [
+          "Coffee & Espresso",
+          "Sandwiches & Food",
+          "Desserts",
+          "Tea & Specialty Drinks",
+          "Pastries & Baked Goods",
+          "Cold Drinks & Smoothies"
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "Describe your business in one line:",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "email",
+      "story",
+      "cta",
+      "services",
+      "image",
+      "title",
+      "sectionTitle",
+      "menuItems",
+      "subtitle"
+    ],
+    "color_preferences": "Creative Orange - Energetic orange with dark accents",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Warm, inviting hero with cafe ambiance.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Coffee, pastries, and food menu.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Our Story",
+        "description": "The cafe story and values.",
+        "benefit": "Builds connection",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photos of your cafe drinks.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "specials",
+        "name": "Today's Specials",
+        "description": "Daily specials.",
+        "benefit": "Creates urgency",
+        "priority": "Medium"
+      },
+      {
+        "id": "hours",
+        "name": "Hours & Location",
+        "description": "Opening hours and map.",
+        "benefit": "Easy to find",
+        "priority": "High"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#FF9900",
+          "#660033",
+          "#999999",
+          "#E0E0E0",
+          "#FF4F00"
+        ],
+        "title": "Vibrant Blaze Path",
+        "inspiration": "Energy bursts like firework sparks"
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#FF6600",
+          "#333333",
+          "#C0C0C0",
+          "#FFA07A",
+          "#FF0033"
+        ],
+        "title": "Sunset On Mars",
+        "inspiration": "Orange hues of Martian sunsets"
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#FF7A00",
+          "#2F4F4F",
+          "#666666",
+          "#FFC080",
+          "#FF00CC"
+        ],
+        "title": "Fiery Ember Dance",
+        "inspiration": "Whirling flames with warm undertones"
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#FFA500",
+          "#5F6A8C",
+          "#333333",
+          "#964B00",
+          "#8B0A1A"
+        ],
+        "title": "Aurora Bloom Rise",
+        "inspiration": "Vibrant sunrises with a splash of magic"
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#FFA07A",
+          "#555555",
+          "#F0E4CC",
+          "#FF8C00",
+          "#660033"
+        ],
+        "title": "Orange Crush Fever",
+        "inspiration": "Summer vibes with the essence of fresh oranges"
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#FF0033",
+          "#343434",
+          "#A70000",
+          "#FFA36A",
+          "#B3B3B3"
+        ],
+        "title": "Darkstar Inferno",
+        "inspiration": "Mysterious dark oranges with a hint of destruction"
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#FFA57D",
+          "#1A1D23",
+          "#666666",
+          "#FFC080",
+          "#FF0033"
+        ],
+        "title": "Coral Reef Surge",
+        "inspiration": "Exotic tropical flavors with a hint of wild adventure"
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#FF7F00",
+          "#333333",
+          "#808080",
+          "#FF9900",
+          "#7F007F"
+        ],
+        "title": "Pyromancer's Spell",
+        "inspiration": "A mystical world of enchanted orange flames"
+      }
+    ],
+    "selected_palette": {
+      "id": "p6",
+      "colors": [
+        "#FF0033",
+        "#343434",
+        "#A70000",
+        "#FFA36A",
+        "#B3B3B3"
+      ],
+      "title": "Darkstar Inferno",
+      "inspiration": "Mysterious dark oranges with a hint of destruction"
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Warm, inviting hero with cafe ambiance.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Coffee, pastries, and food menu.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Our Story",
+        "description": "The cafe story and values.",
+        "benefit": "Builds connection",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photos of your cafe drinks.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "specials",
+        "name": "Today's Specials",
+        "description": "Daily specials.",
+        "benefit": "Creates urgency",
+        "priority": "Medium"
+      },
+      {
+        "id": "hours",
+        "name": "Hours & Location",
+        "description": "Opening hours and map.",
+        "benefit": "Easy to find",
+        "priority": "High"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Warm, inviting hero with cafe ambiance.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Coffee, pastries, and food menu.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Our Story",
+      "description": "The cafe story and values.",
+      "benefit": "Builds connection",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photos of your cafe drinks.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "specials",
+      "name": "Today's Specials",
+      "description": "Daily specials.",
+      "benefit": "Creates urgency",
+      "priority": "Medium"
+    },
+    {
+      "id": "hours",
+      "name": "Hours & Location",
+      "description": "Opening hours and map.",
+      "benefit": "Easy to find",
+      "priority": "High"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Warm, inviting hero with cafe ambiance.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Coffee, pastries, and food menu.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Our Story",
+      "description": "The cafe story and values.",
+      "benefit": "Builds connection",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photos of your cafe drinks.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "specials",
+      "name": "Today's Specials",
+      "description": "Daily specials.",
+      "benefit": "Creates urgency",
+      "priority": "Medium"
+    },
+    {
+      "id": "hours",
+      "name": "Hours & Location",
+      "description": "Opening hours and map.",
+      "benefit": "Easy to find",
+      "priority": "High"
+    }
+  ],
+  "final_metadata_ready": true
+}

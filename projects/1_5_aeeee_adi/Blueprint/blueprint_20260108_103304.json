@@ -1,0 +1,821 @@
+{
+  "projectName": "Foodie",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Savor the Flavors at Foodie",
+    "description": "Indulge in a culinary journey with fresh, local ingredients and signature dishes at Foodie restaurant.",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Warm Terracotta",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#8B4513",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#8B4513",
+      "secondary": "#D2691E",
+      "accent": "#F5DEB3",
+      "background": "#2C1810",
+      "surface": "#FFF8F0",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(45deg, #8B4513, #D2691E)",
+      "accent": "linear-gradient(45deg, #F5DEB3, #FFF8F0)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "fullscreen-overlay",
+        "title": "",
+        "subtitle": "Tasty khana",
+        "description": "Step into a world of flavors where every dish is a testament to the passion for culinary excellence. Our chefs craft each meal with love, using only the freshest ingredients to ensure a truly unforgettable dining experience.",
+        "cta": "Explore",
+        "ctaSecondary": "View Our Menu",
+        "backgroundStyle": "image"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-full-menu": {
+      "id": "full-menu",
+      "type": "Features",
+      "name": "Full Menu",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Foodie special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-food-gallery": {
+      "id": "food-gallery",
+      "type": "Features",
+      "name": "Food Gallery",
+      "props": {
+        "layoutVariant": "bento-grid",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Foodie special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-heritage": {
+      "id": "heritage",
+      "type": "About",
+      "name": "Our Heritage",
+      "props": {
+        "title": "The Story of Foodie",
+        "story": "Foodie was born out of a passion for culinary excellence and a desire to bring people together through the love of good food. Our chefs are dedicated to crafting each dish with love, using only the freshest ingredients to ensure a truly unforgettable dining experience. From our signature burgers to our decadent desserts, every meal is a testament to our commitment to quality and flavor.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founding Year",
+            "description": "Foodie was founded by a group of food enthusiasts who shared a vision of creating a unique dining experience."
+          },
+          {
+            "year": "2015",
+            "title": "First Restaurant Opening",
+            "description": "Our first restaurant opened its doors to the public, offering a menu that blended traditional flavors with modern twists."
+          }
+        ],
+        "stats": [
+          {
+            "value": "1000+",
+            "label": "Meals Served Daily"
+          }
+        ],
+        "layoutVariant": "milestone-cards"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Foodie",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Menu",
+          "href": "#full-menu"
+        },
+        {
+          "text": "Gallery",
+          "href": "#food-gallery"
+        },
+        {
+          "text": "About",
+          "href": "#heritage"
+        }
+      ],
+      "cta": {
+        "text": "Reserve a Table",
+        "href": "#contact",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Foodie",
+      "tagline": "Tasty khana",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Menu",
+              "href": "#full-menu"
+            },
+            {
+              "text": "Gallery",
+              "href": "#food-gallery"
+            },
+            {
+              "text": "About",
+              "href": "#heritage"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "https://facebook.com/foodie"
+            },
+            {
+              "text": "Instagram",
+              "href": "https://instagram.com/foodie"
+            },
+            {
+              "text": "Twitter",
+              "href": "https://twitter.com/foodie"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Foodie. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Warm & Inviting",
+    "hero_concept": "A culinary journey that evokes the senses, with a hero section that showcases the vibrant colors and aromas of our dishes.",
+    "visual_personality": "A warm, elegant, and appetizing visual style that reflects the passion for good food and the joy of sharing meals with others."
+  },
+  "projectId": "3c20936c-2d7a-4f64-9f28-7c106cfdcd87",
+  "session_id": "sess_81c4cbad",
+  "created_at": "2026-01-08T10:33:04.009916",
+  "metadata": {
+    "session_id": "sess_81c4cbad",
+    "timestamp": "2026-01-08T10:32:58.365422",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Foodie",
+    "prop_answers": {
+      "businessName": "Foodie",
+      "colorTheme": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+      "subtitle": "Tasty khana",
+      "cta": "Explore",
+      "story": "TLC",
+      "email": "foodie@gmail.com",
+      "tagline": "nothing",
+      "images": "food",
+      "image": "Professional photo"
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "Tasty khana",
+      "cta": "Explore"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Foodie",
+      "target_audience": "Foodie",
+      "goals": "Tasty khana",
+      "services": [],
+      "style_preferences": [
+        "TLC",
+        "nothing navigation",
+        "Professional photo fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "TLC",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Foodie"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Warm Terracotta - Warm oranges and browns - rustic comfort"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "Tasty khana"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "Explore"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "TLC"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "foodie@gmail.com"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "nothing"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "food"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "Professional photo"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Foodie",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+          "question": ""
+        },
+        "q3": {
+          "answer": "Tasty khana",
+          "question": ""
+        },
+        "q4": {
+          "answer": "Explore",
+          "question": ""
+        },
+        "q5": {
+          "answer": "TLC",
+          "question": ""
+        },
+        "q6": {
+          "answer": "foodie@gmail.com",
+          "question": ""
+        },
+        "q7": {
+          "answer": "nothing",
+          "question": ""
+        },
+        "q8": {
+          "answer": "food",
+          "question": ""
+        },
+        "q9": {
+          "answer": "Professional photo",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Foodie",
+        "colorTheme": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+        "subtitle": "Tasty khana",
+        "cta": "Explore",
+        "story": "TLC",
+        "email": "foodie@gmail.com",
+        "tagline": "nothing",
+        "images": "food",
+        "image": "Professional photo"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#8B4513",
+          "#D2691E",
+          "#F5DEB3",
+          "#FFF8F0",
+          "#2C1810"
+        ]
+      },
+      "color_theme_text": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+      "font_style": "Professional photo",
+      "navigation_style": "nothing"
+    },
+    "features": [
+      "Hero",
+      "Full Menu",
+      "Food Gallery",
+      "Heritage"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_81c4cbad",
+      "project_id": 5,
+      "timestamp": "2026-01-08T05:02:58.256334Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the user's responses, here's an analysis of the type of business or website they want",
+        "answers": {
+          "q1": "Foodie",
+          "q2": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+          "q3": "Tasty khana",
+          "q4": "Explore",
+          "q5": "TLC",
+          "q6": "foodie@gmail.com",
+          "q7": "nothing",
+          "q8": "food",
+          "q9": "Professional photo"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your restaurant name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Pick your website's color scheme:",
+            "type": "radio",
+            "options": [
+              "Elegant Gold - Black and gold - fine dining sophistication",
+              "Fresh Garden - Greens and earth tones - farm to table vibe",
+              "Warm Terracotta - Warm oranges and browns - rustic comfort",
+              "Ocean Blue - Blues and whites - coastal fresh feel"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Your brand's promise in one sentence:",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q4",
+            "question": "Primary call-to-action:",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Contact Us",
+              "Learn More",
+              "Get Started",
+              "Explore",
+              "Shop Now",
+              "Book Now",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q5",
+            "question": "What inspired you to start?",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          },
+          {
+            "id": "q6",
+            "question": "What would you like to say for 'Email'?",
+            "type": "text",
+            "prop_key": "email",
+            "section": "footer"
+          },
+          {
+            "id": "q7",
+            "question": "Tell us more about your Tagline for the hero:",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "Enter your information for 'Images':",
+            "type": "text",
+            "prop_key": "images",
+            "section": "gallery"
+          },
+          {
+            "id": "q9",
+            "question": "What type of hero image fits your brand?",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Location/space",
+              "Abstract/artistic",
+              "Product showcase",
+              "Team/people",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q10",
+            "question": "What would you like to say for 'Items'?",
+            "type": "text",
+            "prop_key": "items",
+            "section": "about"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "subtitle",
+          "cta",
+          "story",
+          "email",
+          "tagline",
+          "images",
+          "image",
+          "items"
+        ],
+        "color_preferences": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "title": "Noir Atelier",
+            "inspiration": "Luxury portfolio aesthetics.",
+            "colors": [
+              "#050505",
+              "#1C1C1E",
+              "#373640",
+              "#A49393",
+              "#F5E6E8"
+            ]
+          },
+          {
+            "id": "p2",
+            "title": "Prism Charge",
+            "inspiration": "Futuristic builder UI with vivid bars.",
+            "colors": [
+              "#0C0824",
+              "#2D1163",
+              "#5B1A8D",
+              "#FF4BCD",
+              "#FFC857"
+            ]
+          },
+          {
+            "id": "p4",
+            "title": "Aurora Forge",
+            "inspiration": "Creative agencies with neon warmth.",
+            "colors": [
+              "#04050A",
+              "#15212E",
+              "#27425C",
+              "#F15263",
+              "#FFC857"
+            ]
+          },
+          {
+            "id": "p3",
+            "title": "Pastel Current",
+            "inspiration": "Soft tech marketing pages.",
+            "colors": [
+              "#101821",
+              "#343C56",
+              "#6BDAB9",
+              "#F7B2BD",
+              "#FDF6F0"
+            ]
+          }
+        ],
+        "selected_palette": {
+          "id": "p2",
+          "title": "Prism Charge",
+          "inspiration": "Futuristic builder UI with vivid bars.",
+          "colors": [
+            "#0C0824",
+            "#2D1163",
+            "#5B1A8D",
+            "#FF4BCD",
+            "#FFC857"
+          ]
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-full-menu",
+    "comp-food-gallery",
+    "comp-heritage"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 44
+}

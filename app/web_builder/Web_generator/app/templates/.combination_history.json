@@ -1,0 +1,1227 @@
+{
+  "cafe": [
+    {
+      "timestamp": "2025-12-27T17:52:14.839698",
+      "variants": {
+        "Hero": "video-bg",
+        "About": "centered",
+        "Features": "grid-4",
+        "Menu": "minimal",
+        "Gallery": "carousel",
+        "Contact": "split",
+        "CTA": "split",
+        "Header": "floating",
+        "hero": "dark-elegance",
+        "about": "team-focus",
+        "features": "icon-boxes",
+        "menu": "floating-cards",
+        "gallery": "fullscreen-immersive"
+      }
+    },
+    {
+      "timestamp": "2025-12-29T11:10:13.666940",
+      "variants": {
+        "Hero": "split",
+        "About": "timeline",
+        "Features": "minimal",
+        "Menu": "tabs",
+        "Gallery": "grid",
+        "Contact": "map-bg",
+        "CTA": "gradient",
+        "Header": "floating",
+        "hero": "warm-welcome",
+        "about": "fullscreen-parallax",
+        "features": "floating-numbers",
+        "menu": "aura-cards",
+        "gallery": "polaroid-scatter"
+      }
+    },
+    {
+      "timestamp": "2025-12-29T14:58:18.616587",
+      "variants": {
+        "Hero": "centered",
+        "About": "centered",
+        "Features": "minimal",
+        "Menu": "accordion",
+        "Gallery": "full-width",
+        "Contact": "map-bg",
+        "CTA": "centered",
+        "Header": "floating",
+        "hero": "full-bleed-food",
+        "about": "cards-stack",
+        "features": "aura-cards",
+        "menu": "magazine-style",
+        "gallery": "split-showcase"
+      }
+    },
+    {
+      "timestamp": "2025-12-30T11:51:41.469733",
+      "variants": {
+        "Hero": "parallax",
+        "About": "story",
+        "Features": "cards",
+        "Menu": "list",
+        "Gallery": "masonry",
+        "Contact": "form-only",
+        "CTA": "minimal",
+        "Header": "minimal",
+        "hero": "cozy-atmosphere",
+        "about": "video-background",
+        "features": "split-image",
+        "menu": "tabbed-filter",
+        "gallery": "lightbox-grid"
+      }
+    },
+    {
+      "timestamp": "2025-12-30T11:59:18.446146",
+      "variants": {
+        "Hero": "centered",
+        "About": "split-left",
+        "Features": "grid-4",
+        "Menu": "cards",
+        "Gallery": "carousel",
+        "Contact": "cards",
+        "CTA": "image-bg",
+        "Header": "dark",
+        "hero": "coffee-steam",
+        "about": "numbers-showcase",
+        "features": "minimal-list",
+        "menu": "zen-minimal",
+        "gallery": "carousel-slider"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T15:00:45.018480",
+      "variants": {
+        "Hero": "centered",
+        "About": "story",
+        "Menu": "grid",
+        "Gallery": "minimal",
+        "Testimonials": "grid-3",
+        "CTA": "centered",
+        "Contact": "split",
+        "Hours": "default",
+        "Header": "centered",
+        "hero": "modern-minimal",
+        "about": "minimal-creative",
+        "menu": "elegant-grid",
+        "gallery": "masonry-food",
+        "hours": "minimal-list"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T12:03:33.988529",
+      "variants": {
+        "Home": "video-bg",
+        "About": "timeline",
+        "Menu": "cards",
+        "Gallery": "minimal",
+        "Testimonials": "slider",
+        "Hours": "default",
+        "Contact": "map-bg",
+        "CTA": "split",
+        "Header": "dark",
+        "home": "morning-fresh",
+        "about": "team-focus",
+        "menu": "floating-cards",
+        "gallery": "staggered-pins",
+        "hours": "minimal-list"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T14:16:03.633378",
+      "variants": {
+        "Home": "split",
+        "About": "split-right",
+        "Menu": "minimal",
+        "Gallery": "masonry",
+        "Testimonials": "cards",
+        "Features": "icons",
+        "Contact": "cards",
+        "FAQ": "minimal",
+        "CTA": "pattern",
+        "Header": "minimal",
+        "home": "dark-elegance",
+        "about": "horizontal-story",
+        "menu": "horizontal-scroll",
+        "gallery": "polaroid-scatter",
+        "features": "grid-minimal"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T17:45:48.033931",
+      "variants": {
+        "Home": "parallax",
+        "About": "split-right",
+        "Menu": "grid",
+        "Gallery": "lightbox",
+        "Testimonials": "grid-3",
+        "CTA": "image-bg",
+        "Contact": "centered",
+        "Header": "gradient",
+        "home": "split-menu",
+        "about": "story-split",
+        "menu": "aura-cards",
+        "gallery": "split-showcase"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T17:46:23.428769",
+      "variants": {
+        "Home": "split",
+        "About": "split-left",
+        "Menu": "tabs",
+        "Gallery": "lightbox",
+        "Testimonials": "carousel",
+        "CTA": "image-bg",
+        "Contact": "form-only",
+        "Header": "minimal",
+        "home": "rustic-charm",
+        "about": "video-background",
+        "menu": "split-showcase",
+        "gallery": "lightbox-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T17:55:59.110510",
+      "variants": {
+        "Home": "video-bg",
+        "About": "centered",
+        "Menu": "list",
+        "Gallery": "grid",
+        "Testimonials": "cards",
+        "CTA": "split",
+        "Contact": "form-only",
+        "Header": "floating",
+        "home": "full-bleed-food",
+        "about": "aura-timeline",
+        "menu": "dark-luxury",
+        "gallery": "interlocking-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T17:58:20.229603",
+      "variants": {
+        "Home": "parallax",
+        "About": "split-left",
+        "Menu": "minimal",
+        "Gallery": "carousel",
+        "Testimonials": "minimal",
+        "CTA": "pattern",
+        "Contact": "form-only",
+        "Header": "centered",
+        "home": "modern-minimal",
+        "about": "numbers-showcase",
+        "menu": "tabbed-filter",
+        "gallery": "masonry-food"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T12:15:33.358254",
+      "variants": {
+        "Home": "gradient",
+        "Menu": "grid",
+        "About": "centered",
+        "Gallery": "minimal",
+        "Features": "minimal",
+        "Contact": "form-only",
+        "Testimonials": "quotes",
+        "FAQ": "accordion",
+        "CTA": "centered",
+        "Header": "dark",
+        "home": "morning-fresh",
+        "menu": "visual-feast",
+        "about": "cards-stack",
+        "gallery": "aura-masonry",
+        "features": "floating-numbers"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T16:25:31.441334",
+      "variants": {
+        "Home": "gradient",
+        "About": "split-left",
+        "Menu": "accordion",
+        "Gallery": "masonry",
+        "Testimonials": "quotes",
+        "CTA": "pattern",
+        "Contact": "minimal",
+        "Header": "centered",
+        "home": "aura-premium",
+        "about": "minimal-creative",
+        "menu": "magazine-style",
+        "gallery": "filmstrip"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T17:15:41.309044",
+      "variants": {
+        "Home": "split",
+        "Menu": "tabs",
+        "About": "cards",
+        "Contact": "split",
+        "Header": "gradient",
+        "home": "dark-elegance",
+        "menu": "elegant-grid",
+        "about": "team-focus"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T15:12:41.291520",
+      "variants": {
+        "Home": "split",
+        "About": "split-left",
+        "Menu": "tabs",
+        "Gallery": "carousel",
+        "Testimonials": "slider",
+        "Hours": "default",
+        "Contact": "form-only",
+        "CTA": "pattern",
+        "Header": "minimal",
+        "home": "cozy-atmosphere",
+        "about": "video-background",
+        "menu": "zen-minimal",
+        "gallery": "fullscreen-immersive",
+        "hours": "minimal-list"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T15:21:54.785927",
+      "variants": {
+        "Home": "centered",
+        "About": "story",
+        "Menu": "tabs",
+        "Gallery": "lightbox",
+        "Testimonials": "slider",
+        "CTA": "centered",
+        "Contact": "centered",
+        "Header": "floating",
+        "home": "coffee-steam",
+        "about": "story-split",
+        "menu": "floating-cards",
+        "gallery": "interlocking-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T17:57:44.411900",
+      "variants": {
+        "Home": "gradient",
+        "About": "cards",
+        "Menu": "grid",
+        "Gallery": "masonry",
+        "Contact": "centered",
+        "Header": "minimal",
+        "home": "rustic-charm",
+        "about": "numbers-showcase",
+        "menu": "split-showcase",
+        "gallery": "split-showcase"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T14:51:05.410236",
+      "variants": {
+        "Home": "split",
+        "About": "timeline",
+        "Menu": "cards",
+        "Gallery": "carousel",
+        "Testimonials": "quotes",
+        "Contact": "split",
+        "Header": "dark",
+        "home": "warm-welcome",
+        "about": "magazine-editorial",
+        "menu": "horizontal-scroll",
+        "gallery": "lightbox-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-08T12:49:29.366100",
+      "variants": {
+        "Home": "gradient",
+        "About": "timeline",
+        "Menu": "grid",
+        "Gallery": "carousel",
+        "Hours": "default",
+        "Contact": "map-bg",
+        "Header": "minimal",
+        "home": "morning-fresh",
+        "about": "fullscreen-parallax",
+        "menu": "visual-feast",
+        "gallery": "carousel-slider",
+        "hours": "minimal-list"
+      }
+    }
+  ],
+  "agency": [
+    {
+      "timestamp": "2026-01-02T10:54:11.305671",
+      "variants": {
+        "Hero": "minimal",
+        "About": "cards",
+        "Services": "default",
+        "Gallery": "masonry",
+        "Testimonials": "quotes",
+        "Contact": "form-only",
+        "Header": "gradient",
+        "hero": "default",
+        "about": "default",
+        "services": "default",
+        "gallery": "default"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T10:55:03.299430",
+      "variants": {
+        "Hero": "parallax",
+        "About": "timeline",
+        "Features": "cards",
+        "Gallery": "grid",
+        "Testimonials": "carousel",
+        "Contact": "cards",
+        "Header": "floating",
+        "hero": "default",
+        "about": "default",
+        "features": "default",
+        "gallery": "default"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T15:30:36.068961",
+      "variants": {
+        "Header": "dark"
+      }
+    },
+    {
+      "timestamp": "2026-01-03T10:17:51.792615",
+      "variants": {
+        "Home": "gradient",
+        "About": "story",
+        "Services": "default",
+        "Contact": "minimal",
+        "Header": "floating",
+        "home": "default",
+        "about": "default",
+        "services": "default"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T14:26:30.862976",
+      "variants": {
+        "Home": "minimal",
+        "Projects": "default",
+        "About": "cards",
+        "Features": "grid-4",
+        "Testimonials": "slider",
+        "Contact": "split",
+        "CTA": "gradient",
+        "FAQ": "tabs",
+        "Header": "floating",
+        "home": "corporate-modern",
+        "about": "story",
+        "features": "grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T15:04:51.994341",
+      "variants": {
+        "Home": "split",
+        "About": "split-left",
+        "Services": "default",
+        "Gallery": "lightbox",
+        "Testimonials": "slider",
+        "Contact": "minimal",
+        "CTA": "split",
+        "Header": "minimal",
+        "home": "corporate-modern",
+        "about": "story",
+        "services": "grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T15:45:21.139568",
+      "variants": {
+        "Home": "split",
+        "About": "timeline",
+        "Features": "alternating",
+        "Testimonials": "cards",
+        "Contact": "minimal",
+        "Header": "dark",
+        "home": "corporate-modern",
+        "about": "story",
+        "features": "grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T15:01:57.269813",
+      "variants": {
+        "Home": "centered",
+        "Projects": "default",
+        "About": "story",
+        "Features": "grid-3",
+        "Testimonials": "grid-3",
+        "Contact": "map-bg",
+        "FAQ": "expandable",
+        "CTA": "minimal",
+        "Header": "floating",
+        "home": "corporate-modern",
+        "about": "story",
+        "features": "grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T19:54:26.841577",
+      "variants": {
+        "Home": "minimal",
+        "About": "centered",
+        "Services": "default",
+        "Header": "centered",
+        "home": "corporate-modern",
+        "about": "story",
+        "services": "grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:19:10.070847",
+      "variants": {
+        "Home": "centered",
+        "About": "cards",
+        "Features": "grid-3",
+        "Testimonials": "carousel",
+        "Contact": "form-only",
+        "Header": "gradient",
+        "home": "corporate-modern",
+        "about": "story",
+        "features": "grid"
+      }
+    }
+  ],
+  "movie": [
+    {
+      "timestamp": "2026-01-02T11:13:26.180181",
+      "variants": {
+        "Hero": "centered",
+        "About": "split-left",
+        "Features": "cards",
+        "Gallery": "minimal",
+        "Testimonials": "minimal",
+        "Contact": "split",
+        "Header": "centered",
+        "hero": "ticket-booth",
+        "about": "cinema-story",
+        "features": "poster-grid",
+        "gallery": "masonry"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T11:15:33.395258",
+      "variants": {
+        "Hero": "gradient",
+        "About": "centered",
+        "Features": "alternating",
+        "Gallery": "full-width",
+        "Testimonials": "grid-3",
+        "Contact": "centered",
+        "Header": "gradient",
+        "hero": "netflix-style",
+        "about": "features-grid",
+        "features": "list-view",
+        "gallery": "slider"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T11:17:00.938434",
+      "variants": {
+        "Hero": "gradient",
+        "About": "split-right",
+        "Features": "grid-3",
+        "Gallery": "full-width",
+        "Testimonials": "cards",
+        "Contact": "cards",
+        "Header": "minimal",
+        "hero": "classic-cinema",
+        "about": "theater-tour",
+        "features": "carousel-showcase",
+        "gallery": "grid"
+      }
+    }
+  ],
+  "gaming": [
+    {
+      "timestamp": "2026-01-02T12:23:52.768315",
+      "variants": {
+        "Hero": "gradient",
+        "Features": "icons",
+        "About": "timeline",
+        "Gallery": "lightbox",
+        "Testimonials": "minimal",
+        "Contact": "minimal",
+        "CTA": "split",
+        "Header": "dark",
+        "hero": "epic-cinematic",
+        "features": "stats-showcase",
+        "about": "mission-cyber",
+        "gallery": "screenshot-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:40:39.105716",
+      "variants": {
+        "Hero": "video-bg",
+        "Features": "minimal",
+        "About": "split-left",
+        "Gallery": "carousel",
+        "Testimonials": "quotes",
+        "FAQ": "accordion",
+        "CTA": "split",
+        "Contact": "minimal",
+        "Header": "floating",
+        "hero": "neon-cyber",
+        "features": "bento-grid",
+        "about": "studio-timeline",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:48:19.012379",
+      "variants": {
+        "Hero": "split",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "split-right",
+        "Gallery": "carousel",
+        "Testimonials": "quotes",
+        "FAQ": "tabs",
+        "CTA": "image-bg",
+        "Contact": "map-bg",
+        "Header": "minimal",
+        "hero": "esports-tournament",
+        "games": "carousel",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "team-roster",
+        "gallery": "media-wall"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:51:08.547157",
+      "variants": {
+        "Hero": "video-bg",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "split-right",
+        "Gallery": "grid",
+        "Testimonials": "slider",
+        "FAQ": "expandable",
+        "CTA": "pattern",
+        "Contact": "form-only",
+        "Header": "gradient",
+        "hero": "game-showcase",
+        "games": "grid-showcase",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "stats-counter",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:51:17.503224",
+      "variants": {
+        "Hero": "video-bg",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "story",
+        "Gallery": "full-width",
+        "Testimonials": "carousel",
+        "FAQ": "cards",
+        "CTA": "pattern",
+        "Contact": "cards",
+        "Header": "floating",
+        "hero": "retro-arcade",
+        "games": "grid-showcase",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "mission-cyber",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T12:52:16.019502",
+      "variants": {
+        "Hero": "minimal",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "story",
+        "Gallery": "masonry",
+        "Testimonials": "quotes",
+        "Contact": "map-bg",
+        "CTA": "image-bg",
+        "Header": "dark",
+        "hero": "streamer-intro",
+        "games": "carousel",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "team-roster",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T14:06:09.898655",
+      "variants": {
+        "Hero": "split",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "cards",
+        "Gallery": "lightbox",
+        "Testimonials": "slider",
+        "CTA": "minimal",
+        "Contact": "minimal",
+        "FAQ": "minimal",
+        "Header": "floating",
+        "hero": "epic-cinematic",
+        "games": "grid-showcase",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "team-roster",
+        "gallery": "screenshot-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T14:10:01.988810",
+      "variants": {
+        "Hero": "parallax",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "split-left",
+        "Gallery": "masonry",
+        "Testimonials": "minimal",
+        "Contact": "centered",
+        "FAQ": "grid",
+        "CTA": "gradient",
+        "Header": "dark",
+        "hero": "dark-tournament",
+        "games": "grid-showcase",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "studio-timeline",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T16:32:16.498480",
+      "variants": {
+        "Hero": "parallax",
+        "Games": "default",
+        "About": "split-left",
+        "Gallery": "carousel",
+        "Header": "dark",
+        "hero": "split-showcase",
+        "games": "grid-showcase",
+        "about": "studio-timeline",
+        "gallery": "media-wall"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T17:19:31.316472",
+      "variants": {
+        "Home": "minimal",
+        "Games": "default",
+        "About": "timeline",
+        "Gallery": "grid",
+        "Contact": "split",
+        "FAQ": "cards",
+        "CTA": "minimal",
+        "Header": "minimal",
+        "home": "neon-cyber",
+        "games": "grid-showcase",
+        "about": "stats-counter",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T17:36:07.803251",
+      "variants": {
+        "Home": "parallax",
+        "Games": "default",
+        "About": "story",
+        "Gallery": "carousel",
+        "Contact": "centered",
+        "FAQ": "expandable",
+        "CTA": "split",
+        "Header": "gradient",
+        "home": "game-showcase",
+        "games": "carousel",
+        "about": "mission-cyber",
+        "gallery": "media-wall"
+      }
+    },
+    {
+      "timestamp": "2026-01-02T18:05:13.328507",
+      "variants": {
+        "Home": "centered",
+        "Games": "default",
+        "About": "cards",
+        "Gallery": "full-width",
+        "Contact": "minimal",
+        "FAQ": "grid",
+        "CTA": "centered",
+        "Header": "centered",
+        "home": "esports-tournament",
+        "games": "carousel",
+        "about": "studio-timeline",
+        "gallery": "screenshot-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T14:43:32.639853",
+      "variants": {
+        "Home": "centered",
+        "Games": "default",
+        "About": "split-left",
+        "Tournaments": "default",
+        "Community": "default",
+        "Gallery": "carousel",
+        "Testimonials": "quotes",
+        "Contact": "map-bg",
+        "CTA": "minimal",
+        "Header": "centered",
+        "home": "particle-storm",
+        "games": "carousel",
+        "about": "team-roster",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "gallery": "media-wall"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T15:57:27.809710",
+      "variants": {
+        "Home": "parallax",
+        "About": "split-right",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "Gallery": "lightbox",
+        "Testimonials": "minimal",
+        "Contact": "centered",
+        "CTA": "pattern",
+        "Header": "centered",
+        "home": "streamer-intro",
+        "about": "team-roster",
+        "games": "carousel",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "gallery": "media-wall"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T15:44:34.661952",
+      "variants": {
+        "Home": "parallax",
+        "Games": "default",
+        "Community": "default",
+        "About": "story",
+        "Gallery": "grid",
+        "Testimonials": "carousel",
+        "CTA": "minimal",
+        "Contact": "minimal",
+        "Header": "dark",
+        "home": "retro-arcade",
+        "games": "carousel",
+        "community": "discord-hub",
+        "about": "team-roster",
+        "gallery": "screenshot-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T15:48:20.093130",
+      "variants": {
+        "Home": "gradient",
+        "About": "split-right",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "Gallery": "lightbox",
+        "Testimonials": "minimal",
+        "CTA": "split",
+        "Contact": "form-only",
+        "Header": "minimal",
+        "home": "neon-cyber",
+        "about": "stats-counter",
+        "games": "grid-showcase",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "gallery": "trailers"
+      }
+    },
+    {
+      "timestamp": "2026-01-08T12:07:45.137506",
+      "variants": {
+        "Home": "video-bg",
+        "Games": "default",
+        "Tournaments": "default",
+        "Community": "default",
+        "About": "timeline",
+        "Gallery": "carousel",
+        "News": "default",
+        "Store": "default",
+        "Contact": "cards",
+        "Header": "gradient",
+        "home": "glitch-effect",
+        "games": "carousel",
+        "tournaments": "bracket-view",
+        "community": "discord-hub",
+        "about": "mission-cyber",
+        "gallery": "media-wall"
+      }
+    }
+  ],
+  "restaurant": [
+    {
+      "timestamp": "2026-01-05T17:53:51.077715",
+      "variants": {
+        "Home": "minimal",
+        "Menu": "tabs",
+        "About": "cards",
+        "Gallery": "grid",
+        "Features": "icons",
+        "Testimonials": "carousel",
+        "FAQ": "tabs",
+        "CTA": "gradient",
+        "Contact": "cards",
+        "Header": "minimal",
+        "home": "rustic-bistro",
+        "menu": "elegant-cards",
+        "about": "elegant",
+        "gallery": "food-grid",
+        "testimonials": "cards-grid",
+        "cta": "centered-cta",
+        "contact": "form"
+      }
+    },
+    {
+      "timestamp": "2026-01-05T18:01:56.397787",
+      "variants": {
+        "Home": "centered",
+        "Menu": "minimal",
+        "About": "timeline",
+        "Gallery": "full-width",
+        "Features": "icons",
+        "Testimonials": "cards",
+        "FAQ": "grid",
+        "CTA": "image-bg",
+        "Contact": "map-bg",
+        "Header": "centered",
+        "home": "rustic-bistro",
+        "menu": "elegant-cards",
+        "about": "elegant",
+        "gallery": "food-grid",
+        "testimonials": "cards-grid",
+        "cta": "centered-cta",
+        "contact": "form"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T14:32:18.943560",
+      "variants": {
+        "Home": "centered",
+        "About": "cards",
+        "Menu": "list",
+        "Gallery": "grid",
+        "Testimonials": "cards",
+        "Reservations": "default",
+        "Reviews": "default",
+        "Contact": "centered",
+        "FAQ": "cards",
+        "CTA": "gradient",
+        "Header": "gradient",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid",
+        "testimonials": "cards-grid",
+        "reservations": "form",
+        "reviews": "cards-grid",
+        "contact": "form",
+        "cta": "centered-cta"
+      }
+    },
+    {
+      "timestamp": "2026-01-06T16:59:55.587085",
+      "variants": {
+        "Home": "gradient",
+        "About": "split-right",
+        "Menu": "cards",
+        "Gallery": "minimal",
+        "Heritage": "default",
+        "Header": "minimal",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T09:51:28.924874",
+      "variants": {
+        "Home": "minimal",
+        "About": "centered",
+        "Menu": "accordion",
+        "Gallery": "grid",
+        "Heritage": "default",
+        "Header": "gradient",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T15:14:06.820070",
+      "variants": {
+        "Home": "video-bg",
+        "About": "timeline",
+        "Menu": "tabs",
+        "Gallery": "lightbox",
+        "Heritage": "default",
+        "Header": "gradient",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T15:15:09.672183",
+      "variants": {
+        "Home": "centered",
+        "About": "cards",
+        "Menu": "grid",
+        "Gallery": "full-width",
+        "Heritage": "default",
+        "Header": "floating",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T15:15:29.750617",
+      "variants": {
+        "Home": "parallax",
+        "About": "split-left",
+        "Menu": "minimal",
+        "Gallery": "carousel",
+        "Heritage": "default",
+        "Header": "floating",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T15:18:19.900845",
+      "variants": {
+        "Home": "split",
+        "About": "cards",
+        "Menu": "grid",
+        "Gallery": "grid",
+        "Heritage": "default",
+        "Header": "dark",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T15:23:50.389020",
+      "variants": {
+        "Home": "gradient",
+        "About": "story",
+        "Menu": "list",
+        "Gallery": "lightbox",
+        "Heritage": "default",
+        "Header": "dark",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T16:23:28.394545",
+      "variants": {
+        "Home": "gradient",
+        "About": "timeline",
+        "Menu": "minimal",
+        "Gallery": "carousel",
+        "Heritage": "default",
+        "Header": "floating",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T16:48:12.571281",
+      "variants": {
+        "Home": "gradient",
+        "About": "split-right",
+        "Menu": "tabs",
+        "Gallery": "lightbox",
+        "Heritage": "default",
+        "Header": "minimal",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T16:48:23.050524",
+      "variants": {
+        "Home": "centered",
+        "About": "story",
+        "Menu": "cards",
+        "Gallery": "minimal",
+        "Heritage": "default",
+        "Header": "centered",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T17:11:14.523068",
+      "variants": {
+        "Home": "parallax",
+        "About": "story",
+        "Menu": "tabs",
+        "Gallery": "masonry",
+        "Heritage": "default",
+        "Header": "gradient",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:12:38.518501",
+      "variants": {
+        "Home": "minimal",
+        "About": "centered",
+        "Menu": "accordion",
+        "Gallery": "masonry",
+        "Heritage": "default",
+        "Header": "floating",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:13:01.873768",
+      "variants": {
+        "Home": "centered",
+        "About": "split-right",
+        "Menu": "list",
+        "Gallery": "full-width",
+        "Heritage": "default",
+        "Header": "gradient",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:14:55.936310",
+      "variants": {
+        "Home": "video-bg",
+        "About": "cards",
+        "Menu": "tabs",
+        "Gallery": "grid",
+        "Heritage": "default",
+        "Header": "dark",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:15:25.440834",
+      "variants": {
+        "Home": "video-bg",
+        "About": "story",
+        "Menu": "minimal",
+        "Gallery": "masonry",
+        "Heritage": "default",
+        "Header": "minimal",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T18:15:43.665345",
+      "variants": {
+        "Home": "split",
+        "About": "split-left",
+        "Menu": "list",
+        "Gallery": "carousel",
+        "Heritage": "default",
+        "Header": "gradient",
+        "home": "rustic-bistro",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
+    },
+    {
+      "timestamp": "2026-01-08T10:33:04.109818",
+      "variants": {
+        "Home": "gradient",
+        "Features": "minimal",
+        "About": "centered",
+        "Header": "floating",
+        "home": "rustic-bistro",
+        "about": "elegant"
+      }
+    }
+  ],
+  "ecommerce": [
+    {
+      "timestamp": "2026-01-06T17:34:46.250765",
+      "variants": {
+        "Home": "video-bg",
+        "Products": "default",
+        "Header": "minimal",
+        "home": "modern-shop",
+        "products": "minimal-list"
+      }
+    },
+    {
+      "timestamp": "2026-01-07T10:29:43.217012",
+      "variants": {
+        "Home": "minimal",
+        "Products": "default",
+        "Header": "gradient",
+        "home": "aura-premium",
+        "products": "grid"
+      }
+    }
+  ]
+}

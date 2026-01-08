@@ -1,0 +1,472 @@
+{
+  "user_id": 3,
+  "session_id": "sess_f30ba2ce",
+  "project_id": 6,
+  "timestamp": "2026-01-08T06:37:37.761874Z",
+  "user_prompt": "Gaming website",
+  "questionnaire": {
+    "user_id": 3,
+    "prompt": "Gaming website",
+    "language": "English",
+    "business_type": "Based on the user's responses, it appears they want to create a website that:\n\n- Is related",
+    "answers": {
+      "q1": "Game adda",
+      "q2": "Tech Purple - Modern purple gradients",
+      "q3": "Explore",
+      "q4": "khelo jitop",
+      "q5": "no",
+      "q6": "khelo kudo",
+      "q7": "no",
+      "q8": "address",
+      "q9": "game"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your gaming brand name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Choose your color palette:",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "What action should visitors take?",
+        "type": "radio",
+        "prop_key": "cta",
+        "section": "hero",
+        "options": [
+          "View Menu",
+          "Shop Now",
+          "Contact Us",
+          "Book Now",
+          "Explore",
+          "Learn More",
+          "Get Started",
+          "Join Now"
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "Your brand's promise in one sentence:",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q5",
+        "question": "Tell us more about your Logotext for the footer:",
+        "type": "text",
+        "prop_key": "logoText",
+        "section": "footer"
+      },
+      {
+        "id": "q6",
+        "question": "What's your attention-grabbing headline?",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q7",
+        "question": "What would you like to say for 'Logo'?",
+        "type": "text",
+        "prop_key": "logo",
+        "section": "footer"
+      },
+      {
+        "id": "q8",
+        "question": "Enter your information for 'Content':",
+        "type": "text",
+        "prop_key": "content",
+        "section": "about"
+      },
+      {
+        "id": "q9",
+        "question": "Enter your information for 'Images':",
+        "type": "text",
+        "prop_key": "images",
+        "section": "gallery"
+      },
+      {
+        "id": "q10",
+        "question": "Tell us your story (2-3 sentences):",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "cta",
+      "subtitle",
+      "logoText",
+      "title",
+      "logo",
+      "content",
+      "images",
+      "story"
+    ],
+    "color_preferences": "Tech Purple - Modern purple gradients",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Epic gaming-themed hero banner.",
+        "benefit": "Immediate impact",
+        "priority": "High"
+      },
+      {
+        "id": "games",
+        "name": "Games",
+        "description": "Featured games catalog.",
+        "benefit": "Shows content",
+        "priority": "High"
+      },
+      {
+        "id": "tournaments",
+        "name": "Tournaments",
+        "description": "Upcoming esports events.",
+        "benefit": "Builds community",
+        "priority": "High"
+      },
+      {
+        "id": "community",
+        "name": "Community",
+        "description": "Discord and social links.",
+        "benefit": "Engagement",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "About Us",
+        "description": "Team info and studio story.",
+        "benefit": "Personal touch",
+        "priority": "Medium"
+      },
+      {
+        "id": "gallery",
+        "name": "Media Gallery",
+        "description": "Screenshots and trailers.",
+        "benefit": "Visual showcase",
+        "priority": "Medium"
+      },
+      {
+        "id": "news",
+        "name": "Updates",
+        "description": "Latest patches and dev logs.",
+        "benefit": "Keeps players informed",
+        "priority": "Low"
+      },
+      {
+        "id": "store",
+        "name": "Game Store",
+        "description": "Link to buy games or merch.",
+        "benefit": "Revenue",
+        "priority": "Low"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#F8D5A5",
+          "#C997EF",
+          "#9B3AEC",
+          "#66069A",
+          "#2E003F"
+        ],
+        "title": "Luminescent Dream",
+        "inspiration": "A celestial escape from digital realms."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#C5C3C8",
+          "#9B59B6",
+          "#7A288A",
+          "#51006A",
+          "#1A1D23"
+        ],
+        "title": "Digital Eclipse",
+        "inspiration": "A mesmerizing dance of light and space."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#E5E5EA",
+          "#C94DCE",
+          "#A52CDE",
+          "#7A007A",
+          "#3B0A36"
+        ],
+        "title": "Futuristic Bloom",
+        "inspiration": "Where tech and nature converge in vibrant color."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#C7C5B8",
+          "#B380D1",
+          "#9A45B7",
+          "#7A1A9A",
+          "#2F0046"
+        ],
+        "title": "Starlight Symphony",
+        "inspiration": "A celestial tapestry of harmony and balance."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#F2F2F2",
+          "#B67BD0",
+          "#9447C9",
+          "#6F02C8",
+          "#2A002B"
+        ],
+        "title": "Galactic Odyssey",
+        "inspiration": "A thrilling journey through cosmic realms."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#F0F0F0",
+          "#D9C1E9",
+          "#CC6ED5",
+          "#A20099",
+          "#2B00CE"
+        ],
+        "title": "Neon Oasis",
+        "inspiration": "A refuge of bright energy in the digital storm."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#E7E7E7",
+          "#C7A9FA",
+          "#B14EDE",
+          "#8200A6",
+          "#1A0C35"
+        ],
+        "title": "Cosmic Storm",
+        "inspiration": "A turbulent display of color in the digital vortex."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#F7F7F7",
+          "#B8D6E5",
+          "#9A5BCE",
+          "#7F00B6",
+          "#3100A5"
+        ],
+        "title": "Pulse Velocity",
+        "inspiration": "A rapid-fire sequence of vibrant, high-tech colors."
+      }
+    ],
+    "selected_palette": {
+      "id": "p3",
+      "colors": [
+        "#E5E5EA",
+        "#C94DCE",
+        "#A52CDE",
+        "#7A007A",
+        "#3B0A36"
+      ],
+      "title": "Futuristic Bloom",
+      "inspiration": "Where tech and nature converge in vibrant color."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Epic gaming-themed hero banner.",
+        "benefit": "Immediate impact",
+        "priority": "High"
+      },
+      {
+        "id": "games",
+        "name": "Games",
+        "description": "Featured games catalog.",
+        "benefit": "Shows content",
+        "priority": "High"
+      },
+      {
+        "id": "tournaments",
+        "name": "Tournaments",
+        "description": "Upcoming esports events.",
+        "benefit": "Builds community",
+        "priority": "High"
+      },
+      {
+        "id": "community",
+        "name": "Community",
+        "description": "Discord and social links.",
+        "benefit": "Engagement",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "About Us",
+        "description": "Team info and studio story.",
+        "benefit": "Personal touch",
+        "priority": "Medium"
+      },
+      {
+        "id": "gallery",
+        "name": "Media Gallery",
+        "description": "Screenshots and trailers.",
+        "benefit": "Visual showcase",
+        "priority": "Medium"
+      },
+      {
+        "id": "news",
+        "name": "Updates",
+        "description": "Latest patches and dev logs.",
+        "benefit": "Keeps players informed",
+        "priority": "Low"
+      },
+      {
+        "id": "store",
+        "name": "Game Store",
+        "description": "Link to buy games or merch.",
+        "benefit": "Revenue",
+        "priority": "Low"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Epic gaming-themed hero banner.",
+      "benefit": "Immediate impact",
+      "priority": "High"
+    },
+    {
+      "id": "games",
+      "name": "Games",
+      "description": "Featured games catalog.",
+      "benefit": "Shows content",
+      "priority": "High"
+    },
+    {
+      "id": "tournaments",
+      "name": "Tournaments",
+      "description": "Upcoming esports events.",
+      "benefit": "Builds community",
+      "priority": "High"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "description": "Discord and social links.",
+      "benefit": "Engagement",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "description": "Team info and studio story.",
+      "benefit": "Personal touch",
+      "priority": "Medium"
+    },
+    {
+      "id": "gallery",
+      "name": "Media Gallery",
+      "description": "Screenshots and trailers.",
+      "benefit": "Visual showcase",
+      "priority": "Medium"
+    },
+    {
+      "id": "news",
+      "name": "Updates",
+      "description": "Latest patches and dev logs.",
+      "benefit": "Keeps players informed",
+      "priority": "Low"
+    },
+    {
+      "id": "store",
+      "name": "Game Store",
+      "description": "Link to buy games or merch.",
+      "benefit": "Revenue",
+      "priority": "Low"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Epic gaming-themed hero banner.",
+      "benefit": "Immediate impact",
+      "priority": "High"
+    },
+    {
+      "id": "games",
+      "name": "Games",
+      "description": "Featured games catalog.",
+      "benefit": "Shows content",
+      "priority": "High"
+    },
+    {
+      "id": "tournaments",
+      "name": "Tournaments",
+      "description": "Upcoming esports events.",
+      "benefit": "Builds community",
+      "priority": "High"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "description": "Discord and social links.",
+      "benefit": "Engagement",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "description": "Team info and studio story.",
+      "benefit": "Personal touch",
+      "priority": "Medium"
+    },
+    {
+      "id": "gallery",
+      "name": "Media Gallery",
+      "description": "Screenshots and trailers.",
+      "benefit": "Visual showcase",
+      "priority": "Medium"
+    },
+    {
+      "id": "news",
+      "name": "Updates",
+      "description": "Latest patches and dev logs.",
+      "benefit": "Keeps players informed",
+      "priority": "Low"
+    },
+    {
+      "id": "store",
+      "name": "Game Store",
+      "description": "Link to buy games or merch.",
+      "benefit": "Revenue",
+      "priority": "Low"
+    }
+  ],
+  "final_metadata_ready": true
+}

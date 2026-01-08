@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvottam: Artisanal Coffee Experience</title>
+    <meta name="description" content="Discover the rich flavors of our specialty beans, crafted with passion and dedication to the art of coffee making.">
+    <meta name="keywords" content="craft coffee, specialty beans, third wave, espresso art, pour-over">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400,500,700&family=Inter:wght@300,400,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A5F',
+            secondary: '#64748B',
+            accent: '#3B82F6',
+            surface: '#F8FAFC',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+        </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1A1A2E;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #1E3A5F, #64748B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1E3A5F, #64748B);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px #1E3A5F40;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 2px solid #1E3A5F30;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            border-color: #1E3A5F;
+            background: #1E3A5F10;
+        }
+        .section { padding: 100px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #1E3A5F; }
+        .nav-link.active { color: #1E3A5F; font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#hero" class="text-2xl font-bold font-heading" style="color: #1E3A5F">Sarvottam</a>
+                <nav class="hidden md:flex items-center gap-8"><a href="#hero" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a><a href="#about" class="nav-link text-gray-700 hover:text-primary font-medium">Our Story</a><a href="#menu" class="nav-link text-gray-700 hover:text-primary font-medium">Our Menu</a><a href="#gallery" class="nav-link text-gray-700 hover:text-primary font-medium">Our Gallery</a><a href="#hours" class="nav-link text-gray-700 hover:text-primary font-medium">Hours & Location</a><a href="#contact" class="nav-link text-gray-700 hover:text-primary font-medium">Get in Touch</a></nav>
+                <a href="#contact" class="btn-primary hidden sm:inline-block">Discover Our Blends</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+    <section class="cafe-hero cafe-hero-morning" id="hero">
+        <div class="morning-container">
+            <div class="hero-top">
+                <div class="time-badge">
+                    <span class="time-icon">🕕</span>
+                    <span>Serving from 6:00 AM</span>
+                </div>
+                <h1 class="hero-title">fdsa</h1>
+                <p class="hero-subtitle">fdsa</p>
+            </div>
+            <div class="menu-preview">
+                <div class="menu-item">
+                    <span class="item-icon">🥐</span>
+                    <span class="item-name">Croissants</span>
+                    <span class="item-price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-icon">☕</span>
+                    <span class="item-name">Espresso</span>
+                    <span class="item-price">$2.50</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-icon">🥯</span>
+                    <span class="item-name">Bagels</span>
+                    <span class="item-price">$4.00</span>
+                </div>
+            </div>
+            <a href="#menu" class="btn-cta">Discover Our Blends</a>
+        </div>
+    </section>
+    
+    <style>
+    .cafe-hero-morning {
+        padding: 120px 24px;
+        background: #1A1A2E;
+        text-align: center;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+    .morning-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .time-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 24px;
+        background: #fff;
+        border-radius: 50px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        margin-bottom: 32px;
+        font-size: 0.9rem;
+        color: #FFFFFF;
+    }
+    .time-icon {
+        font-size: 1.2rem;
+    }
+    .cafe-hero-morning .hero-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(3rem, 8vw, 5rem);
+        color: #FFFFFF;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .cafe-hero-morning .hero-subtitle {
+        font-size: 1.2rem;
+        color: #6B7280;
+        margin-bottom: 40px;
+    }
+    .menu-preview {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .menu-item {
+        background: #fff;
+        padding: 16px 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        transition: all 0.3s ease;
+        min-width: 120px;
+    }
+    .menu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .item-icon {
+        font-size: 2rem;
+    }
+    .item-name {
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    .item-price {
+        color: #1E3A5F;
+        font-weight: 500;
+    }
+    .cafe-hero-morning .btn-cta {
+        display: inline-block;
+        padding: 16px 40px;
+        background: #1E3A5F;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .cafe-hero-morning .btn-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px #1E3A5F30;
+    }
+    </style>
+    
+    <section class="about-parallax" id="about">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1920')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+            <span class="about-badge">Our Story</span>
+            <h2>Our Journey</h2>
+            <p>At Sarvottam, we're passionate about crafting exceptional coffee experiences. Our journey began with a simple yet bold vision: to source the finest specialty beans and roast them to perfection, bringing out the unique flavors and characteristics of each bean. Our expert baristas are dedicated to the art of coffee making, ensuring every cup is a masterpiece.</p>
+            <a href="#menu" class="explore-btn">Explore Our Menu</a>
+        </div>
+    </section>
+    
+    <style>
+    .about-parallax { min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
+    .parallax-bg { position: absolute; inset: -50px; background-size: cover; background-position: center; background-attachment: fixed; }
+    .parallax-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%); }
+    .parallax-content { position: relative; z-index: 2; max-width: 800px; padding: 40px; }
+    .about-badge { display: inline-block; padding: 10px 25px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 30px; }
+    .about-parallax h2 { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 30px; font-weight: 400; }
+    .about-parallax p { font-size: 1.2rem; line-height: 1.9; color: rgba(255,255,255,0.85); margin-bottom: 40px; }
+    .explore-btn { display: inline-block; padding: 18px 50px; background: #1E3A5F; color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: 0.3s; }
+    .explore-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    </style>
+    
+    <section class="cafe-menu-visual" id="menu">
+        <div class="container">
+            <h2 class="section-title text-center">Specialty Coffee</h2>
+            <div class="visual-grid">
+                
+        <div class="visual-item">
+            <div class="item-img" style="background-image: url('https://source.unsplash.com/400x300/?Artisan,Cappuccino,food')">
+                <span class="img-price">$4.50</span>
+            </div>
+            <div class="item-info">
+                <div class="item-text">
+                    <h4>Artisan Cappuccino</h4>
+                    <p class="item-desc">Velvety smooth espresso crowned with silken microfoam, perfe...</p>
+                </div>
+                <a href="#" class="btn-add">+</a>
+            </div>
+        </div>
+        
+        <div class="visual-item">
+            <div class="item-img" style="background-image: url('https://source.unsplash.com/400x300/?Single-Origin,Pour-Over,food')">
+                <span class="img-price">$5.00</span>
+            </div>
+            <div class="item-info">
+                <div class="item-text">
+                    <h4>Single-Origin Pour-Over</h4>
+                    <p class="item-desc">Experience the unique flavors and nuances of our expertly so...</p>
+                </div>
+                <a href="#" class="btn-add">+</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .cafe-menu-visual { padding: 100px 24px; background: #fff; }
+    .visual-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 32px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .visual-item {
+        background: #1A1A2E;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+    .visual-item:hover { transform: scale(1.02); }
+    .item-img { height: 250px; background-size: cover; background-position: center; position: relative; }
+    .img-price { position: absolute; bottom: 20px; right: 20px; background: #fff; padding: 6px 16px; border-radius: 50px; font-weight: 700; color: #FFFFFF; }
+    .item-info { padding: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .item-info h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin: 0; }
+    .btn-add { background: #1E3A5F; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.5rem; }
+    </style>
+    
+    <section class="gallery-carousel" id="gallery">
+        <div class="carousel-wrapper">
+            <h2>A Glimpse into Our World</h2>
+            <div class="carousel-track"><div class="carousel-slide active" style="background-image: url('https://source.unsplash.com/1200x600/?cafe&sig=0')"></div><div class="carousel-slide " style="background-image: url('https://source.unsplash.com/1200x600/?cafe&sig=1')"></div></div>
+            <div class="carousel-nav"><button class="nav-prev">←</button><button class="nav-next">→</button></div>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot "></span></div>
+        </div>
+    </section>
+    <style>
+    .gallery-carousel { padding: 100px 0; background: #0D0D0D; }
+    .carousel-wrapper { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+    .gallery-carousel h2 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #fff; text-align: center; margin-bottom: 50px; }
+    .carousel-track { position: relative; height: 500px; border-radius: 20px; overflow: hidden; }
+    .carousel-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 0.5s; }
+    .carousel-slide.active { opacity: 1; }
+    .carousel-nav { display: flex; justify-content: space-between; position: absolute; top: 50%; left: 20px; right: 20px; transform: translateY(-50%); pointer-events: none; }
+    .nav-prev, .nav-next { width: 50px; height: 50px; border: 2px solid #fff; background: transparent; color: #fff; border-radius: 50%; font-size: 1.2rem; cursor: pointer; pointer-events: all; transition: 0.3s; }
+    .nav-prev:hover, .nav-next:hover { background: #1E3A5F; border-color: #1E3A5F; }
+    .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 30px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #fff3; transition: 0.3s; }
+    .dot.active { background: #1E3A5F; width: 30px; border-radius: 5px; }
+    </style>
+    
+        <section class="shared-contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Us</h2>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        <div class="info-item">
+                            <span class="icon">✉️</span>
+                            <span>info@sarvottam.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>+44 1234567890</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .shared-contact { padding: 100px 24px; background: #1A1A2E; }
+        .shared-contact .container { max-width: 1000px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { font-size: 2rem; color: #FFFFFF; margin-bottom: 16px; }
+        .contact-info p { color: #6B7280; margin-bottom: 32px; line-height: 1.7; }
+        .info-item { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; color: #FFFFFF; }
+        .contact-form { display: flex; flex-direction: column; gap: 16px; }
+        .contact-form input, .contact-form textarea {
+            padding: 16px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            background: #fff;
+        }
+        .contact-form button {
+            padding: 16px;
+            background: #1E3A5F;
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #FFFFFF;
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        </style>
+        
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-4">Sarvottam</div>
+                    <p class="text-gray-400 leading-relaxed">Expertly crafted coffee, passionately served.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    
+                <a href="#hero" class="text-gray-400 hover:text-white transition-colors block">
+                    Home
+                </a>
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors block">
+                    About
+                </a>
+                <a href="#menu" class="text-gray-400 hover:text-white transition-colors block">
+                    Menu
+                </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Connect</h4>
+                <div class="space-y-3">
+                    
+                <a href="https://www.instagram.com/sarvottam" class="text-gray-400 hover:text-white transition-colors block">
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/sarvottam" class="text-gray-400 hover:text-white transition-colors block">
+                    Facebook
+                </a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm"> 2025 Sarvottam. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.animate-on-scroll').forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 100, scale: 0.8 },
+                { opacity: 1, y: 0, scale: 1, duration: 1, ease: "elastic.out(1, 0.5)",
+                  scrollTrigger: { trigger: element, start: "top 90%", toggleActions: "play none none reverse" },
+                  delay: index * 0.05
+                }
+            );
+        });
+        </script>
+    
+    <!-- Smooth scroll and active nav highlighting -->
+    <script>
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

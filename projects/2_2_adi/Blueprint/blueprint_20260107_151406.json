@@ -1,0 +1,905 @@
+{
+  "projectName": "Khana Khajana",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Khana Khajana - Culinary Delights",
+    "description": "Experience the rich flavors of our cuisine, crafted with freshness and passion",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Warm Elegance",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#7C3AED",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#7C3AED",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "background": "#F8FAFC",
+      "surface": "#0F172A",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #7C3AED 0%, #10B981 100%)",
+      "accent": "linear-gradient(135deg, #F59E0B 0%, #F8FAFC 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Khao Pio",
+      "props": {
+        "layoutVariant": "split-left-text",
+        "title": "Khao Pio",
+        "subtitle": "",
+        "description": "Indulge in the rich flavors of our cuisine, where every dish is a masterpiece of culinary art. From the freshness of our ingredients to the passion of our chefs, every aspect of our dining experience is designed to delight your senses.",
+        "cta": "Get Started",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "The Passion of Master Chef",
+        "story": "Master Chef, the founder of Khana Khajana, has always been driven by a passion for culinary excellence. With years of experience in the kitchen, he has perfected his craft, creating dishes that are not only delicious but also visually stunning. His commitment to using only the freshest ingredients and innovative cooking techniques has earned him a reputation as one of the leading chefs in the industry.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founding of Khana Khajana",
+            "description": "Master Chef founded Khana Khajana with a vision to create a dining experience that would exceed his customers' expectations."
+          },
+          {
+            "year": "2015",
+            "title": "Expansion and Growth",
+            "description": "Khana Khajana expanded its operations, introducing new menu items and increasing its staff to meet the growing demand."
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Signature Dishes",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": [
+          {
+            "name": "Grilled Chicken Tikka",
+            "description": "Marinated chicken breast, grilled to perfection and served with a side of mint chutney",
+            "price": "$15",
+            "category": "Starters"
+          },
+          {
+            "name": "Palak Paneer",
+            "description": "Creamy spinach curry with paneer, served with basmati rice and naan bread",
+            "price": "$20",
+            "category": "Mains"
+          },
+          {
+            "name": "Gulab Jamun",
+            "description": "Deep-fried dumplings soaked in rose syrup, served with a sprinkle of cardamom powder",
+            "price": "$8",
+            "category": "Desserts"
+          }
+        ]
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Food Gallery",
+      "props": {
+        "layoutVariant": "masonry",
+        "title": "A Visual Journey",
+        "subtitle": "Explore our culinary creations",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg"
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-heritage": {
+      "id": "heritage",
+      "type": "Heritage",
+      "name": "Our Heritage",
+      "props": {
+        "layoutVariant": "timeline",
+        "title": "A Legacy of Culinary Excellence",
+        "description": "Khana Khajana's heritage is rooted in the rich culinary traditions of India. Our chefs are dedicated to preserving the authenticity of our dishes, while innovating and adapting to the changing tastes of our customers.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founding of Khana Khajana",
+            "description": "Master Chef founded Khana Khajana with a vision to create a dining experience that would exceed his customers' expectations."
+          },
+          {
+            "year": "2015",
+            "title": "Expansion and Growth",
+            "description": "Khana Khajana expanded its operations, introducing new menu items and increasing its staff to meet the growing demand."
+          }
+        ]
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Khana Khajana",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Menu",
+          "href": "#menu"
+        },
+        {
+          "text": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "text": "Heritage",
+          "href": "#heritage"
+        }
+      ],
+      "cta": {
+        "text": "Reserve a Table",
+        "href": "#contact",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Khana Khajana",
+      "tagline": "Experience the rich flavors of our cuisine",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Menu",
+              "href": "#menu"
+            },
+            {
+              "text": "Gallery",
+              "href": "#gallery"
+            },
+            {
+              "text": "Heritage",
+              "href": "#heritage"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "https://www.facebook.com/khanakhajana"
+            },
+            {
+              "text": "Instagram",
+              "href": "https://www.instagram.com/khanakhajana"
+            },
+            {
+              "text": "Twitter",
+              "href": "https://www.twitter.com/khanakhajana"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Khana Khajana. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "cinematic",
+    "hero_concept": "A warm and inviting atmosphere, with a focus on the culinary delights of Khana Khajana",
+    "visual_personality": "Warm, elegant, and sophisticated, with a focus on showcasing the beauty of our dishes"
+  },
+  "projectId": "a9ff6816-3d35-46a1-a9b1-a1fd9fa0707d",
+  "session_id": "sess_af7647c7",
+  "created_at": "2026-01-07T15:14:06.698526",
+  "metadata": {
+    "session_id": "sess_af7647c7",
+    "timestamp": "2026-01-07T15:14:01.374674",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Khana Khajana",
+    "prop_answers": {
+      "businessName": "Khana khajana",
+      "colorTheme": "Creative Orange - Energetic orange with dark accents",
+      "story": "nothing",
+      "title": "khao pio",
+      "services": [
+        "Social Media",
+        "Digital Marketing"
+      ],
+      "chefName": "Master chief",
+      "sectionTitle": "no",
+      "email": "agmail.com",
+      "phone": "5555555555"
+    },
+    "user_hero": {
+      "title": "khao pio",
+      "subtitle": "",
+      "cta": "Get Started"
+    },
+    "user_services": [
+      "Social Media",
+      "Digital Marketing"
+    ],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Khana Khajana",
+      "target_audience": "Khana khajana",
+      "goals": "['Social Media', 'Digital Marketing']",
+      "services": [
+        "Social Media",
+        "Digital Marketing"
+      ],
+      "style_preferences": [
+        [
+          "Social Media",
+          "Digital Marketing"
+        ],
+        "no navigation",
+        "5555555555 fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "nothing",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Khana khajana"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Creative Orange - Energetic orange with dark accents"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "nothing"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "khao pio"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Social Media",
+            "Digital Marketing"
+          ]
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "Master chief"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "no"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "agmail.com"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "5555555555"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Khana khajana",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Creative Orange - Energetic orange with dark accents",
+          "question": ""
+        },
+        "q3": {
+          "answer": "nothing",
+          "question": ""
+        },
+        "q4": {
+          "answer": "khao pio",
+          "question": ""
+        },
+        "q5": {
+          "answer": [
+            "Social Media",
+            "Digital Marketing"
+          ],
+          "question": ""
+        },
+        "q6": {
+          "answer": "Master chief",
+          "question": ""
+        },
+        "q7": {
+          "answer": "no",
+          "question": ""
+        },
+        "q8": {
+          "answer": "agmail.com",
+          "question": ""
+        },
+        "q9": {
+          "answer": "5555555555",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Khana khajana",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "story": "nothing",
+        "title": "khao pio",
+        "services": [
+          "Social Media",
+          "Digital Marketing"
+        ],
+        "chefName": "Master chief",
+        "sectionTitle": "no",
+        "email": "agmail.com",
+        "phone": "5555555555"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#7C3AED",
+          "#10B981",
+          "#F59E0B",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Creative Orange - Energetic orange with dark accents",
+      "font_style": "5555555555",
+      "navigation_style": "no"
+    },
+    "features": [
+      "Hero",
+      "Full Menu",
+      "Food Gallery",
+      "Heritage"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 2,
+      "session_id": "sess_af7647c7",
+      "project_id": 2,
+      "timestamp": "2026-01-07T09:44:01.277782Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 2,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the user's responses, here are some observations:\n\n1. The name of the restaurant is",
+        "answers": {
+          "q1": "Khana khajana",
+          "q2": "Creative Orange - Energetic orange with dark accents",
+          "q3": "nothing",
+          "q4": "khao pio",
+          "q5": [
+            "Social Media",
+            "Digital Marketing"
+          ],
+          "q6": "Master chief",
+          "q7": "no",
+          "q8": "agmail.com",
+          "q9": "5555555555"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your restaurant name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Pick your website's color scheme:",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What's the story behind your business?",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          },
+          {
+            "id": "q4",
+            "question": "What's the main headline for your website?",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q5",
+            "question": "What services do you offer?",
+            "type": "checkbox",
+            "prop_key": "services",
+            "section": "services",
+            "options": [
+              "Web Design/Development",
+              "Social Media",
+              "Branding & Identity",
+              "Digital Marketing",
+              "SEO/Content",
+              "Video Production",
+              "Consulting"
+            ]
+          },
+          {
+            "id": "q6",
+            "question": "Enter your information for 'Chefname':",
+            "type": "text",
+            "prop_key": "chefName",
+            "section": "about"
+          },
+          {
+            "id": "q7",
+            "question": "What would you like to say for 'Sectiontitle'?",
+            "type": "text",
+            "prop_key": "sectionTitle",
+            "section": "about"
+          },
+          {
+            "id": "q8",
+            "question": "Tell us more about your Email for the footer:",
+            "type": "text",
+            "prop_key": "email",
+            "section": "footer"
+          },
+          {
+            "id": "q9",
+            "question": "What would you like to say for 'Phone'?",
+            "type": "text",
+            "prop_key": "phone",
+            "section": "footer"
+          },
+          {
+            "id": "q10",
+            "question": "What would you like to say for 'Description'?",
+            "type": "text",
+            "prop_key": "description",
+            "section": "about"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "story",
+          "title",
+          "services",
+          "chefName",
+          "sectionTitle",
+          "email",
+          "phone",
+          "description"
+        ],
+        "color_preferences": "Creative Orange - Energetic orange with dark accents",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#FFC499",
+              "#FF9900",
+              "#8B4513",
+              "#3B3F54",
+              "#2C2E33"
+            ],
+            "title": "Burning Embers",
+            "inspiration": "Flickering flames dance across the night sky."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#FFAA33",
+              "#FF9900",
+              "#6E2C00",
+              "#2A272C",
+              "#3E3F41"
+            ],
+            "title": "Electric Sunset",
+            "inspiration": "Vibrant colors burst across the city skyline at dusk."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#FF8C69",
+              "#FFC080",
+              "#964B00",
+              "#342B34",
+              "#4C5E66"
+            ],
+            "title": "Sunset Blaze",
+            "inspiration": "Rays of intense sunlight ignite a summer evening."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#FFA07A",
+              "#FF9900",
+              "#8B3E25",
+              "#4B5053",
+              "#2C2E33"
+            ],
+            "title": "Fired Desire",
+            "inspiration": "Artistic expression takes center stage in a burst of creativity."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#FFA57D",
+              "#FFA07A",
+              "#6C1B27",
+              "#3C3F55",
+              "#2C3D53"
+            ],
+            "title": "Daring Flames",
+            "inspiration": "Innovation ignites the passion to push boundaries."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#F7CDB9",
+              "#FFA07A",
+              "#78493D",
+              "#342E36",
+              "#45485D"
+            ],
+            "title": "Warm Oasis",
+            "inspiration": "A vibrant splash of color cools the senses in the heat of summer."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#FFB6C1",
+              "#FFC080",
+              "#8B3A3A",
+              "#3E3F42",
+              "#424A50"
+            ],
+            "title": "Artistic Pulse",
+            "inspiration": "Creativity bursts forth in an energetic display of color."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#FF9933",
+              "#FF9900",
+              "#663300",
+              "#3C3D55",
+              "#2F3A55"
+            ],
+            "title": "Orange Blaze",
+            "inspiration": "Passion fuels the drive to create something bold and beautiful."
+          }
+        ],
+        "selected_palette": {
+          "id": "p1",
+          "colors": [
+            "#FFC499",
+            "#FF9900",
+            "#8B4513",
+            "#3B3F54",
+            "#2C2E33"
+          ],
+          "title": "Burning Embers",
+          "inspiration": "Flickering flames dance across the night sky."
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-heritage"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 2
+}

@@ -1,0 +1,320 @@
+{
+  "user_id": 1,
+  "session_id": "sess_81c4cbad",
+  "project_id": 5,
+  "timestamp": "2026-01-08T05:02:58.256334Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 1,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the user's responses, here's an analysis of the type of business or website they want",
+    "answers": {
+      "q1": "Foodie",
+      "q2": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+      "q3": "Tasty khana",
+      "q4": "Explore",
+      "q5": "TLC",
+      "q6": "foodie@gmail.com",
+      "q7": "nothing",
+      "q8": "food",
+      "q9": "Professional photo"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your restaurant name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Pick your website's color scheme:",
+        "type": "radio",
+        "options": [
+          "Elegant Gold - Black and gold - fine dining sophistication",
+          "Fresh Garden - Greens and earth tones - farm to table vibe",
+          "Warm Terracotta - Warm oranges and browns - rustic comfort",
+          "Ocean Blue - Blues and whites - coastal fresh feel"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Your brand's promise in one sentence:",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q4",
+        "question": "Primary call-to-action:",
+        "type": "radio",
+        "prop_key": "cta",
+        "section": "hero",
+        "options": [
+          "View Menu",
+          "Contact Us",
+          "Learn More",
+          "Get Started",
+          "Explore",
+          "Shop Now",
+          "Book Now",
+          "Join Now"
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "What inspired you to start?",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      },
+      {
+        "id": "q6",
+        "question": "What would you like to say for 'Email'?",
+        "type": "text",
+        "prop_key": "email",
+        "section": "footer"
+      },
+      {
+        "id": "q7",
+        "question": "Tell us more about your Tagline for the hero:",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      },
+      {
+        "id": "q8",
+        "question": "Enter your information for 'Images':",
+        "type": "text",
+        "prop_key": "images",
+        "section": "gallery"
+      },
+      {
+        "id": "q9",
+        "question": "What type of hero image fits your brand?",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Location/space",
+          "Abstract/artistic",
+          "Product showcase",
+          "Team/people",
+          "Auto-select for me"
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Items'?",
+        "type": "text",
+        "prop_key": "items",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "subtitle",
+      "cta",
+      "story",
+      "email",
+      "tagline",
+      "images",
+      "image",
+      "items"
+    ],
+    "color_preferences": "Warm Terracotta - Warm oranges and browns - rustic comfort",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "title": "Noir Atelier",
+        "inspiration": "Luxury portfolio aesthetics.",
+        "colors": [
+          "#050505",
+          "#1C1C1E",
+          "#373640",
+          "#A49393",
+          "#F5E6E8"
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Prism Charge",
+        "inspiration": "Futuristic builder UI with vivid bars.",
+        "colors": [
+          "#0C0824",
+          "#2D1163",
+          "#5B1A8D",
+          "#FF4BCD",
+          "#FFC857"
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Aurora Forge",
+        "inspiration": "Creative agencies with neon warmth.",
+        "colors": [
+          "#04050A",
+          "#15212E",
+          "#27425C",
+          "#F15263",
+          "#FFC857"
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Pastel Current",
+        "inspiration": "Soft tech marketing pages.",
+        "colors": [
+          "#101821",
+          "#343C56",
+          "#6BDAB9",
+          "#F7B2BD",
+          "#FDF6F0"
+        ]
+      }
+    ],
+    "selected_palette": {
+      "id": "p2",
+      "title": "Prism Charge",
+      "inspiration": "Futuristic builder UI with vivid bars.",
+      "colors": [
+        "#0C0824",
+        "#2D1163",
+        "#5B1A8D",
+        "#FF4BCD",
+        "#FFC857"
+      ]
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "final_metadata_ready": true
+}

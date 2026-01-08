@@ -1,0 +1,987 @@
+{
+  "projectName": "Aadi",
+  "projectType": "business",
+  "seo": {
+    "title": "Fsg Business Solutions",
+    "description": "Expert business solutions for trusted results and partnership",
+    "keywords": [
+      "business solutions",
+      "expertise",
+      "trust",
+      "results",
+      "partnership"
+    ]
+  },
+  "theme": {
+    "themeName": "Professional Modern",
+    "themeMood": "Professional & Modern",
+    "primaryColor": "#FF6B6B",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#FF6B6B",
+      "secondary": "#4ECDC4",
+      "accent": "#FFE66D",
+      "background": "#1A1A2E",
+      "surface": "#F8FAFC",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(45deg, #FF6B6B 0%, #4ECDC4 100%)",
+      "accent": "linear-gradient(45deg, #FFE66D 0%, #FF6B6B 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "centered-overlay",
+       0000000000000000000000000000000 "title": "Not Started...",
+        "subtitle": "fsda",
+        "description": "At Fsg, we offer expert business solutions for trusted results and partnership. Our team of experts provides professional and reliable services to meet your business needs.",
+        "cta": "Not Start",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Us",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "About Fsg",
+        "story": "Fsg was founded with the goal of providing expert business solutions to companies. Our team of experts has years of experience in the industry and is dedicated to delivering trusted results and partnership. We pride ourselves on our professional and reliable services, and we strive to meet the unique needs of each of our clients.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founded",
+            "description": "Fsg was founded by a team of industry experts."
+          },
+          {
+            "year": "2022",
+            "title": "Expanded Services",
+            "description": "Fsg expanded its services to meet the growing needs of its clients."
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Clients"
+          },
+          {
+            "value": "500+",
+            "label": "Successful Projects"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-expertise": {
+      "id": "expertise",
+      "type": "Features",
+      "name": "Our Expertise",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Our Expertise",
+        "sectionSubtitle": "We offer a range of expert business solutions to meet your needs.",
+        "featureList": [
+          {
+            "icon": "💼",
+            "title": "Business Strategy",
+            "description": "Our team of experts will work with you to develop a customized business strategy to meet your unique needs."
+          },
+          {
+            "icon": "📊",
+            "title": "Financial Planning",
+            "description": "We provide expert financial planning services to help you achieve your business goals."
+          },
+          {
+            "icon": "📈",
+            "title": "Marketing Solutions",
+            "description": "Our marketing solutions are designed to help you reach your target audience and grow your business."
+          }
+        ]
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-testimonials": {
+      "id": "testimonials",
+      "type": "Testimonials",
+      "name": "What Our Clients Say",
+      "props": {
+        "layoutVariant": "carousel",
+        "sectionTitle": "Testimonials",
+        "testimonials": [
+          {
+            "quote": "Fsg has been instrumental in helping us grow our business. Their expert advice and guidance have been invaluable.",
+            "author": "John Smith",
+            "role": "CEO, ABC Corporation"
+          },
+          {
+            "quote": "We have been working with Fsg for several years and have always been impressed with their professionalism and expertise.",
+            "author": "Jane Doe",
+            "role": "Founder, DEF Startups"
+          },
+          {
+            "quote": "Fsg's marketing solutions have helped us reach a wider audience and increase our sales. We are grateful for their help and support.",
+            "author": "Bob Johnson",
+            "role": "Marketing Manager, GHI Inc."
+          }
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-connect": {
+      "id": "connect",
+      "type": "Contact",
+      "name": "Get in Touch",
+      "props": {
+        "layoutVariant": "split-left-text",
+        "title": "Contact Us",
+        "subtitle": "We would love to hear from you. Please don't hesitate to contact us if you have any questions or need further information.",
+        "email": "fdsa",
+        "phone": "123-456-7890",
+        "address": "ff",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Your Message",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-projects": {
+      "id": "projects",
+      "type": "Features",
+      "name": "Projects",
+      "props": {
+        "layoutVariant": "bento-grid",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Fsg special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-profile": {
+      "id": "profile",
+      "type": "Features",
+      "name": "Profile",
+      "props": {
+        "layoutVariant": "carousel-features",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Fsg special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Fsg",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Expertise",
+          "href": "#expertise"
+        },
+        {
+          "text": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "text": "Contact",
+          "href": "#connect"
+        }
+      ],
+      "cta": {
+        "text": "Get Started",
+        "href": "#connect",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Fsg",
+      "tagline": "Expert business solutions for trusted results and partnership",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "About",
+              "href": "#about"
+            },
+            {
+              "text": "Expertise",
+              "href": "#expertise"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Email",
+              "href": "mailto:fdsa"
+            },
+            {
+              "text": "Phone",
+              "href": "tel:123-456-7890"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2025 Fsg. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Inter",
+        "weights": [
+          400,
+          600,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Inter",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "professional & modern"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Professional Modern",
+    "hero_concept": "A centered hero section with a bold and modern design, featuring a compelling headline and a call-to-action button.",
+    "visual_personality": "Professional, modern, and sleek, with a focus on clean lines, minimalism, and a bold color scheme."
+  },
+  "projectId": "3dccfa24-dc1e-44b9-87a4-ae6a62fde62b",
+  "session_id": "sess_3730df0c",
+  "created_at": "2026-01-07T18:19:09.939841",
+  "metadata": {
+    "session_id": "sess_3730df0c",
+    "timestamp": "2026-01-07T18:19:04.907944",
+    "user_prompt": "Portfolio Website",
+    "business_name": "Fsg",
+    "prop_answers": {
+      "businessName": "fsg",
+      "colorTheme": "Bold Creative - Vibrant colors that pop",
+      "email": "fdsa",
+      "mission": "fsda",
+      "tagline": "fdsa",
+      "subtitle": "fsda",
+      "sectionTitle": "fdsa",
+      "title": "fdsa",
+      "address": "ff"
+    },
+    "user_hero": {
+      "title": "fdsa",
+      "subtitle": "fsda",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "business",
+      "industry": "business",
+      "business_name": "Fsg",
+      "target_audience": "fsg",
+      "goals": "fdsa",
+      "services": [],
+      "style_preferences": [
+        "fdsa",
+        "fdsa navigation",
+        "ff fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsg"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Bold Creative - Vibrant colors that pop"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsda"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsda"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "ff"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "fsg",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Bold Creative - Vibrant colors that pop",
+          "question": ""
+        },
+        "q3": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fsda",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fsda",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q9": {
+          "answer": "ff",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "fsg",
+        "colorTheme": "Bold Creative - Vibrant colors that pop",
+        "email": "fdsa",
+        "mission": "fsda",
+        "tagline": "fdsa",
+        "subtitle": "fsda",
+        "sectionTitle": "fdsa",
+        "title": "fdsa",
+        "address": "ff"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#FF6B6B",
+          "#4ECDC4",
+          "#FFE66D",
+          "#F8FAFC",
+          "#1A1A2E"
+        ]
+      },
+      "color_theme_text": "Bold Creative - Vibrant colors that pop",
+      "font_style": "ff",
+      "navigation_style": "fdsa"
+    },
+    "features": [
+      "Hero",
+      "Projects",
+      "Profile",
+      "Expertise",
+      "Connect"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_3730df0c",
+      "project_id": 4,
+      "timestamp": "2026-01-07T12:49:04.800683Z",
+      "user_prompt": "Portfolio Website",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Portfolio Website",
+        "language": "English",
+        "business_type": "Based on the incomplete responses (q1-9 with random key presses 'f', 's',",
+        "answers": {
+          "q1": "fsg",
+          "q2": "Bold Creative - Vibrant colors that pop",
+          "q3": "fdsa",
+          "q4": "fsda",
+          "q5": "fdsa",
+          "q6": "fsda",
+          "q7": "fdsa",
+          "q8": "fdsa",
+          "q9": "ff"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What's your name?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Pick your website's color scheme:",
+            "type": "radio",
+            "options": [
+              "Clean Minimal - Black, white, and one accent color",
+              "Bold Creative - Vibrant colors that pop",
+              "Professional - Navy and gray - trustworthy",
+              "Dark Mode - Dark backgrounds with light text"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Tell us more about your Email for the contact:",
+            "type": "text",
+            "prop_key": "email",
+            "section": "contact"
+          },
+          {
+            "id": "q4",
+            "question": "Tell us more about your Mission for the about:",
+            "type": "text",
+            "prop_key": "mission",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Tagline'?",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          },
+          {
+            "id": "q6",
+            "question": "If you had 5 seconds to impress, what would you say?",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "What would you like to say for 'Sectiontitle'?",
+            "type": "text",
+            "prop_key": "sectionTitle",
+            "section": "about"
+          },
+          {
+            "id": "q8",
+            "question": "Write your website's main headline:",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q9",
+            "question": "Tell us more about your Address for the footer:",
+            "type": "text",
+            "prop_key": "address",
+            "section": "footer"
+          },
+          {
+            "id": "q10",
+            "question": "What's the story behind your business?",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "email",
+          "mission",
+          "tagline",
+          "subtitle",
+          "sectionTitle",
+          "title",
+          "address",
+          "story"
+        ],
+        "color_preferences": "Bold Creative - Vibrant colors that pop",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#E87C25",
+              "#FFD700",
+              "#C7F464",
+              "#34A85A",
+              "#FF69B4"
+            ],
+            "title": "Electric Storm",
+            "inspiration": "A sudden burst of energetic creativity"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#F7DC6F",
+              "#8BC34A",
+              "#5D8AA8",
+              "#FFC107",
+              "#FF0000"
+            ],
+            "title": "Fusion Ignite",
+            "inspiration": "The meeting of diverse colors in perfect harmony"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#6495ED",
+              "#00BFFF",
+              "#FFA07A",
+              "#8B9467",
+              "#FFD700"
+            ],
+            "title": "Cosmic Blast",
+            "inspiration": "A vibrant explosion of celestial colors"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#FFB6C1",
+              "#FF69B4",
+              "#FFC67D",
+              "#34A8FF",
+              "#F7D2C4"
+            ],
+            "title": "Sunset Frenzy",
+            "inspiration": "A kaleidoscope of warm, vibrant hues"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#B1A1F5",
+              "#9C69E5",
+              "#C9E4CA",
+              "#F3A3A3",
+              "#FFD700"
+            ],
+            "title": "Vibrance Unleashed",
+            "inspiration": "Unbridled energy and color freedom"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#8B008B",
+              "#FF0000",
+              "#FFFF00",
+              "#32CD32",
+              "#00BFFF"
+            ],
+            "title": "Rave Lights",
+            "inspiration": "A party of bright, pulsating colors"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#5B7DEB",
+              "#F8C4CE",
+              "#FFD700",
+              "#34A85A",
+              "#8B9467"
+            ],
+            "title": "Galactic Dream",
+            "inspiration": "A mesmerizing fusion of ethereal colors"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#FFC107",
+              "#FFA07A",
+              "#FF69B4",
+              "#8BC34A",
+              "#CD5C5C"
+            ],
+            "title": "Fire Dance",
+            "inspiration": "A dynamic mix of warm, fiery hues"
+          }
+        ],
+        "selected_palette": {
+          "id": "p2",
+          "colors": [
+            "#F7DC6F",
+            "#8BC34A",
+            "#5D8AA8",
+            "#FFC107",
+            "#FF0000"
+          ],
+          "title": "Fusion Ignite",
+          "inspiration": "The meeting of diverse colors in perfect harmony"
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-expertise",
+    "comp-testimonials",
+    "comp-connect"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  }
+}

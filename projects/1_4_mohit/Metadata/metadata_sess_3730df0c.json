@@ -1,0 +1,378 @@
+{
+  "user_id": 1,
+  "session_id": "sess_3730df0c",
+  "project_id": 4,
+  "timestamp": "2026-01-07T12:49:04.800683Z",
+  "user_prompt": "Portfolio Website",
+  "questionnaire": {
+    "user_id": 1,
+    "prompt": "Portfolio Website",
+    "language": "English",
+    "business_type": "Based on the incomplete responses (q1-9 with random key presses 'f', 's',",
+    "answers": {
+      "q1": "fsg",
+      "q2": "Bold Creative - Vibrant colors that pop",
+      "q3": "fdsa",
+      "q4": "fsda",
+      "q5": "fdsa",
+      "q6": "fsda",
+      "q7": "fdsa",
+      "q8": "fdsa",
+      "q9": "ff"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What's your name?",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Pick your website's color scheme:",
+        "type": "radio",
+        "options": [
+          "Clean Minimal - Black, white, and one accent color",
+          "Bold Creative - Vibrant colors that pop",
+          "Professional - Navy and gray - trustworthy",
+          "Dark Mode - Dark backgrounds with light text"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Tell us more about your Email for the contact:",
+        "type": "text",
+        "prop_key": "email",
+        "section": "contact"
+      },
+      {
+        "id": "q4",
+        "question": "Tell us more about your Mission for the about:",
+        "type": "text",
+        "prop_key": "mission",
+        "section": "about"
+      },
+      {
+        "id": "q5",
+        "question": "What would you like to say for 'Tagline'?",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      },
+      {
+        "id": "q6",
+        "question": "If you had 5 seconds to impress, what would you say?",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q7",
+        "question": "What would you like to say for 'Sectiontitle'?",
+        "type": "text",
+        "prop_key": "sectionTitle",
+        "section": "about"
+      },
+      {
+        "id": "q8",
+        "question": "Write your website's main headline:",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q9",
+        "question": "Tell us more about your Address for the footer:",
+        "type": "text",
+        "prop_key": "address",
+        "section": "footer"
+      },
+      {
+        "id": "q10",
+        "question": "What's the story behind your business?",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "email",
+      "mission",
+      "tagline",
+      "subtitle",
+      "sectionTitle",
+      "title",
+      "address",
+      "story"
+    ],
+    "color_preferences": "Bold Creative - Vibrant colors that pop",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Clean personal banner.",
+        "benefit": "Focus",
+        "priority": "High"
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "description": "Showcase of your best work.",
+        "benefit": "Proof",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Profile",
+        "description": "Your skills and experience.",
+        "benefit": "Personal brand",
+        "priority": "High"
+      },
+      {
+        "id": "skills",
+        "name": "Expertise",
+        "description": "Specific tech stack or skills.",
+        "benefit": "Quick info",
+        "priority": "Medium"
+      },
+      {
+        "id": "contact",
+        "name": "Connect",
+        "description": "Contact form and links.",
+        "benefit": "Reachability",
+        "priority": "High"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#E87C25",
+          "#FFD700",
+          "#C7F464",
+          "#34A85A",
+          "#FF69B4"
+        ],
+        "title": "Electric Storm",
+        "inspiration": "A sudden burst of energetic creativity"
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#F7DC6F",
+          "#8BC34A",
+          "#5D8AA8",
+          "#FFC107",
+          "#FF0000"
+        ],
+        "title": "Fusion Ignite",
+        "inspiration": "The meeting of diverse colors in perfect harmony"
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#6495ED",
+          "#00BFFF",
+          "#FFA07A",
+          "#8B9467",
+          "#FFD700"
+        ],
+        "title": "Cosmic Blast",
+        "inspiration": "A vibrant explosion of celestial colors"
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#FFB6C1",
+          "#FF69B4",
+          "#FFC67D",
+          "#34A8FF",
+          "#F7D2C4"
+        ],
+        "title": "Sunset Frenzy",
+        "inspiration": "A kaleidoscope of warm, vibrant hues"
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#B1A1F5",
+          "#9C69E5",
+          "#C9E4CA",
+          "#F3A3A3",
+          "#FFD700"
+        ],
+        "title": "Vibrance Unleashed",
+        "inspiration": "Unbridled energy and color freedom"
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#8B008B",
+          "#FF0000",
+          "#FFFF00",
+          "#32CD32",
+          "#00BFFF"
+        ],
+        "title": "Rave Lights",
+        "inspiration": "A party of bright, pulsating colors"
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#5B7DEB",
+          "#F8C4CE",
+          "#FFD700",
+          "#34A85A",
+          "#8B9467"
+        ],
+        "title": "Galactic Dream",
+        "inspiration": "A mesmerizing fusion of ethereal colors"
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#FFC107",
+          "#FFA07A",
+          "#FF69B4",
+          "#8BC34A",
+          "#CD5C5C"
+        ],
+        "title": "Fire Dance",
+        "inspiration": "A dynamic mix of warm, fiery hues"
+      }
+    ],
+    "selected_palette": {
+      "id": "p2",
+      "colors": [
+        "#F7DC6F",
+        "#8BC34A",
+        "#5D8AA8",
+        "#FFC107",
+        "#FF0000"
+      ],
+      "title": "Fusion Ignite",
+      "inspiration": "The meeting of diverse colors in perfect harmony"
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Clean personal banner.",
+        "benefit": "Focus",
+        "priority": "High"
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "description": "Showcase of your best work.",
+        "benefit": "Proof",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Profile",
+        "description": "Your skills and experience.",
+        "benefit": "Personal brand",
+        "priority": "High"
+      },
+      {
+        "id": "skills",
+        "name": "Expertise",
+        "description": "Specific tech stack or skills.",
+        "benefit": "Quick info",
+        "priority": "Medium"
+      },
+      {
+        "id": "contact",
+        "name": "Connect",
+        "description": "Contact form and links.",
+        "benefit": "Reachability",
+        "priority": "High"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Clean personal banner.",
+      "benefit": "Focus",
+      "priority": "High"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "description": "Showcase of your best work.",
+      "benefit": "Proof",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Profile",
+      "description": "Your skills and experience.",
+      "benefit": "Personal brand",
+      "priority": "High"
+    },
+    {
+      "id": "skills",
+      "name": "Expertise",
+      "description": "Specific tech stack or skills.",
+      "benefit": "Quick info",
+      "priority": "Medium"
+    },
+    {
+      "id": "contact",
+      "name": "Connect",
+      "description": "Contact form and links.",
+      "benefit": "Reachability",
+      "priority": "High"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Clean personal banner.",
+      "benefit": "Focus",
+      "priority": "High"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "description": "Showcase of your best work.",
+      "benefit": "Proof",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Profile",
+      "description": "Your skills and experience.",
+      "benefit": "Personal brand",
+      "priority": "High"
+    },
+    {
+      "id": "skills",
+      "name": "Expertise",
+      "description": "Specific tech stack or skills.",
+      "benefit": "Quick info",
+      "priority": "Medium"
+    },
+    {
+      "id": "contact",
+      "name": "Connect",
+      "description": "Contact form and links.",
+      "benefit": "Reachability",
+      "priority": "High"
+    }
+  ],
+  "final_metadata_ready": true
+}

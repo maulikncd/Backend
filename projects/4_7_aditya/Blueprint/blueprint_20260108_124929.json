@@ -1,0 +1,1024 @@
+{
+  "projectName": "Sarvottam",
+  "projectType": "coffee_shop",
+  "seo": {
+    "title": "Sarvottam: Artisanal Coffee Experience",
+    "description": "Discover the rich flavors of our specialty beans, crafted with passion and dedication to the art of coffee making.",
+    "keywords": [
+      "craft coffee",
+      "specialty beans",
+      "third wave",
+      "espresso art",
+      "pour-over"
+    ]
+  },
+  "theme": {
+    "themeName": "Modern Cozy",
+    "themeMood": "Modern & Cozy",
+    "primaryColor": "#1E3A5F",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#1E3A5F",
+      "secondary": "#64748B",
+      "accent": "#3B82F6",
+      "background": "#1A1A2E",
+      "surface": "#F8FAFC",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(90deg, #1E3A5F 0%, #64748B 100%)",
+      "accent": "linear-gradient(90deg, #3B82F6 0%, #3B82F6 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "gradient-split",
+        "title": "fdsa",
+        "subtitle": "fdsa",
+        "description": "Indulge in the rich flavors of our expertly crafted coffee, made from the finest specialty beans sourced from around the world.",
+        "cta": "Discover Our Blends",
+        "ctaSecondary": "Visit Us",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Our Journey",
+        "story": "At Sarvottam, we're passionate about crafting exceptional coffee experiences. Our journey began with a simple yet bold vision: to source the finest specialty beans and roast them to perfection, bringing out the unique flavors and characteristics of each bean. Our expert baristas are dedicated to the art of coffee making, ensuring every cup is a masterpiece.",
+        "story2": "We believe in building strong relationships with our coffee farmers, ensuring fair trade practices and sustainable farming methods. Our roasting process is carefully calibrated to bring out the full potential of each bean, resulting in a truly unique and delicious cup of coffee.",
+        "story3": "As we continue to grow and evolve, our commitment to quality, sustainability, and community remains unwavering. We're proud to be a part of the third wave coffee movement, and we invite you to join us on this journey of discovery and passion.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founding",
+            "description": "Sarvottam was founded by a team of coffee enthusiasts with a shared vision of creating exceptional coffee experiences."
+          },
+          {
+            "year": "2015",
+            "title": "First Cafe",
+            "description": "Our first cafe opened its doors, offering a welcoming space for coffee lovers to gather and enjoy our expertly crafted coffee."
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Specialty Coffee",
+        "categories": [
+          "Espresso",
+          "Pour-Over",
+          "Drip Coffee"
+        ],
+        "items": [
+          {
+            "name": "Artisan Cappuccino",
+            "description": "Velvety smooth espresso crowned with silken microfoam, perfect for those who appreciate the classics.",
+            "price": "$4.50"
+          },
+          {
+            "name": "Single-Origin Pour-Over",
+            "description": "Experience the unique flavors and nuances of our expertly sourced single-origin coffee beans.",
+            "price": "$5.00"
+          }
+        ]
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Our Gallery",
+      "props": {
+        "layoutVariant": "masonry",
+        "title": "A Glimpse into Our World",
+        "subtitle": "Explore our coffee shop and experience the warmth and hospitality of Sarvottam.",
+        "categories": [
+          "Coffee",
+          "Food",
+          "Events"
+        ],
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg"
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-hours": {
+      "id": "hours",
+      "type": "Hours",
+      "name": "Hours & Location",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Visit Us",
+        "address": "London",
+        "hours": "Monday - Friday: 7am - 7pm, Saturday - Sunday: 8am - 8pm"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-contact": {
+      "id": "contact",
+      "type": "Contact",
+      "name": "Get in Touch",
+      "props": {
+        "layoutVariant": "split-left-text",
+        "title": "Contact Us",
+        "subtitle": "We'd love to hear from you.",
+        "email": "info@sarvottam.com",
+        "phone": "+44 1234567890",
+        "address": "London",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-our-story": {
+      "id": "our-story",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "milestone-cards",
+        "title": "About Sarvottam",
+        "story": "Welcome to Sarvottam, your trusted partner in coffee_shop excellence. We are committed to delivering outstanding quality and service to every customer.",
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          },
+          {
+            "value": "5+",
+            "label": "Years Experience"
+          },
+          {
+            "value": "50+",
+            "label": "Projects Completed"
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-todays-specials": {
+      "id": "todays-specials",
+      "type": "Specials",
+      "name": "Today's Specials",
+      "props": {
+        "layoutVariant": "default",
+        "sectionTitle": "Today's Specials",
+        "items": [
+          {
+            "name": "Chef's Special",
+            "description": "A delightful creation by our head chef",
+            "price": "$15.99",
+            "badge": "Popular"
+          },
+          {
+            "name": "Soup of the Day",
+            "description": "Homemade soup prepared fresh every morning",
+            "price": "$6.99",
+            "badge": "New"
+          },
+          {
+            "name": "Daily Combo",
+            "description": "Main course + drink + dessert",
+            "price": "$19.99",
+            "badge": "Best Value"
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Sarvottam",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Menu",
+          "href": "#menu"
+        },
+        {
+          "text": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "text": "Hours & Location",
+          "href": "#hours"
+        },
+        {
+          "text": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "cta": {
+        "text": "Discover Our Blends",
+        "href": "#menu",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Sarvottam",
+      "tagline": "Expertly crafted coffee, passionately served.",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "About",
+              "href": "#about"
+            },
+            {
+              "text": "Menu",
+              "href": "#menu"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Instagram",
+              "href": "https://www.instagram.com/sarvottam"
+            },
+            {
+              "text": "Facebook",
+              "href": "https://www.facebook.com/sarvottam"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Sarvottam. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Poppins",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Inter",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "modern & cozy"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Modern Cozy",
+    "hero_concept": "A warm and inviting hero section that showcases the artisanal quality of our coffee, with a focus on the craft and ritual of coffee making.",
+    "visual_personality": "A modern and professional visual style that reflects the high-quality and expertise of Sarvottam, with a touch of warmth and approachability."
+  },
+  "projectId": "e7c0a6a3-4b01-4522-80d9-2f21ffe9fd07",
+  "session_id": "sess_d937acd5",
+  "created_at": "2026-01-08T12:49:29.238383",
+  "metadata": {
+    "session_id": "sess_d937acd5",
+    "timestamp": "2026-01-08T12:49:23.850181",
+    "user_prompt": "Cafe website",
+    "business_name": "Sarvottam",
+    "prop_answers": {
+      "businessName": "Sarvottam",
+      "colorTheme": "Corporate Blue - Professional blues and grays",
+      "address": "london",
+      "description": "fsad",
+      "tagline": "fdsa",
+      "title": "fdsa",
+      "subtitle": "fdsa",
+      "cta": "Join Now",
+      "ctaSecondary": "fad"
+    },
+    "user_hero": {
+      "title": "fdsa",
+      "subtitle": "fdsa",
+      "cta": "Join Now"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "coffee_shop",
+      "industry": "coffee_shop",
+      "business_name": "Sarvottam",
+      "target_audience": "Sarvottam",
+      "goals": "london",
+      "services": [],
+      "style_preferences": [
+        "fdsa",
+        "fdsa navigation",
+        "fad fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Sarvottam"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Corporate Blue - Professional blues and grays"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "london"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsad"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "Join Now"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fad"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Sarvottam",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Corporate Blue - Professional blues and grays",
+          "question": ""
+        },
+        "q3": {
+          "answer": "london",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fsad",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q8": {
+          "answer": "Join Now",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fad",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Sarvottam",
+        "colorTheme": "Corporate Blue - Professional blues and grays",
+        "address": "london",
+        "description": "fsad",
+        "tagline": "fdsa",
+        "title": "fdsa",
+        "subtitle": "fdsa",
+        "cta": "Join Now",
+        "ctaSecondary": "fad"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#1E3A5F",
+          "#64748B",
+          "#3B82F6",
+          "#F8FAFC",
+          "#1A1A2E"
+        ]
+      },
+      "color_theme_text": "Corporate Blue - Professional blues and grays",
+      "font_style": "fad",
+      "navigation_style": "fdsa"
+    },
+    "features": [
+      "Hero",
+      "Our Menu",
+      "Our Story",
+      "Gallery",
+      "Today's Specials",
+      "Hours & Location"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_d937acd5",
+      "project_id": 7,
+      "timestamp": "2026-01-08T07:19:23.743556Z",
+      "user_prompt": "Cafe website",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Cafe website",
+        "language": "English",
+        "business_type": "Based on the user's responses, it appears that they are planning to create a website for a cafe",
+        "answers": {
+          "q1": "Sarvottam",
+          "q2": "Corporate Blue - Professional blues and grays",
+          "q3": "london",
+          "q4": "fsad",
+          "q5": "fdsa",
+          "q6": "fdsa",
+          "q7": "fdsa",
+          "q8": "Join Now",
+          "q9": "fad"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What's your store name?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Pick your website's color scheme:",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What would you like to say for 'Address'?",
+            "type": "text",
+            "prop_key": "address",
+            "section": "footer"
+          },
+          {
+            "id": "q4",
+            "question": "Tell us more about your Description for the about:",
+            "type": "text",
+            "prop_key": "description",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "Enter your information for 'Tagline':",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          },
+          {
+            "id": "q6",
+            "question": "Write your website's main headline:",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "What's your tagline or slogan?",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "Primary call-to-action:",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Learn More",
+              "Explore",
+              "Shop Now",
+              "Contact Us",
+              "Book Now",
+              "Get Started",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q9",
+            "question": "Enter your information for 'Ctasecondary':",
+            "type": "text",
+            "prop_key": "ctaSecondary",
+            "section": "hero"
+          },
+          {
+            "id": "q10",
+            "question": "What would you like to say for 'Logo Text'?",
+            "type": "text",
+            "prop_key": "logo_text",
+            "section": "footer"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "address",
+          "description",
+          "tagline",
+          "title",
+          "subtitle",
+          "cta",
+          "ctaSecondary",
+          "logo_text"
+        ],
+        "color_preferences": "Corporate Blue - Professional blues and grays",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Warm, inviting hero with cafe ambiance.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Coffee, pastries, and food menu.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Our Story",
+            "description": "The cafe story and values.",
+            "benefit": "Builds connection",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photos of your cafe drinks.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "specials",
+            "name": "Today's Specials",
+            "description": "Daily specials.",
+            "benefit": "Creates urgency",
+            "priority": "Medium"
+          },
+          {
+            "id": "hours",
+            "name": "Hours & Location",
+            "description": "Opening hours and map.",
+            "benefit": "Easy to find",
+            "priority": "High"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#87CEEB",
+              "#6495ED",
+              "#C9E4CA",
+              "#B2B1B1",
+              "#5B6B9F"
+            ],
+            "title": "Winter Frost Falls",
+            "inspiration": "Cool tranquility and stillness."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#708090",
+              "#4682B4",
+              "#6E7F9F",
+              "#C6E2B5",
+              "#87B9F7"
+            ],
+            "title": "Grey Skies Ahead",
+            "inspiration": "Serene and hopeful optimism."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#4682B4",
+              "#4E5154",
+              "#9BACC7",
+              "#A9D08D",
+              "#56B3FA"
+            ],
+            "title": "Calm Ocean Breeze",
+            "inspiration": "Soaring and refreshing liberation."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#3498DB",
+              "#66CCCC",
+              "#87CEEB",
+              "#964B00",
+              "#2F4F7F"
+            ],
+            "title": "Frozen Crystal Cave",
+            "inspiration": "Sparkling and mystical elegance."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#56B3FA",
+              "#3E8E41",
+              "#87CEEB",
+              "#8B9467",
+              "#5A6D7B"
+            ],
+            "title": "Stormy Weather Shift",
+            "inspiration": "Dynamic and turbulent energy."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#87B9F7",
+              "#6495ED",
+              "#B2B1B1",
+              "#87CEEB",
+              "#C6E2B5"
+            ],
+            "title": "Cerulean Morning Sky",
+            "inspiration": "Fresh and optimistic beginnings."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#2F4F7F",
+              "#3498DB",
+              "#4E5154",
+              "#6E7F9F",
+              "#A9D08D"
+            ],
+            "title": "Deep Sea Dive",
+            "inspiration": "Rich and underwater mystery."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#6495ED",
+              "#4E5154",
+              "#5B6B9F",
+              "#66CCCC",
+              "#87CEEB"
+            ],
+            "title": "Midnight City Lights",
+            "inspiration": "Cool and metropolitan vibrancy."
+          }
+        ],
+        "selected_palette": {
+          "id": "p1",
+          "colors": [
+            "#87CEEB",
+            "#6495ED",
+            "#C9E4CA",
+            "#B2B1B1",
+            "#5B6B9F"
+          ],
+          "title": "Winter Frost Falls",
+          "inspiration": "Cool tranquility and stillness."
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Warm, inviting hero with cafe ambiance.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Coffee, pastries, and food menu.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Our Story",
+            "description": "The cafe story and values.",
+            "benefit": "Builds connection",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photos of your cafe drinks.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "specials",
+            "name": "Today's Specials",
+            "description": "Daily specials.",
+            "benefit": "Creates urgency",
+            "priority": "Medium"
+          },
+          {
+            "id": "hours",
+            "name": "Hours & Location",
+            "description": "Opening hours and map.",
+            "benefit": "Easy to find",
+            "priority": "High"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Warm, inviting hero with cafe ambiance.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Coffee, pastries, and food menu.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Our Story",
+          "description": "The cafe story and values.",
+          "benefit": "Builds connection",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photos of your cafe drinks.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "specials",
+          "name": "Today's Specials",
+          "description": "Daily specials.",
+          "benefit": "Creates urgency",
+          "priority": "Medium"
+        },
+        {
+          "id": "hours",
+          "name": "Hours & Location",
+          "description": "Opening hours and map.",
+          "benefit": "Easy to find",
+          "priority": "High"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Warm, inviting hero with cafe ambiance.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Coffee, pastries, and food menu.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Our Story",
+          "description": "The cafe story and values.",
+          "benefit": "Builds connection",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photos of your cafe drinks.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "specials",
+          "name": "Today's Specials",
+          "description": "Daily specials.",
+          "benefit": "Creates urgency",
+          "priority": "Medium"
+        },
+        {
+          "id": "hours",
+          "name": "Hours & Location",
+          "description": "Opening hours and map.",
+          "benefit": "Easy to find",
+          "priority": "High"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-hours",
+    "comp-contact"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 59
+}

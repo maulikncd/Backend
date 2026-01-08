@@ -1,0 +1,231 @@
+{
+  "Hero": [
+    "centered",
+    "split",
+    "video-bg",
+    "gradient",
+    "minimal",
+    "parallax",
+    "split",
+    "minimal",
+    "gradient",
+    "parallax"
+  ],
+  "Features": [
+    "icons",
+    "minimal",
+    "grid-4",
+    "alternating",
+    "cards",
+    "icons",
+    "icons",
+    "grid-3",
+    "grid-3",
+    "minimal"
+  ],
+  "About": [
+    "story",
+    "centered",
+    "split-right",
+    "cards",
+    "story",
+    "split-left",
+    "cards",
+    "centered",
+    "timeline",
+    "timeline"
+  ],
+  "Gallery": [
+    "lightbox",
+    "minimal",
+    "masonry",
+    "masonry",
+    "full-width",
+    "grid",
+    "masonry",
+    "carousel",
+    "carousel",
+    "carousel"
+  ],
+  "Testimonials": [
+    "carousel",
+    "cards",
+    "cards",
+    "grid-3",
+    "slider",
+    "slider",
+    "carousel",
+    "minimal",
+    "quotes",
+    "carousel"
+  ],
+  "CTA": [
+    "split",
+    "pattern",
+    "gradient",
+    "image-bg",
+    "gradient",
+    "minimal",
+    "pattern",
+    "centered",
+    "minimal",
+    "split"
+  ],
+  "Contact": [
+    "map-bg",
+    "form-only",
+    "centered",
+    "minimal",
+    "form-only",
+    "centered",
+    "split",
+    "form-only",
+    "cards",
+    "map-bg"
+  ],
+  "Services": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Header": [
+    "gradient",
+    "floating",
+    "gradient",
+    "dark",
+    "minimal",
+    "gradient",
+    "gradient",
+    "floating",
+    "gradient",
+    "minimal"
+  ],
+  "Menu": [
+    "minimal",
+    "tabs",
+    "cards",
+    "tabs",
+    "accordion",
+    "list",
+    "tabs",
+    "minimal",
+    "list",
+    "grid"
+  ],
+  "Authentication": [
+    "default"
+  ],
+  "FAQ": [
+    "minimal",
+    "accordion",
+    "tabs",
+    "tabs",
+    "accordion",
+    "expandable",
+    "tabs",
+    "grid",
+    "cards",
+    "expandable"
+  ],
+  "Games": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Tournaments": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Community": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Hours": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Specials": [
+    "default"
+  ],
+  "Home": [
+    "parallax",
+    "minimal",
+    "centered",
+    "video-bg",
+    "video-bg",
+    "split",
+    "centered",
+    "gradient",
+    "video-bg",
+    "gradient"
+  ],
+  "Projects": [
+    "default",
+    "default"
+  ],
+  "Reservations": [
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Reviews": [
+    "default",
+    "default"
+  ],
+  "Heritage": [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Products": [
+    "default",
+    "default"
+  ],
+  "News": [
+    "default"
+  ],
+  "Store": [
+    "default"
+  ]
+}

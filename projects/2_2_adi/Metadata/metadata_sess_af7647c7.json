@@ -1,0 +1,362 @@
+{
+  "user_id": 2,
+  "session_id": "sess_af7647c7",
+  "project_id": 2,
+  "timestamp": "2026-01-07T09:44:01.277782Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 2,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the user's responses, here are some observations:\n\n1. The name of the restaurant is",
+    "answers": {
+      "q1": "Khana khajana",
+      "q2": "Creative Orange - Energetic orange with dark accents",
+      "q3": "nothing",
+      "q4": "khao pio",
+      "q5": [
+        "Social Media",
+        "Digital Marketing"
+      ],
+      "q6": "Master chief",
+      "q7": "no",
+      "q8": "agmail.com",
+      "q9": "5555555555"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your restaurant name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Pick your website's color scheme:",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "What's the story behind your business?",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      },
+      {
+        "id": "q4",
+        "question": "What's the main headline for your website?",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q5",
+        "question": "What services do you offer?",
+        "type": "checkbox",
+        "prop_key": "services",
+        "section": "services",
+        "options": [
+          "Web Design/Development",
+          "Social Media",
+          "Branding & Identity",
+          "Digital Marketing",
+          "SEO/Content",
+          "Video Production",
+          "Consulting"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "Enter your information for 'Chefname':",
+        "type": "text",
+        "prop_key": "chefName",
+        "section": "about"
+      },
+      {
+        "id": "q7",
+        "question": "What would you like to say for 'Sectiontitle'?",
+        "type": "text",
+        "prop_key": "sectionTitle",
+        "section": "about"
+      },
+      {
+        "id": "q8",
+        "question": "Tell us more about your Email for the footer:",
+        "type": "text",
+        "prop_key": "email",
+        "section": "footer"
+      },
+      {
+        "id": "q9",
+        "question": "What would you like to say for 'Phone'?",
+        "type": "text",
+        "prop_key": "phone",
+        "section": "footer"
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Description'?",
+        "type": "text",
+        "prop_key": "description",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "story",
+      "title",
+      "services",
+      "chefName",
+      "sectionTitle",
+      "email",
+      "phone",
+      "description"
+    ],
+    "color_preferences": "Creative Orange - Energetic orange with dark accents",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#FFC499",
+          "#FF9900",
+          "#8B4513",
+          "#3B3F54",
+          "#2C2E33"
+        ],
+        "title": "Burning Embers",
+        "inspiration": "Flickering flames dance across the night sky."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#FFAA33",
+          "#FF9900",
+          "#6E2C00",
+          "#2A272C",
+          "#3E3F41"
+        ],
+        "title": "Electric Sunset",
+        "inspiration": "Vibrant colors burst across the city skyline at dusk."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#FF8C69",
+          "#FFC080",
+          "#964B00",
+          "#342B34",
+          "#4C5E66"
+        ],
+        "title": "Sunset Blaze",
+        "inspiration": "Rays of intense sunlight ignite a summer evening."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#FFA07A",
+          "#FF9900",
+          "#8B3E25",
+          "#4B5053",
+          "#2C2E33"
+        ],
+        "title": "Fired Desire",
+        "inspiration": "Artistic expression takes center stage in a burst of creativity."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#FFA57D",
+          "#FFA07A",
+          "#6C1B27",
+          "#3C3F55",
+          "#2C3D53"
+        ],
+        "title": "Daring Flames",
+        "inspiration": "Innovation ignites the passion to push boundaries."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#F7CDB9",
+          "#FFA07A",
+          "#78493D",
+          "#342E36",
+          "#45485D"
+        ],
+        "title": "Warm Oasis",
+        "inspiration": "A vibrant splash of color cools the senses in the heat of summer."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#FFB6C1",
+          "#FFC080",
+          "#8B3A3A",
+          "#3E3F42",
+          "#424A50"
+        ],
+        "title": "Artistic Pulse",
+        "inspiration": "Creativity bursts forth in an energetic display of color."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#FF9933",
+          "#FF9900",
+          "#663300",
+          "#3C3D55",
+          "#2F3A55"
+        ],
+        "title": "Orange Blaze",
+        "inspiration": "Passion fuels the drive to create something bold and beautiful."
+      }
+    ],
+    "selected_palette": {
+      "id": "p1",
+      "colors": [
+        "#FFC499",
+        "#FF9900",
+        "#8B4513",
+        "#3B3F54",
+        "#2C2E33"
+      ],
+      "title": "Burning Embers",
+      "inspiration": "Flickering flames dance across the night sky."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "final_metadata_ready": true
+}

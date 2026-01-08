@@ -1,0 +1,416 @@
+{
+  "user_id": 4,
+  "session_id": "sess_d937acd5",
+  "project_id": 7,
+  "timestamp": "2026-01-08T07:19:23.743556Z",
+  "user_prompt": "Cafe website",
+  "questionnaire": {
+    "user_id": 4,
+    "prompt": "Cafe website",
+    "language": "English",
+    "business_type": "Based on the user's responses, it appears that they are planning to create a website for a cafe",
+    "answers": {
+      "q1": "Sarvottam",
+      "q2": "Corporate Blue - Professional blues and grays",
+      "q3": "london",
+      "q4": "fsad",
+      "q5": "fdsa",
+      "q6": "fdsa",
+      "q7": "fdsa",
+      "q8": "Join Now",
+      "q9": "fad"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What's your store name?",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Pick your website's color scheme:",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "What would you like to say for 'Address'?",
+        "type": "text",
+        "prop_key": "address",
+        "section": "footer"
+      },
+      {
+        "id": "q4",
+        "question": "Tell us more about your Description for the about:",
+        "type": "text",
+        "prop_key": "description",
+        "section": "about"
+      },
+      {
+        "id": "q5",
+        "question": "Enter your information for 'Tagline':",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      },
+      {
+        "id": "q6",
+        "question": "Write your website's main headline:",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q7",
+        "question": "What's your tagline or slogan?",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q8",
+        "question": "Primary call-to-action:",
+        "type": "radio",
+        "prop_key": "cta",
+        "section": "hero",
+        "options": [
+          "View Menu",
+          "Learn More",
+          "Explore",
+          "Shop Now",
+          "Contact Us",
+          "Book Now",
+          "Get Started",
+          "Join Now"
+        ]
+      },
+      {
+        "id": "q9",
+        "question": "Enter your information for 'Ctasecondary':",
+        "type": "text",
+        "prop_key": "ctaSecondary",
+        "section": "hero"
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Logo Text'?",
+        "type": "text",
+        "prop_key": "logo_text",
+        "section": "footer"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "address",
+      "description",
+      "tagline",
+      "title",
+      "subtitle",
+      "cta",
+      "ctaSecondary",
+      "logo_text"
+    ],
+    "color_preferences": "Corporate Blue - Professional blues and grays",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Warm, inviting hero with cafe ambiance.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Coffee, pastries, and food menu.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Our Story",
+        "description": "The cafe story and values.",
+        "benefit": "Builds connection",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photos of your cafe drinks.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "specials",
+        "name": "Today's Specials",
+        "description": "Daily specials.",
+        "benefit": "Creates urgency",
+        "priority": "Medium"
+      },
+      {
+        "id": "hours",
+        "name": "Hours & Location",
+        "description": "Opening hours and map.",
+        "benefit": "Easy to find",
+        "priority": "High"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#87CEEB",
+          "#6495ED",
+          "#C9E4CA",
+          "#B2B1B1",
+          "#5B6B9F"
+        ],
+        "title": "Winter Frost Falls",
+        "inspiration": "Cool tranquility and stillness."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#708090",
+          "#4682B4",
+          "#6E7F9F",
+          "#C6E2B5",
+          "#87B9F7"
+        ],
+        "title": "Grey Skies Ahead",
+        "inspiration": "Serene and hopeful optimism."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#4682B4",
+          "#4E5154",
+          "#9BACC7",
+          "#A9D08D",
+          "#56B3FA"
+        ],
+        "title": "Calm Ocean Breeze",
+        "inspiration": "Soaring and refreshing liberation."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#3498DB",
+          "#66CCCC",
+          "#87CEEB",
+          "#964B00",
+          "#2F4F7F"
+        ],
+        "title": "Frozen Crystal Cave",
+        "inspiration": "Sparkling and mystical elegance."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#56B3FA",
+          "#3E8E41",
+          "#87CEEB",
+          "#8B9467",
+          "#5A6D7B"
+        ],
+        "title": "Stormy Weather Shift",
+        "inspiration": "Dynamic and turbulent energy."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#87B9F7",
+          "#6495ED",
+          "#B2B1B1",
+          "#87CEEB",
+          "#C6E2B5"
+        ],
+        "title": "Cerulean Morning Sky",
+        "inspiration": "Fresh and optimistic beginnings."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#2F4F7F",
+          "#3498DB",
+          "#4E5154",
+          "#6E7F9F",
+          "#A9D08D"
+        ],
+        "title": "Deep Sea Dive",
+        "inspiration": "Rich and underwater mystery."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#6495ED",
+          "#4E5154",
+          "#5B6B9F",
+          "#66CCCC",
+          "#87CEEB"
+        ],
+        "title": "Midnight City Lights",
+        "inspiration": "Cool and metropolitan vibrancy."
+      }
+    ],
+    "selected_palette": {
+      "id": "p1",
+      "colors": [
+        "#87CEEB",
+        "#6495ED",
+        "#C9E4CA",
+        "#B2B1B1",
+        "#5B6B9F"
+      ],
+      "title": "Winter Frost Falls",
+      "inspiration": "Cool tranquility and stillness."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Warm, inviting hero with cafe ambiance.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Coffee, pastries, and food menu.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Our Story",
+        "description": "The cafe story and values.",
+        "benefit": "Builds connection",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photos of your cafe drinks.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "specials",
+        "name": "Today's Specials",
+        "description": "Daily specials.",
+        "benefit": "Creates urgency",
+        "priority": "Medium"
+      },
+      {
+        "id": "hours",
+        "name": "Hours & Location",
+        "description": "Opening hours and map.",
+        "benefit": "Easy to find",
+        "priority": "High"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Warm, inviting hero with cafe ambiance.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Coffee, pastries, and food menu.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Our Story",
+      "description": "The cafe story and values.",
+      "benefit": "Builds connection",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photos of your cafe drinks.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "specials",
+      "name": "Today's Specials",
+      "description": "Daily specials.",
+      "benefit": "Creates urgency",
+      "priority": "Medium"
+    },
+    {
+      "id": "hours",
+      "name": "Hours & Location",
+      "description": "Opening hours and map.",
+      "benefit": "Easy to find",
+      "priority": "High"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Warm, inviting hero with cafe ambiance.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Coffee, pastries, and food menu.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Our Story",
+      "description": "The cafe story and values.",
+      "benefit": "Builds connection",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photos of your cafe drinks.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "specials",
+      "name": "Today's Specials",
+      "description": "Daily specials.",
+      "benefit": "Creates urgency",
+      "priority": "Medium"
+    },
+    {
+      "id": "hours",
+      "name": "Hours & Location",
+      "description": "Opening hours and map.",
+      "benefit": "Easy to find",
+      "priority": "High"
+    }
+  ],
+  "final_metadata_ready": true
+}

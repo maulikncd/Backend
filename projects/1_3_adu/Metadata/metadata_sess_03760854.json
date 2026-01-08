@@ -1,0 +1,372 @@
+{
+  "user_id": 1,
+  "session_id": "sess_03760854",
+  "project_id": 3,
+  "timestamp": "2026-01-07T12:42:34.005303Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 1,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the responses, especially considering what appears to be nonsensical user input for some questions,",
+    "answers": {
+      "q1": "adu",
+      "q2": "Minimal B&W - Black and white sophistication",
+      "q3": "fdsfsa",
+      "q4": "fsdafsda",
+      "q5": "fsadfsa",
+      "q6": "fsdafsda",
+      "q7": "fasdfsdafsd",
+      "q8": [
+        "Social Media",
+        "Web Design/Development",
+        "Digital Marketing",
+        "Video Production"
+      ],
+      "q9": "fdsa"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What's your restaurant named?",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "What colors represent your brand?",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "What would you like to say for 'Description'?",
+        "type": "text",
+        "prop_key": "description",
+        "section": "about"
+      },
+      {
+        "id": "q4",
+        "question": "What would you like to say for 'Address'?",
+        "type": "text",
+        "prop_key": "address",
+        "section": "footer"
+      },
+      {
+        "id": "q5",
+        "question": "What's your attention-grabbing headline?",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q6",
+        "question": "Tell us more about your Phone for the footer:",
+        "type": "text",
+        "prop_key": "phone",
+        "section": "footer"
+      },
+      {
+        "id": "q7",
+        "question": "Enter your information for 'Name':",
+        "type": "text",
+        "prop_key": "name",
+        "section": "footer"
+      },
+      {
+        "id": "q8",
+        "question": "What services do you offer?",
+        "type": "checkbox",
+        "prop_key": "services",
+        "section": "services",
+        "options": [
+          "Web Design/Development",
+          "Digital Marketing",
+          "Social Media",
+          "Video Production",
+          "Branding & Identity",
+          "SEO/Content",
+          "Consulting"
+        ]
+      },
+      {
+        "id": "q9",
+        "question": "Tell us more about your Items for the about:",
+        "type": "text",
+        "prop_key": "items",
+        "section": "about"
+      },
+      {
+        "id": "q10",
+        "question": "What type of hero image fits your brand?",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Location/space",
+          "Product showcase",
+          "Abstract/artistic",
+          "Team/people",
+          "Auto-select for me"
+        ]
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "description",
+      "address",
+      "title",
+      "phone",
+      "name",
+      "services",
+      "items",
+      "image"
+    ],
+    "color_preferences": "Minimal B&W - Black and white sophistication",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#FFFFFF",
+          "#E5E5EA",
+          "#7F7F80",
+          "#43443B",
+          "#000000"
+        ],
+        "title": "Midnight Sky",
+        "inspiration": "A tranquil, icy vastness."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#F7F7F7",
+          "#454545",
+          "#7A787B",
+          "#3A3C41",
+          "#2F2F2F"
+        ],
+        "title": "City Streets",
+        "inspiration": "Sophistication amidst a bustling landscape."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#000000",
+          "#808080",
+          "#B1B1B1",
+          "#F7F7F7",
+          "#FFFFFF"
+        ],
+        "title": "Monumental",
+        "inspiration": "Timeless grandeur in monochromatic majesty."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#4D4D4F",
+          "#7F7F7F",
+          "#C7C7C7",
+          "#F5F5F5",
+          "#FFFFFF"
+        ],
+        "title": "Shadowed",
+        "inspiration": "Elegant mystery in a world of light and dark."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#FFFFFF",
+          "#B2B2B2",
+          "#959595",
+          "#636363",
+          "#333333"
+        ],
+        "title": "Pure Form",
+        "inspiration": "Clean lines, minimalist sophistication."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#1B1B1B",
+          "#3B3B40",
+          "#5C5C6C",
+          "#757576",
+          "#E5E5E5"
+        ],
+        "title": "Dark Canvas",
+        "inspiration": "Inky, mysterious, and endlessly creative."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#F7F7F7",
+          "#333333",
+          "#C6C4BF",
+          "#969696",
+          "#000000"
+        ],
+        "title": "Graffiti Walls",
+        "inspiration": "Vibrant city life in shades of white and black."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#FFFFFF",
+          "#C7C6C5",
+          "#969696",
+          "#333333",
+          "#000000"
+        ],
+        "title": "Frozen Lake",
+        "inspiration": "Primal, icy beauty, pure and untouched."
+      }
+    ],
+    "selected_palette": {
+      "id": "p6",
+      "colors": [
+        "#1B1B1B",
+        "#3B3B40",
+        "#5C5C6C",
+        "#757576",
+        "#E5E5E5"
+      ],
+      "title": "Dark Canvas",
+      "inspiration": "Inky, mysterious, and endlessly creative."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "final_metadata_ready": true
+}

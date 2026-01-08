@@ -1,0 +1,106 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.venv
+.env.*
+!.env.example
+secrets/
+credentials/
+config/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.cer
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+*.sqlite3
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Build and release
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Local development
+.env.local
+.env.development
+.env.test
+.env.production
+
+# User projects and uploads
+Users_Projects/
+media/
+uploads/
+staticfiles/
+
+# Debug files
+debug_output.txt
+openapi_schema.json
+*.log
+*.log.*
+logs/
+
+# Jupyter Notebook
+.ipynb_checkpoints

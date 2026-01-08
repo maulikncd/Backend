@@ -1,0 +1,882 @@
+{
+  "projectName": "Adu",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Adu Restaurant",
+    "description": "Experience the epitome of culinary excellence at Adu, where freshness and flavors come together to create an unforgettable dining experience.",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Warm & Inviting",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#1E293B",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#1E293B",
+      "secondary": "#64748B",
+      "accent": "#3B82F6",
+      "background": "#1E293B",
+      "surface": "#FFFFFF",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(45deg, #1E293B 0%, #64748B 100%)",
+      "accent": "linear-gradient(45deg, #3B82F6 0%, #1E293B 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "fullscreen-overlay",
+        "title": "ff",
+        "subtitle": "Indulge in a culinary journey like no other",
+        "description": "Experience the perfect blend of flavors and ambiance at Adu, where every dish is crafted to delight your senses.",
+        "cta": "Reserve a Table",
+        "ctaSecondary": "View Our Menu",
+        "backgroundStyle": "image"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "story": "At Adu, our passion for food is rooted in our commitment to using only the freshest ingredients and innovative culinary techniques. Our chef's story began with a love for cooking and a desire to share that love with the world. With a focus on creating a unique dining experience, we strive to make every meal a memorable one.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founding",
+            "description": "Adu was founded with a vision to provide an exceptional dining experience."
+          },
+          {
+            "year": "2015",
+            "title": "Expansion",
+            "description": "Adu expanded its operations to include a new location."
+          }
+        ],
+        "stats": [
+          {
+            "value": "1000+",
+            "label": "Happy Customers"
+          }
+        ],
+        "layoutVariant": "split-content"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "sectionTitle": "Explore Our Cuisine",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": [
+          {
+            "name": "Grilled Chicken",
+            "description": "Tender and juicy, our grilled chicken is marinated to perfection.",
+            "price": "$15",
+            "category": "Starters"
+          },
+          {
+            "name": "Pan-Seared Salmon",
+            "description": "Fresh and flavorful, our pan-seared salmon is a must-try.",
+            "price": "$25",
+            "category": "Mains"
+          }
+        ],
+        "layoutVariant": "image-cards"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Our Gallery",
+      "props": {
+        "title": "A Glimpse into Adu",
+        "subtitle": "Experience the ambiance and cuisine of Adu",
+        "categories": [
+          "Dishes",
+          "Ambiance"
+        ],
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg"
+        ],
+        "layoutVariant": "carousel"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-heritage": {
+      "id": "heritage",
+      "type": "Heritage",
+      "name": "Our Heritage",
+      "props": {
+        "title": "The Story Behind Adu",
+        "story": "Adu's heritage is rooted in its commitment to providing an exceptional dining experience. With a focus on using only the freshest ingredients and innovative culinary techniques, Adu has become a staple in the culinary world."
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Adu",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Menu",
+          "href": "#menu"
+        }
+      ],
+      "cta": {
+        "text": "Reserve a Table",
+        "href": "#contact",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Adu",
+      "tagline": "Experience the epitome of culinary excellence",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Menu",
+              "href": "#menu"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "https://facebook.com"
+            },
+            {
+              "text": "Instagram",
+              "href": "https://instagram.com"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Adu. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Warm & Inviting",
+    "hero_concept": "A duvet of flavors, Adu's dining experience is a sensory journey that will leave you craving for more.",
+    "visual_personality": "Adu's visual personality is warm, inviting, and appetizing, reflecting the restaurant's commitment to providing an exceptional dining experience."
+  },
+  "projectId": "49853b20-242a-47cc-9f68-da2e0a034e37",
+  "session_id": "sess_03760854",
+  "created_at": "2026-01-07T18:12:38.413443",
+  "metadata": {
+    "session_id": "sess_03760854",
+    "timestamp": "2026-01-07T18:12:34.116966",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Adu",
+    "prop_answers": {
+      "businessName": "adu",
+      "colorTheme": "Minimal B&W - Black and white sophistication",
+      "description": "fdsfsa",
+      "address": "fsdafsda",
+      "title": "fsadfsa",
+      "phone": "fsdafsda",
+      "name": "fasdfsdafsd",
+      "services": [
+        "Social Media",
+        "Web Design/Development",
+        "Digital Marketing",
+        "Video Production"
+      ],
+      "items": "fdsa"
+    },
+    "user_hero": {
+      "title": "fsadfsa",
+      "subtitle": "",
+      "cta": "Get Started"
+    },
+    "user_services": [
+      "Social Media",
+      "Web Design/Development",
+      "Digital Marketing",
+      "Video Production"
+    ],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Adu",
+      "target_audience": "adu",
+      "goals": "['Social Media', 'Web Design/Development', 'Digital Marketing', 'Video Production']",
+      "services": [
+        "Social Media",
+        "Web Design/Development",
+        "Digital Marketing",
+        "Video Production"
+      ],
+      "style_preferences": [
+        "fsadfsa",
+        "fasdfsdafsd navigation",
+        "fdsa fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "adu"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Minimal B&W - Black and white sophistication"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsfsa"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsdafsda"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsadfsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsdafsda"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fasdfsdafsd"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Social Media",
+            "Web Design/Development",
+            "Digital Marketing",
+            "Video Production"
+          ]
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "adu",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Minimal B&W - Black and white sophistication",
+          "question": ""
+        },
+        "q3": {
+          "answer": "fdsfsa",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fsdafsda",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fsadfsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fsdafsda",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fasdfsdafsd",
+          "question": ""
+        },
+        "q8": {
+          "answer": [
+            "Social Media",
+            "Web Design/Development",
+            "Digital Marketing",
+            "Video Production"
+          ],
+          "question": ""
+        },
+        "q9": {
+          "answer": "fdsa",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "adu",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "description": "fdsfsa",
+        "address": "fsdafsda",
+        "title": "fsadfsa",
+        "phone": "fsdafsda",
+        "name": "fasdfsdafsd",
+        "services": [
+          "Social Media",
+          "Web Design/Development",
+          "Digital Marketing",
+          "Video Production"
+        ],
+        "items": "fdsa"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#1E293B",
+          "#64748B",
+          "#3B82F6",
+          "#FFFFFF",
+          "#1E293B"
+        ]
+      },
+      "color_theme_text": "Minimal B&W - Black and white sophistication",
+      "font_style": "fdsa",
+      "navigation_style": "fasdfsdafsd"
+    },
+    "features": [
+      "Hero",
+      "Full Menu",
+      "Food Gallery",
+      "Heritage"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_03760854",
+      "project_id": 3,
+      "timestamp": "2026-01-07T12:42:34.005303Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the responses, especially considering what appears to be nonsensical user input for some questions,",
+        "answers": {
+          "q1": "adu",
+          "q2": "Minimal B&W - Black and white sophistication",
+          "q3": "fdsfsa",
+          "q4": "fsdafsda",
+          "q5": "fsadfsa",
+          "q6": "fsdafsda",
+          "q7": "fasdfsdafsd",
+          "q8": [
+            "Social Media",
+            "Web Design/Development",
+            "Digital Marketing",
+            "Video Production"
+          ],
+          "q9": "fdsa"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What's your restaurant named?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "What colors represent your brand?",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What would you like to say for 'Description'?",
+            "type": "text",
+            "prop_key": "description",
+            "section": "about"
+          },
+          {
+            "id": "q4",
+            "question": "What would you like to say for 'Address'?",
+            "type": "text",
+            "prop_key": "address",
+            "section": "footer"
+          },
+          {
+            "id": "q5",
+            "question": "What's your attention-grabbing headline?",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q6",
+            "question": "Tell us more about your Phone for the footer:",
+            "type": "text",
+            "prop_key": "phone",
+            "section": "footer"
+          },
+          {
+            "id": "q7",
+            "question": "Enter your information for 'Name':",
+            "type": "text",
+            "prop_key": "name",
+            "section": "footer"
+          },
+          {
+            "id": "q8",
+            "question": "What services do you offer?",
+            "type": "checkbox",
+            "prop_key": "services",
+            "section": "services",
+            "options": [
+              "Web Design/Development",
+              "Digital Marketing",
+              "Social Media",
+              "Video Production",
+              "Branding & Identity",
+              "SEO/Content",
+              "Consulting"
+            ]
+          },
+          {
+            "id": "q9",
+            "question": "Tell us more about your Items for the about:",
+            "type": "text",
+            "prop_key": "items",
+            "section": "about"
+          },
+          {
+            "id": "q10",
+            "question": "What type of hero image fits your brand?",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Location/space",
+              "Product showcase",
+              "Abstract/artistic",
+              "Team/people",
+              "Auto-select for me"
+            ]
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "description",
+          "address",
+          "title",
+          "phone",
+          "name",
+          "services",
+          "items",
+          "image"
+        ],
+        "color_preferences": "Minimal B&W - Black and white sophistication",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#FFFFFF",
+              "#E5E5EA",
+              "#7F7F80",
+              "#43443B",
+              "#000000"
+            ],
+            "title": "Midnight Sky",
+            "inspiration": "A tranquil, icy vastness."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#F7F7F7",
+              "#454545",
+              "#7A787B",
+              "#3A3C41",
+              "#2F2F2F"
+            ],
+            "title": "City Streets",
+            "inspiration": "Sophistication amidst a bustling landscape."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#000000",
+              "#808080",
+              "#B1B1B1",
+              "#F7F7F7",
+              "#FFFFFF"
+            ],
+            "title": "Monumental",
+            "inspiration": "Timeless grandeur in monochromatic majesty."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#4D4D4F",
+              "#7F7F7F",
+              "#C7C7C7",
+              "#F5F5F5",
+              "#FFFFFF"
+            ],
+            "title": "Shadowed",
+            "inspiration": "Elegant mystery in a world of light and dark."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#FFFFFF",
+              "#B2B2B2",
+              "#959595",
+              "#636363",
+              "#333333"
+            ],
+            "title": "Pure Form",
+            "inspiration": "Clean lines, minimalist sophistication."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#1B1B1B",
+              "#3B3B40",
+              "#5C5C6C",
+              "#757576",
+              "#E5E5E5"
+            ],
+            "title": "Dark Canvas",
+            "inspiration": "Inky, mysterious, and endlessly creative."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#F7F7F7",
+              "#333333",
+              "#C6C4BF",
+              "#969696",
+              "#000000"
+            ],
+            "title": "Graffiti Walls",
+            "inspiration": "Vibrant city life in shades of white and black."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#FFFFFF",
+              "#C7C6C5",
+              "#969696",
+              "#333333",
+              "#000000"
+            ],
+            "title": "Frozen Lake",
+            "inspiration": "Primal, icy beauty, pure and untouched."
+          }
+        ],
+        "selected_palette": {
+          "id": "p6",
+          "colors": [
+            "#1B1B1B",
+            "#3B3B40",
+            "#5C5C6C",
+            "#757576",
+            "#E5E5E5"
+          ],
+          "title": "Dark Canvas",
+          "inspiration": "Inky, mysterious, and endlessly creative."
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Elegant restaurant hero.",
+            "benefit": "Ambiance",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Full Menu",
+            "description": "Interactive food and drink menu.",
+            "benefit": "Key information",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Food Gallery",
+            "description": "High-quality food photography.",
+            "benefit": "Visual delight",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "Heritage",
+            "description": "Chef and restaurant history.",
+            "benefit": "Authenticity",
+            "priority": "Medium"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Elegant restaurant hero.",
+          "benefit": "Ambiance",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Full Menu",
+          "description": "Interactive food and drink menu.",
+          "benefit": "Key information",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Food Gallery",
+          "description": "High-quality food photography.",
+          "benefit": "Visual delight",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "Heritage",
+          "description": "Chef and restaurant history.",
+          "benefit": "Authenticity",
+          "priority": "Medium"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-heritage"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  }
+}

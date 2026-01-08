@@ -1,0 +1,1180 @@
+{
+  "projectName": "Game Adda",
+  "projectType": "gaming",
+  "seo": {
+    "title": "Game Adda: Epic Gaming Experiences",
+    "description": "Immerse yourself in legendary gaming worlds, level up with competitive leaderboards, and explore unique gameplay features",
+    "keywords": [
+      "gaming",
+      "level up",
+      "epic",
+      "legendary",
+      "competitive",
+      "immersive world"
+    ]
+  },
+  "theme": {
+    "themeName": "Neon Dreams",
+    "themeMood": "Bold & Dynamic",
+    "primaryColor": "#8B5CF6",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#8B5CF6",
+      "secondary": "#7C3AED",
+      "accent": "#10B981",
+      "background": "#F8FAFC",
+      "surface": "#0F172A",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(45deg, #8B5CF6 0%, #7C3AED 100%)",
+      "accent": "linear-gradient(45deg, #10B981 0%, #8B5CF6 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "fullscreen-overlay",
+        "title": "Khelo Kudo",
+        "subtitle": "Khelo Jitop",
+        "description": "Enter the immersive world of Game Adda, where legendary gaming experiences await. Level up with competitive leaderboards and explore unique gameplay features",
+        "cta": "Explore",
+        "ctaSecondary": "",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-games": {
+      "id": "games",
+      "type": "Games",
+      "name": "Games",
+      "props": {
+        "sectionTitle": "Explore Our Games",
+        "sectionSubtitle": "Immerse yourself in our legendary gaming worlds",
+        "featureList": [
+          {
+            "icon": "🎮",
+            "title": "Epic Quests",
+            "description": "Embark on thrilling adventures and conquer challenges"
+          },
+          {
+            "icon": "🏆",
+            "title": "Competitive Leaderboards",
+            "description": "Level up and compete with others to reach the top"
+          },
+          {
+            "icon": "🤖",
+            "title": "AI-Powered Enemies",
+            "description": "Face off against intelligent foes and test your skills"
+          }
+        ],
+        "layoutVariant": "orbit-layout"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-tournaments": {
+      "id": "tournaments",
+      "type": "Tournaments",
+      "name": "Tournaments",
+      "props": {
+        "sectionTitle": "Join Our Tournaments",
+        "sectionSubtitle": "Compete with others and win epic rewards",
+        "featureList": [
+          {
+            "icon": "🏆",
+            "title": "Monthly Tournaments",
+            "description": "Participate in our monthly tournaments and win exclusive prizes"
+          },
+          {
+            "icon": "👥",
+            "title": "Team Play",
+            "description": "Join forces with friends and conquer the competition"
+          },
+          {
+            "icon": "📈",
+            "title": "Leaderboard Rankings",
+            "description": "Track your progress and climb the ranks"
+          }
+        ],
+        "layoutVariant": "icon-grid"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-community": {
+      "id": "community",
+      "type": "Community",
+      "name": "Community",
+      "props": {
+        "sectionTitle": "Join Our Community",
+        "sectionSubtitle": "Connect with other gamers and share your passion",
+        "featureList": [
+          {
+            "icon": "👥",
+            "title": "Forums",
+            "description": "Discuss your favorite games and connect with others"
+          },
+          {
+            "icon": "📺",
+            "title": "Live Streams",
+            "description": "Watch live gameplay and interact with streamers"
+          },
+          {
+            "icon": "📚",
+            "title": "Guides and Tutorials",
+            "description": "Improve your skills with expert guides and tutorials"
+          }
+        ],
+        "layoutVariant": "icon-grid"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Us",
+      "props": {
+        "title": "Our Mission",
+        "story": "Game Adda was founded with a passion for gaming and a mission to innovate the industry. We strive to create immersive worlds, legendary gameplay experiences, and a community that shares our passion.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founded",
+            "description": "Game Adda was founded by a team of gaming enthusiasts"
+          },
+          {
+            "year": "2022",
+            "title": "First Game Release",
+            "description": "We released our first game, which quickly gained popularity"
+          }
+        ],
+        "stats": [
+          {
+            "value": "1000+",
+            "label": "Registered Users"
+          },
+          {
+            "value": "500+",
+            "label": "Active Players"
+          }
+        ],
+        "layoutVariant": "stats-highlight"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-media": {
+      "id": "media",
+      "type": "Gallery",
+      "name": "Media Gallery",
+      "props": {
+        "title": "Our Media Gallery",
+        "subtitle": "Explore our collection of gaming screenshots and videos",
+        "categories": [
+          "Screenshots",
+          "Videos"
+        ],
+        "images": [
+          "https://example.com/screenshot1.jpg",
+          "https://example.com/screenshot2.jpg"
+        ],
+        "layoutVariant": "grid-lightbox"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-updates": {
+      "id": "updates",
+      "type": "News",
+      "name": "Updates",
+      "props": {
+        "title": "Our Latest Updates",
+        "subtitle": "Stay up-to-date with the latest news and announcements",
+        "featureList": [
+          {
+            "icon": "📣",
+            "title": "New Game Release",
+            "description": "We are excited to announce the release of our new game"
+          },
+          {
+            "icon": "📈",
+            "title": "Update 1.1",
+            "description": "We have released a new update with exciting features and improvements"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-gamestore": {
+      "id": "gamestore",
+      "type": "Store",
+      "name": "Game Store",
+      "props": {
+        "title": "Our Game Store",
+        "subtitle": "Browse our collection of games and purchase your favorites",
+        "categories": [
+          "Action",
+          "Adventure",
+          "Strategy"
+        ],
+        "items": [
+          {
+            "name": "Game 1",
+            "description": "An action-packed game with exciting gameplay",
+            "price": "$19.99"
+          },
+          {
+            "name": "Game 2",
+            "description": "A strategy game with complex gameplay and puzzles",
+            "price": "$29.99"
+          }
+        ]
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-contact": {
+      "id": "contact",
+      "type": "Contact",
+      "name": "Contact Us",
+      "props": {
+        "title": "Get in Touch",
+        "subtitle": "Contact us with any questions or feedback",
+        "email": "info@example.com",
+        "phone": "+1 123 456 7890",
+        "address": "123 Main St, Anytown, USA",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message",
+        "layoutVariant": "asymmetric-split"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-game-store": {
+      "id": "game-store",
+      "type": "Features",
+      "name": "Game Store",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Game Adda special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Game Adda",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Games",
+          "href": "#games"
+        },
+        {
+          "text": "Tournaments",
+          "href": "#tournaments"
+        },
+        {
+          "text": "Community",
+          "href": "#community"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Media Gallery",
+          "href": "#media"
+        },
+        {
+          "text": "Updates",
+          "href": "#updates"
+        },
+        {
+          "text": "Game Store",
+          "href": "#gamestore"
+        }
+      ],
+      "cta": {
+        "text": "Explore",
+        "href": "#hero",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Game Adda",
+      "tagline": "Immerse yourself in legendary gaming worlds",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Games",
+              "href": "#games"
+            },
+            {
+              "text": "Tournaments",
+              "href": "#tournaments"
+            },
+            {
+              "text": "Community",
+              "href": "#community"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "https://www.facebook.com"
+            },
+            {
+              "text": "Twitter",
+              "href": "https://www.twitter.com"
+            },
+            {
+              "text": "Instagram",
+              "href": "https://www.instagram.com"
+            }
+          ]
+        }
+      ],
+      "copyright": "2025 Game Adda. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Orbitron",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Rajdhani",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "bold & dynamic"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Neon Dreams",
+    "hero_concept": "A futuristic, neon-lit cityscape with a massive gaming arena in the center, surrounded by towering skyscrapers and flying cars zipping by",
+    "visual_personality": "Bold, dynamic, and immersive, with a focus on creating an epic gaming experience that transports players to new and exciting worlds"
+  },
+  "projectId": "9f2db49b-8536-44c5-a3ea-a10f31b63ba2",
+  "session_id": "sess_f30ba2ce",
+  "created_at": "2026-01-08T12:07:44.989889",
+  "metadata": {
+    "session_id": "sess_f30ba2ce",
+    "timestamp": "2026-01-08T12:07:37.862750",
+    "user_prompt": "Gaming website",
+    "business_name": "Game Adda",
+    "prop_answers": {
+      "businessName": "Game adda",
+      "colorTheme": "Tech Purple - Modern purple gradients",
+      "cta": "Explore",
+      "subtitle": "khelo jitop",
+      "logoText": "no",
+      "title": "khelo kudo",
+      "logo": "no",
+      "content": "address",
+      "images": "game"
+    },
+    "user_hero": {
+      "title": "khelo kudo",
+      "subtitle": "khelo jitop",
+      "cta": "Explore"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "gaming",
+      "industry": "gaming",
+      "business_name": "Game Adda",
+      "target_audience": "Game adda",
+      "goals": "Explore",
+      "services": [],
+      "style_preferences": [
+        "no",
+        "no navigation",
+        "game fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Game adda"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Tech Purple - Modern purple gradients"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "Explore"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "khelo jitop"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "no"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "khelo kudo"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "no"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "address"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "game"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Game adda",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Tech Purple - Modern purple gradients",
+          "question": ""
+        },
+        "q3": {
+          "answer": "Explore",
+          "question": ""
+        },
+        "q4": {
+          "answer": "khelo jitop",
+          "question": ""
+        },
+        "q5": {
+          "answer": "no",
+          "question": ""
+        },
+        "q6": {
+          "answer": "khelo kudo",
+          "question": ""
+        },
+        "q7": {
+          "answer": "no",
+          "question": ""
+        },
+        "q8": {
+          "answer": "address",
+          "question": ""
+        },
+        "q9": {
+          "answer": "game",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Game adda",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "cta": "Explore",
+        "subtitle": "khelo jitop",
+        "logoText": "no",
+        "title": "khelo kudo",
+        "logo": "no",
+        "content": "address",
+        "images": "game"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#8B5CF6",
+          "#7C3AED",
+          "#10B981",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Tech Purple - Modern purple gradients",
+      "font_style": "game",
+      "navigation_style": "no"
+    },
+    "features": [
+      "Hero",
+      "Games",
+      "Tournaments",
+      "Community",
+      "About Us",
+      "Media Gallery",
+      "Updates",
+      "Game Store"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 3,
+      "session_id": "sess_f30ba2ce",
+      "project_id": 6,
+      "timestamp": "2026-01-08T06:37:37.761874Z",
+      "user_prompt": "Gaming website",
+      "questionnaire": {
+        "user_id": 3,
+        "prompt": "Gaming website",
+        "language": "English",
+        "business_type": "Based on the user's responses, it appears they want to create a website that:\n\n- Is related",
+        "answers": {
+          "q1": "Game adda",
+          "q2": "Tech Purple - Modern purple gradients",
+          "q3": "Explore",
+          "q4": "khelo jitop",
+          "q5": "no",
+          "q6": "khelo kudo",
+          "q7": "no",
+          "q8": "address",
+          "q9": "game"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your gaming brand name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Choose your color palette:",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What action should visitors take?",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Shop Now",
+              "Contact Us",
+              "Book Now",
+              "Explore",
+              "Learn More",
+              "Get Started",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q4",
+            "question": "Your brand's promise in one sentence:",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q5",
+            "question": "Tell us more about your Logotext for the footer:",
+            "type": "text",
+            "prop_key": "logoText",
+            "section": "footer"
+          },
+          {
+            "id": "q6",
+            "question": "What's your attention-grabbing headline?",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "What would you like to say for 'Logo'?",
+            "type": "text",
+            "prop_key": "logo",
+            "section": "footer"
+          },
+          {
+            "id": "q8",
+            "question": "Enter your information for 'Content':",
+            "type": "text",
+            "prop_key": "content",
+            "section": "about"
+          },
+          {
+            "id": "q9",
+            "question": "Enter your information for 'Images':",
+            "type": "text",
+            "prop_key": "images",
+            "section": "gallery"
+          },
+          {
+            "id": "q10",
+            "question": "Tell us your story (2-3 sentences):",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "cta",
+          "subtitle",
+          "logoText",
+          "title",
+          "logo",
+          "content",
+          "images",
+          "story"
+        ],
+        "color_preferences": "Tech Purple - Modern purple gradients",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Epic gaming-themed hero banner.",
+            "benefit": "Immediate impact",
+            "priority": "High"
+          },
+          {
+            "id": "games",
+            "name": "Games",
+            "description": "Featured games catalog.",
+            "benefit": "Shows content",
+            "priority": "High"
+          },
+          {
+            "id": "tournaments",
+            "name": "Tournaments",
+            "description": "Upcoming esports events.",
+            "benefit": "Builds community",
+            "priority": "High"
+          },
+          {
+            "id": "community",
+            "name": "Community",
+            "description": "Discord and social links.",
+            "benefit": "Engagement",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "About Us",
+            "description": "Team info and studio story.",
+            "benefit": "Personal touch",
+            "priority": "Medium"
+          },
+          {
+            "id": "gallery",
+            "name": "Media Gallery",
+            "description": "Screenshots and trailers.",
+            "benefit": "Visual showcase",
+            "priority": "Medium"
+          },
+          {
+            "id": "news",
+            "name": "Updates",
+            "description": "Latest patches and dev logs.",
+            "benefit": "Keeps players informed",
+            "priority": "Low"
+          },
+          {
+            "id": "store",
+            "name": "Game Store",
+            "description": "Link to buy games or merch.",
+            "benefit": "Revenue",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#F8D5A5",
+              "#C997EF",
+              "#9B3AEC",
+              "#66069A",
+              "#2E003F"
+            ],
+            "title": "Luminescent Dream",
+            "inspiration": "A celestial escape from digital realms."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#C5C3C8",
+              "#9B59B6",
+              "#7A288A",
+              "#51006A",
+              "#1A1D23"
+            ],
+            "title": "Digital Eclipse",
+            "inspiration": "A mesmerizing dance of light and space."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#E5E5EA",
+              "#C94DCE",
+              "#A52CDE",
+              "#7A007A",
+              "#3B0A36"
+            ],
+            "title": "Futuristic Bloom",
+            "inspiration": "Where tech and nature converge in vibrant color."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#C7C5B8",
+              "#B380D1",
+              "#9A45B7",
+              "#7A1A9A",
+              "#2F0046"
+            ],
+            "title": "Starlight Symphony",
+            "inspiration": "A celestial tapestry of harmony and balance."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#F2F2F2",
+              "#B67BD0",
+              "#9447C9",
+              "#6F02C8",
+              "#2A002B"
+            ],
+            "title": "Galactic Odyssey",
+            "inspiration": "A thrilling journey through cosmic realms."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#F0F0F0",
+              "#D9C1E9",
+              "#CC6ED5",
+              "#A20099",
+              "#2B00CE"
+            ],
+            "title": "Neon Oasis",
+            "inspiration": "A refuge of bright energy in the digital storm."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#E7E7E7",
+              "#C7A9FA",
+              "#B14EDE",
+              "#8200A6",
+              "#1A0C35"
+            ],
+            "title": "Cosmic Storm",
+            "inspiration": "A turbulent display of color in the digital vortex."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#F7F7F7",
+              "#B8D6E5",
+              "#9A5BCE",
+              "#7F00B6",
+              "#3100A5"
+            ],
+            "title": "Pulse Velocity",
+            "inspiration": "A rapid-fire sequence of vibrant, high-tech colors."
+          }
+        ],
+        "selected_palette": {
+          "id": "p3",
+          "colors": [
+            "#E5E5EA",
+            "#C94DCE",
+            "#A52CDE",
+            "#7A007A",
+            "#3B0A36"
+          ],
+          "title": "Futuristic Bloom",
+          "inspiration": "Where tech and nature converge in vibrant color."
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Epic gaming-themed hero banner.",
+            "benefit": "Immediate impact",
+            "priority": "High"
+          },
+          {
+            "id": "games",
+            "name": "Games",
+            "description": "Featured games catalog.",
+            "benefit": "Shows content",
+            "priority": "High"
+          },
+          {
+            "id": "tournaments",
+            "name": "Tournaments",
+            "description": "Upcoming esports events.",
+            "benefit": "Builds community",
+            "priority": "High"
+          },
+          {
+            "id": "community",
+            "name": "Community",
+            "description": "Discord and social links.",
+            "benefit": "Engagement",
+            "priority": "Medium"
+          },
+          {
+            "id": "about",
+            "name": "About Us",
+            "description": "Team info and studio story.",
+            "benefit": "Personal touch",
+            "priority": "Medium"
+          },
+          {
+            "id": "gallery",
+            "name": "Media Gallery",
+            "description": "Screenshots and trailers.",
+            "benefit": "Visual showcase",
+            "priority": "Medium"
+          },
+          {
+            "id": "news",
+            "name": "Updates",
+            "description": "Latest patches and dev logs.",
+            "benefit": "Keeps players informed",
+            "priority": "Low"
+          },
+          {
+            "id": "store",
+            "name": "Game Store",
+            "description": "Link to buy games or merch.",
+            "benefit": "Revenue",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Epic gaming-themed hero banner.",
+          "benefit": "Immediate impact",
+          "priority": "High"
+        },
+        {
+          "id": "games",
+          "name": "Games",
+          "description": "Featured games catalog.",
+          "benefit": "Shows content",
+          "priority": "High"
+        },
+        {
+          "id": "tournaments",
+          "name": "Tournaments",
+          "description": "Upcoming esports events.",
+          "benefit": "Builds community",
+          "priority": "High"
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "description": "Discord and social links.",
+          "benefit": "Engagement",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "About Us",
+          "description": "Team info and studio story.",
+          "benefit": "Personal touch",
+          "priority": "Medium"
+        },
+        {
+          "id": "gallery",
+          "name": "Media Gallery",
+          "description": "Screenshots and trailers.",
+          "benefit": "Visual showcase",
+          "priority": "Medium"
+        },
+        {
+          "id": "news",
+          "name": "Updates",
+          "description": "Latest patches and dev logs.",
+          "benefit": "Keeps players informed",
+          "priority": "Low"
+        },
+        {
+          "id": "store",
+          "name": "Game Store",
+          "description": "Link to buy games or merch.",
+          "benefit": "Revenue",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Epic gaming-themed hero banner.",
+          "benefit": "Immediate impact",
+          "priority": "High"
+        },
+        {
+          "id": "games",
+          "name": "Games",
+          "description": "Featured games catalog.",
+          "benefit": "Shows content",
+          "priority": "High"
+        },
+        {
+          "id": "tournaments",
+          "name": "Tournaments",
+          "description": "Upcoming esports events.",
+          "benefit": "Builds community",
+          "priority": "High"
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "description": "Discord and social links.",
+          "benefit": "Engagement",
+          "priority": "Medium"
+        },
+        {
+          "id": "about",
+          "name": "About Us",
+          "description": "Team info and studio story.",
+          "benefit": "Personal touch",
+          "priority": "Medium"
+        },
+        {
+          "id": "gallery",
+          "name": "Media Gallery",
+          "description": "Screenshots and trailers.",
+          "benefit": "Visual showcase",
+          "priority": "Medium"
+        },
+        {
+          "id": "news",
+          "name": "Updates",
+          "description": "Latest patches and dev logs.",
+          "benefit": "Keeps players informed",
+          "priority": "Low"
+        },
+        {
+          "id": "store",
+          "name": "Game Store",
+          "description": "Link to buy games or merch.",
+          "benefit": "Revenue",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-games",
+    "comp-tournaments",
+    "comp-community",
+    "comp-about",
+    "comp-media",
+    "comp-updates",
+    "comp-gamestore",
+    "comp-contact"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 57
+}

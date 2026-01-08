@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Adda: Craft Coffee House</title>
+    <meta name="description" content="Experience the art of specialty coffee at Foodie Adda, where every cup tells a story of passion and dedication.">
+    <meta name="keywords" content="craft coffee, specialty beans, pour-over, espresso art, third wave">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400,500,700&family=Inter:wght@300,400,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7C3AED',
+            secondary: '#10B981',
+            accent: '#F59E0B',
+            surface: '#0F172A',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+        </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #7C3AED, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #7C3AED, #10B981);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px #7C3AED40;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #1A1A1A;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 2px solid #7C3AED30;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            border-color: #7C3AED;
+            background: #7C3AED10;
+        }
+        .section { padding: 100px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #7C3AED; }
+        .nav-link.active { color: #7C3AED; font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#hero" class="text-2xl font-bold font-heading text-white">Foodie Adda</a>
+                <nav class="hidden md:flex items-center gap-8"><a href="#hero" class="nav-link text-gray-300 hover:text-white">Home</a><a href="#about" class="nav-link text-gray-300 hover:text-white">Our Story</a><a href="#menu" class="nav-link text-gray-300 hover:text-white">Our Menu</a><a href="#gallery" class="nav-link text-gray-300 hover:text-white">Our Gallery</a><a href="#contact" class="nav-link text-gray-300 hover:text-white">Get in Touch</a></nav>
+                <a href="#contact" class="border border-white/30 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition-all">Order Now</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+    <section class="cafe-hero cafe-hero-warm" id="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">☕ Est. 2024</div>
+            <h1 class="hero-title">Crafting Every Cup</h1>
+            <p class="hero-subtitle">With passion and precision, we bring you the best of specialty coffee.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary">Discover Our Blends</a>
+                <a href="#contact" class="btn btn-outline">Visit Us</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <span class="feature-icon">🌿</span>
+                    <span>Organic Beans</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🍰</span>
+                    <span>Fresh Pastries</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📶</span>
+                    <span>Free WiFi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .cafe-hero-warm {
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .cafe-hero-warm .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.05);
+        animation: slowZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes slowZoom {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+    }
+    .cafe-hero-warm .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(45, 32, 19, 0.6) 0%,
+            rgba(45, 32, 19, 0.8) 100%
+        );
+    }
+    .cafe-hero-warm .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        padding: 40px 24px;
+        animation: fadeUp 1s ease-out;
+    }
+    .cafe-hero-warm .hero-badge {
+        display: inline-block;
+        padding: 8px 20px;
+        background: #7C3AED30;
+        border: 1px solid #7C3AED50;
+        color: #10B981;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+    }
+    .cafe-hero-warm .hero-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 1.1;
+        text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .cafe-hero-warm .hero-subtitle {
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 32px;
+        font-style: italic;
+    }
+    .cafe-hero-warm .hero-cta {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+    .cafe-hero-warm .btn-primary {
+        background: #7C3AED;
+        color: #fff;
+        padding: 16px 36px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 2px solid #7C3AED;
+    }
+    .cafe-hero-warm .btn-primary:hover {
+        background: transparent;
+        transform: translateY(-2px);
+    }
+    .cafe-hero-warm .btn-outline {
+        background: transparent;
+        color: #fff;
+        padding: 16px 36px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid rgba(255,255,255,0.5);
+        transition: all 0.3s ease;
+    }
+    .cafe-hero-warm .btn-outline:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: #fff;
+    }
+    .cafe-hero-warm .hero-features {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cafe-hero-warm .feature {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255,255,255,0.8);
+        font-size: 0.95rem;
+    }
+    .cafe-hero-warm .feature-icon {
+        font-size: 1.2rem;
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+        .cafe-hero-warm .hero-features {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    </style>
+    
+    <section class="about-magazine" id="about">
+        <div class="magazine-container">
+            <div class="mag-left">
+                <span class="chapter">Chapter One</span>
+                <h2>Our Journey</h2>
+                <div class="mag-line"></div>
+                <p class="lead-text">At Foodie Adda, we're driven by a passion for specialty coffee. Our story begins with a quest to source the finest beans from around the world. We believe in the importance of sustainability and community involvement, which is why we partner with local farmers and suppliers to bring you the best of ...</p>
+            </div>
+            <div class="mag-right">
+                <div class="text-column">
+                    <p>the best....</p>
+                    <div class="stats-row"><div class="stat"><span class="stat-num">100+</span><span class="stat-text">Happy Customers</span></div><div class="stat"><span class="stat-num">50+</span><span class="stat-text">Coffee Blends</span></div><div class="stat"><span class="stat-num">20+</span><span class="stat-text">Awards and Recognition</span></div></div>
+                </div>
+                <div class="image-column">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600" alt="Coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .about-magazine { padding: 120px 40px; background: #fff; }
+    .magazine-container { max-width: 1300px; margin: 0 auto; }
+    .mag-left { margin-bottom: 80px; max-width: 600px; }
+    .chapter { color: #7C3AED; text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; font-weight: 600; }
+    .about-magazine h2 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #1A1A1A; margin: 20px 0 30px; line-height: 1.1; }
+    .mag-line { width: 80px; height: 2px; background: #7C3AED; margin-bottom: 30px; }
+    .lead-text { font-size: 1.3rem; line-height: 1.8; color: #666; }
+    .mag-right { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .text-column p { font-size: 1.1rem; line-height: 1.9; color: #666; margin-bottom: 40px; }
+    .stats-row { display: flex; gap: 50px; }
+    .stat { text-align: center; }
+    .stat-num { display: block; font-size: 2.5rem; font-weight: 700; color: #7C3AED; }
+    .stat-text { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+    .image-column img { width: 100%; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); }
+    @media (max-width: 968px) { .mag-right { grid-template-columns: 1fr; } }
+    </style>
+    
+    <section class="menu-scroll" id="menu">
+        <div class="scroll-header">
+            <h2>Specialty Coffee</h2>
+            <div class="scroll-arrows">
+                <button class="arrow-btn prev">←</button>
+                <button class="arrow-btn next">→</button>
+            </div>
+        </div>
+        <div class="scroll-track">
+            
+        <div class="scroll-card">
+            <div class="card-img" style="background-image: url('https://source.unsplash.com/300x400/?Artisan,Cappuccino')">
+                <div class="card-badge">$4.50</div>
+            </div>
+            <div class="card-info">
+                <h4>Artisan Cappuccino</h4>
+                <p>Velvety smooth espresso crowned with silken microf</p>
+            </div>
+        </div>
+        
+        <div class="scroll-card">
+            <div class="card-img" style="background-image: url('https://source.unsplash.com/300x400/?Single-Origin,Pour-over')">
+                <div class="card-badge">$5.00</div>
+            </div>
+            <div class="card-info">
+                <h4>Single-Origin Pour-over</h4>
+                <p>A carefully crafted pour-over using our single-ori</p>
+            </div>
+        </div>
+        
+        <div class="scroll-card">
+            <div class="card-img" style="background-image: url('https://source.unsplash.com/300x400/?Cold,Brew')">
+                <div class="card-badge">$4.00</div>
+            </div>
+            <div class="card-info">
+                <h4>Cold Brew</h4>
+                <p>Our cold brew coffee is made by steeping our speci</p>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    
+    <style>
+    .menu-scroll { padding: 100px 0; background: #F8FAFC; overflow: hidden; }
+    .scroll-header { max-width: 1200px; margin: 0 auto 50px; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
+    .scroll-header h2 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #1A1A1A; }
+    .scroll-arrows { display: flex; gap: 12px; }
+    .arrow-btn { width: 50px; height: 50px; border: 2px solid #7C3AED; background: transparent; border-radius: 50%; font-size: 1.2rem; cursor: pointer; transition: 0.3s; color: #7C3AED; }
+    .arrow-btn:hover { background: #7C3AED; color: #fff; }
+    .scroll-track { display: flex; gap: 30px; padding: 20px 40px; overflow-x: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .scroll-track::-webkit-scrollbar { display: none; }
+    .scroll-card { flex: 0 0 280px; background: #fff; border-radius: 20px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .scroll-card:hover { transform: translateY(-10px); }
+    .card-img { height: 320px; background-size: cover; background-position: center; position: relative; }
+    .card-badge { position: absolute; top: 20px; right: 20px; background: #fff; padding: 8px 16px; border-radius: 50px; font-weight: 700; color: #7C3AED; }
+    .card-info { padding: 24px; }
+    .card-info h4 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #1A1A1A; margin-bottom: 8px; }
+    .card-info p { color: #888; font-size: 0.95rem; }
+    </style>
+    
+    <section class="gallery-lightbox" id="gallery">
+        <div class="gallery-header"><h2>A Glimpse into Our World</h2><div class="header-line"></div></div>
+        <div class="lightbox-grid"><div class="lightbox-item" style="background-image: url('https://source.unsplash.com/600x600/?cafe&sig=0')"><div class="item-hover"><span>View</span></div></div><div class="lightbox-item" style="background-image: url('https://source.unsplash.com/600x600/?cafe&sig=1')"><div class="item-hover"><span>View</span></div></div><div class="lightbox-item" style="background-image: url('https://source.unsplash.com/600x600/?cafe&sig=2')"><div class="item-hover"><span>View</span></div></div></div>
+    </section>
+    <style>
+    .gallery-lightbox { padding: 100px 24px; background: #fff; }
+    .gallery-header { text-align: center; margin-bottom: 60px; }
+    .gallery-header h2 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #1A1A1A; }
+    .header-line { width: 60px; height: 2px; background: #7C3AED; margin: 20px auto; }
+    .lightbox-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 1200px; margin: 0 auto; }
+    .lightbox-item { aspect-ratio: 1; background-size: cover; background-position: center; border-radius: 12px; position: relative; cursor: pointer; overflow: hidden; }
+    .item-hover { position: absolute; inset: 0; background: #7C3AED90; display: flex; align-items: center; justify-content: center; opacity: 0; transition: 0.3s; }
+    .lightbox-item:hover .item-hover { opacity: 1; }
+    .item-hover span { color: #fff; font-weight: 600; border: 2px solid #fff; padding: 10px 25px; border-radius: 50px; }
+    @media (max-width: 768px) { .lightbox-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+    
+        <section class="shared-testimonials" id="testimonials">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"Exceptional service and amazing results. Highly recommended!"</p>
+                        <div class="author">
+                            <span class="name">John Smith</span>
+                            <span class="role">CEO, TechCorp</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"They exceeded our expectations in every way possible."</p>
+                        <div class="author">
+                            <span class="name">Sarah Johnson</span>
+                            <span class="role">Marketing Director</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Professional, creative, and incredibly easy to work with."</p>
+                        <div class="author">
+                            <span class="name">Mike Williams</span>
+                            <span class="role">Founder, StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .shared-testimonials { padding: 100px 24px; background: #F8FAFC; }
+        .shared-testimonials .container { max-width: 1200px; margin: 0 auto; }
+        .shared-testimonials h2 { font-size: 2rem; color: #1A1A1A; text-align: center; margin-bottom: 60px; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .testimonial-card { background: #F8FAFC; padding: 32px; border-radius: 12px; }
+        .quote { font-size: 1.1rem; color: #1A1A1A; line-height: 1.7; margin-bottom: 24px; font-style: italic; }
+        .author { display: flex; flex-direction: column; }
+        .author .name { font-weight: 600; color: #1A1A1A; }
+        .author .role { font-size: 0.9rem; color: #6B7280; }
+        @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
+        </style>
+        
+        <section class="shared-contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Us</h2>
+                        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        <div class="info-item">
+                            <span class="icon">✉️</span>
+                            <span>foodieadda@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>123-456-7890</span>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .shared-contact { padding: 100px 24px; background: #F8FAFC; }
+        .shared-contact .container { max-width: 1000px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { font-size: 2rem; color: #1A1A1A; margin-bottom: 16px; }
+        .contact-info p { color: #6B7280; margin-bottom: 32px; line-height: 1.7; }
+        .info-item { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; color: #1A1A1A; }
+        .contact-form { display: flex; flex-direction: column; gap: 16px; }
+        .contact-form input, .contact-form textarea {
+            padding: 16px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            background: #fff;
+        }
+        .contact-form button {
+            padding: 16px;
+            background: #7C3AED;
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #1A1A1A;
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        </style>
+        
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-4">Foodie Adda</div>
+                    <p class="text-gray-400 leading-relaxed">Specialty coffee, crafted with love.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    
+                <a href="#hero" class="text-gray-400 hover:text-white transition-colors block">
+                    Home
+                </a>
+                <a href="#menu" class="text-gray-400 hover:text-white transition-colors block">
+                    Menu
+                </a>
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors block">
+                    About
+                </a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors block">
+                    Contact
+                </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Connect</h4>
+                <div class="space-y-3">
+                    
+                <a href="https://www.facebook.com/foodieadda" class="text-gray-400 hover:text-white transition-colors block">
+                    Facebook
+                </a>
+                <a href="https://www.instagram.com/foodieadda" class="text-gray-400 hover:text-white transition-colors block">
+                    Instagram
+                </a>
+                <a href="https://www.twitter.com/foodieadda" class="text-gray-400 hover:text-white transition-colors block">
+                    Twitter
+                </a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm"> 2025 Foodie Adda. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.animate-on-scroll').forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 60 },
+                { opacity: 1, y: 0, duration: 0.9, ease: "power3.out",
+                  scrollTrigger: { trigger: element, start: "top 85%", toggleActions: "play none none reverse" },
+                  delay: index * 0.1 % 0.5
+                }
+            );
+        });
+        </script>
+    
+    <!-- Smooth scroll and active nav highlighting -->
+    <script>
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

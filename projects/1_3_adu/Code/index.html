@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adu Restaurant</title>
+    <meta name="description" content="Experience the epitome of culinary excellence at Adu, where freshness and flavors come together to create an unforgettable dining experience.">
+    <meta name="keywords" content="dining experience, culinary, flavors, freshness, cuisine">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400,500,700&family=Lato:wght@300,400,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E293B',
+            secondary: '#64748B',
+            accent: '#3B82F6',
+            surface: '#FFFFFF',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'sans-serif'],
+            body: ['Lato', 'sans-serif'],
+          },
+        },
+      },
+    }
+        </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #1E293B;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #1E293B, #64748B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1E293B, #64748B);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px #1E293B40;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 2px solid #1E293B30;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            border-color: #1E293B;
+            background: #1E293B10;
+        }
+        .section { padding: 100px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #1E293B; }
+        .nav-link.active { color: #1E293B; font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <div class="h-1 bg-gradient-to-r" style="background: linear-gradient(90deg, #1E293B, #64748B)"></div>
+        <div class="bg-white shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="#hero" class="text-2xl font-bold font-heading" style="color: #1E293B">Adu</a>
+                    <nav class="hidden md:flex items-center gap-8"><a href="#hero" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a><a href="#about" class="nav-link text-gray-700 hover:text-primary font-medium">Our Story</a><a href="#menu" class="nav-link text-gray-700 hover:text-primary font-medium">Our Menu</a><a href="#gallery" class="nav-link text-gray-700 hover:text-primary font-medium">Our Gallery</a><a href="#heritage" class="nav-link text-gray-700 hover:text-primary font-medium">Our Heritage</a></nav>
+                    <a href="#contact" class="btn-primary">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+    <section class="bistro-hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>🍴</span>
+                    <span>Family Owned Since 1978</span>
+                </div>
+                
+                <h1 class="hero-name">The Hungry Fork</h1>
+                <p class="hero-tagline">Home-style Comfort Food</p>
+                <p class="hero-desc">Experience the perfect blend of flavors and ambiance at Adu, where every dish is crafted to delight your senses.</p>
+                
+                <div class="cta-group">
+                    <a href="#menu" class="btn-primary">Reserve a Table</a>
+                    <a href="#about" class="btn-secondary">Our Story</a>
+                </div>
+                
+                <div class="quick-info">
+                    <div class="info-badge">
+                        <span class="badge-icon">⭐</span>
+                        <span class="badge-text">4.9 Rating</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="badge-icon">🚚</span>
+                        <span class="badge-text">Free Delivery</span>
+                    </div>
+                    <div class="info-badge">
+                        <span class="badge-icon">⏰</span>
+                        <span class="badge-text">Open Now</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-stack">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Dish 1" class="main-dish">
+                    <div class="floating-card">
+                        <span class="card-icon">🔥</span>
+                        <span class="card-text">Today's Special</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+    
+    .bistro-hero {
+        min-height: 100vh;
+        background: #1E293B;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 120px 60px;
+        overflow: hidden;
+    }
+    .hero-bg-pattern {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 10% 20%, #1E293B10 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, #64748B10 0%, transparent 40%);
+    }
+    .hero-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background: #1E293B15;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        color: #1E293B;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    .hero-name {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(3rem, 6vw, 5rem);
+        color: #FFFFFF;
+        line-height: 1.1;
+        margin-bottom: 16px;
+    }
+    .hero-tagline {
+        font-size: 1.5rem;
+        color: #1E293B;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    .hero-desc {
+        font-size: 1.1rem;
+        color: #FFFFFF90;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+    .cta-group {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    .btn-primary {
+        padding: 18px 40px;
+        background: #1E293B;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.3s;
+        box-shadow: 0 10px 30px #1E293B40;
+    }
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px #1E293B50;
+    }
+    .btn-secondary {
+        padding: 18px 40px;
+        background: transparent;
+        border: 2px solid #FFFFFF30;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.3s;
+    }
+    .btn-secondary:hover {
+        border-color: #1E293B;
+        color: #1E293B;
+    }
+    .quick-info {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .info-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        font-size: 0.9rem;
+        color: #FFFFFF;
+    }
+    .hero-image {
+        position: relative;
+    }
+    .image-stack {
+        position: relative;
+    }
+    .main-dish {
+        width: 100%;
+        border-radius: 40px;
+        box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    }
+    .floating-card {
+        position: absolute;
+        bottom: 40px;
+        left: -40px;
+        background: white;
+        padding: 16px 24px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    .card-icon { font-size: 1.5rem; }
+    .card-text { font-weight: 600; color: #FFFFFF; }
+    @media (max-width: 1024px) {
+        .hero-container { grid-template-columns: 1fr; gap: 60px; }
+        .bistro-hero { padding: 120px 40px; }
+    }
+    @media (max-width: 640px) {
+        .bistro-hero { padding: 100px 24px; }
+        .floating-card { display: none; }
+    }
+    </style>
+    
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="image-main">
+                        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600" alt="Restaurant Interior">
+                    </div>
+                    <div class="image-secondary">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400" alt="Chef at work">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-years">25+</span>
+                        <span class="exp-text">Years of Excellence</span>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-story">At Adu, our passion for food is rooted in our commitment to using only the freshest ingredients and innovative culinary techniques. Our chef's story began with a love for cooking and a desire to share that love with the world. With a focus on creating a unique dining experience, we strive to make every meal a memorable one.</p>
+                    
+                    <div class="philosophy">
+                        <div class="philosophy-item">
+                            <span class="philosophy-icon">🍃</span>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Locally sourced, seasonal produce</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-item">
+                            <span class="philosophy-icon">👨‍🍳</span>
+                            <div>
+                                <h4>Expert Craftsmanship</h4>
+                                <p>Decades of culinary experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chef-info">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ez1c79f3a9?w=100" alt="Chef Marco Rossi" class="chef-avatar">
+                        <div>
+                            <h4 class="chef-name">Chef Marco Rossi</h4>
+                            <p class="chef-title">Executive Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;500&display=swap');
+    
+    .about-section {
+        padding: 120px 0;
+        background: #1E293B;
+    }
+    .about-section .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: center;
+    }
+    .about-images {
+        position: relative;
+    }
+    .image-main {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .image-main img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .image-secondary {
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        width: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 6px solid #1E293B;
+    }
+    .image-secondary img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .experience-badge {
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        background: #1E293B;
+        padding: 24px 30px;
+        border-radius: 16px;
+        text-align: center;
+    }
+    .exp-years {
+        display: block;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #0A0A0A;
+        line-height: 1;
+    }
+    .exp-text {
+        font-size: 0.8rem;
+        color: #0A0A0A;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .section-label {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: #1E293B;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+    .about-story {
+        font-size: 1.15rem;
+        color: #FFFFFF80;
+        line-height: 1.9;
+        margin-bottom: 40px;
+    }
+    .philosophy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .philosophy-item {
+        display: flex;
+        gap: 16px;
+    }
+    .philosophy-icon {
+        font-size: 2rem;
+    }
+    .philosophy-item h4 {
+        font-size: 1rem;
+        color: #FFFFFF;
+        margin-bottom: 4px;
+    }
+    .philosophy-item p {
+        font-size: 0.9rem;
+        color: #FFFFFF60;
+    }
+    .chef-info {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-top: 30px;
+        border-top: 1px solid #FFFFFF15;
+    }
+    .chef-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .chef-name {
+        font-size: 1.1rem;
+        color: #FFFFFF;
+        margin-bottom: 4px;
+    }
+    .chef-title {
+        font-size: 0.9rem;
+        color: #1E293B;
+    }
+    @media (max-width: 1024px) {
+        .about-grid { grid-template-columns: 1fr; gap: 60px; }
+        .image-secondary { right: 20px; }
+        .experience-badge { left: 20px; }
+    }
+    </style>
+    
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Menu</span>
+                <h2 class="section-title">Explore Our Cuisine</h2>
+                <p class="section-subtitle">Carefully crafted dishes using the finest ingredients</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="Starters">Starters</button><button class="menu-tab " data-category="Mains">Mains</button>
+            </div>
+            
+            <div class="menu-content">
+                <div class="menu-category active" data-category="Starters">
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Grilled Chicken">
+                </div>
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-name">Grilled Chicken</h3>
+                        <span class="item-price">$$15</span>
+                    </div>
+                    <p class="item-desc">Tender and juicy, our grilled chicken is marinated to perfection.</p>
+                </div>
+            </div>
+            </div><div class="menu-category " data-category="Mains">
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Pan-Seared Salmon">
+                </div>
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-name">Pan-Seared Salmon</h3>
+                        <span class="item-price">$$25</span>
+                    </div>
+                    <p class="item-desc">Fresh and flavorful, our pan-seared salmon is a must-try.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="menu-footer">
+                <a href="#" class="download-menu">View Full Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;500&display=swap');
+    
+    .menu-section {
+        padding: 120px 0;
+        background: #1E293B;
+    }
+    .menu-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .section-label {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: #1E293B;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    .section-subtitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1rem;
+        color: #FFFFFF60;
+    }
+    .menu-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+    .menu-tab {
+        padding: 14px 32px;
+        background: transparent;
+        border: 1px solid #FFFFFF20;
+        color: #FFFFFF80;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .menu-tab:hover {
+        border-color: #1E293B;
+        color: #1E293B;
+    }
+    .menu-tab.active {
+        background: #1E293B;
+        border-color: #1E293B;
+        color: #0A0A0A;
+    }
+    .menu-category {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .menu-category.active {
+        display: grid;
+    }
+    .menu-item {
+        display: flex;
+        gap: 24px;
+        padding: 24px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.05);
+        border-radius: 16px;
+        transition: all 0.3s;
+    }
+    .menu-item:hover {
+        background: rgba(255,255,255,0.06);
+        transform: translateY(-5px);
+    }
+    .item-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item-content {
+        flex: 1;
+    }
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .item-name {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    .item-price {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1E293B;
+    }
+    .item-desc {
+        font-size: 0.95rem;
+        color: #FFFFFF60;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .menu-footer {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .download-menu {
+        color: #1E293B;
+        text-decoration: none;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #1E293B50;
+        padding-bottom: 4px;
+        transition: all 0.3s;
+    }
+    .download-menu:hover {
+        border-color: #1E293B;
+    }
+    @media (max-width: 768px) {
+        .menu-category { grid-template-columns: 1fr; }
+        .menu-item { flex-direction: column; }
+        .item-image { width: 100%; height: 200px; }
+    }
+    </style>
+    
+    <script>
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
+            tab.classList.add('active');
+            document.querySelector(`.menu-category[data-category="${tab.dataset.category}"]`).classList.add('active');
+        });
+    });
+    </script>
+    
+    <section class="restaurant-gallery" id="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">A Glimpse into Adu</h2>
+                <p class="section-subtitle">Experience the ambiance and cuisine of Adu</p>
+            </div>
+            
+            <div class="gallery-grid">
+                
+        <div class="gallery-item large" onclick="openGalleryLightbox(0)">
+            <img src="https://example.com/image1.jpg" alt="" loading="lazy">
+            <div class="item-overlay">
+                <span class="caption"></span>
+                <span class="zoom-icon">+</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item " onclick="openGalleryLightbox(1)">
+            <img src="https://example.com/image2.jpg" alt="" loading="lazy">
+            <div class="item-overlay">
+                <span class="caption"></span>
+                <span class="zoom-icon">+</span>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div class="gallery-lightbox" id="galleryLightbox">
+            <button class="lightbox-close" onclick="closeGalleryLightbox()">&times;</button>
+            <button class="lightbox-prev" onclick="navGallery(-1)">&#10094;</button>
+            <div class="lightbox-content">
+                <img src="" alt="" id="galleryLightboxImg">
+                <p class="lightbox-caption" id="galleryLightboxCaption"></p>
+            </div>
+            <button class="lightbox-next" onclick="navGallery(1)">&#10095;</button>
+        </div>
+    </section>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@400;500&display=swap');
+    
+    .restaurant-gallery {
+        padding: 120px 0;
+        background: #1E293B;
+    }
+    .restaurant-gallery .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .gallery-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .section-label {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: #1E293B;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #FFFFFF80;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .gallery-item {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        cursor: pointer;
+    }
+    .gallery-item.large {
+        grid-row: span 2;
+        aspect-ratio: auto;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    .item-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .gallery-item:hover .item-overlay {
+        opacity: 1;
+    }
+    .item-overlay .caption {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .item-overlay .zoom-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background: #1E293B;
+        color: #0A0A0A;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .gallery-item:hover .zoom-icon {
+        opacity: 1;
+    }
+    
+    /* Lightbox */
+    .gallery-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.95);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-lightbox.active {
+        display: flex;
+    }
+    .lightbox-content {
+        max-width: 90vw;
+        max-height: 85vh;
+        text-align: center;
+    }
+    #galleryLightboxImg {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+    .lightbox-caption {
+        color: white;
+        margin-top: 16px;
+        font-size: 1.2rem;
+    }
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 3rem;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .lightbox-prev, .lightbox-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.5rem;
+        color: white;
+        background: rgba(255,255,255,0.1);
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .lightbox-prev:hover, .lightbox-next:hover {
+        background: #1E293B;
+        color: #0A0A0A;
+    }
+    .lightbox-prev { left: 30px; }
+    .lightbox-next { right: 30px; }
+    
+    @media (max-width: 1024px) {
+        .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        .gallery-item.large { grid-row: span 1; aspect-ratio: 4/3; }
+    }
+    @media (max-width: 640px) {
+        .gallery-grid { grid-template-columns: 1fr; }
+    }
+    </style>
+    
+    <script>
+    const galleryImgs = ['{"url": "https://example.com/image1.jpg", "caption": ""}', '{"url": "https://example.com/image2.jpg", "caption": ""}'];
+    let galleryIdx = 0;
+    
+    function openGalleryLightbox(idx) {
+        galleryIdx = idx;
+        updateGalleryLightbox();
+        document.getElementById('galleryLightbox').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeGalleryLightbox() {
+        document.getElementById('galleryLightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function navGallery(dir) {
+        galleryIdx += dir;
+        if (galleryIdx < 0) galleryIdx = galleryImgs.length - 1;
+        if (galleryIdx >= galleryImgs.length) galleryIdx = 0;
+        updateGalleryLightbox();
+    }
+    
+    function updateGalleryLightbox() {
+        const img = galleryImgs[galleryIdx];
+        document.getElementById('galleryLightboxImg').src = img.url;
+        document.getElementById('galleryLightboxCaption').textContent = img.caption;
+    }
+    
+    document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('galleryLightbox').classList.contains('active')) return;
+        if (e.key === 'Escape') closeGalleryLightbox();
+        if (e.key === 'ArrowLeft') navGallery(-1);
+        if (e.key === 'ArrowRight') navGallery(1);
+    });
+    </script>
+    
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-4">Adu</div>
+                    <p class="text-gray-400 leading-relaxed">Experience the epitome of culinary excellence</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    
+                <a href="#hero" class="text-gray-400 hover:text-white transition-colors block">
+                    Home
+                </a>
+                <a href="#menu" class="text-gray-400 hover:text-white transition-colors block">
+                    Menu
+                </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Connect</h4>
+                <div class="space-y-3">
+                    
+                <a href="https://facebook.com" class="text-gray-400 hover:text-white transition-colors block">
+                    Facebook
+                </a>
+                <a href="https://instagram.com" class="text-gray-400 hover:text-white transition-colors block">
+                    Instagram
+                </a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm"> 2025 Adu. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.animate-on-scroll').forEach((element, index) => {
+            const direction = index % 2 === 0 ? -80 : 80;
+            gsap.fromTo(element, 
+                { opacity: 0, x: direction },
+                { opacity: 1, x: 0, duration: 0.8, ease: "power2.out",
+                  scrollTrigger: { trigger: element, start: "top 85%", toggleActions: "play none none reverse" },
+                  delay: index * 0.1
+                }
+            );
+        });
+        </script>
+    
+    <!-- Smooth scroll and active nav highlighting -->
+    <script>
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

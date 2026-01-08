@@ -1,0 +1,1172 @@
+{
+  "projectName": "Foodie Adda",
+  "projectType": "coffee_shop",
+  "seo": {
+    "title": "Foodie Adda: Craft Coffee House",
+    "description": "Experience the art of specialty coffee at Foodie Adda, where every cup tells a story of passion and dedication.",
+    "keywords": [
+      "craft coffee",
+      "specialty beans",
+      "pour-over",
+      "espresso art",
+      "third wave"
+    ]
+  },
+  "theme": {
+    "themeName": "Cozy Craft",
+    "themeMood": "Modern & Cozy",
+    "primaryColor": "#7C3AED",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#7C3AED",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "background": "#F8FAFC",
+      "surface": "#0F172A",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #7C3AED 0%, #10B981 100%)",
+      "accent": "linear-gradient(135deg, #F59E0B 0%, #F59E0B 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "gradient-split",
+        "title": "Crafting Every Cup",
+        "subtitle": "With passion and precision, we bring you the best of specialty coffee.",
+        "description": "From pour-overs to espresso art, every cup is a testament to our dedication to the craft.",
+        "cta": "Discover Our Blends",
+        "ctaSecondary": "Visit Us",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Our Journey",
+        "story": "At Foodie Adda, we're driven by a passion for specialty coffee. Our story begins with a quest to source the finest beans from around the world. We believe in the importance of sustainability and community involvement, which is why we partner with local farmers and suppliers to bring you the best of the best.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founded",
+            "description": "Foodie Adda was founded by a group of coffee enthusiasts who shared a vision of creating a unique coffee experience."
+          },
+          {
+            "year": "2015",
+            "title": "First Store",
+            "description": "We opened our first store in the heart of the city, offering a wide range of specialty coffee drinks and a cozy atmosphere."
+          },
+          {
+            "year": "2020",
+            "title": "Expansion",
+            "description": "We expanded our operations to include a roastery and a coffee lab, allowing us to experiment with new blends and flavors."
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          },
+          {
+            "value": "50+",
+            "label": "Coffee Blends"
+          },
+          {
+            "value": "20+",
+            "label": "Awards and Recognition"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Specialty Coffee",
+        "categories": [
+          "Espresso",
+          "Pour-over",
+          "Cold Brew"
+        ],
+        "items": [
+          {
+            "name": "Artisan Cappuccino",
+            "description": "Velvety smooth espresso crowned with silken microfoam, perfect for those who appreciate the classics.",
+            "price": "$4.50",
+            "category": "Espresso"
+          },
+          {
+            "name": "Single-Origin Pour-over",
+            "description": "A carefully crafted pour-over using our single-origin coffee beans, showcasing the unique flavors and nuances of each region.",
+            "price": "$5.00",
+            "category": "Pour-over"
+          },
+          {
+            "name": "Cold Brew",
+            "description": "Our cold brew coffee is made by steeping our specialty coffee beans in cold water for an extended period, resulting in a smooth and refreshing drink.",
+            "price": "$4.00",
+            "category": "Cold Brew"
+          }
+        ]
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Our Gallery",
+      "props": {
+        "layoutVariant": "masonry",
+        "title": "A Glimpse into Our World",
+        "subtitle": "Take a look at our coffee shop and the people who make it special.",
+        "categories": [
+          "Coffee",
+          "People",
+          "Events"
+        ],
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg",
+          "https://example.com/image3.jpg"
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-testimonials": {
+      "id": "testimonials",
+      "type": "Testimonials",
+      "name": "What Our Customers Say",
+      "props": {
+        "layoutVariant": "carousel",
+        "sectionTitle": "Real People, Real Stories",
+        "testimonials": [
+          {
+            "quote": "Foodie Adda is my go-to spot for specialty coffee. The staff is always friendly and knowledgeable, and the coffee is always top-notch.",
+            "author": "Emily R.",
+            "role": "Coffee Connoisseur"
+          },
+          {
+            "quote": "I've been to many coffee shops, but Foodie Adda is the only one that truly understands the art of coffee. The pour-overs are always perfectly crafted, and the atmosphere is cozy and inviting.",
+            "author": "David K.",
+            "role": "Coffee Enthusiast"
+          },
+          {
+            "quote": "As a freelancer, I spend a lot of time working from coffee shops. Foodie Adda is my favorite spot to work from - the coffee is great, the staff is friendly, and the atmosphere is always welcoming.",
+            "author": "Sarah L.",
+            "role": "Freelancer"
+          }
+        ]
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-contact": {
+      "id": "contact",
+      "type": "Contact",
+      "name": "Get in Touch",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Contact Us",
+        "subtitle": "We'd love to hear from you!",
+        "email": "foodieadda@gmail.com",
+        "phone": "123-456-7890",
+        "address": "123 Main St, Anytown, USA",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Your Message",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "comp-our-story": {
+      "id": "our-story",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "milestone-cards",
+        "title": "About Foodie Adda",
+        "story": "Welcome to Foodie Adda, your trusted partner in coffee_shop excellence. We are committed to delivering outstanding quality and service to every customer.",
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          },
+          {
+            "value": "5+",
+            "label": "Years Experience"
+          },
+          {
+            "value": "50+",
+            "label": "Projects Completed"
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-todays-specials": {
+      "id": "todays-specials",
+      "type": "Specials",
+      "name": "Today's Specials",
+      "props": {
+        "layoutVariant": "default",
+        "sectionTitle": "Today's Specials",
+        "items": [
+          {
+            "name": "Chef's Special",
+            "description": "A delightful creation by our head chef",
+            "price": "$15.99",
+            "badge": "Popular"
+          },
+          {
+            "name": "Soup of the Day",
+            "description": "Homemade soup prepared fresh every morning",
+            "price": "$6.99",
+            "badge": "New"
+          },
+          {
+            "name": "Daily Combo",
+            "description": "Main course + drink + dessert",
+            "price": "$19.99",
+            "badge": "Best Value"
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-hours-and-location": {
+      "id": "hours-and-location",
+      "type": "Hours",
+      "name": "Hours & Location",
+      "props": {
+        "layoutVariant": "default",
+        "title": "Hours & Location",
+        "address": "123 Main Street, City, State 12345",
+        "phone": "(555) 123-4567",
+        "email": "hello@foodieadda.com",
+        "hours": [
+          {
+            "day": "Monday - Friday",
+            "time": "7:00 AM - 9:00 PM"
+          },
+          {
+            "day": "Saturday",
+            "time": "8:00 AM - 10:00 PM"
+          },
+          {
+            "day": "Sunday",
+            "time": "9:00 AM - 8:00 PM"
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Foodie Adda",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Menu",
+          "href": "#menu"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "cta": {
+        "text": "Order Now",
+        "href": "#menu",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Foodie Adda",
+      "tagline": "Specialty coffee, crafted with love.",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Menu",
+              "href": "#menu"
+            },
+            {
+              "text": "About",
+              "href": "#about"
+            },
+            {
+              "text": "Contact",
+              "href": "#contact"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "https://www.facebook.com/foodieadda"
+            },
+            {
+              "text": "Instagram",
+              "href": "https://www.instagram.com/foodieadda"
+            },
+            {
+              "text": "Twitter",
+              "href": "https://www.twitter.com/foodieadda"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Foodie Adda. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Poppins",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Inter",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "modern & cozy"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Modern & Cozy",
+    "hero_concept": "A warm and inviting hero section that showcases the specialty coffee experience.",
+    "visual_personality": "A modern and cozy visual style that reflects the passion and dedication to specialty coffee."
+  },
+  "projectId": "af562230-c2d2-412d-97e6-7052421a81cf",
+  "session_id": "sess_4f650f0f",
+  "created_at": "2026-01-07T14:51:05.260451",
+  "metadata": {
+    "session_id": "sess_4f650f0f",
+    "timestamp": "2026-01-07T14:50:59.167117",
+    "user_prompt": "Cafe website",
+    "business_name": "Foodie Adda",
+    "prop_answers": {
+      "businessName": "Foodie adda",
+      "colorTheme": "Creative Orange - Energetic orange with dark accents",
+      "email": "foodie@gmail.com",
+      "story": "we are best from scratch",
+      "cta": "View Menu",
+      "services": [
+        "Video Production",
+        "Social Media"
+      ],
+      "image": "Professional photo",
+      "sectionTitle": "nothing",
+      "menuItems": [
+        "Sandwiches & Food",
+        "Desserts",
+        "Cold Drinks & Smoothies"
+      ]
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "",
+      "cta": "View Menu"
+    },
+    "user_services": [
+      "Video Production",
+      "Social Media"
+    ],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [
+        "Sandwiches & Food",
+        "Desserts",
+        "Cold Drinks & Smoothies"
+      ],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "coffee_shop",
+      "industry": "coffee_shop",
+      "business_name": "Foodie Adda",
+      "target_audience": "Foodie adda",
+      "goals": "['Video Production', 'Social Media']",
+      "services": [
+        "Video Production",
+        "Social Media"
+      ],
+      "style_preferences": [
+        "View Menu",
+        "Professional photo navigation",
+        "['Sandwiches & Food', 'Desserts', 'Cold Drinks & Smoothies'] fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "we are best from scratch",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Foodie adda"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Creative Orange - Energetic orange with dark accents"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "foodie@gmail.com"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "we are best from scratch"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "View Menu"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Video Production",
+            "Social Media"
+          ]
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "Professional photo"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "nothing"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Sandwiches & Food",
+            "Desserts",
+            "Cold Drinks & Smoothies"
+          ]
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Foodie adda",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Creative Orange - Energetic orange with dark accents",
+          "question": ""
+        },
+        "q3": {
+          "answer": "foodie@gmail.com",
+          "question": ""
+        },
+        "q4": {
+          "answer": "we are best from scratch",
+          "question": ""
+        },
+        "q5": {
+          "answer": "View Menu",
+          "question": ""
+        },
+        "q6": {
+          "answer": [
+            "Video Production",
+            "Social Media"
+          ],
+          "question": ""
+        },
+        "q7": {
+          "answer": "Professional photo",
+          "question": ""
+        },
+        "q8": {
+          "answer": "nothing",
+          "question": ""
+        },
+        "q9": {
+          "answer": [
+            "Sandwiches & Food",
+            "Desserts",
+            "Cold Drinks & Smoothies"
+          ],
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Foodie adda",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "email": "foodie@gmail.com",
+        "story": "we are best from scratch",
+        "cta": "View Menu",
+        "services": [
+          "Video Production",
+          "Social Media"
+        ],
+        "image": "Professional photo",
+        "sectionTitle": "nothing",
+        "menuItems": [
+          "Sandwiches & Food",
+          "Desserts",
+          "Cold Drinks & Smoothies"
+        ]
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#7C3AED",
+          "#10B981",
+          "#F59E0B",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Creative Orange - Energetic orange with dark accents",
+      "font_style": [
+        "Sandwiches & Food",
+        "Desserts",
+        "Cold Drinks & Smoothies"
+      ],
+      "navigation_style": "Professional photo"
+    },
+    "features": [
+      "Hero",
+      "Our Menu",
+      "Our Story",
+      "Gallery",
+      "Today's Specials",
+      "Hours & Location"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_4f650f0f",
+      "project_id": 1,
+      "timestamp": "2026-01-07T09:20:59.049870Z",
+      "user_prompt": "Cafe website",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Cafe website",
+        "language": "English",
+        "business_type": "Based on the user's responses, it seems like they want to create a website for a cafe.",
+        "answers": {
+          "q1": "Foodie adda",
+          "q2": "Creative Orange - Energetic orange with dark accents",
+          "q3": "foodie@gmail.com",
+          "q4": "we are best from scratch",
+          "q5": "View Menu",
+          "q6": [
+            "Video Production",
+            "Social Media"
+          ],
+          "q7": "Professional photo",
+          "q8": "nothing",
+          "q9": [
+            "Sandwiches & Food",
+            "Desserts",
+            "Cold Drinks & Smoothies"
+          ]
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your agency name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Choose your color palette:",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Enter your information for 'Email':",
+            "type": "text",
+            "prop_key": "email",
+            "section": "footer"
+          },
+          {
+            "id": "q4",
+            "question": "Tell us your story (2-3 sentences):",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "Primary call-to-action:",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Shop Now",
+              "Learn More",
+              "Book Now",
+              "Contact Us",
+              "Get Started",
+              "Explore",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q6",
+            "question": "Select your core services:",
+            "type": "checkbox",
+            "prop_key": "services",
+            "section": "services",
+            "options": [
+              "Web Design/Development",
+              "SEO/Content",
+              "Branding & Identity",
+              "Video Production",
+              "Digital Marketing",
+              "Social Media",
+              "Consulting"
+            ]
+          },
+          {
+            "id": "q7",
+            "question": "What should the background show?",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Location/space",
+              "Abstract/artistic",
+              "Product showcase",
+              "Team/people",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q8",
+            "question": "What would you like to say for 'Sectiontitle'?",
+            "type": "text",
+            "prop_key": "sectionTitle",
+            "section": "about"
+          },
+          {
+            "id": "q9",
+            "question": "What do you serve?",
+            "type": "checkbox",
+            "prop_key": "menuItems",
+            "section": "menu",
+            "options": [
+              "Coffee & Espresso",
+              "Sandwiches & Food",
+              "Desserts",
+              "Tea & Specialty Drinks",
+              "Pastries & Baked Goods",
+              "Cold Drinks & Smoothies"
+            ]
+          },
+          {
+            "id": "q10",
+            "question": "Describe your business in one line:",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "email",
+          "story",
+          "cta",
+          "services",
+          "image",
+          "title",
+          "sectionTitle",
+          "menuItems",
+          "subtitle"
+        ],
+        "color_preferences": "Creative Orange - Energetic orange with dark accents",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Warm, inviting hero with cafe ambiance.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Coffee, pastries, and food menu.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Our Story",
+            "description": "The cafe story and values.",
+            "benefit": "Builds connection",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photos of your cafe drinks.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "specials",
+            "name": "Today's Specials",
+            "description": "Daily specials.",
+            "benefit": "Creates urgency",
+            "priority": "Medium"
+          },
+          {
+            "id": "hours",
+            "name": "Hours & Location",
+            "description": "Opening hours and map.",
+            "benefit": "Easy to find",
+            "priority": "High"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#FF9900",
+              "#660033",
+              "#999999",
+              "#E0E0E0",
+              "#FF4F00"
+            ],
+            "title": "Vibrant Blaze Path",
+            "inspiration": "Energy bursts like firework sparks"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#FF6600",
+              "#333333",
+              "#C0C0C0",
+              "#FFA07A",
+              "#FF0033"
+            ],
+            "title": "Sunset On Mars",
+            "inspiration": "Orange hues of Martian sunsets"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#FF7A00",
+              "#2F4F4F",
+              "#666666",
+              "#FFC080",
+              "#FF00CC"
+            ],
+            "title": "Fiery Ember Dance",
+            "inspiration": "Whirling flames with warm undertones"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#FFA500",
+              "#5F6A8C",
+              "#333333",
+              "#964B00",
+              "#8B0A1A"
+            ],
+            "title": "Aurora Bloom Rise",
+            "inspiration": "Vibrant sunrises with a splash of magic"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#FFA07A",
+              "#555555",
+              "#F0E4CC",
+              "#FF8C00",
+              "#660033"
+            ],
+            "title": "Orange Crush Fever",
+            "inspiration": "Summer vibes with the essence of fresh oranges"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#FF0033",
+              "#343434",
+              "#A70000",
+              "#FFA36A",
+              "#B3B3B3"
+            ],
+            "title": "Darkstar Inferno",
+            "inspiration": "Mysterious dark oranges with a hint of destruction"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#FFA57D",
+              "#1A1D23",
+              "#666666",
+              "#FFC080",
+              "#FF0033"
+            ],
+            "title": "Coral Reef Surge",
+            "inspiration": "Exotic tropical flavors with a hint of wild adventure"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#FF7F00",
+              "#333333",
+              "#808080",
+              "#FF9900",
+              "#7F007F"
+            ],
+            "title": "Pyromancer's Spell",
+            "inspiration": "A mystical world of enchanted orange flames"
+          }
+        ],
+        "selected_palette": {
+          "id": "p6",
+          "colors": [
+            "#FF0033",
+            "#343434",
+            "#A70000",
+            "#FFA36A",
+            "#B3B3B3"
+          ],
+          "title": "Darkstar Inferno",
+          "inspiration": "Mysterious dark oranges with a hint of destruction"
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Warm, inviting hero with cafe ambiance.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Coffee, pastries, and food menu.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Our Story",
+            "description": "The cafe story and values.",
+            "benefit": "Builds connection",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photos of your cafe drinks.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "specials",
+            "name": "Today's Specials",
+            "description": "Daily specials.",
+            "benefit": "Creates urgency",
+            "priority": "Medium"
+          },
+          {
+            "id": "hours",
+            "name": "Hours & Location",
+            "description": "Opening hours and map.",
+            "benefit": "Easy to find",
+            "priority": "High"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Warm, inviting hero with cafe ambiance.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Coffee, pastries, and food menu.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Our Story",
+          "description": "The cafe story and values.",
+          "benefit": "Builds connection",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photos of your cafe drinks.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "specials",
+          "name": "Today's Specials",
+          "description": "Daily specials.",
+          "benefit": "Creates urgency",
+          "priority": "Medium"
+        },
+        {
+          "id": "hours",
+          "name": "Hours & Location",
+          "description": "Opening hours and map.",
+          "benefit": "Easy to find",
+          "priority": "High"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Warm, inviting hero with cafe ambiance.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Coffee, pastries, and food menu.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Our Story",
+          "description": "The cafe story and values.",
+          "benefit": "Builds connection",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photos of your cafe drinks.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "specials",
+          "name": "Today's Specials",
+          "description": "Daily specials.",
+          "benefit": "Creates urgency",
+          "priority": "Medium"
+        },
+        {
+          "id": "hours",
+          "name": "Hours & Location",
+          "description": "Opening hours and map.",
+          "benefit": "Easy to find",
+          "priority": "High"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-testimonials",
+    "comp-contact"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 1
+}
