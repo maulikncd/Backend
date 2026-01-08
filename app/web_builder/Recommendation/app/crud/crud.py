@@ -1,10 +1,12 @@
-
 import json
-import sqlite3
 from pathlib import Path
 
 import redis
+from sqlalchemy import text
 from app.Auth.core.config import get_settings
+from app.Auth.db.session import SessionLocal
+from app.Auth.models.metadata import Metadata
+from app.Auth.models.project import Project
 
 # Redis configuration
 settings = get_settings()
@@ -19,57 +21,8 @@ def get_redis():
     return redis_client
 
 
-def _resolve_sqlite_path(database_url: str) -> str:
-    """
-    Convert a sqlite database URL (sqlite:///...) into a filesystem path
-    so we can connect with sqlite3 and share the same file as SQLAlchemy.
-    """
-    if not database_url.startswith("sqlite"):
-        raise ValueError("Metadata persistence currently supports sqlite only")
-
-    # Support sqlite:///absolute_or_relative and sqlite:///<drive>/<path>
-    prefix = "sqlite:///"
-    alt_prefix = "sqlite://"
-
-    if database_url.startswith(prefix):
-        raw_path = database_url[len(prefix):]
-    elif database_url.startswith(alt_prefix):
-        raw_path = database_url[len(alt_prefix):]
-    else:
-        raw_path = database_url
-
-    raw_path = raw_path.strip()
-
-    if raw_path in ("", ":memory:"):
-        return ":memory:"
-
-    return str(Path(raw_path).resolve())
-
-
-AUTH_DB_PATH = _resolve_sqlite_path(settings.database_url)
-
-
-def _init_metadata_db():
-    """Ensure the SQLite database and metadata table exist."""
-    if AUTH_DB_PATH != ":memory:":
-        Path(AUTH_DB_PATH).parent.mkdir(parents=True, exist_ok=True)
-
-    with sqlite3.connect(AUTH_DB_PATH) as conn:
-        conn.execute(
-            """
-            CREATE TABLE IF NOT EXISTS metadata (
-                metadata_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                session_id TEXT NOT NULL,
-                project_id INTEGER NOT NULL,
-                user_id INTEGER NOT NULL,
-                path TEXT NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            )
-            """
-        )
-
-
-_init_metadata_db()
+# Removed _resolve_sqlite_path and _init_metadata_db as they are sqlite specific.
+# Tables should be created by alembic or main init logic.
 
 
 def save_session(session_id: str, data: dict):
@@ -105,69 +58,62 @@ def save_metadata(metadata: dict, user_id: str, username: str, project_id: int, 
         raise ValueError("Invalid user identifier provided for metadata storage.")
 
     # Fetch project information to validate ownership and locate folder
-    with sqlite3.connect(AUTH_DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            """
-            SELECT folder_path, user_id, project_name
-            FROM projects
-            WHERE project_id = ?
-            """,
-            (project_id,),
-        )
-        project_row = cursor.fetchone()
-
-    if not project_row:
-        raise ValueError("Project not found.")
-
-    folder_path, owner_user_id, project_name = project_row
-    if owner_user_id != user_id_int:
-        raise PermissionError("Project does not belong to the authenticated user.")
-
-    if folder_path:
-        project_folder = Path(folder_path)
-    else:
-        project_folder = projects_folder / f"{owner_user_id}_{project_id}_{project_name}"
-
-    if not project_folder.exists():
-        raise FileNotFoundError("Project folder not found on disk.")
-
-    metadata_folder = project_folder / "Metadata"
-    metadata_folder.mkdir(parents=True, exist_ok=True)
-
-    metadata_filename = f"metadata_{session_id}.json"
-    metadata_file_path = metadata_folder / metadata_filename
-
-    with open(metadata_file_path, 'w', encoding='utf-8') as f:
-        json.dump(metadata, f, indent=2, ensure_ascii=False)
-
+    # Fetch project information to validate ownership and locate folder
+    db = SessionLocal()
     try:
-        relative_path = metadata_file_path.relative_to(backend_path)
-    except ValueError:
-        relative_path = metadata_file_path
+        project_row = db.execute(
+            text("SELECT folder_path, user_id, project_name FROM projects WHERE project_id = :pid"),
+            {"pid": project_id}
+        ).fetchone()
 
-    with sqlite3.connect(AUTH_DB_PATH) as conn:
-        cursor = conn.cursor()
-        cursor.execute(
-            """
-            INSERT INTO metadata (session_id, project_id, user_id, path)
-            VALUES (?, ?, ?, ?)
-            """,
-            (session_id, project_id, user_id_int, str(relative_path)),
-        )
-        conn.commit()
-        metadata_id = cursor.lastrowid
-        cursor.execute(
-            """
-            SELECT metadata_id, created_at
-            FROM metadata
-            WHERE metadata_id = ?
-            """,
-            (metadata_id,),
-        )
-        result = cursor.fetchone()
+        if not project_row:
+            raise ValueError("Project not found.")
 
-    return {"metadata_id": result[0], "created_at": result[1], "path": str(relative_path)}
+        folder_path, owner_user_id, project_name = project_row
+        if owner_user_id != user_id_int:
+            raise PermissionError("Project does not belong to the authenticated user.")
+
+        if folder_path:
+            project_folder = Path(folder_path)
+        else:
+            project_folder = projects_folder / f"{owner_user_id}_{project_id}_{project_name}"
+
+        if not project_folder.exists():
+            raise FileNotFoundError(f"Project folder not found on disk at {project_folder}")
+
+        metadata_folder = project_folder / "Metadata"
+        metadata_folder.mkdir(parents=True, exist_ok=True)
+
+        metadata_filename = f"metadata_{session_id}.json"
+        metadata_file_path = metadata_folder / metadata_filename
+
+        with open(metadata_file_path, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, indent=2, ensure_ascii=False)
+
+        try:
+            relative_path = metadata_file_path.relative_to(backend_path)
+        except ValueError:
+            relative_path = metadata_file_path
+
+        # Insert metadata record
+        new_metadata = Metadata(
+            session_id=session_id,
+            project_id=project_id,
+            user_id=user_id_int,
+            path=str(relative_path)
+        )
+        db.add(new_metadata)
+        db.commit()
+        db.refresh(new_metadata)
+        
+        return {
+            "metadata_id": new_metadata.metadata_id, 
+            "created_at": new_metadata.created_at, 
+            "path": new_metadata.path
+        }
+
+    finally:
+        db.close()
 
 
 def save_answers(session_id: str, answers: dict):

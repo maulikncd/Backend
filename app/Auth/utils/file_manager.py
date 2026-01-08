@@ -4,18 +4,22 @@ Handles saving blueprints, code, and website files to project folders
 """
 
 import json
-import sqlite3
+import json
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 from datetime import datetime
+
+from sqlalchemy import text
+from app.Auth.db.session import SessionLocal
 
 from app.Auth.core.config import get_settings
 
 
 def _resolve_sqlite_path(database_url: str) -> str:
     """Convert sqlite database URL to filesystem path."""
+    """Convert sqlite database URL to filesystem path."""
     if not database_url.startswith("sqlite"):
-        raise ValueError("Only sqlite is supported")
+        return None
 
     prefix = "sqlite:///"
     alt_prefix = "sqlite://"
@@ -50,31 +54,26 @@ def get_project_from_session(session_id: str, user_id: int, db=None) -> Optional
     
     Looks up the metadata table to find associated project_id,
     then fetches full project details from projects table.
-    
-    Args:
-        session_id: The session ID
-        user_id: The user ID
-        db: Optional SQLAlchemy session (not used, kept for compatibility)
-        
-    Returns:
-        Project dict with folder_path, project_id, project_name, etc.
     """
     try:
         user_id_int = int(user_id) if isinstance(user_id, str) else user_id
         
-        with sqlite3.connect(AUTH_DB_PATH) as conn:
-            cursor = conn.cursor()
+        # Use provided db session or create a new one
+        should_close = False
+        if db is None:
+            db = SessionLocal()
+            should_close = True
             
+        try:
             # First, find project_id from metadata table using session_id
-            cursor.execute(
-                """
+            # Using raw SQL since Metadata model might not be available
+            metadata_query = text("""
                 SELECT project_id FROM metadata 
-                WHERE session_id = ? AND user_id = ?
+                WHERE session_id = :session_id AND user_id = :user_id
                 ORDER BY created_at DESC LIMIT 1
-                """,
-                (session_id, user_id_int)
-            )
-            metadata_row = cursor.fetchone()
+            """)
+            result = db.execute(metadata_query, {"session_id": session_id, "user_id": user_id_int})
+            metadata_row = result.fetchone()
             
             if not metadata_row:
                 print(f"[file_manager] No metadata found for session {session_id}")
@@ -83,35 +82,39 @@ def get_project_from_session(session_id: str, user_id: int, db=None) -> Optional
             project_id = metadata_row[0]
             
             # Now fetch project details
-            cursor.execute(
-                """
+            project_query = text("""
                 SELECT project_id, user_id, project_name, folder_path, created_at
                 FROM projects
-                WHERE project_id = ? AND user_id = ?
-                """,
-                (project_id, user_id_int)
-            )
-            project_row = cursor.fetchone()
+                WHERE project_id = :project_id AND user_id = :user_id
+            """)
+            result = db.execute(project_query, {"project_id": project_id, "user_id": user_id_int})
+            project_row = result.fetchone()
             
             if not project_row:
                 print(f"[file_manager] Project {project_id} not found")
                 return None
             
-            project_id, owner_id, project_name, folder_path, created_at = project_row
+            # Unpack based on query order
+            # project_id, user_id, project_name, folder_path, created_at
+            p_id, owner_id, p_name, f_path, c_at = project_row
             
             # Determine folder path
-            if folder_path:
-                project_folder = Path(folder_path)
+            if f_path:
+                project_folder = Path(f_path)
             else:
-                project_folder = PROJECTS_FOLDER / f"{owner_id}_{project_id}_{project_name}"
+                project_folder = PROJECTS_FOLDER / f"{owner_id}_{p_id}_{p_name}"
             
             return {
-                "project_id": project_id,
+                "project_id": p_id,
                 "user_id": owner_id,
-                "project_name": project_name,
+                "project_name": p_name,
                 "folder_path": str(project_folder),
-                "created_at": created_at
+                "created_at": c_at
             }
+            
+        finally:
+            if should_close:
+                db.close()
             
     except Exception as e:
         print(f"[file_manager] Error getting project: {e}")

@@ -21,10 +21,16 @@ def create_app() -> FastAPI:
     app = FastAPI(title=settings.app_name, version="1.0.0")
 
     # CORS Configuration - Allow all origins for development
+    # CORS Configuration
+    origins = [
+        "http://localhost:5173",  # Vite default
+        "http://localhost:3000",  # React default
+        "http://localhost:5174",  # Vite alternative
+    ]
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=False,
+        allow_origins=origins,
+        allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
@@ -41,7 +47,14 @@ def create_app() -> FastAPI:
 
     @app.on_event("startup")
     def _startup() -> None:
-        init_db()
+        try:
+            init_db()
+            print("✅ Database tables initialized successfully.")
+        except Exception as e:
+            print(f"⚠️  Database connection failed: {e}")
+            print("❗ IF USING AWS RDS: Please check your Security Group 'Inbound rules'.")
+            print("   Ensure port 5432 is open for your IP address.")
+            print("   The server will start, but database operations will fail until connectivity is fixed.")
 
     return app
 
