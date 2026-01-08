@@ -26,6 +26,16 @@ except ImportError:
     HAS_COLOR_UTILS = False
     print("[HTMLGenerator] Warning: ColorUtils not available")
 
+# Import Compliance Validator for blueprint-website verification
+try:
+    from .compliance_validator import BlueprintComplianceValidator, BlueprintWebsiteTracker
+    HAS_COMPLIANCE_VALIDATOR = True
+except ImportError:
+    HAS_COMPLIANCE_VALIDATOR = False
+    BlueprintComplianceValidator = None
+    BlueprintWebsiteTracker = None
+    print("[HTMLGenerator] Warning: ComplianceValidator not available")
+
 
 class HTMLGeneratorService:
     """
@@ -117,6 +127,18 @@ class HTMLGeneratorService:
         # Load template history to avoid repetition
         template_history = self._load_template_history()
         used_variants = {}
+        
+        # ============================================================
+        # PRE-CHECK: Warn if we're running low on unique combinations
+        # ============================================================
+        if HAS_TEMPLATE_REGISTRY and CombinationTracker:
+            try:
+                stats = CombinationTracker.get_generation_stats(website_type)
+                if stats.get("duplicate_rate", 0) > 0.3:
+                    print(f"[HTMLGenerator] ⚠️ High duplication rate ({stats['duplicate_rate']*100:.0f}%) for {website_type}")
+                    print(f"[HTMLGenerator] 💡 Consider clearing history or adding more template variants")
+            except Exception as e:
+                pass  # Stats check is optional
         
         print(f"[HTMLGenerator] 📊 Project: {project_name}")
         print(f"[HTMLGenerator] 🎨 Primary Color: {colors.get('primary')}")
@@ -219,6 +241,34 @@ class HTMLGeneratorService:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(html_content)
                 print(f"[HTMLGenerator] 💾 Saved: {file_path}")
+        
+        # ============================================================
+        # COMPLIANCE VALIDATION: Check website matches blueprint
+        # ============================================================
+        if HAS_COMPLIANCE_VALIDATOR and BlueprintComplianceValidator:
+            try:
+                session_id = blueprint.get("session_id", blueprint.get("blueprint_id", "unknown"))
+                compliance_report = BlueprintComplianceValidator.generate_compliance_report(
+                    blueprint=blueprint,
+                    generated_html=pages,
+                    session_id=session_id
+                )
+                
+                # Track generation for debugging
+                if BlueprintWebsiteTracker:
+                    BlueprintWebsiteTracker.record_generation(
+                        session_id=session_id,
+                        blueprint=blueprint,
+                        generated_html=pages,
+                        used_variants=final_combination if 'final_combination' in dir() else used_variants
+                    )
+                
+                # Warn if compliance is low
+                if compliance_report["compliance_score"] < 70:
+                    print(f"[HTMLGenerator] ⚠️ LOW COMPLIANCE SCORE: {compliance_report['compliance_score']}/100")
+                    print(f"[HTMLGenerator] ⚠️ Failed checks: {compliance_report['checks_failed']}")
+            except Exception as e:
+                print(f"[HTMLGenerator] Compliance validation error: {e}")
         
         print(f"[HTMLGenerator] ✅ Generated {len(pages)} standalone pages!")
         return pages
@@ -482,6 +532,32 @@ class HTMLGeneratorService:
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(full_html)
             print(f"[HTMLGenerator] 💾 Saved: {file_path}")
+        
+        # ============================================================
+        # COMPLIANCE VALIDATION: Check website matches blueprint
+        # ============================================================
+        if HAS_COMPLIANCE_VALIDATOR and BlueprintComplianceValidator:
+            try:
+                session_id = blueprint.get("session_id", blueprint.get("blueprint_id", "unknown"))
+                compliance_report = BlueprintComplianceValidator.generate_compliance_report(
+                    blueprint=blueprint,
+                    generated_html=pages,
+                    session_id=session_id
+                )
+                
+                # Track generation
+                if BlueprintWebsiteTracker:
+                    BlueprintWebsiteTracker.record_generation(
+                        session_id=session_id,
+                        blueprint=blueprint,
+                        generated_html=pages,
+                        used_variants=final_combination if 'final_combination' in dir() else used_variants
+                    )
+                
+                if compliance_report["compliance_score"] < 70:
+                    print(f"[HTMLGenerator] ⚠️ LOW COMPLIANCE SCORE: {compliance_report['compliance_score']}/100")
+            except Exception as e:
+                print(f"[HTMLGenerator] Compliance validation error: {e}")
         
         print(f"[HTMLGenerator] ✅ Generated SINGLE PAGE website!")
         return pages
@@ -1877,7 +1953,17 @@ class HTMLGeneratorService:
         """Render Menu section for restaurants/cafes"""
         title = props.get("sectionTitle", "Our Menu")
         categories = props.get("categories", [])
-        items = props.get("items", [])
+        raw_items = props.get("items", [])
+        
+        # Normalize items to dict format
+        items = []
+        for item in raw_items:
+            if isinstance(item, str):
+                items.append({"name": item, "category": "Menu", "price": "", "description": ""})
+            elif isinstance(item, dict):
+                items.append(item)
+            else:
+                items.append({"name": str(item), "category": "Menu", "price": "", "description": ""})
         
         # Group items by category
         items_by_category = {}
@@ -2362,9 +2448,20 @@ class HTMLGeneratorService:
         for section in sections[:3]:
             links_html = ""
             for link in section.get("links", [])[:5]:
+                # Handle both string and dict link formats
+                if isinstance(link, str):
+                    link_href = "#"
+                    link_text = link
+                elif isinstance(link, dict):
+                    link_href = link.get("href", "#")
+                    link_text = link.get("text", "Link")
+                else:
+                    link_href = "#"
+                    link_text = str(link)
+                    
                 links_html += f'''
-                <a href="{link.get("href", "#")}" class="text-gray-400 hover:text-white transition-colors block">
-                    {link.get("text", "Link")}
+                <a href="{link_href}" class="text-gray-400 hover:text-white transition-colors block">
+                    {link_text}
                 </a>'''
             
             sections_html += f'''

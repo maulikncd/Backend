@@ -2,12 +2,22 @@ from typing import Dict, Any
 import random
 
 from .variant_food_grid import render as render_food_grid
+from .variant_masonry import render as render_masonry
+from .variant_carousel import render as render_carousel
+from .variant_lightbox_grid import render as render_lightbox_grid
+from .variant_fullscreen import render as render_fullscreen
 
 
 class RestaurantGalleryTemplates:
-    """Restaurant-specific gallery sections"""
+    """Restaurant gallery section - 5+ variants"""
     
-    VARIANTS = ["food-grid"]
+    VARIANTS = [
+        "food-grid",
+        "masonry",
+        "carousel",
+        "lightbox-grid",
+        "fullscreen"
+    ]
     
     @classmethod
     def render(cls, props: Dict[str, Any], colors: Dict[str, str], variant: str = None) -> str:
@@ -15,7 +25,11 @@ class RestaurantGalleryTemplates:
             variant = random.choice(cls.VARIANTS)
         
         dispatch = {
-            "food-grid": render_food_grid
+            "food-grid": render_food_grid,
+            "masonry": render_masonry,
+            "carousel": render_carousel,
+            "lightbox-grid": render_lightbox_grid,
+            "fullscreen": render_fullscreen
         }
         
         render_func = dispatch.get(variant)

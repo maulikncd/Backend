@@ -12,40 +12,40 @@
     "parallax"
   ],
   "Features": [
-    "grid-4",
-    "alternating",
-    "cards",
-    "icons",
     "icons",
     "grid-3",
     "grid-3",
     "minimal",
     "grid-4",
-    "grid-4"
+    "grid-4",
+    "grid",
+    "grid",
+    "grid-4",
+    "alternating"
   ],
   "About": [
-    "cards",
+    "timeline",
+    "timeline",
+    "centered",
+    "timeline",
+    "split-left",
+    "split-right",
+    "split-left",
     "story",
     "split-left",
-    "cards",
-    "centered",
-    "timeline",
-    "timeline",
-    "centered",
-    "timeline",
-    "split-left"
+    "cards"
   ],
   "Gallery": [
+    "masonry",
+    "carousel",
+    "carousel",
+    "carousel",
+    "masonry",
+    "lightbox",
     "minimal",
-    "masonry",
-    "masonry",
-    "full-width",
     "grid",
-    "masonry",
-    "carousel",
-    "carousel",
-    "carousel",
-    "masonry"
+    "minimal",
+    "full-width"
   ],
   "Testimonials": [
     "carousel",
@@ -60,8 +60,6 @@
     "carousel"
   ],
   "CTA": [
-    "split",
-    "pattern",
     "gradient",
     "image-bg",
     "gradient",
@@ -69,10 +67,11 @@
     "pattern",
     "centered",
     "minimal",
-    "split"
+    "split",
+    "split",
+    "pattern"
   ],
   "Contact": [
-    "centered",
     "minimal",
     "form-only",
     "centered",
@@ -81,7 +80,8 @@
     "cards",
     "map-bg",
     "map-bg",
-    "split"
+    "split",
+    "centered"
   ],
   "Services": [
     "default",
@@ -96,27 +96,27 @@
     "default"
   ],
   "Header": [
-    "dark",
-    "minimal",
-    "gradient",
-    "gradient",
-    "floating",
-    "gradient",
     "minimal",
     "centered",
     "minimal",
-    "floating"
+    "floating",
+    "gradient",
+    "dark",
+    "gradient",
+    "floating",
+    "floating",
+    "gradient"
   ],
   "Menu": [
-    "tabs",
-    "cards",
-    "tabs",
-    "accordion",
     "list",
     "tabs",
     "minimal",
     "list",
     "grid",
+    "accordion",
+    "grid",
+    "tabs",
+    "cards",
     "accordion"
   ],
   "Authentication": [
@@ -124,14 +124,14 @@
   ],
   "FAQ": [
     "accordion",
-    "tabs",
-    "tabs",
-    "accordion",
     "expandable",
     "tabs",
     "grid",
     "cards",
     "expandable",
+    "accordion",
+    "minimal",
+    "tabs",
     "accordion"
   ],
   "Games": [
@@ -182,15 +182,15 @@
   ],
   "Home": [
     "video-bg",
-    "video-bg",
-    "split",
+    "gradient",
+    "parallax",
+    "parallax",
+    "minimal",
+    "minimal",
+    "parallax",
     "centered",
-    "gradient",
-    "video-bg",
-    "gradient",
-    "parallax",
-    "parallax",
-    "minimal"
+    "split",
+    "parallax"
   ],
   "Projects": [
     "default",
@@ -228,6 +228,19 @@
     "default"
   ],
   "Store": [
+    "default",
+    "default"
+  ],
+  "Reservation": [
+    "default"
+  ],
+  "Footer": [
+    "default",
+    "default",
+    "default",
+    "default"
+  ],
+  "Updates": [
     "default"
   ]
 }

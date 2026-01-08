@@ -5,7 +5,7 @@ Prevents repetition across generations
 
 import os
 import json
-from typing import Dict, List, Set, Optional
+from typing import Dict, List, Set, Optional, Any
 from datetime import datetime
 import random
 
@@ -21,7 +21,7 @@ class CombinationTracker:
     """
     
     HISTORY_FILE = os.path.join(os.path.dirname(__file__), ".combination_history.json")
-    MAX_HISTORY_PER_TYPE = 20  # Keep last 20 generations
+    MAX_HISTORY_PER_TYPE = 10  # Keep last 10 generations for uniqueness check
     
     _current_session_variants = {} # Temporary buffer for current generation
     
@@ -188,6 +188,143 @@ class CombinationTracker:
         else:
             if os.path.exists(cls.HISTORY_FILE):
                 os.remove(cls.HISTORY_FILE)
+    
+    # ============================================================
+    # WEBSITE UNIQUENESS VERIFICATION
+    # ============================================================
+    
+    @classmethod
+    def generate_combination_hash(cls, used_variants: Dict[str, str]) -> str:
+        """
+        Generate a hash representing the website's template combination.
+        
+        Args:
+            used_variants: Dict of component_type -> variant_name
+            
+        Returns:
+            String hash representing this unique combination
+        """
+        import hashlib
+        
+        # Sort keys for consistent hashing
+        sorted_items = sorted(used_variants.items())
+        combination_str = "|".join([f"{k}:{v}" for k, v in sorted_items])
+        
+        # Create a short hash
+        hash_obj = hashlib.md5(combination_str.encode())
+        return hash_obj.hexdigest()[:12]
+    
+    @classmethod
+    def is_duplicate_combination(cls, website_type: str, used_variants: Dict[str, str], lookback: int = 10) -> bool:
+        """
+        Check if this exact combination was used in recent generations.
+        
+        Args:
+            website_type: Type of website
+            used_variants: Dict of component_type -> variant_name
+            lookback: How many generations to check (default: 10)
+            
+        Returns:
+            True if this is a duplicate, False if unique
+        """
+        history = cls.load_history()
+        records = history.get(website_type, [])
+        
+        # Generate hash for current combination
+        current_hash = cls.generate_combination_hash(used_variants)
+        
+        # Check against last N generations
+        for record in records[-lookback:]:
+            stored_variants = record.get("variants", {})
+            stored_hash = cls.generate_combination_hash(stored_variants)
+            
+            if current_hash == stored_hash:
+                print(f"[CombinationTracker] ⚠️ DUPLICATE detected! Hash: {current_hash}")
+                return True
+        
+        print(f"[CombinationTracker] ✅ Unique combination. Hash: {current_hash}")
+        return False
+    
+    @classmethod
+    def get_unique_variants_avoiding_duplicates(
+        cls,
+        website_type: str,
+        component_variants: Dict[str, List[str]],
+        max_attempts: int = 5
+    ) -> Dict[str, str]:
+        """
+        Get a complete unique combination that doesn't match any in last 10 generations.
+        
+        Args:
+            website_type: Type of website
+            component_variants: Dict of component_type -> list of variants
+            max_attempts: How many times to try before giving up
+            
+        Returns:
+            Dict of component_type -> selected variant (guaranteed unique if possible)
+        """
+        for attempt in range(max_attempts):
+            # Use different lookback values to get more variety
+            lookback = 3 + (attempt * 2)  # 3, 5, 7, 9, 11
+            
+            combination = cls.get_unique_combination(
+                website_type=website_type,
+                component_variants=component_variants,
+                lookback=min(lookback, cls.MAX_HISTORY_PER_TYPE)
+            )
+            
+            # Check if this exact combination exists
+            if not cls.is_duplicate_combination(website_type, combination):
+                print(f"[CombinationTracker] 🎯 Found unique combination on attempt {attempt + 1}")
+                return combination
+            
+            print(f"[CombinationTracker] 🔄 Attempt {attempt + 1} produced duplicate, retrying...")
+        
+        # If all attempts failed, still return the last combination (with warning)
+        print(f"[CombinationTracker] ⚠️ Could not find unique combination after {max_attempts} attempts")
+        return combination
+    
+    @classmethod
+    def get_generation_stats(cls, website_type: str = None) -> Dict[str, Any]:
+        """
+        Get statistics about generation history.
+        
+        Args:
+            website_type: Optional - get stats for specific type, or all if None
+            
+        Returns:
+            Dict with statistics
+        """
+        history = cls.load_history()
+        
+        if website_type:
+            records = history.get(website_type, [])
+            unique_hashes = set()
+            for record in records:
+                hash_val = cls.generate_combination_hash(record.get("variants", {}))
+                unique_hashes.add(hash_val)
+            
+            return {
+                "website_type": website_type,
+                "total_generations": len(records),
+                "unique_combinations": len(unique_hashes),
+                "duplicate_rate": 1 - (len(unique_hashes) / max(len(records), 1))
+            }
+        else:
+            stats = {}
+            for wtype, records in history.items():
+                unique_hashes = set()
+                for record in records:
+                    hash_val = cls.generate_combination_hash(record.get("variants", {}))
+                    unique_hashes.add(hash_val)
+                
+                stats[wtype] = {
+                    "total_generations": len(records),
+                    "unique_combinations": len(unique_hashes),
+                    "duplicate_rate": 1 - (len(unique_hashes) / max(len(records), 1))
+                }
+            
+            return stats
 
 
 # Export

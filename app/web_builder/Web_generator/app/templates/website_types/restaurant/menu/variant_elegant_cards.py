@@ -1,5 +1,14 @@
 from typing import Dict, Any, List
 
+def _normalize_item(item) -> Dict[str, Any]:
+    """Normalize menu item to dict format - handles string or dict input"""
+    if isinstance(item, str):
+        return {"name": item, "category": "Menu", "price": "", "description": "", "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400"}
+    elif isinstance(item, dict):
+        return item
+    else:
+        return {"name": str(item), "category": "Menu", "price": "", "description": "", "image": ""}
+
 def render(props: Dict[str, Any], colors: Dict[str, str]) -> str:
     """
     Elegant Cards - Menu with elegant card layout,
@@ -7,7 +16,10 @@ def render(props: Dict[str, Any], colors: Dict[str, str]) -> str:
     """
     title = props.get("sectionTitle", props.get("title", "Our Menu"))
     subtitle = props.get("subtitle", "Carefully crafted dishes using the finest ingredients")
-    menu_items = props.get("menuItems", props.get("items", _get_default_menu()))
+    raw_items = props.get("menuItems", props.get("items", _get_default_menu()))
+    
+    # Normalize all items to dict format
+    menu_items = [_normalize_item(item) for item in raw_items]
     
     primary = colors.get("primary", "#C9A962")
     bg = colors.get("background", "#0A0A0A")

@@ -1,0 +1,1157 @@
+{
+  "projectId": "df839d3c-4070-4a76-9fbe-63e4c46366b8",
+  "projectName": "Maulik",
+  "projectType": "restaurant",
+  "session_id": "sess_96247b4f",
+  "created_at": "2026-01-08T17:13:16.057598",
+  "metadata": {
+    "session_id": "sess_96247b4f",
+    "timestamp": "2026-01-08T17:13:14.997752",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Maulik",
+    "prop_answers": {
+      "businessName": "maulik",
+      "colorTheme": "Tech Purple - Modern purple gradients",
+      "menuItems": "fsda",
+      "title": "fdsafsa",
+      "name": "fdsafsa",
+      "description": "fdsafdsa",
+      "image": "Product showcase",
+      "subtitle": "fdsa",
+      "story": "fsda"
+    },
+    "user_hero": {
+      "title": "fdsafsa",
+      "subtitle": "fdsa",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Maulik",
+      "target_audience": "maulik",
+      "goals": "fsda",
+      "services": [],
+      "style_preferences": [
+        "fdsafsa",
+        "Product showcase navigation",
+        "fsda fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "fsda",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "maulik"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Tech Purple - Modern purple gradients"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsda"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsa"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafdsa"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "Product showcase"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsda"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "maulik",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Tech Purple - Modern purple gradients",
+          "question": ""
+        },
+        "q3": {
+          "answer": "fsda",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fdsafsa",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fdsafsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fdsafdsa",
+          "question": ""
+        },
+        "q7": {
+          "answer": "Product showcase",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fsda",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "maulik",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "title": "fdsafsa",
+        "name": "fdsafsa",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#8B5CF6",
+          "#7C3AED",
+          "#10B981",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Tech Purple - Modern purple gradients",
+      "font_style": "fsda",
+      "navigation_style": "Product showcase"
+    },
+    "features": [
+      "About",
+      "Hero",
+      "Our Menu",
+      "Gallery",
+      "Reservation",
+      "Footer",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_96247b4f",
+      "project_id": 14,
+      "timestamp": "2026-01-08T11:43:14.629943Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the provided user responses, it seems that the initial intention was to create a Restaurant Site.",
+        "answers": {
+          "q1": "maulik",
+          "q2": "Tech Purple - Modern purple gradients",
+          "q3": "fsda",
+          "q4": "fdsafsa",
+          "q5": "fdsafsa",
+          "q6": "fdsafdsa",
+          "q7": "Product showcase",
+          "q8": "fdsa",
+          "q9": "fsda"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Your restaurant's name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "What colors represent your brand?",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Enter your information for 'Menuitems':",
+            "type": "text",
+            "prop_key": "menuItems",
+            "section": "menu"
+          },
+          {
+            "id": "q4",
+            "question": "Complete: '[Your Brand] - ____'",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Name'?",
+            "type": "text",
+            "prop_key": "name",
+            "section": "footer"
+          },
+          {
+            "id": "q6",
+            "question": "Enter your information for 'Description':",
+            "type": "text",
+            "prop_key": "description",
+            "section": "about"
+          },
+          {
+            "id": "q7",
+            "question": "Choose your hero visual style:",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Product showcase",
+              "Location/space",
+              "Abstract/artistic",
+              "Team/people",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q8",
+            "question": "What's your tagline or slogan?",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q9",
+            "question": "Share your journey with visitors:",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          },
+          {
+            "id": "q10",
+            "question": "What would you like to say for 'Mission'?",
+            "type": "text",
+            "prop_key": "mission",
+            "section": "about"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "menuItems",
+          "title",
+          "name",
+          "description",
+          "image",
+          "subtitle",
+          "story",
+          "mission"
+        ],
+        "color_preferences": "Tech Purple - Modern purple gradients",
+        "features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#3F004D",
+              "#6543D7",
+              "#964BFF",
+              "#B77CFF",
+              "#F2B6DC"
+            ],
+            "title": "Cosmic Shift",
+            "inspiration": "Ethereal exploration of celestial hues"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#4C0099",
+              "#6600CC",
+              "#8C0099",
+              "#C000B2",
+              "#FF99CC"
+            ],
+            "title": "Digital Mirage",
+            "inspiration": "Surreal journey through the digital veil"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#4C3388",
+              "#6A49D8",
+              "#B35CFF",
+              "#8F6FFB",
+              "#F8E5FA"
+            ],
+            "title": "Luminescent Depths",
+            "inspiration": "Glowing exploration of the ocean's heart"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#6F0A87",
+              "#A03BD4",
+              "#7A52A5",
+              "#8C67E2",
+              "#D6C2E2"
+            ],
+            "title": "Galactic Oasis",
+            "inspiration": "Exotic escape to a starry retreat"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#4E005B",
+              "#6C00CC",
+              "#9833FF",
+              "#BB55C6",
+              "#FF99C2"
+            ],
+            "title": "Cyberstorm",
+            "inspiration": "Rapid descent into a digital whirlwind"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#3C005A",
+              "#5C0088",
+              "#A33CFF",
+              "#C36AF7",
+              "#FFC2E2"
+            ],
+            "title": "Fusion Core",
+            "inspiration": "Searing energy emanating from a digital nucleus"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#5600AA",
+              "#7700CC",
+              "#9A45D9",
+              "#C56AFF",
+              "#F2D6D7"
+            ],
+            "title": "Echo Chamber",
+            "inspiration": "Haunted reverberations of abandoned technology"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#4400CD",
+              "#6600D5",
+              "#9900DE",
+              "#A000F4",
+              "#D4B5E3"
+            ],
+            "title": "Quantum Leap",
+            "inspiration": "Sudden transition into a strange new world"
+          }
+        ],
+        "selected_palette": {
+          "id": "p5",
+          "colors": [
+            "#4E005B",
+            "#6C00CC",
+            "#9833FF",
+            "#BB55C6",
+            "#FF99C2"
+          ],
+          "title": "Cyberstorm",
+          "inspiration": "Rapid descent into a digital whirlwind"
+        },
+        "selected_features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "seo": {
+    "title": "Maulik | restaurant",
+    "description": "Maulik offers top-quality restaurant services. Contact us today!",
+    "keywords": [
+      "maulik",
+      "restaurant",
+      "restaurant"
+    ]
+  },
+  "theme": {
+    "themeName": "Custom Theme",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#8B5CF6",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#8B5CF6",
+      "secondary": "#7C3AED",
+      "accent": "#10B981",
+      "background": "#0F172A",
+      "surface": "#F5F5F5",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #8B5CF620, #7C3AED20)",
+      "accent": "linear-gradient(90deg, #8B5CF6, #10B981)"
+    }
+  },
+  "components": {
+    "comp-home": {
+      "id": "home",
+      "type": "Home",
+      "name": "Home Section",
+      "props": {
+        "layoutVariant": "parallax-hero",
+        "title": "fdsafsa",
+        "subtitle": "fdsa",
+        "description": "fdsafdsa",
+        "cta": "Get Started",
+        "ctaSecondary": "Learn More",
+        "backgroundStyle": "gradient-mesh",
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "image": "Product showcase",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 1000,
+        "delay": 0,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Section",
+      "props": {
+        "layoutVariant": "stats-highlight",
+        "title": "fdsafsa",
+        "story": "fsda",
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          },
+          {
+            "value": "5+",
+            "label": "Years Experience"
+          },
+          {
+            "value": "50+",
+            "label": "Projects Completed"
+          }
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Home Section",
+      "props": {
+        "layoutVariant": "default",
+        "title": "fdsafsa",
+        "description": "fdsafdsa",
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-our_menu": {
+      "id": "our_menu",
+      "type": "Menu",
+      "name": "Menu Section",
+      "props": {
+        "layoutVariant": "accordion-style",
+        "sectionTitle": "Our Menu",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": [
+          {
+            "name": "Signature Dish",
+            "description": "Our chef's special creation",
+            "price": "$15.99",
+            "category": "Mains"
+          },
+          {
+            "name": "Fresh Salad",
+            "description": "Garden fresh vegetables",
+            "price": "$8.99",
+            "category": "Starters"
+          },
+          {
+            "name": "Sweet Delight",
+            "description": "Homemade dessert",
+            "price": "$6.99",
+            "category": "Desserts"
+          }
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "title": "fdsafsa",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Gallery Section",
+      "props": {
+        "layoutVariant": "masonry",
+        "title": "fdsafsa",
+        "subtitle": "fdsa",
+        "categories": [
+          "All",
+          "Featured",
+          "Recent"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+          "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
+          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-reservation": {
+      "id": "reservation",
+      "type": "Features",
+      "name": "Features Section",
+      "props": {
+        "layoutVariant": "carousel-features",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Maulik special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "title": "fdsafsa",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-footer": {
+      "id": "footer",
+      "type": "Features",
+      "name": "Features Section",
+      "props": {
+        "layoutVariant": "carousel-features",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Maulik special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Quality Service",
+            "description": "We provide exceptional quality service tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Expert Team",
+            "description": "We provide exceptional expert team tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "24/7 Support",
+            "description": "We provide exceptional 24/7 support tailored to your needs."
+          },
+          {
+            "icon": "🚀",
+            "title": "Best Prices",
+            "description": "We provide exceptional best prices tailored to your needs."
+          }
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "title": "fdsafsa",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-faq": {
+      "id": "faq",
+      "type": "FAQ",
+      "name": "FAQ Section",
+      "props": {
+        "layoutVariant": "default",
+        "sectionTitle": "Frequently Asked Questions",
+        "faqs": [
+          {
+            "question": "How do I get started?",
+            "answer": "Simply sign up and explore our services."
+          },
+          {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept all major credit cards and PayPal."
+          },
+          {
+            "question": "How can I contact support?",
+            "answer": "Reach out via our contact form or email us directly."
+          }
+        ],
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "title": "fdsafsa",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-contact": {
+      "id": "contact",
+      "type": "Contact",
+      "name": "Contact Section",
+      "props": {
+        "layoutVariant": "card-style",
+        "title": "fdsafsa",
+        "subtitle": "fdsa",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Email Address",
+            "required": true
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "placeholder": "Phone Number",
+            "required": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Your Message",
+            "required": true,
+            "rows": 4
+          }
+        ],
+        "ctaText": "Send Message",
+        "businessName": "maulik",
+        "name": "fdsafsa",
+        "colorTheme": "Tech Purple - Modern purple gradients",
+        "menuItems": "fsda",
+        "description": "fdsafdsa",
+        "image": "Product showcase",
+        "story": "fsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "componentOrder": [
+    "comp-home",
+    "comp-about",
+    "comp-hero",
+    "comp-our_menu",
+    "comp-gallery",
+    "comp-reservation",
+    "comp-footer",
+    "comp-faq",
+    "comp-contact"
+  ],
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Maulik",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "label": "Home",
+          "href": "#home"
+        },
+        {
+          "label": "About",
+          "href": "#about"
+        },
+        {
+          "label": "Menu",
+          "href": "#our_menu"
+        },
+        {
+          "label": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "label": "Features",
+          "href": "#reservation"
+        },
+        {
+          "label": "Features",
+          "href": "#footer"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "cta": {
+        "text": "Contact Us",
+        "href": "#contact",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Maulik",
+      "tagline": "Tech Purple - Modern purple gradients",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "label": "Home",
+              "href": "#home"
+            },
+            {
+              "label": "About",
+              "href": "#about"
+            },
+            {
+              "label": "Menu",
+              "href": "#our_menu"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "label": "Facebook",
+              "href": "#"
+            },
+            {
+              "label": "Instagram",
+              "href": "#"
+            },
+            {
+              "label": "Twitter",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Maulik. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          600,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    },
+    "animationConfig": {
+      "easing": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "hoverEffect": "scale"
+    }
+  },
+  "designVision": {
+    "design_theme": "modern",
+    "hero_concept": "Clean and professional hero with clear call-to-action",
+    "visual_personality": "Professional and trustworthy"
+  },
+  "quality": {
+    "score": 90,
+    "grade": "A",
+    "issues_count": 1,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "websiteType": "restaurant",
+  "blueprint_id": 70
+}

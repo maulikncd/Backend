@@ -1,0 +1,984 @@
+{
+  "projectName": "Fffff",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Fffff Restaurant",
+    "description": "Experience the best culinary delights at Fffff Restaurant",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Warm & Inviting",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#1E293B",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#1E293B",
+      "secondary": "#64748B",
+      "accent": "#3B82F6",
+      "background": "#FFFFFF",
+      "surface": "#F8FAFB",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(45deg, #1E293B, #64748B)",
+      "accent": "linear-gradient(45deg, #3B82F6, #1E293B)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "split-left-text",
+        "title": "fdsafsad",
+        "subtitle": "fsadsda",
+        "description": "Indulge in our carefully crafted dishes, made with fresh and local ingredients",
+        "cta": "View Menu",
+        "ctaSecondary": "View Our Menu",
+        "backgroundStyle": "gradient-mesh",
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "images": "fdsafsa",
+        "mission": "fdafdsa"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Us",
+      "props": {
+        "title": "fdsafsad",
+        "story": "At Fffff Restaurant, we are passionate about serving the best culinary delights. Our chef's story began with a passion for food and a desire to create a unique dining experience. We use only the freshest and local ingredients to craft our dishes.",
+        "milestones": [
+          {
+            "year": "2010",
+            "title": "Founded",
+            "description": "Fffff Restaurant was founded by our passionate chef"
+          },
+          {
+            "year": "2015",
+            "title": "Expanded",
+            "description": "We expanded our restaurant to accommodate more guests"
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          }
+        ],
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "images": "fdsafsa",
+        "cta": "View Menu",
+        "subtitle": "fsadsda",
+        "mission": "fdafdsa",
+        "layoutVariant": "split-content"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "sectionTitle": "fas",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": "fdsafsa",
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "images": "fdsafsa",
+        "cta": "View Menu",
+        "subtitle": "fsadsda",
+        "mission": "fdafdsa",
+        "title": "fdsafsad",
+        "layoutVariant": "list-view"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Our Gallery",
+      "props": {
+        "title": "fdsafsad",
+        "subtitle": "fsadsda",
+        "categories": [
+          "Dishes",
+          "Restaurant"
+        ],
+        "images": "fdsafsa",
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "cta": "View Menu",
+        "mission": "fdafdsa",
+        "layoutVariant": "carousel"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-reservation": {
+      "id": "reservation",
+      "type": "CTA",
+      "name": "Reservations",
+      "props": {
+        "title": "fdsafsad",
+        "description": "Book your table now and experience the best of culinary delights",
+        "ctaText": "Reserve Now",
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "images": "fdsafsa",
+        "cta": "View Menu",
+        "subtitle": "fsadsda",
+        "mission": "fdafdsa",
+        "layoutVariant": "floating-card"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-footer": {
+      "id": "footer",
+      "type": "Footer",
+      "name": "Footer",
+      "props": {
+        "logo": "Fffff Restaurant",
+        "tagline": "Savor the Flavor",
+        "sections": [
+          {
+            "title": "Quick Links",
+            "links": [
+              "Home",
+              "About",
+              "Menu"
+            ]
+          },
+          {
+            "title": "Connect",
+            "links": [
+              "Facebook",
+              "Twitter",
+              "Instagram"
+            ]
+          }
+        ],
+        "copyright": " 2025 Fffff Restaurant. All rights reserved.",
+        "businessName": "fffff",
+        "name": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "images": "fdsafsa",
+        "cta": "View Menu",
+        "subtitle": "fsadsda",
+        "mission": "fdafdsa",
+        "title": "fdsafsad"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Fffff Restaurant",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Menu",
+          "href": "#menu"
+        },
+        {
+          "text": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "text": "Reservations",
+          "href": "#reservation"
+        }
+      ],
+      "cta": {
+        "text": "Reserve a Table",
+        "href": "#reservation",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Fffff Restaurant",
+      "tagline": "Savor the Flavor",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            "Home",
+            "About",
+            "Menu"
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            "Facebook",
+            "Twitter",
+            "Instagram"
+          ]
+        }
+      ],
+      "copyright": " 2025 Fffff Restaurant. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Warm & Inviting",
+    "hero_concept": "A warm and inviting hero section that showcases our culinary delights",
+    "visual_personality": "A warm and elegant visual style that reflects our passion for food"
+  },
+  "projectId": "7baad6fc-3b4f-4cf7-9b63-6a0d15cdf7c8",
+  "session_id": "sess_907e4dbb",
+  "created_at": "2026-01-08T16:25:23.803259",
+  "websiteType": "restaurant",
+  "metadata": {
+    "session_id": "sess_907e4dbb",
+    "timestamp": "2026-01-08T16:25:19.501519",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Fffff",
+    "prop_answers": {
+      "businessName": "fffff",
+      "colorTheme": "Minimal B&W - Black and white sophistication",
+      "sectionTitle": "fas",
+      "items": "fdsafsa",
+      "images": "fdsafsa",
+      "cta": "View Menu",
+      "subtitle": "fsadsda",
+      "mission": "fdafdsa",
+      "title": "fdsafsad"
+    },
+    "user_hero": {
+      "title": "fdsafsad",
+      "subtitle": "fsadsda",
+      "cta": "View Menu"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Fffff",
+      "target_audience": "fffff",
+      "goals": "fas",
+      "services": [],
+      "style_preferences": [
+        "fdsafsa",
+        "fsadsda navigation",
+        "fdsafsad fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "fffff"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Minimal B&W - Black and white sophistication"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "fas"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsa"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "View Menu"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsadsda"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdafdsa"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsad"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "fffff",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Minimal B&W - Black and white sophistication",
+          "question": ""
+        },
+        "q3": {
+          "answer": "fas",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fdsafsa",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fdsafsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "View Menu",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fsadsda",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fdafdsa",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fdsafsad",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "fffff",
+        "colorTheme": "Minimal B&W - Black and white sophistication",
+        "sectionTitle": "fas",
+        "items": "fdsafsa",
+        "images": "fdsafsa",
+        "cta": "View Menu",
+        "subtitle": "fsadsda",
+        "mission": "fdafdsa",
+        "title": "fdsafsad"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#1E293B",
+          "#64748B",
+          "#3B82F6",
+          "#F8FAFB",
+          "#FFFFFF"
+        ]
+      },
+      "color_theme_text": "Minimal B&W - Black and white sophistication",
+      "font_style": "fdsafsad",
+      "navigation_style": "fsadsda"
+    },
+    "features": [
+      "About",
+      "Hero",
+      "Our Menu",
+      "Gallery",
+      "Reservation",
+      "Footer",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_907e4dbb",
+      "project_id": 12,
+      "timestamp": "2026-01-08T10:55:19.365889Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on your responses, it appears you are not giving meaningful answers to my questions. However, based",
+        "answers": {
+          "q1": "fffff",
+          "q2": "Minimal B&W - Black and white sophistication",
+          "q3": "fas",
+          "q4": "fdsafsa",
+          "q5": "fdsafsa",
+          "q6": "View Menu",
+          "q7": "fsadsda",
+          "q8": "fdafdsa",
+          "q9": "fdsafsad"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your restaurant name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Which vibe matches your brand?",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What would you like to say for 'Sectiontitle'?",
+            "type": "text",
+            "prop_key": "sectionTitle",
+            "section": "about"
+          },
+          {
+            "id": "q4",
+            "question": "Tell us more about your Items for the about:",
+            "type": "text",
+            "prop_key": "items",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Images'?",
+            "type": "text",
+            "prop_key": "images",
+            "section": "gallery"
+          },
+          {
+            "id": "q6",
+            "question": "What action should visitors take?",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Learn More",
+              "Book Now",
+              "Contact Us",
+              "Shop Now",
+              "Get Started",
+              "Explore",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q7",
+            "question": "Your brand's promise in one sentence:",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "Tell us more about your Mission for the about:",
+            "type": "text",
+            "prop_key": "mission",
+            "section": "about"
+          },
+          {
+            "id": "q9",
+            "question": "Write your website's main headline:",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q10",
+            "question": "What does your agency do?",
+            "type": "checkbox",
+            "prop_key": "services",
+            "section": "services",
+            "options": [
+              "Web Design/Development",
+              "Branding & Identity",
+              "SEO/Content",
+              "Digital Marketing",
+              "Video Production",
+              "Social Media",
+              "Consulting"
+            ]
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "sectionTitle",
+          "items",
+          "images",
+          "cta",
+          "subtitle",
+          "mission",
+          "title",
+          "services"
+        ],
+        "features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#ffffff",
+              "#f7f7f7",
+              "#c5c5c5",
+              "#b3b3b3",
+              "#949494"
+            ],
+            "title": "Frozen Tears",
+            "inspiration": "Echoes of winter calmness."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#ffffff",
+              "#d3d3d3",
+              "#ccc",
+              "#a6a6a6",
+              "#808080"
+            ],
+            "title": "Snowy Canvas",
+            "inspiration": "A pristine blank slate."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#ffffff",
+              "#f2f2f2",
+              "#e5e5e5",
+              "#c0c0c0",
+              "#a9a9a9"
+            ],
+            "title": "Pure Frost",
+            "inspiration": "An icy, delicate beauty."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#f7f7f7",
+              "#f5f5f5",
+              "#e9e9e9",
+              "#e4e4e4",
+              "#cccccc"
+            ],
+            "title": "Soft Hush",
+            "inspiration": "A soothing gentle calm."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#f9f9f9",
+              "#ededed",
+              "#ebebeb",
+              "#dfdfdf",
+              "#d7d7d7"
+            ],
+            "title": "Icy Horizon",
+            "inspiration": "A distant glimmer of hope."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#ffffff",
+              "#e5e5e5",
+              "#c9c9c9",
+              "#bababa",
+              "#979797"
+            ],
+            "title": "Blank Page",
+            "inspiration": "A creative canvas awaits."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#fbfbfb",
+              "#f5f5f5",
+              "#e4e4e4",
+              "#dcdcdc",
+              "#cacaca"
+            ],
+            "title": "Frozen Lagoon",
+            "inspiration": "A serene natural wonder."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#fcfcfc",
+              "#f1f1f1",
+              "#eaeaea",
+              "#dddada",
+              "#cdcdcd"
+            ],
+            "title": "Clear Sky",
+            "inspiration": "A limitless blue horizon."
+          }
+        ],
+        "selected_palette": {
+          "id": "p3",
+          "colors": [
+            "#ffffff",
+            "#f2f2f2",
+            "#e5e5e5",
+            "#c0c0c0",
+            "#a9a9a9"
+          ],
+          "title": "Pure Frost",
+          "inspiration": "An icy, delicate beauty."
+        },
+        "selected_features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-reservation",
+    "comp-footer"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 68
+}

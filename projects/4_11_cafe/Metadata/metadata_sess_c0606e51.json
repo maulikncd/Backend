@@ -1,0 +1,413 @@
+{
+  "user_id": 4,
+  "session_id": "sess_c0606e51",
+  "project_id": 11,
+  "timestamp": "2026-01-08T10:52:18.935382Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 4,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the user's input, we can identify the following relevant points:\n\n1. The user initially",
+    "answers": {
+      "q1": "foodie adda",
+      "q2": "Elegant Gold - Black and gold - fine dining sophistication",
+      "q3": "fdsa",
+      "q4": "fdsafsad",
+      "q5": "Product showcase",
+      "q6": "fdsa",
+      "q7": "fsad",
+      "q8": "fdsafsda",
+      "q9": "fdsfsa"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your restaurant name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Which vibe matches your brand?",
+        "type": "radio",
+        "options": [
+          "Elegant Gold - Black and gold - fine dining sophistication",
+          "Fresh Garden - Greens and earth tones - farm to table vibe",
+          "Warm Terracotta - Warm oranges and browns - rustic comfort",
+          "Ocean Blue - Blues and whites - coastal fresh feel"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Tell us more about your Images for the gallery:",
+        "type": "text",
+        "prop_key": "images",
+        "section": "gallery"
+      },
+      {
+        "id": "q4",
+        "question": "What would you like to say for 'Mission'?",
+        "type": "text",
+        "prop_key": "mission",
+        "section": "about"
+      },
+      {
+        "id": "q5",
+        "question": "Choose your hero visual style:",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Team/people",
+          "Product showcase",
+          "Location/space",
+          "Abstract/artistic",
+          "Auto-select for me"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "What makes you special? (short phrase)",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q7",
+        "question": "What would you like to say for 'Tagline'?",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      },
+      {
+        "id": "q8",
+        "question": "What inspired you to start?",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      },
+      {
+        "id": "q9",
+        "question": "Enter your information for 'Name':",
+        "type": "text",
+        "prop_key": "name",
+        "section": "footer"
+      },
+      {
+        "id": "q10",
+        "question": "Enter your information for 'Phone':",
+        "type": "text",
+        "prop_key": "phone",
+        "section": "footer"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "images",
+      "mission",
+      "image",
+      "subtitle",
+      "tagline",
+      "story",
+      "name",
+      "phone"
+    ],
+    "features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Food and drink offerings.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "reservation",
+        "name": "Reservation",
+        "description": "Reservation section.",
+        "benefit": "Enhances website",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#FFC107",
+          "#964B00",
+          "#FF99CC",
+          "#8B9467",
+          "#F0F0F0"
+        ],
+        "title": "Spice Bazaar",
+        "inspiration": "Rich aromas of a bustling market"
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#FFA07A",
+          "#3E8E41",
+          "#FF9966",
+          "#964B00",
+          "#F5F5F5"
+        ],
+        "title": "Ginger Fusion",
+        "inspiration": "Vibrant fusion of international flavors"
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#FFC400",
+          "#2E865F",
+          "#66CD00",
+          "#FFA07A",
+          "#F2F2F2"
+        ],
+        "title": "Savory Sizzle",
+        "inspiration": "Sizzling plates of savory delight"
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#00BFFF",
+          "#FFC0CB",
+          "#FFFF99",
+          "#808080",
+          "#C5C3C5"
+        ],
+        "title": "Dessert Dream",
+        "inspiration": "Sweet treats that soothe the soul"
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#C6F4C5",
+          "#3B5998",
+          "#F36D8F",
+          "#FFA8C4",
+          "#E4E2E5"
+        ],
+        "title": "Fresh Fusion",
+        "inspiration": "Healthy bites that bring people together"
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#A52A2A",
+          "#FF9900",
+          "#F5DEB3",
+          "#964B00",
+          "#D3D3D3"
+        ],
+        "title": "Saffron Nights",
+        "inspiration": "Warm, exotic evenings and spices"
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#F5D6CE",
+          "#8B9467",
+          "#B38867",
+          "#FFC500",
+          "#F7F7F7"
+        ],
+        "title": "Bistro Chic",
+        "inspiration": "Sophisticated comfort food for connoisseurs"
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#34A850",
+          "#8E44AD",
+          "#FFA07A",
+          "#F2C464",
+          "#D3D3D3"
+        ],
+        "title": "Tropical Oasis",
+        "inspiration": "Fresh, vibrant flavors of an exotic getaway"
+      }
+    ],
+    "selected_palette": {
+      "id": "p3",
+      "colors": [
+        "#FFC400",
+        "#2E865F",
+        "#66CD00",
+        "#FFA07A",
+        "#F2F2F2"
+      ],
+      "title": "Savory Sizzle",
+      "inspiration": "Sizzling plates of savory delight"
+    },
+    "selected_features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Food and drink offerings.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "reservation",
+        "name": "Reservation",
+        "description": "Reservation section.",
+        "benefit": "Enhances website",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Food and drink offerings.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "reservation",
+      "name": "Reservation",
+      "description": "Reservation section.",
+      "benefit": "Enhances website",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Food and drink offerings.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "reservation",
+      "name": "Reservation",
+      "description": "Reservation section.",
+      "benefit": "Enhances website",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    }
+  ],
+  "final_metadata_ready": true
+}

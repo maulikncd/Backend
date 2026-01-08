@@ -1,0 +1,1337 @@
+{
+  "projectName": "Gamezilla",
+  "projectType": "gaming",
+  "seo": {
+    "title": "Epic Gaming Experience",
+    "description": "Immerse in legendary games and level up with Gamezilla",
+    "keywords": [
+      "gaming",
+      "epic",
+      "legendary",
+      "competitive",
+      "immersive world"
+    ]
+  },
+  "theme": {
+    "themeName": "Dark Neon",
+    "themeMood": "Bold & Dynamic",
+    "primaryColor": "#00F0FF",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#00F0FF",
+      "secondary": "#FF00E4",
+      "accent": "#00FF88",
+      "background": "#0A0A1A",
+      "surface": "#1A1A2E",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(90deg, #00F0FF 0%, #FF00E4 100%)",
+      "accent": "linear-gradient(90deg, #00FF88 0%, #00F0FF 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "fullscreen-overlay",
+        "title": "Level Up with Gamezilla",
+        "subtitle": "Enter the immersive world of epic gaming",
+        "description": "Experience legendary games and competitive gameplay with Gamezilla. Join now and level up your gaming experience.",
+        "cta": "Join Now",
+        "ctaSecondary": "Join the Community",
+        "backgroundStyle": "gradient-mesh",
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Gamezilla",
+      "props": {
+        "title": "Our Mission",
+        "story": "Gamezilla was founded with a mission to innovate gaming and provide an immersive experience to our community. We strive for technical excellence and community passion.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founding",
+            "description": "Gamezilla was founded by a team of gaming enthusiasts."
+          },
+          {
+            "year": "2022",
+            "title": "First Game Release",
+            "description": "Gamezilla released its first game, which became a huge success."
+          }
+        ],
+        "stats": [
+          {
+            "value": "1000+",
+            "label": "Active Players"
+          },
+          {
+            "value": "500+",
+            "label": "Games Played"
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa",
+        "layoutVariant": "team-focus"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-games": {
+      "id": "games",
+      "type": "Games",
+      "name": "Our Games",
+      "props": {
+        "sectionTitle": "Explore Our Games",
+        "sectionSubtitle": "Immerse in legendary games and level up with Gamezilla",
+        "gameList": [
+          {
+            "icon": "🎮",
+            "title": "Game 1",
+            "description": "This is a legendary game."
+          },
+          {
+            "icon": "👾",
+            "title": "Game 2",
+            "description": "This is an epic game."
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-community": {
+      "id": "community",
+      "type": "Community",
+      "name": "Our Community",
+      "props": {
+        "sectionTitle": "Join Our Community",
+        "sectionSubtitle": "Connect with other gamers and level up your gaming experience",
+        "communityList": [
+          {
+            "icon": "👥",
+            "title": "Forums",
+            "description": "Discuss games and connect with other gamers."
+          },
+          {
+            "icon": "📢",
+            "title": "News",
+            "description": "Stay up-to-date with the latest gaming news."
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-why-choose-us": {
+      "id": "why-choose-us",
+      "type": "Features",
+      "name": "Why Choose Us",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "What We Offer",
+        "sectionSubtitle": "Discover what makes Gamezilla special",
+        "featureList": [
+          {
+            "icon": "✨",
+            "title": "Digital Marketing",
+            "description": "We provide exceptional digital marketing tailored to your needs."
+          },
+          {
+            "icon": "🎯",
+            "title": "Branding & Identity",
+            "description": "We provide exceptional branding & identity tailored to your needs."
+          },
+          {
+            "icon": "💡",
+            "title": "Social Media",
+            "description": "We provide exceptional social media tailored to your needs."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Gallery",
+      "props": {
+        "title": "Gallery",
+        "subtitle": "Explore our gaming gallery",
+        "imageList": [
+          {
+            "url": "image1.jpg",
+            "alt": "Image 1"
+          },
+          {
+            "url": "image2.jpg",
+            "alt": "Image 2"
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa",
+        "layoutVariant": "horizontal-filmstrip"
+      },
+      "animation": {
+        "type": "carousel",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-footer": {
+      "id": "footer",
+      "type": "Footer",
+      "name": "Footer",
+      "props": {
+        "logo": "fdsafdsa",
+        "tagline": "Level Up with Gamezilla",
+        "sections": [
+          {
+            "title": "Quick Links",
+            "links": [
+              {
+                "text": "Home",
+                "href": "#"
+              },
+              {
+                "text": "About",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Connect",
+            "links": [
+              {
+                "text": "Facebook",
+                "href": "#"
+              },
+              {
+                "text": "Twitter",
+                "href": "#"
+              }
+            ]
+          }
+        ],
+        "copyright": "2025 Gamezilla. All rights reserved.",
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-updates": {
+      "id": "updates",
+      "type": "Updates",
+      "name": "Updates",
+      "props": {
+        "title": "Updates",
+        "subtitle": "Stay up-to-date with the latest gaming news",
+        "updateList": [
+          {
+            "icon": "📢",
+            "title": "Update 1",
+            "description": "This is an update."
+          },
+          {
+            "icon": "📢",
+            "title": "Update 2",
+            "description": "This is another update."
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-store": {
+      "id": "store",
+      "type": "Store",
+      "name": "Store",
+      "props": {
+        "title": "Store",
+        "subtitle": "Buy games and merchandise",
+        "productList": [
+          {
+            "icon": "🎮",
+            "title": "Game 1",
+            "description": "This is a game.",
+            "price": "$10"
+          },
+          {
+            "icon": "👕",
+            "title": "Merchandise",
+            "description": "This is merchandise.",
+            "price": "$20"
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    },
+    "comp-faq": {
+      "id": "faq",
+      "type": "FAQ",
+      "name": "FAQ",
+      "props": {
+        "title": "FAQ",
+        "subtitle": "Frequently asked questions",
+        "faqList": [
+          {
+            "icon": "🤔",
+            "question": "Question 1",
+            "answer": "This is an answer."
+          },
+          {
+            "icon": "🤔",
+            "question": "Question 2",
+            "answer": "This is another answer."
+          }
+        ],
+        "businessName": "Gamezilla",
+        "name": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Gamezilla",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#"
+        },
+        {
+          "text": "About",
+          "href": "#"
+        }
+      ],
+      "cta": {
+        "text": "Play Now",
+        "href": "#",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Gamezilla",
+      "tagline": "Level Up with Gamezilla",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#"
+            },
+            {
+              "text": "About",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Facebook",
+              "href": "#"
+            },
+            {
+              "text": "Twitter",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "copyright": "2025 Gamezilla. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Orbitron",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Rajdhani",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "bold & dynamic"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Dark Neon",
+    "hero_concept": "Immerse in legendary games and level up with Gamezilla",
+    "visual_personality": "Bold & Dynamic"
+  },
+  "projectId": "10c61be2-b928-4aa2-a42c-918cdcd771c4",
+  "session_id": "sess_d238c201",
+  "created_at": "2026-01-08T17:23:50.469068",
+  "websiteType": "gaming",
+  "metadata": {
+    "session_id": "sess_d238c201",
+    "timestamp": "2026-01-08T17:23:44.215937",
+    "user_prompt": "Gaming website",
+    "business_name": "Gamezilla",
+    "prop_answers": {
+      "businessName": "Gamezilla",
+      "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+      "cta": "Join Now",
+      "services": [
+        "Digital Marketing",
+        "Branding & Identity",
+        "Social Media"
+      ],
+      "phone": "00000",
+      "team": "fdsa",
+      "images": "fsda",
+      "address": "fsdafsad",
+      "logo": "fdsafdsa"
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "",
+      "cta": "Join Now"
+    },
+    "user_services": [
+      "Digital Marketing",
+      "Branding & Identity",
+      "Social Media"
+    ],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "gaming",
+      "industry": "gaming",
+      "business_name": "Gamezilla",
+      "target_audience": "Gamezilla",
+      "goals": "['Digital Marketing', 'Branding & Identity', 'Social Media']",
+      "services": [
+        "Digital Marketing",
+        "Branding & Identity",
+        "Social Media"
+      ],
+      "style_preferences": [
+        "00000",
+        "fsda navigation",
+        "fdsafdsa fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Gamezilla"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Esports Green - Black with neon green - pro gamer aesthetic"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "Join Now"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Digital Marketing",
+            "Branding & Identity",
+            "Social Media"
+          ]
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "00000"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsda"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsdafsad"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafdsa"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Gamezilla",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Esports Green - Black with neon green - pro gamer aesthetic",
+          "question": ""
+        },
+        "q3": {
+          "answer": "Join Now",
+          "question": ""
+        },
+        "q4": {
+          "answer": [
+            "Digital Marketing",
+            "Branding & Identity",
+            "Social Media"
+          ],
+          "question": ""
+        },
+        "q5": {
+          "answer": "00000",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fsda",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fsdafsad",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fdsafdsa",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Gamezilla",
+        "colorTheme": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "cta": "Join Now",
+        "services": [
+          "Digital Marketing",
+          "Branding & Identity",
+          "Social Media"
+        ],
+        "phone": "00000",
+        "team": "fdsa",
+        "images": "fsda",
+        "address": "fsdafsad",
+        "logo": "fdsafdsa"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#00F0FF",
+          "#FF00E4",
+          "#00FF88",
+          "#1A1A2E",
+          "#0A0A1A"
+        ]
+      },
+      "color_theme_text": "Esports Green - Black with neon green - pro gamer aesthetic",
+      "font_style": "fdsafdsa",
+      "navigation_style": "fsda"
+    },
+    "features": [
+      "About",
+      "Games",
+      "Hero",
+      "Community",
+      "Why Choose Us",
+      "Gallery",
+      "Footer",
+      "Updates",
+      "Store",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 1,
+      "session_id": "sess_d238c201",
+      "project_id": 15,
+      "timestamp": "2026-01-08T11:53:43.954140Z",
+      "user_prompt": "Gaming website",
+      "questionnaire": {
+        "user_id": 1,
+        "prompt": "Gaming website",
+        "language": "English",
+        "business_type": "Based on the provided information, it seems like the user is planning to create a gaming website, specifically",
+        "answers": {
+          "q1": "Gamezilla",
+          "q2": "Esports Green - Black with neon green - pro gamer aesthetic",
+          "q3": "Join Now",
+          "q4": [
+            "Digital Marketing",
+            "Branding & Identity",
+            "Social Media"
+          ],
+          "q5": "00000",
+          "q6": "fdsa",
+          "q7": "fsda",
+          "q8": "fsdafsad",
+          "q9": "fdsafdsa"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What's your company name?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Pick your website's color scheme:",
+            "type": "radio",
+            "options": [
+              "Neon Cyber - Electric blues and purples - futuristic",
+              "Dark Pro - Black with red accents - competitive edge",
+              "Retro Arcade - Bright pinks and yellows - playful nostalgia",
+              "Esports Green - Black with neon green - pro gamer aesthetic"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What action should visitors take?",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Get Started",
+              "Shop Now",
+              "Learn More",
+              "Contact Us",
+              "Book Now",
+              "Explore",
+              "Join Now"
+            ]
+          },
+          {
+            "id": "q4",
+            "question": "What does your agency do?",
+            "type": "checkbox",
+            "prop_key": "services",
+            "section": "services",
+            "options": [
+              "Web Design/Development",
+              "SEO/Content",
+              "Digital Marketing",
+              "Video Production",
+              "Branding & Identity",
+              "Social Media",
+              "Consulting"
+            ]
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Phone'?",
+            "type": "text",
+            "prop_key": "phone",
+            "section": "footer"
+          },
+          {
+            "id": "q6",
+            "question": "Enter your information for 'Team':",
+            "type": "text",
+            "prop_key": "team",
+            "section": "team"
+          },
+          {
+            "id": "q7",
+            "question": "Enter your information for 'Images':",
+            "type": "text",
+            "prop_key": "images",
+            "section": "gallery"
+          },
+          {
+            "id": "q8",
+            "question": "Tell us more about your Address for the footer:",
+            "type": "text",
+            "prop_key": "address",
+            "section": "footer"
+          },
+          {
+            "id": "q9",
+            "question": "What would you like to say for 'Logo'?",
+            "type": "text",
+            "prop_key": "logo",
+            "section": "footer"
+          },
+          {
+            "id": "q10",
+            "question": "Tell us more about your Brand for the footer:",
+            "type": "text",
+            "prop_key": "brand",
+            "section": "footer"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "cta",
+          "services",
+          "phone",
+          "team",
+          "images",
+          "address",
+          "logo",
+          "brand"
+        ],
+        "color_preferences": "Esports Green - Black with neon green - pro gamer aesthetic",
+        "features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "games",
+            "name": "Games",
+            "description": "Featured games catalog.",
+            "benefit": "Shows content",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "tournaments",
+            "name": "Tournaments",
+            "description": "Esports events.",
+            "benefit": "Community",
+            "priority": "High"
+          },
+          {
+            "id": "community",
+            "name": "Community",
+            "description": "Discord and social links.",
+            "benefit": "Engagement",
+            "priority": "Medium"
+          },
+          {
+            "id": "features",
+            "name": "Why Choose Us",
+            "description": "Key selling points.",
+            "benefit": "Builds trust",
+            "priority": "Medium"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          },
+          {
+            "id": "news",
+            "name": "Updates",
+            "description": "Latest news and patches.",
+            "benefit": "Keeps informed",
+            "priority": "Low"
+          },
+          {
+            "id": "store",
+            "name": "Store",
+            "description": "Buy games or merch.",
+            "benefit": "Revenue",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "1F1F1F",
+              "009245",
+              "33CC33",
+              "99FF00",
+              "00CC00"
+            ],
+            "title": "Midnight Sprint",
+            "inspiration": "High-stakes action under neon lights"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "2E3436",
+              "00572C",
+              "34A85A",
+              "87FF00",
+              "00FF00"
+            ],
+            "title": "Glitch Mode",
+            "inspiration": "Fragging in a world of rapid-fire colors"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "4C5154",
+              "009F5B",
+              "37C39A",
+              "33CC33",
+              "CCFF00"
+            ],
+            "title": "Pixel Storm",
+            "inspiration": "Rainbow-colored chaos in the heat of battle"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "1C1C1C",
+              "006B44",
+              "33B3B3",
+              "66FF00",
+              "00CC00"
+            ],
+            "title": "Rampage Mode",
+            "inspiration": "Unleashing fury in a green-tinted world"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "2A2A2A",
+              "008A44",
+              "34C759",
+              "7F7FFF",
+              "00FF33"
+            ],
+            "title": "Cybernetic Dawn",
+            "inspiration": "Neon-tinged revolution on the digital frontier"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "3C3F41",
+              "004B5A",
+              "37A8B7",
+              "99CC33",
+              "33FF00"
+            ],
+            "title": "Fracture Point",
+            "inspiration": "Electric tension on the edge of catastrophe"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "282828",
+              "0C7A56",
+              "43CE98",
+              "00CC99",
+              "33CC33"
+            ],
+            "title": "Quantum Flux",
+            "inspiration": "Color-shifting chaos in the quantum realm"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "444444",
+              "00595B",
+              "45C9B4",
+              "33FF00",
+              "00FFFF"
+            ],
+            "title": "Velocity Rush",
+            "inspiration": "High-speed thrills in a neon-tipped world"
+          }
+        ],
+        "selected_palette": {
+          "id": "p1",
+          "colors": [
+            "1F1F1F",
+            "009245",
+            "33CC33",
+            "99FF00",
+            "00CC00"
+          ],
+          "title": "Midnight Sprint",
+          "inspiration": "High-stakes action under neon lights"
+        },
+        "selected_features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "games",
+            "name": "Games",
+            "description": "Featured games catalog.",
+            "benefit": "Shows content",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "community",
+            "name": "Community",
+            "description": "Discord and social links.",
+            "benefit": "Engagement",
+            "priority": "Medium"
+          },
+          {
+            "id": "features",
+            "name": "Why Choose Us",
+            "description": "Key selling points.",
+            "benefit": "Builds trust",
+            "priority": "Medium"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          },
+          {
+            "id": "news",
+            "name": "Updates",
+            "description": "Latest news and patches.",
+            "benefit": "Keeps informed",
+            "priority": "Low"
+          },
+          {
+            "id": "store",
+            "name": "Store",
+            "description": "Buy games or merch.",
+            "benefit": "Revenue",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "games",
+          "name": "Games",
+          "description": "Featured games catalog.",
+          "benefit": "Shows content",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "description": "Discord and social links.",
+          "benefit": "Engagement",
+          "priority": "Medium"
+        },
+        {
+          "id": "features",
+          "name": "Why Choose Us",
+          "description": "Key selling points.",
+          "benefit": "Builds trust",
+          "priority": "Medium"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        },
+        {
+          "id": "news",
+          "name": "Updates",
+          "description": "Latest news and patches.",
+          "benefit": "Keeps informed",
+          "priority": "Low"
+        },
+        {
+          "id": "store",
+          "name": "Store",
+          "description": "Buy games or merch.",
+          "benefit": "Revenue",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "games",
+          "name": "Games",
+          "description": "Featured games catalog.",
+          "benefit": "Shows content",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "description": "Discord and social links.",
+          "benefit": "Engagement",
+          "priority": "Medium"
+        },
+        {
+          "id": "features",
+          "name": "Why Choose Us",
+          "description": "Key selling points.",
+          "benefit": "Builds trust",
+          "priority": "Medium"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        },
+        {
+          "id": "news",
+          "name": "Updates",
+          "description": "Latest news and patches.",
+          "benefit": "Keeps informed",
+          "priority": "Low"
+        },
+        {
+          "id": "store",
+          "name": "Store",
+          "description": "Buy games or merch.",
+          "benefit": "Revenue",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-games",
+    "comp-community",
+    "comp-why-choose-us",
+    "comp-gallery",
+    "comp-footer",
+    "comp-updates",
+    "comp-store",
+    "comp-faq"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 74
+}

@@ -1,0 +1,414 @@
+{
+  "user_id": 1,
+  "session_id": "sess_96247b4f",
+  "project_id": 14,
+  "timestamp": "2026-01-08T11:43:14.629943Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 1,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the provided user responses, it seems that the initial intention was to create a Restaurant Site.",
+    "answers": {
+      "q1": "maulik",
+      "q2": "Tech Purple - Modern purple gradients",
+      "q3": "fsda",
+      "q4": "fdsafsa",
+      "q5": "fdsafsa",
+      "q6": "fdsafdsa",
+      "q7": "Product showcase",
+      "q8": "fdsa",
+      "q9": "fsda"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Your restaurant's name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "What colors represent your brand?",
+        "type": "radio",
+        "options": [
+          "Corporate Blue - Professional blues and grays",
+          "Creative Orange - Energetic orange with dark accents",
+          "Tech Purple - Modern purple gradients",
+          "Minimal B&W - Black and white sophistication"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Enter your information for 'Menuitems':",
+        "type": "text",
+        "prop_key": "menuItems",
+        "section": "menu"
+      },
+      {
+        "id": "q4",
+        "question": "Complete: '[Your Brand] - ____'",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q5",
+        "question": "What would you like to say for 'Name'?",
+        "type": "text",
+        "prop_key": "name",
+        "section": "footer"
+      },
+      {
+        "id": "q6",
+        "question": "Enter your information for 'Description':",
+        "type": "text",
+        "prop_key": "description",
+        "section": "about"
+      },
+      {
+        "id": "q7",
+        "question": "Choose your hero visual style:",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Product showcase",
+          "Location/space",
+          "Abstract/artistic",
+          "Team/people",
+          "Auto-select for me"
+        ]
+      },
+      {
+        "id": "q8",
+        "question": "What's your tagline or slogan?",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q9",
+        "question": "Share your journey with visitors:",
+        "type": "textarea",
+        "prop_key": "story",
+        "section": "about"
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Mission'?",
+        "type": "text",
+        "prop_key": "mission",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "menuItems",
+      "title",
+      "name",
+      "description",
+      "image",
+      "subtitle",
+      "story",
+      "mission"
+    ],
+    "color_preferences": "Tech Purple - Modern purple gradients",
+    "features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Food and drink offerings.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "reservation",
+        "name": "Reservation",
+        "description": "Reservation section.",
+        "benefit": "Enhances website",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#3F004D",
+          "#6543D7",
+          "#964BFF",
+          "#B77CFF",
+          "#F2B6DC"
+        ],
+        "title": "Cosmic Shift",
+        "inspiration": "Ethereal exploration of celestial hues"
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#4C0099",
+          "#6600CC",
+          "#8C0099",
+          "#C000B2",
+          "#FF99CC"
+        ],
+        "title": "Digital Mirage",
+        "inspiration": "Surreal journey through the digital veil"
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#4C3388",
+          "#6A49D8",
+          "#B35CFF",
+          "#8F6FFB",
+          "#F8E5FA"
+        ],
+        "title": "Luminescent Depths",
+        "inspiration": "Glowing exploration of the ocean's heart"
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#6F0A87",
+          "#A03BD4",
+          "#7A52A5",
+          "#8C67E2",
+          "#D6C2E2"
+        ],
+        "title": "Galactic Oasis",
+        "inspiration": "Exotic escape to a starry retreat"
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#4E005B",
+          "#6C00CC",
+          "#9833FF",
+          "#BB55C6",
+          "#FF99C2"
+        ],
+        "title": "Cyberstorm",
+        "inspiration": "Rapid descent into a digital whirlwind"
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#3C005A",
+          "#5C0088",
+          "#A33CFF",
+          "#C36AF7",
+          "#FFC2E2"
+        ],
+        "title": "Fusion Core",
+        "inspiration": "Searing energy emanating from a digital nucleus"
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#5600AA",
+          "#7700CC",
+          "#9A45D9",
+          "#C56AFF",
+          "#F2D6D7"
+        ],
+        "title": "Echo Chamber",
+        "inspiration": "Haunted reverberations of abandoned technology"
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#4400CD",
+          "#6600D5",
+          "#9900DE",
+          "#A000F4",
+          "#D4B5E3"
+        ],
+        "title": "Quantum Leap",
+        "inspiration": "Sudden transition into a strange new world"
+      }
+    ],
+    "selected_palette": {
+      "id": "p5",
+      "colors": [
+        "#4E005B",
+        "#6C00CC",
+        "#9833FF",
+        "#BB55C6",
+        "#FF99C2"
+      ],
+      "title": "Cyberstorm",
+      "inspiration": "Rapid descent into a digital whirlwind"
+    },
+    "selected_features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Our Menu",
+        "description": "Food and drink offerings.",
+        "benefit": "Shows offerings",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "reservation",
+        "name": "Reservation",
+        "description": "Reservation section.",
+        "benefit": "Enhances website",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Food and drink offerings.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "reservation",
+      "name": "Reservation",
+      "description": "Reservation section.",
+      "benefit": "Enhances website",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Our Menu",
+      "description": "Food and drink offerings.",
+      "benefit": "Shows offerings",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "reservation",
+      "name": "Reservation",
+      "description": "Reservation section.",
+      "benefit": "Enhances website",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    }
+  ],
+  "final_metadata_ready": true
+}

@@ -1109,14 +1109,140 @@ SPECIAL COMPONENTS TO INCLUDE:
         
         ai_response["componentOrder"] = order
         
+        # ============================================================
+        # CRITICAL: Inject user's questionnaire answers into component props
+        # This ensures user's answers override AI-generated content
+        # ============================================================
+        self._inject_user_answers_to_props(ai_response, metadata)
+        
         # Assign random layout variants if missing
         self._ensure_layout_variants(ai_response)
         
         return ai_response
+
+    def _inject_user_answers_to_props(self, blueprint: Dict[str, Any], metadata: Dict[str, Any]) -> None:
+        """
+        Inject user's questionnaire answers into component props.
+        
+        This is CRITICAL for ensuring the generated website uses:
+        - User's actual name (not "John Doe")
+        - User's actual skills (not default skills)
+        - User's profession (not generic titles)
+        - User's story/description
+        
+        Maps prop_key answers to the appropriate component props.
+        """
+        # Get prop_answers from metadata
+        questionnaire = metadata.get("questionnaire", {})
+        prop_answers = questionnaire.get("prop_answers", {})
+        
+        # Also get type-specific data
+        business_name = metadata.get("business_extracted_data", {}).get("business_name", "")
+        portfolio_data = metadata.get("portfolio_data", {})
+        cafe_data = metadata.get("cafe_data", {})
+        gaming_data = metadata.get("gaming_data", {})
+        ecommerce_data = metadata.get("ecommerce_data", {})
+        
+        if not prop_answers and not portfolio_data and not business_name:
+            print("[BlueprintService] ⚠️ No user answers to inject")
+            return
+        
+        print(f"[BlueprintService] 💉 Injecting {len(prop_answers)} user answers into component props")
+        
+        components = blueprint.get("components", {})
+        
+        for comp_key, component in components.items():
+            if not isinstance(component, dict):
+                continue
+            
+            props = component.get("props", {})
+            comp_type = component.get("type", "").lower()
+            
+            # Universal: Inject business name
+            if business_name:
+                props["businessName"] = business_name
+                props["name"] = business_name
+            
+            # Inject prop_key answers directly
+            for prop_key, answer in prop_answers.items():
+                # Skip empty answers
+                if not answer:
+                    continue
+                    
+                # Map common prop_keys to component props
+                if prop_key == "businessName":
+                    props["name"] = answer
+                    props["businessName"] = answer
+                elif prop_key == "title":
+                    props["title"] = answer
+                elif prop_key == "subtitle":
+                    props["subtitle"] = answer
+                elif prop_key == "tagline":
+                    props["tagline"] = answer
+                elif prop_key == "description":
+                    props["description"] = answer
+                elif prop_key == "cta":
+                    props["cta"] = answer
+                elif prop_key == "story":
+                    props["story"] = answer
+                else:
+                    # Direct injection for other props
+                    props[prop_key] = answer
+            
+            # Type-specific injections for Portfolio
+            if portfolio_data:
+                if portfolio_data.get("profession"):
+                    props["title"] = portfolio_data["profession"]
+                if portfolio_data.get("skills"):
+                    props["skills"] = portfolio_data["skills"]
+                if portfolio_data.get("work_style"):
+                    props["workStyle"] = portfolio_data["work_style"]
+                if portfolio_data.get("experience"):
+                    props["experience"] = portfolio_data["experience"]
+            
+            # Type-specific injections for Cafe
+            if cafe_data:
+                if cafe_data.get("signature"):
+                    props["signature"] = cafe_data["signature"]
+                if cafe_data.get("atmosphere"):
+                    props["atmosphere"] = cafe_data["atmosphere"]
+                if cafe_data.get("specialty"):
+                    props["specialty"] = cafe_data["specialty"]
+                if cafe_data.get("hours"):
+                    props["hours"] = cafe_data["hours"]
+                if cafe_data.get("menu_items"):
+                    props["menuItems"] = cafe_data["menu_items"]
+            
+            # Type-specific injections for Gaming
+            if gaming_data:
+                if gaming_data.get("game_name"):
+                    props["gameName"] = gaming_data["game_name"]
+                if gaming_data.get("genre"):
+                    props["genre"] = gaming_data["genre"]
+                if gaming_data.get("platforms"):
+                    props["platforms"] = gaming_data["platforms"]
+                if gaming_data.get("style"):
+                    props["style"] = gaming_data["style"]
+            
+            # Type-specific injections for Ecommerce
+            if ecommerce_data:
+                if ecommerce_data.get("product_type"):
+                    props["productType"] = ecommerce_data["product_type"]
+                if ecommerce_data.get("usp"):
+                    props["usp"] = ecommerce_data["usp"]
+                if ecommerce_data.get("shipping"):
+                    props["shipping"] = ecommerce_data["shipping"]
+            
+            # Update the component props
+            component["props"] = props
+        
+        print(f"[BlueprintService] ✅ User answers injected into all components")
+
     
     def _ensure_layout_variants(self, blueprint: Dict[str, Any]) -> None:
         """
         Ensure all components have layout variants assigned.
+
         
         Args:
             blueprint: Blueprint to enhance (modified in place)

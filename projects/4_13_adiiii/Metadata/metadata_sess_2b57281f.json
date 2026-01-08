@@ -1,0 +1,545 @@
+{
+  "user_id": 4,
+  "session_id": "sess_2b57281f",
+  "project_id": 13,
+  "timestamp": "2026-01-08T11:02:12.658870Z",
+  "user_prompt": "Gaming",
+  "questionnaire": {
+    "user_id": 4,
+    "prompt": "Gaming",
+    "language": "English",
+    "business_type": "Based on the user's input, I would analyze the following points to determine the type of business or",
+    "answers": {
+      "q1": "Gaming adda",
+      "q2": "Neon Cyber - Electric blues and purples - futuristic",
+      "q3": "fdafdsa",
+      "q4": "fdsafsda",
+      "q5": [
+        "Mod Support",
+        "Story Mode",
+        "Open World",
+        "Competitive Ranked"
+      ],
+      "q6": [
+        "Branding & Identity",
+        "Social Media",
+        "Video Production"
+      ],
+      "q7": "fdsa",
+      "q8": "fdsafsda",
+      "q9": "fsafsda"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Enter your gaming brand name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Choose your color palette:",
+        "type": "radio",
+        "options": [
+          "Neon Cyber - Electric blues and purples - futuristic",
+          "Dark Pro - Black with red accents - competitive edge",
+          "Retro Arcade - Bright pinks and yellows - playful nostalgia",
+          "Esports Green - Black with neon green - pro gamer aesthetic"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Tell us more about your Tagline for the hero:",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      },
+      {
+        "id": "q4",
+        "question": "What would you like to say for 'Logotext'?",
+        "type": "text",
+        "prop_key": "logoText",
+        "section": "footer"
+      },
+      {
+        "id": "q5",
+        "question": "What makes your game special?",
+        "type": "checkbox",
+        "prop_key": "features",
+        "section": "features",
+        "options": [
+          "Multiplayer",
+          "Regular Updates",
+          "Mod Support",
+          "Story Mode",
+          "Competitive Ranked",
+          "Open World",
+          "Cross-Platform"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "What does your agency do?",
+        "type": "checkbox",
+        "prop_key": "services",
+        "section": "services",
+        "options": [
+          "Web Design/Development",
+          "SEO/Content",
+          "Branding & Identity",
+          "Digital Marketing",
+          "Social Media",
+          "Video Production",
+          "Consulting"
+        ]
+      },
+      {
+        "id": "q7",
+        "question": "Tell us more about your Content for the about:",
+        "type": "text",
+        "prop_key": "content",
+        "section": "about"
+      },
+      {
+        "id": "q8",
+        "question": "What would you like to say for 'Links'?",
+        "type": "text",
+        "prop_key": "links",
+        "section": "navbar"
+      },
+      {
+        "id": "q9",
+        "question": "What would you like to say for 'Games'?",
+        "type": "text",
+        "prop_key": "games",
+        "section": "games"
+      },
+      {
+        "id": "q10",
+        "question": "Enter your information for 'Items':",
+        "type": "text",
+        "prop_key": "items",
+        "section": "about"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "tagline",
+      "logoText",
+      "features",
+      "services",
+      "content",
+      "links",
+      "games",
+      "items"
+    ],
+    "color_preferences": "Neon Cyber - Electric blues and purples - futuristic",
+    "features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "games",
+        "name": "Games",
+        "description": "Featured games catalog.",
+        "benefit": "Shows content",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "tournaments",
+        "name": "Tournaments",
+        "description": "Esports events.",
+        "benefit": "Community",
+        "priority": "High"
+      },
+      {
+        "id": "community",
+        "name": "Community",
+        "description": "Discord and social links.",
+        "benefit": "Engagement",
+        "priority": "Medium"
+      },
+      {
+        "id": "features",
+        "name": "Why Choose Us",
+        "description": "Key selling points.",
+        "benefit": "Builds trust",
+        "priority": "Medium"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      },
+      {
+        "id": "news",
+        "name": "Updates",
+        "description": "Latest news and patches.",
+        "benefit": "Keeps informed",
+        "priority": "Low"
+      },
+      {
+        "id": "store",
+        "name": "Store",
+        "description": "Buy games or merch.",
+        "benefit": "Revenue",
+        "priority": "Low"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#3C4EBF",
+          "#66CCCC",
+          "#C67FF1",
+          "#FF0099",
+          "#CC33CC"
+        ],
+        "title": "Luminescent Wave",
+        "inspiration": "Reflecting the neon glow of city lights on the dark waters"
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#4C7BF5",
+          "#87CEEB",
+          "#FFC5C5",
+          "#C5B4F3",
+          "#B4009E"
+        ],
+        "title": "Cosmic Eclipse",
+        "inspiration": "A burst of vibrant colors in the vastness of space"
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#3B58CB",
+          "#8CEAEE",
+          "#FF99CC",
+          "#FF0033",
+          "#E50075"
+        ],
+        "title": "Technicolor Dreams",
+        "inspiration": "A psychedelic explosion of color that blurs reality"
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#4499FF",
+          "#6FA8DC",
+          "#C4C5F5",
+          "#9999CC",
+          "#6600CC"
+        ],
+        "title": "Glacial Storm",
+        "inspiration": "Electrifying icy gusts shaking the ground"
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#5F9FFF",
+          "#98B0CC",
+          "#D3D5F3",
+          "#F7E9F5",
+          "#C9D3F5"
+        ],
+        "title": "Digital Dawn",
+        "inspiration": "The first rays of light on a digital world"
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#2F69B2",
+          "#56ACFF",
+          "#C9C3F2",
+          "#FF99FF",
+          "#E3C5FA"
+        ],
+        "title": "Aurora Borealis",
+        "inspiration": "A breathtaking display of electric colors in the night sky"
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#00BFFF",
+          "#CCF7F7",
+          "#FF69B4",
+          "#C5C3F2",
+          "#F7F2F5"
+        ],
+        "title": "Neon Dreamscape",
+        "inspiration": "Vibrant colors that transport you to a fantastical realm"
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#1C4F9B",
+          "#5C8EC9",
+          "#C4E5FF",
+          "#E2D1E5",
+          "#A400B4"
+        ],
+        "title": "Quantum Flux",
+        "inspiration": "Disrupting the norms, shifting the color spectrum"
+      }
+    ],
+    "selected_palette": {
+      "id": "p1",
+      "colors": [
+        "#3C4EBF",
+        "#66CCCC",
+        "#C67FF1",
+        "#FF0099",
+        "#CC33CC"
+      ],
+      "title": "Luminescent Wave",
+      "inspiration": "Reflecting the neon glow of city lights on the dark waters"
+    },
+    "selected_features": [
+      {
+        "id": "about",
+        "name": "About",
+        "description": "Tell your story and mission.",
+        "benefit": "Builds trust",
+        "priority": "High"
+      },
+      {
+        "id": "games",
+        "name": "Games",
+        "description": "Featured games catalog.",
+        "benefit": "Shows content",
+        "priority": "High"
+      },
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Eye-catching hero banner section.",
+        "benefit": "First impression",
+        "priority": "High"
+      },
+      {
+        "id": "tournaments",
+        "name": "Tournaments",
+        "description": "Esports events.",
+        "benefit": "Community",
+        "priority": "High"
+      },
+      {
+        "id": "community",
+        "name": "Community",
+        "description": "Discord and social links.",
+        "benefit": "Engagement",
+        "priority": "Medium"
+      },
+      {
+        "id": "features",
+        "name": "Why Choose Us",
+        "description": "Key selling points.",
+        "benefit": "Builds trust",
+        "priority": "Medium"
+      },
+      {
+        "id": "gallery",
+        "name": "Gallery",
+        "description": "Photo gallery.",
+        "benefit": "Visual appeal",
+        "priority": "Medium"
+      },
+      {
+        "id": "footer",
+        "name": "Footer",
+        "description": "Site links and copyright.",
+        "benefit": "Professional finish",
+        "priority": "Low"
+      },
+      {
+        "id": "news",
+        "name": "Updates",
+        "description": "Latest news and patches.",
+        "benefit": "Keeps informed",
+        "priority": "Low"
+      },
+      {
+        "id": "store",
+        "name": "Store",
+        "description": "Buy games or merch.",
+        "benefit": "Revenue",
+        "priority": "Low"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "games",
+      "name": "Games",
+      "description": "Featured games catalog.",
+      "benefit": "Shows content",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "tournaments",
+      "name": "Tournaments",
+      "description": "Esports events.",
+      "benefit": "Community",
+      "priority": "High"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "description": "Discord and social links.",
+      "benefit": "Engagement",
+      "priority": "Medium"
+    },
+    {
+      "id": "features",
+      "name": "Why Choose Us",
+      "description": "Key selling points.",
+      "benefit": "Builds trust",
+      "priority": "Medium"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    },
+    {
+      "id": "news",
+      "name": "Updates",
+      "description": "Latest news and patches.",
+      "benefit": "Keeps informed",
+      "priority": "Low"
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "description": "Buy games or merch.",
+      "benefit": "Revenue",
+      "priority": "Low"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "about",
+      "name": "About",
+      "description": "Tell your story and mission.",
+      "benefit": "Builds trust",
+      "priority": "High"
+    },
+    {
+      "id": "games",
+      "name": "Games",
+      "description": "Featured games catalog.",
+      "benefit": "Shows content",
+      "priority": "High"
+    },
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Eye-catching hero banner section.",
+      "benefit": "First impression",
+      "priority": "High"
+    },
+    {
+      "id": "tournaments",
+      "name": "Tournaments",
+      "description": "Esports events.",
+      "benefit": "Community",
+      "priority": "High"
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "description": "Discord and social links.",
+      "benefit": "Engagement",
+      "priority": "Medium"
+    },
+    {
+      "id": "features",
+      "name": "Why Choose Us",
+      "description": "Key selling points.",
+      "benefit": "Builds trust",
+      "priority": "Medium"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "description": "Photo gallery.",
+      "benefit": "Visual appeal",
+      "priority": "Medium"
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "description": "Site links and copyright.",
+      "benefit": "Professional finish",
+      "priority": "Low"
+    },
+    {
+      "id": "news",
+      "name": "Updates",
+      "description": "Latest news and patches.",
+      "benefit": "Keeps informed",
+      "priority": "Low"
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "description": "Buy games or merch.",
+      "benefit": "Revenue",
+      "priority": "Low"
+    }
+  ],
+  "final_metadata_ready": true
+}

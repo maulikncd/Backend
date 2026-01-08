@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Gaming Experience</title>
+    <meta name="description" content="Immerse in legendary games and level up with Gamezilla">
+    <meta name="keywords" content="gaming, epic, legendary, competitive, immersive world">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400,500,700&family=Rajdhani:wght@300,400,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00F0FF',
+            secondary: '#FF00E4',
+            accent: '#00FF88',
+            surface: '#1A1A2E',
+          },
+          fontFamily: {
+            heading: ['Orbitron', 'sans-serif'],
+            body: ['Rajdhani', 'sans-serif'],
+          },
+        },
+      },
+    }
+        </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #0A0A1A;
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Orbitron', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #00F0FF, #FF00E4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #00F0FF, #FF00E4);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px #00F0FF40;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 2px solid #00F0FF30;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            border-color: #00F0FF;
+            background: #00F0FF10;
+        }
+        .section { padding: 100px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #00F0FF; }
+        .nav-link.active { color: #00F0FF; font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <header class="fixed top-0 left-0 right-0 z-50">
+        <div class="h-1 bg-gradient-to-r" style="background: linear-gradient(90deg, #00F0FF, #FF00E4)"></div>
+        <div class="bg-white shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="#hero" class="text-2xl font-bold font-heading" style="color: #00F0FF">Gamezilla</a>
+                    <nav class="hidden md:flex items-center gap-8"><a href="#hero" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a><a href="#about" class="nav-link text-gray-700 hover:text-primary font-medium">About Gamezilla</a><a href="#games" class="nav-link text-gray-700 hover:text-primary font-medium">Our Games</a><a href="#community" class="nav-link text-gray-700 hover:text-primary font-medium">Our Community</a><a href="#why-choose-us" class="nav-link text-gray-700 hover:text-primary font-medium">Why Choose Us</a><a href="#gallery" class="nav-link text-gray-700 hover:text-primary font-medium">Gallery</a><a href="#footer" class="nav-link text-gray-700 hover:text-primary font-medium">Footer</a><a href="#updates" class="nav-link text-gray-700 hover:text-primary font-medium">Updates</a><a href="#store" class="nav-link text-gray-700 hover:text-primary font-medium">Store</a><a href="#faq" class="nav-link text-gray-700 hover:text-primary font-medium">FAQ</a></nav>
+                    <a href="#contact" class="btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+    <section class="gaming-hero-cyber" id="hero">
+        <div class="cyber-bg"><div class="grid-lines"></div></div>
+        <div class="cyber-content">
+            <div class="glitch-text">Level Up with Gamezilla</div>
+            <p class="cyber-subtitle">Enter the immersive world of epic gaming</p>
+            <div class="cyber-cta"><a href="#games" class="neon-btn">Join Now</a><a href="#trailer" class="ghost-btn">Watch Trailer</a></div>
+            <div class="cyber-stats"><div class="stat"><span class="num">2M+</span><span class="label">Players</span></div><div class="stat"><span class="num">4.9</span><span class="label">Rating</span></div><div class="stat"><span class="num">50+</span><span class="label">Awards</span></div></div>
+        </div>
+    </section>
+    <style>
+    .gaming-hero-cyber { min-height: 100vh; background: #0A0A1A; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+    .cyber-bg { position: absolute; inset: 0; }
+    .grid-lines { position: absolute; inset: 0; background-image: linear-gradient(#00F0FF10 1px, transparent 1px), linear-gradient(90deg, #00F0FF10 1px, transparent 1px); background-size: 50px 50px; animation: gridMove 20s linear infinite; }
+    @keyframes gridMove { 0% { transform: perspective(500px) rotateX(60deg) translateY(0); } 100% { transform: perspective(500px) rotateX(60deg) translateY(50px); } }
+    .cyber-content { position: relative; z-index: 2; color: #fff; }
+    .glitch-text { font-size: clamp(4rem, 12vw, 10rem); font-weight: 900; text-transform: uppercase; letter-spacing: -5px; text-shadow: 0 0 30px #00F0FF, 0 0 60px #00F0FF50; animation: glitch 3s infinite; }
+    @keyframes glitch { 0%, 90%, 100% { transform: translate(0); } 92% { transform: translate(-5px, 2px); } 94% { transform: translate(5px, -2px); } }
+    .cyber-subtitle { font-size: 1.5rem; color: #00F0FF; margin: 20px 0 40px; letter-spacing: 5px; text-transform: uppercase; }
+    .cyber-cta { display: flex; gap: 20px; justify-content: center; margin-bottom: 60px; }
+    .neon-btn { padding: 18px 50px; background: #00F0FF; color: #000; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); transition: 0.3s; }
+    .neon-btn:hover { box-shadow: 0 0 30px #00F0FF; }
+    .ghost-btn { padding: 18px 50px; border: 2px solid #00F0FF; color: #00F0FF; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+    .ghost-btn:hover { background: #00F0FF20; }
+    .cyber-stats { display: flex; gap: 60px; justify-content: center; }
+    .stat .num { display: block; font-size: 3rem; font-weight: 800; color: #00F0FF; }
+    .stat .label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 2px; }
+    </style>
+    
+    <section class="gaming-about-timeline" id="about"><div class="container"><h2>Our Mission</h2><div class="timeline"><div class="timeline-item"><span class="year">2018</span><div class="content"><h4>Founded</h4><p>Started with a dream</p></div></div><div class="timeline-item"><span class="year">2020</span><div class="content"><h4>First Game</h4><p>Launched our debut title</p></div></div><div class="timeline-item"><span class="year">2022</span><div class="content"><h4>10M Players</h4><p>Hit major milestone</p></div></div><div class="timeline-item"><span class="year">2024</span><div class="content"><h4>Global</h4><p>Offices worldwide</p></div></div></div></div></section>
+    <style>
+    .gaming-about-timeline { padding: 100px 40px; background: linear-gradient(135deg, #0D0D15, #1a1a2e); }
+    .container { max-width: 900px; margin: 0 auto; text-align: center; color: #fff; }
+    .gaming-about-timeline h2 { font-size: 3rem; font-weight: 800; margin-bottom: 60px; }
+    .timeline { position: relative; padding-left: 50px; text-align: left; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: #00F0FF30; }
+    .timeline-item { position: relative; margin-bottom: 50px; }
+    .timeline-item::before { content: ''; position: absolute; left: -56px; top: 5px; width: 14px; height: 14px; background: #00F0FF; border-radius: 50%; }
+    .year { color: #00F0FF; font-weight: 700; font-size: 0.9rem; letter-spacing: 2px; }
+    .content h4 { font-size: 1.5rem; margin: 10px 0; }
+    .content p { color: rgba(255,255,255,0.6); }
+    </style>
+    
+    <section class="games-grid-showcase" id="games"><div class="container"><div class="section-header"><span class="tag">Game Library</span><h2>Our Games</h2></div><div class="games-grid"><div class="game-card"><div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=500')"><div class="card-overlay"><a href="#" class="play-btn">▶</a></div></div><div class="card-body"><div class="card-top"><span class="genre">Action RPG</span><span class="rating">★ 4.9</span></div><h3>Shadow Warriors</h3><div class="card-actions"><a href="#" class="btn-primary">Play Now</a><a href="#" class="btn-ghost">Details</a></div></div></div><div class="game-card"><div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500')"><div class="card-overlay"><a href="#" class="play-btn">▶</a></div></div><div class="card-body"><div class="card-top"><span class="genre">Racing</span><span class="rating">★ 4.7</span></div><h3>Cyber Chase</h3><div class="card-actions"><a href="#" class="btn-primary">Play Now</a><a href="#" class="btn-ghost">Details</a></div></div></div><div class="game-card"><div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500')"><div class="card-overlay"><a href="#" class="play-btn">▶</a></div></div><div class="card-body"><div class="card-top"><span class="genre">FPS</span><span class="rating">★ 4.8</span></div><h3>Battle Arena</h3><div class="card-actions"><a href="#" class="btn-primary">Play Now</a><a href="#" class="btn-ghost">Details</a></div></div></div><div class="game-card"><div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1493711662062-fa541f7f3d24?w=500')"><div class="card-overlay"><a href="#" class="play-btn">▶</a></div></div><div class="card-body"><div class="card-top"><span class="genre">MMORPG</span><span class="rating">★ 4.6</span></div><h3>Legend Quest</h3><div class="card-actions"><a href="#" class="btn-primary">Play Now</a><a href="#" class="btn-ghost">Details</a></div></div></div></div></div></section>
+    <style>
+    .games-grid-showcase { padding: 120px 40px; background: #0D0D15; }
+    .container { max-width: 1300px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 60px; color: #fff; }
+    .tag { color: #00F0FF; text-transform: uppercase; letter-spacing: 4px; font-size: 0.9rem; }
+    .section-header h2 { font-size: 3.5rem; font-weight: 800; margin-top: 15px; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+    .game-card { background: #1a1a2e; border-radius: 16px; overflow: hidden; transition: 0.4s; }
+    .game-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+    .card-img { height: 200px; background-size: cover; background-position: center; position: relative; }
+    .card-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; opacity: 0; transition: 0.3s; }
+    .game-card:hover .card-overlay { opacity: 1; }
+    .play-btn { width: 60px; height: 60px; background: #00F0FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem; text-decoration: none; }
+    .card-body { padding: 25px; color: #fff; }
+    .card-top { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.85rem; }
+    .genre { color: #00F0FF; text-transform: uppercase; letter-spacing: 1px; }
+    .rating { color: #FFD700; }
+    .card-body h3 { font-size: 1.4rem; margin-bottom: 20px; }
+    .card-actions { display: flex; gap: 15px; }
+    .btn-primary { padding: 12px 25px; background: #00F0FF; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+    .btn-ghost { padding: 12px 25px; border: 1px solid #555; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+    .btn-ghost:hover { border-color: #00F0FF; color: #00F0FF; }
+    </style>
+    
+    <section class="gaming-community-feed" id="community">
+        <div class="feed-container">
+            <div class="feed-header"><h2>Community Feed</h2></div>
+            <div class="posts-list">
+        <div class="feed-post">
+            <div class="post-header">
+                <div class="user-avatar">S</div>
+                <div class="user-info"><h4>ShadowKing</h4><span>2h ago</span></div>
+            </div>
+            <p class="post-content">Just hit Diamond rank! Let's go! 🎮</p>
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400" alt="Post">
+            <div class="post-actions">
+                <button>❤️ 1.2K</button>
+                <button>💬 Comment</button>
+                <button>🔄 Share</button>
+            </div>
+        </div>
+        
+        <div class="feed-post">
+            <div class="post-header">
+                <div class="user-avatar">N</div>
+                <div class="user-info"><h4>NeonSlayer</h4><span>5h ago</span></div>
+            </div>
+            <p class="post-content">New setup is finally complete! Ready to grind.</p>
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=400" alt="Post">
+            <div class="post-actions">
+                <button>❤️ 856</button>
+                <button>💬 Comment</button>
+                <button>🔄 Share</button>
+            </div>
+        </div>
+        
+        <div class="feed-post">
+            <div class="post-header">
+                <div class="user-avatar">C</div>
+                <div class="user-info"><h4>CyberWolf</h4><span>1d ago</span></div>
+            </div>
+            <p class="post-content">Tournament prep starts now. Who's joining?</p>
+            
+            <div class="post-actions">
+                <button>❤️ 432</button>
+                <button>💬 Comment</button>
+                <button>🔄 Share</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <style>
+    .gaming-community-feed { padding: 120px 24px; background: #0A0A1A; }
+    .feed-container { max-width: 600px; margin: 0 auto; }
+    .feed-header { text-align: center; margin-bottom: 48px; }
+    .feed-header h2 { font-family: 'Rajdhani', sans-serif; font-size: 2.5rem; font-weight: 800; color: #FFFFFF; }
+    .posts-list { display: flex; flex-direction: column; gap: 24px; }
+    .feed-post { background: #FFFFFF05; border-radius: 20px; padding: 24px; }
+    .post-header { display: flex; gap: 12px; margin-bottom: 16px; }
+    .user-avatar { width: 48px; height: 48px; background: #00F0FF; color: #0A0A1A; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
+    .user-info h4 { font-weight: 700; color: #FFFFFF; }
+    .user-info span { font-size: 0.85rem; color: #FF00E4; }
+    .post-content { color: #FFFFFF; line-height: 1.6; margin-bottom: 16px; }
+    .feed-post img { width: 100%; border-radius: 12px; margin-bottom: 16px; }
+    .post-actions { display: flex; gap: 16px; }
+    .post-actions button { background: #FFFFFF08; border: none; padding: 10px 20px; border-radius: 100px; color: #FFFFFF; cursor: pointer; transition: all 0.3s ease; }
+    .post-actions button:hover { background: #00F0FF20; }
+    </style>
+    
+    <section id="why-choose-us" class="gaming-features-split" id="features"><div class="split-grid">
+        <div class="split-img" style="background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000') center/cover"></div>
+        <div class="split-content"><span class="tag">Features</span><h2>Next-Gen Gaming</h2><ul class="feature-list">
+            <li><span class="check">✓</span> Ray-tracing graphics</li>
+            <li><span class="check">✓</span> 120 FPS support</li>
+            <li><span class="check">✓</span> Haptic feedback</li>
+            <li><span class="check">✓</span> Cloud saves</li>
+        </ul><a href="#" class="cta-btn">Learn More</a></div>
+    </div></section>
+    <style>
+    .gaming-features-split { min-height: 100vh; display: flex; }
+    .split-grid { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+    .split-img { background-size: cover; }
+    .split-content { background: #0D0D15; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; color: #fff; }
+    .tag { color: #00F0FF; text-transform: uppercase; letter-spacing: 4px; font-size: 0.9rem; margin-bottom: 20px; }
+    .split-content h2 { font-size: 3rem; margin-bottom: 40px; }
+    .feature-list { list-style: none; margin-bottom: 40px; }
+    .feature-list li { padding: 15px 0; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 15px; font-size: 1.1rem; }
+    .check { color: #00F0FF; font-weight: bold; }
+    .cta-btn { display: inline-block; padding: 18px 50px; background: #00F0FF; color: #fff; text-decoration: none; font-weight: 700; align-self: flex-start; transition: 0.3s; }
+    .cta-btn:hover { transform: scale(1.05); }
+    @media (max-width: 900px) { .split-grid { grid-template-columns: 1fr; } .split-img { height: 300px; } }
+    </style>
+    
+    <section class="gaming-gallery-grid" id="gallery"><div class="container"><h2>Gallery</h2><div class="gallery-grid"><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600')"><div class="overlay"><span>🔍</span></div></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600')"><div class="overlay"><span>🔍</span></div></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600')"><div class="overlay"><span>🔍</span></div></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1493711662062-fa541f7f3d24?w=600')"><div class="overlay"><span>🔍</span></div></div></div></div></section>
+    <style>
+    .gaming-gallery-grid { padding: 100px 40px; background: #0D0D15; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .gaming-gallery-grid h2 { font-size: 2.5rem; color: #fff; text-align: center; margin-bottom: 50px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .gallery-item { height: 300px; background-size: cover; background-position: center; border-radius: 16px; position: relative; overflow: hidden; cursor: pointer; }
+    .gallery-item .overlay { position: absolute; inset: 0; background: #00F0FF90; display: flex; align-items: center; justify-content: center; opacity: 0; transition: 0.3s; }
+    .gallery-item:hover .overlay { opacity: 1; }
+    .overlay span { font-size: 3rem; }
+    @media (max-width: 768px) { .gallery-grid { grid-template-columns: 1fr; } }
+    </style>
+    <section id="footer">
+    <footer class="gaming-footer-split">
+        <div class="split-left">
+            <div class="left-content">
+                <h2>GameZone</h2>
+                <p>Join the ultimate gaming community. Play, compete, and connect with millions of players worldwide.</p>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="split-right">
+            <div class="right-content">
+                <div class="links-grid">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#">Games</a>
+                        <a href="#">Tournaments</a>
+                        <a href="#">Store</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Community</h4>
+                        <a href="#">Discord</a>
+                        <a href="#">Forums</a>
+                        <a href="#">Teams</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2024 GameZone. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+    .gaming-footer-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 400px;
+    }
+    .split-left {
+        background: linear-gradient(135deg, #00F0FF, #00F0FFCC);
+        padding: 80px 60px;
+        display: flex;
+        align-items: center;
+    }
+    .split-right {
+        background: #0A0A1A;
+        padding: 80px 60px;
+        display: flex;
+        align-items: center;
+    }
+    .left-content {
+        max-width: 400px;
+    }
+    .left-content h2 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.5rem;
+        color: #0A0A1A;
+        margin-bottom: 20px;
+    }
+    .left-content p {
+        color: #0A0A1ACC;
+        line-height: 1.7;
+        margin-bottom: 32px;
+    }
+    .newsletter-box {
+        display: flex;
+        gap: 12px;
+    }
+    .newsletter-box input {
+        flex: 1;
+        padding: 14px 20px;
+        background: #0A0A1A20;
+        border: 1px solid #0A0A1A40;
+        border-radius: 8px;
+        color: #0A0A1A;
+        font-size: 1rem;
+    }
+    .newsletter-box input::placeholder {
+        color: #0A0A1A80;
+    }
+    .newsletter-box button {
+        padding: 14px 28px;
+        background: #0A0A1A;
+        color: #00F0FF;
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .newsletter-box button:hover {
+        transform: scale(1.05);
+    }
+    .right-content {
+        width: 100%;
+    }
+    .links-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-bottom: 48px;
+    }
+    .link-group h4 {
+        color: #FFFFFF;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .link-group a {
+        display: block;
+        color: #FF00E4;
+        text-decoration: none;
+        padding: 6px 0;
+        transition: color 0.3s ease;
+    }
+    .link-group a:hover {
+        color: #00F0FF;
+    }
+    .copyright {
+        color: #FF00E4;
+        font-size: 0.9rem;
+        padding-top: 24px;
+        border-top: 1px solid #FFFFFF10;
+    }
+    @media (max-width: 900px) {
+        .gaming-footer-split { grid-template-columns: 1fr; }
+        .split-left, .split-right { padding: 60px 24px; }
+        .links-grid { grid-template-columns: 1fr 1fr; }
+    }
+    </style>
+    </section>
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="faq-header">
+                    <h2>FAQ</h2>
+                    <p>Frequently asked questions</p>
+                </div>
+                <div class="faq-list">
+            <div class="faq-item" data-faq="0">
+                <button class="faq-question" onclick="toggleFAQ(0)" aria-expanded="false">
+                    <span>What are your business hours?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-0">
+                    <p>We're open Monday to Friday from 9 AM to 6 PM, and Saturday from 10 AM to 4 PM. We're closed on Sundays.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="1">
+                <button class="faq-question" onclick="toggleFAQ(1)" aria-expanded="false">
+                    <span>How can I contact you?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-1">
+                    <p>You can reach us via email, phone, or by filling out our contact form. We typically respond within 24 hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="2">
+                <button class="faq-question" onclick="toggleFAQ(2)" aria-expanded="false">
+                    <span>Do you offer refunds?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-2">
+                    <p>Yes, we offer a 30-day satisfaction guarantee. If you're not happy with our service, contact us for a full refund.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="3">
+                <button class="faq-question" onclick="toggleFAQ(3)" aria-expanded="false">
+                    <span>What are your business hours?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-3">
+                    <p>We're open Monday to Friday from 9 AM to 6 PM, and Saturday from 10 AM to 4 PM. We're closed on Sundays.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="4">
+                <button class="faq-question" onclick="toggleFAQ(4)" aria-expanded="false">
+                    <span>How can I contact you?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-4">
+                    <p>You can reach us via email, phone, or by filling out our contact form. We typically respond within 24 hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="5">
+                <button class="faq-question" onclick="toggleFAQ(5)" aria-expanded="false">
+                    <span>Do you offer refunds?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-5">
+                    <p>Yes, we offer a 30-day satisfaction guarantee. If you're not happy with our service, contact us for a full refund.</p>
+                </div>
+            </div>
+            </div>
+                <div class="faq-cta">
+                    <p>Still have questions?</p>
+                    <a href="#contact" class="cta-link">Contact our support team →</a>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .faq-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+        }
+        .faq-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .faq-header h2 {
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+        .faq-header p { color: #6b7280; font-size: 1.1rem; }
+        .faq-list { display: flex; flex-direction: column; gap: 16px; }
+        .faq-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .faq-item:hover { border-color: #00F0FF40; }
+        .faq-item.active {
+            border-color: #00F0FF;
+            box-shadow: 0 8px 30px #00F0FF15;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            transition: color 0.3s;
+        }
+        .faq-question:hover { color: #00F0FF; }
+        .faq-icon {
+            flex-shrink: 0;
+            color: #00F0FF;
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer p {
+            padding: 0 24px 24px;
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .faq-item.active .faq-answer { max-height: 500px; }
+        .faq-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: #00F0FF08;
+            border-radius: 20px;
+        }
+        .faq-cta p { color: #6b7280; margin-bottom: 12px; }
+        .cta-link {
+            color: #00F0FF;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .cta-link:hover { text-decoration: underline; }
+        </style>
+        
+        <script>
+        function toggleFAQ(index) {
+            const item = document.querySelector(`[data-faq="${index}"]`);
+            const wasActive = item.classList.contains('active');
+            const btn = item.querySelector('.faq-question');
+            
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            
+            // Open clicked if wasn't active
+            if (!wasActive) {
+                item.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+        
+        // Keyboard navigation
+        document.querySelectorAll('.faq-question').forEach((btn, i) => {
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(i);
+                }
+            });
+        });
+        </script>
+        
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-4">Gamezilla</div>
+                    <p class="text-gray-400 leading-relaxed">Level Up with Gamezilla</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    
+                <a href="#" class="text-gray-400 hover:text-white transition-colors block">
+                    Home
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors block">
+                    About
+                </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Connect</h4>
+                <div class="space-y-3">
+                    
+                <a href="#" class="text-gray-400 hover:text-white transition-colors block">
+                    Facebook
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors block">
+                    Twitter
+                </a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">2025 Gamezilla. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.animate-on-scroll').forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0, y: 100, scale: 0.8 },
+                { opacity: 1, y: 0, scale: 1, duration: 1, ease: "elastic.out(1, 0.5)",
+                  scrollTrigger: { trigger: element, start: "top 90%", toggleActions: "play none none reverse" },
+                  delay: index * 0.05
+                }
+            );
+        });
+        </script>
+    
+    <!-- Smooth scroll and active nav highlighting -->
+    <script>
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

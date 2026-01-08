@@ -1,0 +1,969 @@
+{
+  "projectName": "Adi Resturant",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Savor Flavors at Adi Resturant",
+    "description": "Indulge in a culinary journey with fresh, local ingredients and signature dishes at Adi Resturant",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Warm & Inviting",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#7C3AED",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#7C3AED",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "background": "#0F172A",
+      "surface": "#1F2937",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #7C3AED 0%, #10B981 100%)",
+      "accent": "linear-gradient(135deg, #F59E0B 0%, #7C3AED 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Hero Section",
+      "props": {
+        "layoutVariant": "split-left-text",
+        "title": "Savor the Flavors",
+        "subtitle": "fsdafsad",
+        "description": "fdsa",
+        "cta": "Reserve a Table",
+        "backgroundStyle": "image",
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "phone": "fdsafsa",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "About Us",
+      "props": {
+        "title": "Our Story",
+        "story": "At Adi Resturant, we're passionate about serving the best culinary experience. Our chef's story began with a love for food and a dream to create a warm, inviting atmosphere where people can come together to savor flavors.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founding Year",
+            "description": "Adi Resturant was founded with a mission to provide the best dining experience"
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          }
+        ],
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "description": "fdsa",
+        "phone": "fdsafsa",
+        "subtitle": "fsdafsad",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds",
+        "layoutVariant": "split-content"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "sectionTitle": "Signature Dishes",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": [
+          {
+            "name": "Grilled Chicken",
+            "description": "Tender grilled chicken with a hint of smoky flavor, served with a side of fresh vegetables",
+            "price": "$15",
+            "category": "Mains"
+          },
+          {
+            "name": "Seafood Paella",
+            "description": "Savory seafood paella with a blend of fresh seafood and spices, served with a side of garlic bread",
+            "price": "$25",
+            "category": "Mains"
+          }
+        ],
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "description": "fdsa",
+        "phone": "fdsafsa",
+        "subtitle": "fsdafsad",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds",
+        "layoutVariant": "image-cards"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Gallery",
+      "props": {
+        "title": "Our Gallery",
+        "subtitle": "fsdafsad",
+        "categories": [
+          "Dishes",
+          "Events"
+        ],
+        "images": [
+          "https://example.com/image1.jpg",
+          "https://example.com/image2.jpg"
+        ],
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "description": "fdsa",
+        "phone": "fdsafsa",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds",
+        "layoutVariant": "carousel"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-reservation": {
+      "id": "reservation",
+      "type": "Reservation",
+      "name": "Reservations",
+      "props": {
+        "title": "Reserve a Table",
+        "description": "fdsa",
+        "ctaText": "Reserve Now",
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "phone": "fdsafsa",
+        "subtitle": "fsdafsad",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-footer": {
+      "id": "footer",
+      "type": "Footer",
+      "name": "Footer",
+      "props": {
+        "logo": "Adi Resturant",
+        "tagline": "Savor the Flavors",
+        "sections": [
+          {
+            "title": "Quick Links",
+            "links": [
+              {
+                "text": "Home",
+                "href": "#"
+              }
+            ]
+          }
+        ],
+        "copyright": " 2025 Adi Resturant. All rights reserved.",
+        "businessName": "Adi resturant",
+        "name": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "description": "fdsa",
+        "phone": "fdsafsa",
+        "subtitle": "fsdafsad",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Adi Resturant",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#"
+        }
+      ],
+      "cta": {
+        "text": "Reserve a Table",
+        "href": "#reservation",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Adi Resturant",
+      "tagline": "Savor the Flavors",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "copyright": " 2025 Adi Resturant. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "warm-elegant",
+    "hero_concept": "A warm and inviting hero section that showcases the culinary experience at Adi Resturant",
+    "visual_personality": "A blend of modern and elegant elements that reflect the restaurant's passion for food and hospitality"
+  },
+  "projectId": "3cd34fdc-3cea-4efe-9d0d-591ea869faae",
+  "session_id": "sess_c91b01d7",
+  "created_at": "2026-01-08T16:20:58.955591",
+  "websiteType": "restaurant",
+  "metadata": {
+    "session_id": "sess_c91b01d7",
+    "timestamp": "2026-01-08T16:20:54.539918",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Adi Resturant",
+    "prop_answers": {
+      "businessName": "Adi resturant",
+      "colorTheme": "Creative Orange - Energetic orange with dark accents",
+      "image": "Product showcase",
+      "description": "fdsa",
+      "phone": "fdsafsa",
+      "subtitle": "fsdafsad",
+      "mission": "fsdafsda",
+      "address": "fdsafsda",
+      "gallery": "fdsafds"
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "fsdafsad",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Adi Resturant",
+      "target_audience": "Adi resturant",
+      "goals": "Product showcase",
+      "services": [],
+      "style_preferences": [
+        "fdsafsa",
+        "fsdafsda navigation",
+        "fdsafds fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Adi resturant"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Creative Orange - Energetic orange with dark accents"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "Product showcase"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsa"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsdafsad"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsdafsda"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsda"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafds"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Adi resturant",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Creative Orange - Energetic orange with dark accents",
+          "question": ""
+        },
+        "q3": {
+          "answer": "Product showcase",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q5": {
+          "answer": "fdsafsa",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fsdafsad",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fsdafsda",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fdsafsda",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fdsafds",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Adi resturant",
+        "colorTheme": "Creative Orange - Energetic orange with dark accents",
+        "image": "Product showcase",
+        "description": "fdsa",
+        "phone": "fdsafsa",
+        "subtitle": "fsdafsad",
+        "mission": "fsdafsda",
+        "address": "fdsafsda",
+        "gallery": "fdsafds"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#7C3AED",
+          "#10B981",
+          "#F59E0B",
+          "#1F2937",
+          "#0F172A"
+        ]
+      },
+      "color_theme_text": "Creative Orange - Energetic orange with dark accents",
+      "font_style": "fdsafds",
+      "navigation_style": "fsdafsda"
+    },
+    "features": [
+      "About",
+      "Hero",
+      "Our Menu",
+      "Gallery",
+      "Reservation",
+      "Footer",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_c91b01d7",
+      "project_id": 10,
+      "timestamp": "2026-01-08T10:49:31.175368Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the user's responses, it seems that the intended business or website is:\n\nRestaurant Site.",
+        "answers": {
+          "q1": "Adi resturant",
+          "q2": "Creative Orange - Energetic orange with dark accents",
+          "q3": "Product showcase",
+          "q4": "fdsa",
+          "q5": "fdsafsa",
+          "q6": "fsdafsad",
+          "q7": "fsdafsda",
+          "q8": "fdsafsda",
+          "q9": "fdsafds"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your restaurant name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Choose your color palette:",
+            "type": "radio",
+            "options": [
+              "Corporate Blue - Professional blues and grays",
+              "Creative Orange - Energetic orange with dark accents",
+              "Tech Purple - Modern purple gradients",
+              "Minimal B&W - Black and white sophistication"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What type of hero image fits your brand?",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Product showcase",
+              "Abstract/artistic",
+              "Location/space",
+              "Team/people",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q4",
+            "question": "What would you like to say for 'Description'?",
+            "type": "text",
+            "prop_key": "description",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Phone'?",
+            "type": "text",
+            "prop_key": "phone",
+            "section": "footer"
+          },
+          {
+            "id": "q6",
+            "question": "Your brand's promise in one sentence:",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "What would you like to say for 'Mission'?",
+            "type": "text",
+            "prop_key": "mission",
+            "section": "about"
+          },
+          {
+            "id": "q8",
+            "question": "Tell us more about your Address for the footer:",
+            "type": "text",
+            "prop_key": "address",
+            "section": "footer"
+          },
+          {
+            "id": "q9",
+            "question": "Enter your information for 'Gallery':",
+            "type": "text",
+            "prop_key": "gallery",
+            "section": "gallery"
+          },
+          {
+            "id": "q10",
+            "question": "What action should visitors take?",
+            "type": "radio",
+            "prop_key": "cta",
+            "section": "hero",
+            "options": [
+              "View Menu",
+              "Book Now",
+              "Shop Now",
+              "Get Started",
+              "Contact Us",
+              "Learn More",
+              "Explore",
+              "Join Now"
+            ]
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "image",
+          "description",
+          "phone",
+          "subtitle",
+          "mission",
+          "address",
+          "gallery",
+          "cta"
+        ],
+        "color_preferences": "Creative Orange - Energetic orange with dark accents",
+        "features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#FF9900",
+              "#660000",
+              "#999999",
+              "#AAAAAA",
+              "#333333"
+            ],
+            "title": "Fierce Ember Dawn",
+            "inspiration": "Vibrant orange meets molten shadows."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#FFC107",
+              "#7A5100",
+              "#4A3C38",
+              "#434A54",
+              "#8F2F21"
+            ],
+            "title": "Solar Flare Frenzy",
+            "inspiration": "Raging sunsets paint the sky."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#FF69B4",
+              "#7F0000",
+              "#4D2B7E",
+              "#C0C0C0",
+              "#333"
+            ],
+            "title": "Darkstar Rise",
+            "inspiration": "Celestial energy blazes with darkness."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#FF3F4F",
+              "#660033",
+              "#999999",
+              "#AAAAAA",
+              "#333333"
+            ],
+            "title": "Crimson Ember",
+            "inspiration": "Fiery passion ignites the night."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#FFD700",
+              "#7A9648",
+              "#434A54",
+              "#434A54",
+              "#666"
+            ],
+            "title": "Glimmering Oasis",
+            "inspiration": "Golden orange hues soothe the desert."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#FF9900",
+              "#7F4D00",
+              "#2F3C40",
+              "#434A54",
+              "#9F1C33"
+            ],
+            "title": "Blazing Citadel",
+            "inspiration": "Intense city life pulses through steel."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#FFC400",
+              "#9B6633",
+              "#A9A9A9",
+              "#C0C0C0",
+              "#5A5A5A"
+            ],
+            "title": "Sunkissed Dream",
+            "inspiration": "Soft orange hues dance with morning light."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#FF8C1A",
+              "#6F2F2F",
+              "#4D2F43",
+              "#555555",
+              "#8F0606"
+            ],
+            "title": "Stormchaser",
+            "inspiration": "Turbulent energy clashes with thunder."
+          }
+        ],
+        "selected_palette": {
+          "id": "p2",
+          "colors": [
+            "#FFC107",
+            "#7A5100",
+            "#4A3C38",
+            "#434A54",
+            "#8F2F21"
+          ],
+          "title": "Solar Flare Frenzy",
+          "inspiration": "Raging sunsets paint the sky."
+        },
+        "selected_features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-reservation",
+    "comp-footer"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 65
+}

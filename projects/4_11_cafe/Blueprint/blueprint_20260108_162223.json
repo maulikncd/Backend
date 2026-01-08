@@ -1,0 +1,978 @@
+{
+  "projectName": "Foodie Adda",
+  "projectType": "restaurant",
+  "seo": {
+    "title": "Savor the Flavors at Foodie Adda",
+    "description": "Experience the culinary delight at Foodie Adda, where freshness and local ingredients come together in a warm and inviting atmosphere.",
+    "keywords": [
+      "dining experience",
+      "culinary",
+      "flavors",
+      "freshness",
+      "cuisine"
+    ]
+  },
+  "theme": {
+    "themeName": "Elegant Bistro",
+    "themeMood": "Warm & Inviting",
+    "primaryColor": "#D4AF37",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#D4AF37",
+      "secondary": "#FFFFFF",
+      "accent": "#F5E6C8",
+      "background": "#0F0F0F",
+      "surface": "#1A1A1A",
+      "text": "#FFFFFF"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #D4AF37 0%, #FFFFFF 100%)",
+      "accent": "linear-gradient(135deg, #F5E6C8 0%, #D4AF37 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Welcome to Foodie Adda",
+      "props": {
+        "layoutVariant": "fullscreen-overlay",
+        "title": "Indulge in the Flavors",
+        "subtitle": "fdsa",
+        "description": "Where every bite tells a story of passion and dedication to the art of cuisine.",
+        "cta": "Reserve a Table",
+        "ctaSecondary": "View Our Menu",
+        "backgroundStyle": "image",
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "tagline": "fsad",
+        "story": "fdsafsda"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-about": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "The Chef's Passion",
+        "story": "fdsafsda",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Established",
+            "description": "Foodie Adda was established with a vision to provide an exceptional dining experience."
+          },
+          {
+            "year": "2022",
+            "title": "Expansion",
+            "description": "We expanded our operations to cater to a wider audience."
+          }
+        ],
+        "stats": [
+          {
+            "value": "100+",
+            "label": "Happy Customers"
+          }
+        ],
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "tagline": "fsad"
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-menu": {
+      "id": "menu",
+      "type": "Menu",
+      "name": "Our Menu",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Explore Our Cuisine",
+        "categories": [
+          "Starters",
+          "Mains",
+          "Desserts"
+        ],
+        "items": [
+          {
+            "name": "Grilled Chicken",
+            "description": "Tender and juicy, marinated in our special blend of herbs.",
+            "price": "$15",
+            "category": "Starters"
+          },
+          {
+            "name": "Pan-Seared Salmon",
+            "description": "Fresh salmon, cooked to perfection with a hint of lemon and garlic.",
+            "price": "$25",
+            "category": "Mains"
+          },
+          {
+            "name": "Chocolate Lava Cake",
+            "description": "Rich and decadent, a perfect treat for any chocolate lover.",
+            "price": "$8",
+            "category": "Desserts"
+          }
+        ],
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "tagline": "fsad",
+        "story": "fdsafsda"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-gallery": {
+      "id": "gallery",
+      "type": "Gallery",
+      "name": "Our Gallery",
+      "props": {
+        "layoutVariant": "masonry",
+        "title": "A Glimpse into Foodie Adda",
+        "subtitle": "fdsa",
+        "categories": [
+          "Dishes",
+          "Ambiance",
+          "Events"
+        ],
+        "images": "fdsa",
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "tagline": "fsad",
+        "story": "fdsafsda"
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-reservation": {
+      "id": "reservation",
+      "type": "CTA",
+      "name": "Reserve a Table",
+      "props": {
+        "layoutVariant": "minimal-statement",
+        "title": "Book Your Experience",
+        "description": "Join us for an unforgettable dining experience.",
+        "ctaText": "Reserve Now",
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "tagline": "fsad",
+        "story": "fdsafsda"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-footer": {
+      "id": "footer",
+      "type": "Footer",
+      "name": "Footer",
+      "props": {
+        "layoutVariant": "split",
+        "logo": "Foodie Adda",
+        "tagline": "fsad",
+        "sections": [
+          {
+            "title": "Quick Links",
+            "links": [
+              "Home",
+              "Menu",
+              "About"
+            ]
+          },
+          {
+            "title": "Connect",
+            "links": [
+              "Facebook",
+              "Instagram",
+              "Twitter"
+            ]
+          }
+        ],
+        "copyright": " 2025 Foodie Adda. All rights reserved.",
+        "businessName": "foodie adda",
+        "name": "fdsfsa",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "story": "fdsafsda"
+      },
+      "animation": {
+        "type": "fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Foodie Adda",
+        "style": "modern"
+      },
+      "links": [
+        "Home",
+        "Menu",
+        "About",
+        "Gallery",
+        "Reserve a Table"
+      ],
+      "cta": {
+        "text": "Reserve Now",
+        "href": "#reservation",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Foodie Adda",
+      "tagline": "Where every bite tells a story",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            "Home",
+            "Menu",
+            "About"
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            "Facebook",
+            "Instagram",
+            "Twitter"
+          ]
+        }
+      ],
+      "copyright": " 2025 Foodie Adda. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "warm & inviting"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Elegant Bistro",
+    "hero_concept": "A warm and inviting atmosphere, with a focus on culinary excellence and a passion for sharing this excellence with the community.",
+    "visual_personality": "Warm, elegant, and sophisticated, with a focus on creating an unforgettable dining experience."
+  },
+  "projectId": "34c2c1cf-46f5-4c81-ae6f-d01c263b5cf6",
+  "session_id": "sess_c0606e51",
+  "created_at": "2026-01-08T16:22:23.879053",
+  "websiteType": "restaurant",
+  "metadata": {
+    "session_id": "sess_c0606e51",
+    "timestamp": "2026-01-08T16:22:19.029108",
+    "user_prompt": "Restaurant Site",
+    "business_name": "Foodie Adda",
+    "prop_answers": {
+      "businessName": "foodie adda",
+      "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+      "images": "fdsa",
+      "mission": "fdsafsad",
+      "image": "Product showcase",
+      "subtitle": "fdsa",
+      "tagline": "fsad",
+      "story": "fdsafsda",
+      "name": "fdsfsa"
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "fdsa",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "restaurant",
+      "industry": "restaurant",
+      "business_name": "Foodie Adda",
+      "target_audience": "foodie adda",
+      "goals": "fdsa",
+      "services": [],
+      "style_preferences": [
+        "Product showcase",
+        "fsad navigation",
+        "fdsfsa fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "fdsafsda",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "foodie adda"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Elegant Gold - Black and gold - fine dining sophistication"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsad"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "Product showcase"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsa"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "fsad"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsafsda"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "fdsfsa"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "foodie adda",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Elegant Gold - Black and gold - fine dining sophistication",
+          "question": ""
+        },
+        "q3": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q4": {
+          "answer": "fdsafsad",
+          "question": ""
+        },
+        "q5": {
+          "answer": "Product showcase",
+          "question": ""
+        },
+        "q6": {
+          "answer": "fdsa",
+          "question": ""
+        },
+        "q7": {
+          "answer": "fsad",
+          "question": ""
+        },
+        "q8": {
+          "answer": "fdsafsda",
+          "question": ""
+        },
+        "q9": {
+          "answer": "fdsfsa",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "foodie adda",
+        "colorTheme": "Elegant Gold - Black and gold - fine dining sophistication",
+        "images": "fdsa",
+        "mission": "fdsafsad",
+        "image": "Product showcase",
+        "subtitle": "fdsa",
+        "tagline": "fsad",
+        "story": "fdsafsda",
+        "name": "fdsfsa"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#D4AF37",
+          "#FFFFFF",
+          "#F5E6C8",
+          "#1A1A1A",
+          "#0F0F0F"
+        ]
+      },
+      "color_theme_text": "Elegant Gold - Black and gold - fine dining sophistication",
+      "font_style": "fdsfsa",
+      "navigation_style": "fsad"
+    },
+    "features": [
+      "About",
+      "Hero",
+      "Our Menu",
+      "Gallery",
+      "Reservation",
+      "Footer",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_c0606e51",
+      "project_id": 11,
+      "timestamp": "2026-01-08T10:52:18.935382Z",
+      "user_prompt": "Restaurant Site",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Restaurant Site",
+        "language": "English",
+        "business_type": "Based on the user's input, we can identify the following relevant points:\n\n1. The user initially",
+        "answers": {
+          "q1": "foodie adda",
+          "q2": "Elegant Gold - Black and gold - fine dining sophistication",
+          "q3": "fdsa",
+          "q4": "fdsafsad",
+          "q5": "Product showcase",
+          "q6": "fdsa",
+          "q7": "fsad",
+          "q8": "fdsafsda",
+          "q9": "fdsfsa"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "Enter your restaurant name:",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Which vibe matches your brand?",
+            "type": "radio",
+            "options": [
+              "Elegant Gold - Black and gold - fine dining sophistication",
+              "Fresh Garden - Greens and earth tones - farm to table vibe",
+              "Warm Terracotta - Warm oranges and browns - rustic comfort",
+              "Ocean Blue - Blues and whites - coastal fresh feel"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Tell us more about your Images for the gallery:",
+            "type": "text",
+            "prop_key": "images",
+            "section": "gallery"
+          },
+          {
+            "id": "q4",
+            "question": "What would you like to say for 'Mission'?",
+            "type": "text",
+            "prop_key": "mission",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "Choose your hero visual style:",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Team/people",
+              "Product showcase",
+              "Location/space",
+              "Abstract/artistic",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q6",
+            "question": "What makes you special? (short phrase)",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "What would you like to say for 'Tagline'?",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "What inspired you to start?",
+            "type": "textarea",
+            "prop_key": "story",
+            "section": "about"
+          },
+          {
+            "id": "q9",
+            "question": "Enter your information for 'Name':",
+            "type": "text",
+            "prop_key": "name",
+            "section": "footer"
+          },
+          {
+            "id": "q10",
+            "question": "Enter your information for 'Phone':",
+            "type": "text",
+            "prop_key": "phone",
+            "section": "footer"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "images",
+          "mission",
+          "image",
+          "subtitle",
+          "tagline",
+          "story",
+          "name",
+          "phone"
+        ],
+        "features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#FFC107",
+              "#964B00",
+              "#FF99CC",
+              "#8B9467",
+              "#F0F0F0"
+            ],
+            "title": "Spice Bazaar",
+            "inspiration": "Rich aromas of a bustling market"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#FFA07A",
+              "#3E8E41",
+              "#FF9966",
+              "#964B00",
+              "#F5F5F5"
+            ],
+            "title": "Ginger Fusion",
+            "inspiration": "Vibrant fusion of international flavors"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#FFC400",
+              "#2E865F",
+              "#66CD00",
+              "#FFA07A",
+              "#F2F2F2"
+            ],
+            "title": "Savory Sizzle",
+            "inspiration": "Sizzling plates of savory delight"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#00BFFF",
+              "#FFC0CB",
+              "#FFFF99",
+              "#808080",
+              "#C5C3C5"
+            ],
+            "title": "Dessert Dream",
+            "inspiration": "Sweet treats that soothe the soul"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#C6F4C5",
+              "#3B5998",
+              "#F36D8F",
+              "#FFA8C4",
+              "#E4E2E5"
+            ],
+            "title": "Fresh Fusion",
+            "inspiration": "Healthy bites that bring people together"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#A52A2A",
+              "#FF9900",
+              "#F5DEB3",
+              "#964B00",
+              "#D3D3D3"
+            ],
+            "title": "Saffron Nights",
+            "inspiration": "Warm, exotic evenings and spices"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#F5D6CE",
+              "#8B9467",
+              "#B38867",
+              "#FFC500",
+              "#F7F7F7"
+            ],
+            "title": "Bistro Chic",
+            "inspiration": "Sophisticated comfort food for connoisseurs"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#34A850",
+              "#8E44AD",
+              "#FFA07A",
+              "#F2C464",
+              "#D3D3D3"
+            ],
+            "title": "Tropical Oasis",
+            "inspiration": "Fresh, vibrant flavors of an exotic getaway"
+          }
+        ],
+        "selected_palette": {
+          "id": "p3",
+          "colors": [
+            "#FFC400",
+            "#2E865F",
+            "#66CD00",
+            "#FFA07A",
+            "#F2F2F2"
+          ],
+          "title": "Savory Sizzle",
+          "inspiration": "Sizzling plates of savory delight"
+        },
+        "selected_features": [
+          {
+            "id": "about",
+            "name": "About",
+            "description": "Tell your story and mission.",
+            "benefit": "Builds trust",
+            "priority": "High"
+          },
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Eye-catching hero banner section.",
+            "benefit": "First impression",
+            "priority": "High"
+          },
+          {
+            "id": "menu",
+            "name": "Our Menu",
+            "description": "Food and drink offerings.",
+            "benefit": "Shows offerings",
+            "priority": "High"
+          },
+          {
+            "id": "gallery",
+            "name": "Gallery",
+            "description": "Photo gallery.",
+            "benefit": "Visual appeal",
+            "priority": "Medium"
+          },
+          {
+            "id": "reservation",
+            "name": "Reservation",
+            "description": "Reservation section.",
+            "benefit": "Enhances website",
+            "priority": "Medium"
+          },
+          {
+            "id": "footer",
+            "name": "Footer",
+            "description": "Site links and copyright.",
+            "benefit": "Professional finish",
+            "priority": "Low"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "about",
+          "name": "About",
+          "description": "Tell your story and mission.",
+          "benefit": "Builds trust",
+          "priority": "High"
+        },
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Eye-catching hero banner section.",
+          "benefit": "First impression",
+          "priority": "High"
+        },
+        {
+          "id": "menu",
+          "name": "Our Menu",
+          "description": "Food and drink offerings.",
+          "benefit": "Shows offerings",
+          "priority": "High"
+        },
+        {
+          "id": "gallery",
+          "name": "Gallery",
+          "description": "Photo gallery.",
+          "benefit": "Visual appeal",
+          "priority": "Medium"
+        },
+        {
+          "id": "reservation",
+          "name": "Reservation",
+          "description": "Reservation section.",
+          "benefit": "Enhances website",
+          "priority": "Medium"
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "description": "Site links and copyright.",
+          "benefit": "Professional finish",
+          "priority": "Low"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-about",
+    "comp-menu",
+    "comp-gallery",
+    "comp-reservation",
+    "comp-footer"
+  ],
+  "quality": {
+    "score": 95,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 1,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 66
+}

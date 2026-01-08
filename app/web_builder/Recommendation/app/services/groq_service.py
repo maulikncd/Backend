@@ -1369,86 +1369,110 @@ RULES:
         return "agency"  # Default
     
     def _get_features_from_templates(self, website_type: str) -> List[Dict[str, Any]]:
-        """Get features based on available templates for the website type"""
+        """
+        DYNAMICALLY scan the actual template folders for the website type.
+        This ensures features are always in sync with available templates.
+        """
+        from pathlib import Path
         
-        # Template-based features for each website type
-        # NOTE: This list is filtered DYNAMICALLY by folder existence below.
-        TEMPLATE_FEATURES = {
-            "movie": [
-                {"id": "hero", "name": "Hero", "description": "Dramatic movie-themed hero banner.", "benefit": "Instant impact", "priority": "High"},
-                {"id": "movies", "name": "Now Showing", "description": "Grid of currently playing movies.", "benefit": "Shows offerings", "priority": "High"},
-                {"id": "showtimes", "name": "Showtimes", "description": "Interactive schedule.", "benefit": "Easy booking", "priority": "High"},
-                {"id": "tickets", "name": "Book Tickets", "description": "Ticket booking section.", "benefit": "Converts visitors", "priority": "High"},
-                {"id": "about", "name": "About Cinema", "description": "Cinema story and facilities.", "benefit": "Builds trust", "priority": "Medium"},
-                {"id": "gallery", "name": "Gallery", "description": "Photo gallery of cinema halls.", "benefit": "Visual proof", "priority": "Medium"},
-                {"id": "contact", "name": "Contact", "description": "Location and contact form.", "benefit": "Easy reach", "priority": "Medium"},
-            ],
-            "cafe": [
-                {"id": "hero", "name": "Hero", "description": "Warm, inviting hero with cafe ambiance.", "benefit": "First impression", "priority": "High"},
-                {"id": "menu", "name": "Our Menu", "description": "Coffee, pastries, and food menu.", "benefit": "Shows offerings", "priority": "High"},
-                {"id": "about", "name": "Our Story", "description": "The cafe story and values.", "benefit": "Builds connection", "priority": "High"},
-                {"id": "gallery", "name": "Gallery", "description": "Photos of your cafe drinks.", "benefit": "Visual appeal", "priority": "Medium"},
-                {"id": "specials", "name": "Today's Specials", "description": "Daily specials.", "benefit": "Creates urgency", "priority": "Medium"},
-                {"id": "hours", "name": "Hours & Location", "description": "Opening hours and map.", "benefit": "Easy to find", "priority": "High"},
-            ],
-            "gaming": [
-                {"id": "hero", "name": "Hero", "description": "Epic gaming-themed hero banner.", "benefit": "Immediate impact", "priority": "High"},
-                {"id": "games", "name": "Games", "description": "Featured games catalog.", "benefit": "Shows content", "priority": "High"},
-                {"id": "tournaments", "name": "Tournaments", "description": "Upcoming esports events.", "benefit": "Builds community", "priority": "High"},
-                {"id": "community", "name": "Community", "description": "Discord and social links.", "benefit": "Engagement", "priority": "Medium"},
-                {"id": "about", "name": "About Us", "description": "Team info and studio story.", "benefit": "Personal touch", "priority": "Medium"},
-                {"id": "gallery", "name": "Media Gallery", "description": "Screenshots and trailers.", "benefit": "Visual showcase", "priority": "Medium"},
-                {"id": "news", "name": "Updates", "description": "Latest patches and dev logs.", "benefit": "Keeps players informed", "priority": "Low"},
-                {"id": "store", "name": "Game Store", "description": "Link to buy games or merch.", "benefit": "Revenue", "priority": "Low"},
-            ],
-            "restaurant": [
-                {"id": "hero", "name": "Hero", "description": "Elegant restaurant hero.", "benefit": "Ambiance", "priority": "High"},
-                {"id": "menu", "name": "Full Menu", "description": "Interactive food and drink menu.", "benefit": "Key information", "priority": "High"},
-                {"id": "reservations", "name": "Reservations", "description": "Booking slot selector.", "benefit": "Converts", "priority": "High"},
-                {"id": "gallery", "name": "Food Gallery", "description": "High-quality food photography.", "benefit": "Visual delight", "priority": "Medium"},
-                {"id": "about", "name": "Heritage", "description": "Chef and restaurant history.", "benefit": "Authenticity", "priority": "Medium"},
-                {"id": "contact", "name": "Contact", "description": "Location and contact info.", "benefit": "Find us", "priority": "High"},
-            ],
-            "portfolio": [
-                {"id": "hero", "name": "Hero", "description": "Clean personal banner.", "benefit": "Focus", "priority": "High"},
-                {"id": "projects", "name": "Projects", "description": "Showcase of your best work.", "benefit": "Proof", "priority": "High"},
-                {"id": "about", "name": "Profile", "description": "Your skills and experience.", "benefit": "Personal brand", "priority": "High"},
-                {"id": "skills", "name": "Expertise", "description": "Specific tech stack or skills.", "benefit": "Quick info", "priority": "Medium"},
-                {"id": "contact", "name": "Connect", "description": "Contact form and links.", "benefit": "Reachability", "priority": "High"},
-            ],
-            "ecommerce": [
-                {"id": "hero", "name": "Hero", "description": "Sales-focused hero banner.", "benefit": "Conversion", "priority": "High"},
-                {"id": "products", "name": "Products", "description": "Product catalog with categories.", "benefit": "Revenue", "priority": "High"},
-                {"id": "about", "name": "Brand", "description": "Your company mission.", "benefit": "Trust", "priority": "Medium"},
-                {"id": "faq", "name": "Store FAQ", "description": "Shipping, returns, and support.", "benefit": "Reduces doubts", "priority": "Medium"},
-            ],
+        # Human-readable names and descriptions for common folder names
+        FEATURE_METADATA = {
+            # Common sections
+            "hero": {"name": "Hero", "description": "Eye-catching hero banner section.", "benefit": "First impression", "priority": "High"},
+            "about": {"name": "About", "description": "Tell your story and mission.", "benefit": "Builds trust", "priority": "High"},
+            "contact": {"name": "Contact", "description": "Contact form and information.", "benefit": "Easy reach", "priority": "High"},
+            "footer": {"name": "Footer", "description": "Site links and copyright.", "benefit": "Professional finish", "priority": "Low"},
+            "navbar": {"name": "Navigation", "description": "Site navigation bar.", "benefit": "Easy navigation", "priority": "Low"},
+            
+            # Portfolio
+            "projects": {"name": "Projects", "description": "Showcase your best work.", "benefit": "Proof of skills", "priority": "High"},
+            "skills": {"name": "Expertise", "description": "Your technical skills and abilities.", "benefit": "Quick overview", "priority": "Medium"},
+            
+            # E-commerce
+            "products": {"name": "Products", "description": "Product catalog display.", "benefit": "Revenue driver", "priority": "High"},
+            "categories": {"name": "Categories", "description": "Browse products by category.", "benefit": "Easy navigation", "priority": "High"},
+            "features": {"name": "Why Choose Us", "description": "Key selling points.", "benefit": "Builds trust", "priority": "Medium"},
+            "testimonials": {"name": "Reviews", "description": "Customer testimonials.", "benefit": "Social proof", "priority": "Medium"},
+            "newsletter": {"name": "Newsletter", "description": "Email signup form.", "benefit": "Lead capture", "priority": "Medium"},
+            
+            # Cafe/Restaurant
+            "menu": {"name": "Our Menu", "description": "Food and drink offerings.", "benefit": "Shows offerings", "priority": "High"},
+            "gallery": {"name": "Gallery", "description": "Photo gallery.", "benefit": "Visual appeal", "priority": "Medium"},
+            "specials": {"name": "Specials", "description": "Today's special offers.", "benefit": "Creates urgency", "priority": "Medium"},
+            "hours": {"name": "Hours & Location", "description": "Opening hours and map.", "benefit": "Easy to find", "priority": "High"},
+            "reservations": {"name": "Reservations", "description": "Table booking.", "benefit": "Converts visitors", "priority": "High"},
+            
+            # Gaming
+            "games": {"name": "Games", "description": "Featured games catalog.", "benefit": "Shows content", "priority": "High"},
+            "tournaments": {"name": "Tournaments", "description": "Esports events.", "benefit": "Community", "priority": "High"},
+            "community": {"name": "Community", "description": "Discord and social links.", "benefit": "Engagement", "priority": "Medium"},
+            "news": {"name": "Updates", "description": "Latest news and patches.", "benefit": "Keeps informed", "priority": "Low"},
+            "store": {"name": "Store", "description": "Buy games or merch.", "benefit": "Revenue", "priority": "Low"},
+            
+            # Movie/Cinema
+            "movies": {"name": "Now Showing", "description": "Currently playing movies.", "benefit": "Shows offerings", "priority": "High"},
+            "showtimes": {"name": "Showtimes", "description": "Movie schedules.", "benefit": "Easy booking", "priority": "High"},
+            "tickets": {"name": "Book Tickets", "description": "Ticket booking.", "benefit": "Converts", "priority": "High"},
+            
+            # Agency
+            "services": {"name": "Services", "description": "What you offer.", "benefit": "Shows value", "priority": "High"},
+            "team": {"name": "Team", "description": "Meet the team.", "benefit": "Personal touch", "priority": "Medium"},
+            "stats": {"name": "Stats", "description": "Key achievements.", "benefit": "Builds credibility", "priority": "Medium"},
         }
         
-        # Get list of features for this type
-        all_features = TEMPLATE_FEATURES.get(website_type, [])
-        if not all_features:
-            # Fallback to agency features if type unknown
-            all_features = [
+        # Path to the website type's template folder
+        type_path = Path(__file__).parent.parent.parent.parent / "Web_generator" / "app" / "templates" / "website_types" / website_type
+        
+        features = []
+        
+        # Check if the folder exists
+        if type_path.is_dir():
+            # Scan all subdirectories (each is a component template)
+            for folder in sorted(type_path.iterdir()):
+                if folder.is_dir() and not folder.name.startswith("__"):
+                    folder_name = folder.name.lower()
+                    
+                    # Skip navbar as it's auto-included
+                    if folder_name == "navbar":
+                        continue
+                    
+                    # Get metadata or generate default
+                    meta = FEATURE_METADATA.get(folder_name, {
+                        "name": folder_name.replace("_", " ").title(),
+                        "description": f"{folder_name.replace('_', ' ').title()} section.",
+                        "benefit": "Enhances website",
+                        "priority": "Medium"
+                    })
+                    
+                    features.append({
+                        "id": folder_name,
+                        "name": meta["name"],
+                        "description": meta["description"],
+                        "benefit": meta["benefit"],
+                        "priority": meta["priority"]
+                    })
+            
+            print(f"[GroqService] 📂 Scanned {type_path.name}: found {len(features)} template folders")
+        else:
+            print(f"[GroqService] ⚠️ Template folder not found: {type_path}")
+        
+        # If no features found, use fallback
+        if not features:
+            features = [
                 {"id": "hero", "name": "Hero", "description": "Impressive hero banner.", "benefit": "Instant impact", "priority": "High"},
                 {"id": "about", "name": "About Us", "description": "Company story.", "benefit": "Builds trust", "priority": "High"},
                 {"id": "services", "name": "Services", "description": "What you offer.", "benefit": "Shows value", "priority": "High"},
                 {"id": "contact", "name": "Contact", "description": "Contact form.", "benefit": "Easy reach", "priority": "High"},
             ]
-            website_type = "agency"
+            print(f"[GroqService] ⚠️ Using fallback features for '{website_type}'")
+        
+        # Sort by priority (High first, then Medium, then Low)
+        priority_order = {"High": 0, "Medium": 1, "Low": 2}
+        features.sort(key=lambda x: priority_order.get(x.get("priority", "Medium"), 1))
+        
+        return features
 
-        from pathlib import Path
-        type_path = Path(__file__).parent.parent.parent.parent / "Web_generator" / "app" / "templates" / "website_types" / website_type
-        
-        # FILTER: Only keep features that have a corresponding folder
-        filtered_features = []
-        for feature in all_features:
-            feature_id = feature["id"]
-            if (type_path / feature_id).is_dir():
-                filtered_features.append(feature)
-            else:
-                print(f"[GroqService] ⏭️ Filtering out feature '{feature_id}' - no template folder found for '{website_type}'")
-        
-        return filtered_features
+
     
     def _generate_features_with_ai(self, prompt: str, business_type: str, answers: Dict[str, str]) -> List[Dict[str, Any]]:
         """Fallback: Generate features using AI (legacy method)"""
