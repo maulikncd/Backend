@@ -1,0 +1,907 @@
+{
+  "projectName": "London",
+  "projectType": "business",
+  "seo": {
+    "title": "Expert React Solutions",
+    "description": "Transform your business with trusted React expertise and results-driven solutions",
+    "keywords": [
+      "React development",
+      "business solutions",
+      "expertise",
+      "trust",
+      "results",
+      "partnership"
+    ]
+  },
+  "theme": {
+    "themeName": "Professional React",
+    "themeMood": "Professional & Modern",
+    "primaryColor": "#7C3AED",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#7C3AED",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "background": "#F8FAFC",
+      "surface": "#0F172A",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #7C3AED 0%, #10B981 100%)",
+      "accent": "linear-gradient(135deg, #F59E0B 0%, #F59E0B 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "React Frontend Solutions",
+      "props": {
+        "layoutVariant": "centered-overlay",
+        "title": "react frontend is best",
+        "subtitle": "i am expert in react",
+        "description": "Transform your business with trusted React expertise and results-driven solutions. Partner with us for tailored React development services.",
+        "cta": "Get Started",
+        "ctaSecondary": "explore",
+        "backgroundStyle": "gradient-mesh"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-projects": {
+      "id": "projects",
+      "type": "Projects",
+      "name": "Expertise",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "sectionTitle": "Industry Expertise",
+        "sectionSubtitle": "Results-driven solutions for your business",
+        "featureList": [
+          {
+            "icon": "💻",
+            "title": "React Development",
+            "description": "Custom React applications for web and mobile"
+          },
+          {
+            "icon": "📊",
+            "title": "Python Solutions",
+            "description": "Data-driven solutions with Python"
+          },
+          {
+            "icon": "🤖",
+            "title": "AI Integration",
+            "description": "Artificial intelligence solutions for enhanced business performance"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-profile": {
+      "id": "profile",
+      "type": "About",
+      "name": "About Us",
+      "props": {
+        "layoutVariant": "minimal-statement",
+        "title": "Company Profile",
+        "story": "As a seasoned React developer, I bring expertise and trust to every project. With a passion for delivering results-driven solutions, I partner with businesses to transform their operations through tailored React development services.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founded",
+            "description": "Started as a solo React development venture"
+          },
+          {
+            "year": "2022",
+            "title": "Expanded Services",
+            "description": "Added Python and AI integration services to the portfolio"
+          }
+        ],
+        "stats": [
+          {
+            "value": "10+",
+            "label": "Happy Clients"
+          },
+          {
+            "value": "20+",
+            "label": "Successful Projects"
+          }
+        ]
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-expertise": {
+      "id": "expertise",
+      "type": "Features",
+      "name": "Services",
+      "props": {
+        "layoutVariant": "masonry",
+        "sectionTitle": "Our Services",
+        "sectionSubtitle": "Tailored solutions for your business needs",
+        "featureList": [
+          {
+            "icon": "📈",
+            "title": "React Development",
+            "description": "Custom React applications for enhanced business performance"
+          },
+          {
+            "icon": "📊",
+            "title": "Python Solutions",
+            "description": "Data-driven solutions with Python for informed decision-making"
+          },
+          {
+            "icon": "🤖",
+            "title": "AI Integration",
+            "description": "Artificial intelligence solutions for predictive insights and automation"
+          }
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-connect": {
+      "id": "connect",
+      "type": "Contact",
+      "name": "Get in Touch",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Contact Us",
+        "subtitle": "Let's discuss your React development needs",
+        "email": "adi@gmail.com",
+        "phone": "",
+        "address": "",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Your Message",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message"
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "London",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Expertise",
+          "href": "#projects"
+        },
+        {
+          "text": "About",
+          "href": "#profile"
+        },
+        {
+          "text": "Services",
+          "href": "#expertise"
+        },
+        {
+          "text": "Contact",
+          "href": "#connect"
+        }
+      ],
+      "cta": {
+        "text": "Get Started",
+        "href": "#connect",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "London",
+      "tagline": "Transforming businesses with React expertise",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Expertise",
+              "href": "#projects"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Email",
+              "href": "mailto:adi@gmail.com"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2025 London. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Inter",
+        "weights": [
+          400,
+          600,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Inter",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "professional & modern"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Professional React",
+    "hero_concept": "A centered hero section with a gradient background, showcasing the expertise in React development and highlighting the benefits of partnering with the business.",
+    "visual_personality": "Professional, modern, and solution-oriented, with a focus on showcasing expertise and trust through a clean and minimalistic design."
+  },
+  "projectId": "bae05825-791f-4fc9-8f45-b8f4b18179ba",
+  "session_id": "sess_1790a619",
+  "created_at": "2026-01-08T14:24:51.674941",
+  "metadata": {
+    "session_id": "sess_1790a619",
+    "timestamp": "2026-01-08T14:24:45.115020",
+    "user_prompt": "Portfolio Website",
+    "business_name": "London",
+    "prop_answers": {
+      "businessName": "london",
+      "colorTheme": "Dark Mode - Dark backgrounds with light text",
+      "bio": "i am a react developer",
+      "subtitle": "i am expert in react",
+      "ctaSecondary": "explore",
+      "email": "adi@gmail.com",
+      "title": "react frontend is best",
+      "projects": "react, python, ai",
+      "year": "2024"
+    },
+    "user_hero": {
+      "title": "react frontend is best",
+      "subtitle": "i am expert in react",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "business",
+      "industry": "business",
+      "business_name": "London",
+      "target_audience": "london",
+      "goals": "i am a react developer",
+      "services": [],
+      "style_preferences": [
+        "explore",
+        "react frontend is best navigation",
+        "2024 fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "london"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Dark Mode - Dark backgrounds with light text"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": "i am a react developer"
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "i am expert in react"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "explore"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "adi@gmail.com"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "react frontend is best"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "react, python, ai"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "2024"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "london",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Dark Mode - Dark backgrounds with light text",
+          "question": ""
+        },
+        "q3": {
+          "answer": "i am a react developer",
+          "question": ""
+        },
+        "q4": {
+          "answer": "i am expert in react",
+          "question": ""
+        },
+        "q5": {
+          "answer": "explore",
+          "question": ""
+        },
+        "q6": {
+          "answer": "adi@gmail.com",
+          "question": ""
+        },
+        "q7": {
+          "answer": "react frontend is best",
+          "question": ""
+        },
+        "q8": {
+          "answer": "react, python, ai",
+          "question": ""
+        },
+        "q9": {
+          "answer": "2024",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "london",
+        "colorTheme": "Dark Mode - Dark backgrounds with light text",
+        "bio": "i am a react developer",
+        "subtitle": "i am expert in react",
+        "ctaSecondary": "explore",
+        "email": "adi@gmail.com",
+        "title": "react frontend is best",
+        "projects": "react, python, ai",
+        "year": "2024"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#7C3AED",
+          "#10B981",
+          "#F59E0B",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Dark Mode - Dark backgrounds with light text",
+      "font_style": "2024",
+      "navigation_style": "react frontend is best"
+    },
+    "features": [
+      "Hero",
+      "Projects",
+      "Profile",
+      "Expertise",
+      "Connect"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_1790a619",
+      "project_id": 8,
+      "timestamp": "2026-01-08T08:54:45.031654Z",
+      "user_prompt": "Portfolio Website",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Portfolio Website",
+        "language": "English",
+        "business_type": "Based on the user's responses, I can infer that the user wants to create a:\n\n**Portfolio",
+        "answers": {
+          "q1": "london",
+          "q2": "Dark Mode - Dark backgrounds with light text",
+          "q3": "i am a react developer",
+          "q4": "i am expert in react",
+          "q5": "explore",
+          "q6": "adi@gmail.com",
+          "q7": "react frontend is best",
+          "q8": "react, python, ai",
+          "q9": "2024"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "How should visitors address you?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Choose your color palette:",
+            "type": "radio",
+            "options": [
+              "Clean Minimal - Black, white, and one accent color",
+              "Bold Creative - Vibrant colors that pop",
+              "Professional - Navy and gray - trustworthy",
+              "Dark Mode - Dark backgrounds with light text"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "Enter your information for 'Bio':",
+            "type": "text",
+            "prop_key": "bio",
+            "section": "about"
+          },
+          {
+            "id": "q4",
+            "question": "If you had 5 seconds to impress, what would you say?",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          },
+          {
+            "id": "q5",
+            "question": "Enter your information for 'Ctasecondary':",
+            "type": "text",
+            "prop_key": "ctaSecondary",
+            "section": "hero"
+          },
+          {
+            "id": "q6",
+            "question": "Tell us more about your Email for the footer:",
+            "type": "text",
+            "prop_key": "email",
+            "section": "footer"
+          },
+          {
+            "id": "q7",
+            "question": "Write your website's main headline:",
+            "type": "text",
+            "prop_key": "title",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "Enter your information for 'Projects':",
+            "type": "text",
+            "prop_key": "projects",
+            "section": "projects"
+          },
+          {
+            "id": "q9",
+            "question": "What would you like to say for 'Year'?",
+            "type": "text",
+            "prop_key": "year",
+            "section": "footer"
+          },
+          {
+            "id": "q10",
+            "question": "What would you like to say for 'Tagline'?",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "bio",
+          "subtitle",
+          "ctaSecondary",
+          "email",
+          "title",
+          "projects",
+          "year",
+          "tagline"
+        ],
+        "color_preferences": "Dark Mode - Dark backgrounds with light text",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#2E3338",
+              "#F7F7F7",
+              "#C9E4CA",
+              "#3C3F41",
+              "#8B9467"
+            ],
+            "title": "Midnight Hush",
+            "inspiration": "Inspired by the quiet stillness of a dark night."
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#282828",
+              "#C5C3C4",
+              "#9AE9F4",
+              "#3F3F3F",
+              "#64B2B2"
+            ],
+            "title": "Dark Oasis",
+            "inspiration": "Finding refuge in the calm of a desert night."
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#333333",
+              "#F2F2F2",
+              "#A8D6F5",
+              "#444444",
+              "#969696"
+            ],
+            "title": "Shadow Weaver",
+            "inspiration": "A dark tapestry woven with subtle threads."
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#455A64",
+              "#F2F2F2",
+              "#B2E6CE",
+              "#5C6BC0",
+              "#A5A5A5"
+            ],
+            "title": "Dusky Evening",
+            "inspiration": "The soft hue of sunset gives way to night."
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#333333",
+              "#C4C4C4",
+              "#56B3FA",
+              "#444444",
+              "#999999"
+            ],
+            "title": "Silentium",
+            "inspiration": "Echoes of a dark and quiet world."
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#1A1D23",
+              "#E5E5E5",
+              "#C5E2F4",
+              "#242628",
+              "#646A6B"
+            ],
+            "title": "Blackout Bloom",
+            "inspiration": "A midnight garden blooms in the darkness."
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#232B3D",
+              "#FFFFFF",
+              "#7BC1F4",
+              "#464646",
+              "#737373"
+            ],
+            "title": "Darkstar Dreams",
+            "inspiration": "Exploring the infinite vastness of a dark universe."
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#2A2730",
+              "#D3D3D3",
+              "#9CEBFF",
+              "#3C3F41",
+              "#A7A7A7"
+            ],
+            "title": "Lost City Nights",
+            "inspiration": "Ancient secrets whisper in the darkness of an abandoned city."
+          }
+        ],
+        "selected_palette": {
+          "id": "p2",
+          "colors": [
+            "#282828",
+            "#C5C3C4",
+            "#9AE9F4",
+            "#3F3F3F",
+            "#64B2B2"
+          ],
+          "title": "Dark Oasis",
+          "inspiration": "Finding refuge in the calm of a desert night."
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-projects",
+    "comp-profile",
+    "comp-expertise",
+    "comp-connect"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 60
+}

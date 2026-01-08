@@ -1,42 +1,37 @@
 from typing import Dict, Any
 import random
 
-from .variant_modern_shop import render as render_modern_shop
-from .variant_luxury_brand import render as render_luxury_brand
-from .variant_aura_premium import render as render_aura_premium
-from .variant_cinematic_video import render as render_cinematic_video
-from .variant_split_scroll import render as render_split_scroll
-from .variant_glitch_art import render as render_glitch_art
-
+from .variant_aura_premium import render as render_aura
+from .variant_cinematic_video import render as render_video
+from .variant_glitch_art import render as render_glitch
+from .variant_luxury_brand import render as render_luxury
+from .variant_modern_shop import render as render_modern
+from .variant_split_scroll import render as render_split
+from .variant_flash_sale import render as render_flash
+from .variant_minimal_product import render as render_minimal
+from .variant_categories import render as render_cats
+from .variant_bento import render as render_bento
 
 class EcommerceHeroTemplates:
-    """E-commerce hero sections"""
-    
     VARIANTS = [
-        "modern-shop", 
-        "luxury-brand", 
-        "aura-premium",
-        "cinematic-video",
-        "split-scroll",
-        "glitch-art"
+        "aura-premium", "cinematic-video", "glitch-art", "luxury-brand",
+        "modern-shop", "split-scroll", "flash-sale", "minimal-product",
+        "categories", "bento"
     ]
     
     @classmethod
     def render(cls, props: Dict[str, Any], colors: Dict[str, str], variant: str = None) -> str:
-        if variant is None:
-            variant = random.choice(cls.VARIANTS)
-        
+        if variant is None: variant = random.choice(cls.VARIANTS)
         dispatch = {
-            "modern-shop": render_modern_shop,
-            "luxury-brand": render_luxury_brand,
-            "aura-premium": render_aura_premium,
-            "cinematic-video": render_cinematic_video,
-            "split-scroll": render_split_scroll,
-            "glitch-art": render_glitch_art
+            "aura-premium": render_aura,
+            "cinematic-video": render_video,
+            "glitch-art": render_glitch,
+            "luxury-brand": render_luxury,
+            "modern-shop": render_modern,
+            "split-scroll": render_split,
+            "flash-sale": render_flash,
+            "minimal-product": render_minimal,
+            "categories": render_cats,
+            "bento": render_bento
         }
-        
-        render_func = dispatch.get(variant)
-        if render_func:
-            return render_func(props, colors)
-        
-        return render_modern_shop(props, colors)
+        return dispatch.get(variant, render_aura)(props, colors)

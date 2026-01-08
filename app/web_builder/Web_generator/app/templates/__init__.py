@@ -20,7 +20,9 @@ from .shared import (
     SharedNavbarTemplates,
     SharedContactTemplates,
     SharedCTATemplates,
-    SharedTestimonialsTemplates
+    SharedTestimonialsTemplates,
+    SharedFAQTemplates,
+    FAQPageTemplates
 )
 
 # Alias for backward compatibility - use AgencyTemplates as default/generic
@@ -36,28 +38,24 @@ TestimonialsTemplates = SharedTestimonialsTemplates
 GalleryTemplates = PortfolioTemplates.Projects  # Fallback
 NavbarTemplates = SharedNavbarTemplates
 PricingTemplates = AgencyTemplates.Services  # Fallback
+FAQTemplates = FAQPageTemplates
+
 
 # For Menu - use CafeTemplates
 MenuTemplates = CafeTemplates.Menu
 
-# Placeholder classes for missing ones
-class FAQTemplates:
-    VARIANTS = ["default"]
-    @classmethod
-    def get_variant(cls, variant, props, colors):
-        return ""
-    @classmethod
-    def render(cls, props, colors, variant=None):
-        return ""
-
+# Placeholder for Cards - can use Features or similar
 class CardsTemplates:
-    VARIANTS = ["default"]
+    VARIANTS = ["grid-3", "cards", "icons"]
     @classmethod
     def get_variant(cls, variant, props, colors):
-        return ""
+        from .shared import FunctionalComponents
+        return FunctionalComponents.render_cards(props, colors)
     @classmethod
     def render(cls, props, colors, variant=None):
-        return ""
+        from .shared import FunctionalComponents
+        return FunctionalComponents.render_cards(props, colors)
+
 
 class BusinessTemplates:
     """Business-specific template configurations for different industries"""

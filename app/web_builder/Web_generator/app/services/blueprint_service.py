@@ -741,32 +741,32 @@ SPECIAL COMPONENTS TO INCLUDE:
             theme_colors = None
             
             if "dark" in t:
-                # User wants dark mode - override any selected palette
-                theme_colors = ["#7C3AED", "#10B981", "#F59E0B", "#0F172A", "#F8FAFC"]
+                # User wants dark mode - background MUST be dark (index 4)
+                theme_colors = ["#7C3AED", "#10B981", "#F59E0B", "#1F2937", "#0F172A"]
                 print(f"[BlueprintService] 🎨 User selected DARK MODE - using dark color palette")
             elif "bold" in t or "creative" in t or "vibrant" in t:
-                theme_colors = ["#FF6B6B", "#4ECDC4", "#FFE66D", "#F8FAFC", "#1A1A2E"]
+                theme_colors = ["#FF6B6B", "#4ECDC4", "#FFE66D", "#F1F5F9", "#FFFFFF"]
                 print(f"[BlueprintService] 🎨 User selected BOLD/CREATIVE - using vibrant colors")
             elif "minimal" in t or ("clean" in t):
-                theme_colors = ["#1E293B", "#64748B", "#3B82F6", "#FFFFFF", "#1E293B"]
+                theme_colors = ["#1E293B", "#64748B", "#3B82F6", "#F8FAFB", "#FFFFFF"]
                 print(f"[BlueprintService] 🎨 User selected CLEAN MINIMAL - using minimal colors")
             elif "professional" in t or "navy" in t or "trustworthy" in t:
-                theme_colors = ["#1E3A5F", "#64748B", "#3B82F6", "#F8FAFC", "#1A1A2E"]
+                theme_colors = ["#1E3A5F", "#64748B", "#3B82F6", "#F1F5F9", "#FFFFFF"]
                 print(f"[BlueprintService] 🎨 User selected PROFESSIONAL - using navy colors")
             elif "warm" in t or "espresso" in t or "cozy" in t:
-                theme_colors = ["#8B4513", "#D2691E", "#F5DEB3", "#FFF8F0", "#2C1810"]
+                theme_colors = ["#8B4513", "#D2691E", "#F5DEB3", "#FFFDF9", "#FCF5E5"]
                 print(f"[BlueprintService] 🎨 User selected WARM - using warm earth tones")
             elif "neon" in t or "cyber" in t or "futuristic" in t:
-                theme_colors = ["#00F0FF", "#FF00E4", "#00FF88", "#0A0A1A", "#F0F0F0"]
+                theme_colors = ["#00F0FF", "#FF00E4", "#00FF88", "#1A1A2E", "#0A0A1A"]
                 print(f"[BlueprintService] 🎨 User selected NEON/CYBER - using neon colors")
             elif "retro" in t or "arcade" in t:
-                theme_colors = ["#FF6B9D", "#FFE93E", "#9D4EDD", "#1A0A2E", "#FFFFFF"]
+                theme_colors = ["#FF6B9D", "#FFE93E", "#9D4EDD", "#2E1A47", "#1A0A2E"]
                 print(f"[BlueprintService] 🎨 User selected RETRO - using arcade colors")
             elif "esports" in t or "pro gamer" in t:
-                theme_colors = ["#00FF00", "#1DB954", "#FF4500", "#0A0A0A", "#FFFFFF"]
+                theme_colors = ["#00FF00", "#1DB954", "#FF4500", "#121212", "#0A0A0A"]
                 print(f"[BlueprintService] 🎨 User selected ESPORTS - using gaming colors")
             elif "gold" in t or "elegant" in t or "luxury" in t:
-                theme_colors = ["#D4AF37", "#1A1A1A", "#F5E6C8", "#0F0F0F", "#F5F5F5"]
+                theme_colors = ["#D4AF37", "#FFFFFF", "#F5E6C8", "#1A1A1A", "#0F0F0F"]
                 print(f"[BlueprintService] 🎨 User selected ELEGANT/GOLD - using luxury colors")
             elif "blue" in t and "green" in t:
                 theme_colors = ["#0077B6", "#00B4D8", "#4CAF50", "#F8FAFC", "#1E293B"]
@@ -786,6 +786,19 @@ SPECIAL COMPONENTS TO INCLUDE:
             if theme_colors:
                 colors = theme_colors  # Override any previously set colors
                 print(f"[BlueprintService] 🎨 Using user's color theme choice: {color_theme}")
+            else:
+                # If no specific theme color recognized, but they gave a description,
+                # use it to pick a palette from the library
+                detected_type = self._extract_business_type(user_prompt or color_theme)
+                palette = ColorPaletteLibrary.get_safe_palette_for_industry(detected_type)
+                colors = [
+                    palette["primary"], 
+                    palette["secondary"], 
+                    palette["accent"], 
+                    palette["surface"],
+                    palette["background"]
+                ]
+                print(f"[BlueprintService] 🎨 Using industry-matched palette for: {detected_type}")
 
         # Default colors if none found - use validated palettes
         if not colors:
@@ -797,10 +810,10 @@ SPECIAL COMPONENTS TO INCLUDE:
                 palette["primary"], 
                 palette["secondary"], 
                 palette["accent"], 
-                palette["background"],
-                palette["text"]  # Include text color for proper contrast
+                palette["surface"],
+                palette["background"]
             ]
-            print(f"[BlueprintService] 🎨 Using validated premium palette '{palette.get('name', 'Default')}' for {detected_type}")
+            print(f"[BlueprintService] 🎨 No color choice found, using default {detected_type} palette")
         
         print(f"[BlueprintService] 🎨 Final colors: {colors[:3]}...")
         
@@ -846,6 +859,13 @@ SPECIAL COMPONENTS TO INCLUDE:
                 features.append(highlight_features)
             print(f"[BlueprintService] ⚠️ Using default minimal features: {features}")
         
+        # Self-Correction: If we have multiple Q&A answers but no FAQ in features, ADD IT
+        if "FAQ" not in [f.upper() for f in features]:
+            faq_potential_answers = [a for k, a in answers_dict.items() if ("q" in k.lower() or "faq" in k.lower()) and len(str(a)) > 5]
+            if len(faq_potential_answers) >= 2 or questionnaire.get("faqs"):
+                features.append("FAQ")
+                print(f"[BlueprintService] ➕ Auto-added FAQ to features due to detected QA content")
+
         print(f"[BlueprintService] Extracted features: {features}")
         
         # ============================================
@@ -983,24 +1003,26 @@ SPECIAL COMPONENTS TO INCLUDE:
     def _extract_business_type(self, prompt: str) -> str:
         """
         Extract business type from user prompt.
+        Ensures it matches keys in WEBSITE_TYPE_TEMPLATES.
         """
+        if not prompt:
+            return "agency"
+            
         prompt_lower = prompt.lower()
         
         business_keywords = {
-            "restaurant": ["restaurant", "food", "dining", "eatery", "cuisine", "kitchen"],
-            "bakery": ["bakery", "bake", "cake", "pastry", "bread", "sweets"],
-            "coffee_shop": ["coffee", "espresso", "cafe", "barista", "beans", "brew"],
-            "retail": ["store", "shop", "retail", "boutique", "fashion", "clothing", "apparel"],
-            "salon": ["salon", "spa", "beauty", "hair", "nail", "makeover"],
-            "fitness": ["gym", "fitness", "yoga", "workout", "training", "crossfit", "athletics"],
-            "agency": ["agency", "marketing", "design", "creative", "consulting", "branding"],
-            "healthcare": ["clinic", "doctor", "medical", "health", "dental", "physio"],
-            "education": ["school", "education", "tutoring", "learning", "academy", "course"],
-            "technology": ["tech", "software", "app", "startup", "IT", "digital", "coding"],
-            "photography": ["photography", "photographer", "photo studio", "lens", "shoot"],
-            "real_estate": ["real estate", "property", "housing", "realtor", "apartment", "realty"],
-            "gaming": ["gaming", "game", "esports", "gamer", "play", "match", "console", "pc games"],
-            "movie": ["movie", "cinema", "theater", "film", "screen", "box office"]
+            "restaurant": ["restaurant", "food", "dining", "eatery", "cuisine", "kitchen", "bistro", "steakhouse"],
+            "bakery": ["bakery", "bake", "cake", "pastry", "bread", "sweets", "donut"],
+            "cafe": ["coffee", "espresso", "cafe", "barista", "beans", "brew", "latte"],
+            "ecommerce": ["store", "shop", "retail", "boutique", "fashion", "clothing", "apparel", "ecommerce", "buy", "sell"],
+            "gaming": ["gaming", "game", "esports", "gamer", "play", "match", "console", "pc games", "tournament", "steam", "twitch"],
+            "movie": ["movie", "cinema", "theater", "theatre", "film", "screen", "box office", "blockbuster", "showtime"],
+            "portfolio": ["portfolio", "personal", "developer", "designer", "freelance", "photographer", "cv", "resume"],
+            "agency": ["agency", "marketing", "design", "creative", "consulting", "branding", "corporate", "business"],
+            "healthcare": ["clinic", "doctor", "medical", "health", "dental", "physio", "hospital"],
+            "fitness": ["gym", "fitness", "yoga", "workout", "training", "crossfit", "athletics", "personal trainer"],
+            "education": ["school", "education", "tutoring", "learning", "academy", "course", "college", "university"],
+            "technology": ["tech", "software", "app", "startup", "IT", "digital", "coding", "saas", "platform"]
         }
         
         # Priority 1: Check for exact keyword matches
@@ -1009,15 +1031,17 @@ SPECIAL COMPONENTS TO INCLUDE:
                 if keyword in prompt_lower:
                     return b_type
         
-        # Priority 2: Check for name patterns (e.g., "Gam" in name usually means gaming)
+        # Priority 2: Check for name patterns
         if "gam" in prompt_lower:
             return "gaming"
         if "film" in prompt_lower or "cine" in prompt_lower:
             return "movie"
-        if "auto" in prompt_lower or "car" in prompt_lower:
-            return "business"  # Could add automotive type later
+        if "shop" in prompt_lower or "store" in prompt_lower:
+            return "ecommerce"
+        if "food" in prompt_lower or "eat" in prompt_lower:
+            return "restaurant"
             
-        return "business"
+        return "agency"
     
     def _finalize_blueprint(
         self, 
@@ -1040,6 +1064,13 @@ SPECIAL COMPONENTS TO INCLUDE:
         ai_response["projectId"] = str(uuid.uuid4())
         ai_response["session_id"] = session_id
         ai_response["created_at"] = datetime.now().isoformat()
+        
+        # FIX for HTMLGeneratorService compatibility
+        # Ensure 'websiteType' matches 'projectType'
+        if "projectType" in ai_response:
+            ai_response["websiteType"] = ai_response["projectType"]
+        elif "business_extracted_data" in metadata:
+            ai_response["websiteType"] = metadata["business_extracted_data"].get("business_type", "agency")
         
         # Preserve original metadata
         ai_response["metadata"] = metadata
@@ -1067,8 +1098,16 @@ SPECIAL COMPONENTS TO INCLUDE:
                 "visual_personality": "Clean, professional, and engaging"
             }
         
-        # Add component order
-        ai_response["componentOrder"] = list(ai_response.get("components", {}).keys())
+        # Add component order (ensure FAQ is included if it exists in components but not order)
+        components = ai_response.get("components", {})
+        order = ai_response.get("componentOrder", list(components.keys()))
+        
+        # Self-correction: ensure FAQ is in order if FAQ component exists
+        for comp_key in components:
+            if "faq" in comp_key.lower() and comp_key not in order:
+                order.append(comp_key)
+        
+        ai_response["componentOrder"] = order
         
         # Assign random layout variants if missing
         self._ensure_layout_variants(ai_response)

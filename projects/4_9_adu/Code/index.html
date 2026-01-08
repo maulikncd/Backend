@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Portfolio</title>
+    <meta name="description" content="Explore Aditya's portfolio, showcasing expertise in graphic design and commitment to delivering high-quality results">
+    <meta name="keywords" content="Graphic Design, Portfolio, Solutions, Expertise, Trust, Results, Partnership">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400,500,700&family=Inter:wght@300,400,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7C3AED',
+            secondary: '#10B981',
+            accent: '#F59E0B',
+            surface: '#0F172A',
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+        </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #7C3AED, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #7C3AED, #10B981);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px #7C3AED40;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #1A1A1A;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 2px solid #7C3AED30;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            border-color: #7C3AED;
+            background: #7C3AED10;
+        }
+        .section { padding: 100px 0; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); }
+        .nav-link { transition: color 0.3s ease; }
+        .nav-link:hover { color: #7C3AED; }
+        .nav-link.active { color: #7C3AED; font-weight: 600; }
+    </style>
+</head>
+<body>
+    
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl">
+        <div class="bg-white/95 backdrop-blur-lg rounded-full shadow-lg px-8 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#hero" class="text-xl font-bold font-heading" style="color: #7C3AED">Aditya</a>
+                <nav class="hidden md:flex items-center gap-6"><a href="#hero" class="nav-link text-gray-700 hover:text-primary text-sm">Home</a><a href="#projects" class="nav-link text-gray-700 hover:text-primary text-sm">Recent Projects</a><a href="#about" class="nav-link text-gray-700 hover:text-primary text-sm">Our Story</a><a href="#expertise" class="nav-link text-gray-700 hover:text-primary text-sm">Our Expertise</a><a href="#connect" class="nav-link text-gray-700 hover:text-primary text-sm">Get in Touch</a><a href="#faq" class="nav-link text-gray-700 hover:text-primary text-sm">Frequently Asked Questions</a></nav>
+                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:shadow-lg transition-all" style="background: #7C3AED">Get Started</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+    <section class="portfolio-hero-bento" id="hero">
+        <div class="bento-container">
+            <div class="bento-grid">
+                <div class="bento-item intro">
+                    <span class="label">Hello, I'm</span>
+                    <h1>John Doe</h1>
+                    <p>Expert Graphic Design Solutions crafting beautiful digital experiences</p>
+                    <a href="#contact" class="cta">Get in Touch →</a>
+                </div>
+                <div class="bento-item photo">
+                    <div class="avatar">J</div>
+                </div>
+                <div class="bento-item stat">
+                    <span class="num">5+</span>
+                    <span class="lbl">Years Experience</span>
+                </div>
+                <div class="bento-item stat">
+                    <span class="num">50+</span>
+                    <span class="lbl">Projects Completed</span>
+                </div>
+                <div class="bento-item skills">
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">UI/UX</span>
+                </div>
+                <div class="bento-item social">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .portfolio-hero-bento { min-height: 100vh; background: #F8FAFC; display: flex; align-items: center; padding: 80px 24px; }
+    .bento-container { max-width: 1100px; margin: 0 auto; width: 100%; }
+    .bento-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(3, auto); gap: 20px; }
+    .bento-item { background: #1A1A1A05; border: 1px solid #1A1A1A10; border-radius: 24px; padding: 32px; }
+    .bento-item.intro { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; justify-content: center; }
+    .bento-item.photo { grid-row: span 2; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #7C3AED20, #7C3AED05); }
+    .bento-item.skills { grid-column: span 2; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .bento-item.social { grid-column: span 2; display: flex; gap: 24px; align-items: center; justify-content: center; }
+    .label { color: #7C3AED; font-weight: 600; margin-bottom: 8px; }
+    .intro h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; color: #1A1A1A; line-height: 1.1; margin-bottom: 16px; }
+    .intro p { color: #10B981; font-size: 1.1rem; line-height: 1.6; margin-bottom: 32px; }
+    .cta { color: #7C3AED; text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+    .avatar { width: 150px; height: 150px; background: #7C3AED; color: #F8FAFC; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem; font-weight: 900; }
+    .stat { text-align: center; }
+    .num { display: block; font-size: 2.5rem; font-weight: 900; color: #7C3AED; }
+    .lbl { color: #10B981; font-size: 0.9rem; }
+    .skill { padding: 10px 20px; background: #7C3AED15; color: #7C3AED; font-weight: 600; border-radius: 100px; font-size: 0.9rem; }
+    .social a { color: #1A1A1A; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+    .social a:hover { color: #7C3AED; }
+    @media (max-width: 900px) { .bento-grid { grid-template-columns: 1fr 1fr; } .bento-item.intro { grid-column: span 2; } }
+    </style>
+    
+    <section class="portfolio-projects-masonry" id="projects">
+        <div class="masonry-container">
+            <div class="masonry-header">
+                <h2>My Work</h2>
+            </div>
+            <div class="masonry-grid">
+        <div class="masonry-card tall">
+            <div class="card-visual"><span>E</span></div>
+            <div class="card-overlay">
+                <span class="cat">Web</span>
+                <h3>E-Commerce</h3>
+            </div>
+        </div>
+        
+        <div class="masonry-card ">
+            <div class="card-visual"><span>D</span></div>
+            <div class="card-overlay">
+                <span class="cat">App</span>
+                <h3>Dashboard</h3>
+            </div>
+        </div>
+        
+        <div class="masonry-card ">
+            <div class="card-visual"><span>P</span></div>
+            <div class="card-overlay">
+                <span class="cat">Web</span>
+                <h3>Portfolio</h3>
+            </div>
+        </div>
+        
+        <div class="masonry-card tall">
+            <div class="card-visual"><span>M</span></div>
+            <div class="card-overlay">
+                <span class="cat">Mobile</span>
+                <h3>Mobile App</h3>
+            </div>
+        </div>
+        
+        <div class="masonry-card ">
+            <div class="card-visual"><span>A</span></div>
+            <div class="card-overlay">
+                <span class="cat">Dashboard</span>
+                <h3>Analytics</h3>
+            </div>
+        </div>
+        
+        <div class="masonry-card ">
+            <div class="card-visual"><span>S</span></div>
+            <div class="card-overlay">
+                <span class="cat">SaaS</span>
+                <h3>SaaS Tool</h3>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <style>
+    .portfolio-projects-masonry { padding: 120px 24px; background: #F8FAFC; }
+    .masonry-container { max-width: 1200px; margin: 0 auto; }
+    .masonry-header { text-align: center; margin-bottom: 60px; }
+    .masonry-header h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: #1A1A1A; }
+    .masonry-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 180px; gap: 24px; }
+    .masonry-card { position: relative; border-radius: 20px; overflow: hidden; cursor: pointer; }
+    .masonry-card.tall { grid-row: span 2; }
+    .card-visual { width: 100%; height: 100%; background: linear-gradient(135deg, #7C3AED25, #7C3AED05); display: flex; align-items: center; justify-content: center; transition: transform 0.5s ease; }
+    .card-visual span { font-size: 4rem; font-weight: 900; color: #7C3AED40; }
+    .masonry-card:hover .card-visual { transform: scale(1.1); }
+    .card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, #F8FAFCE6, transparent 50%); padding: 24px; display: flex; flex-direction: column; justify-content: flex-end; opacity: 0; transition: opacity 0.3s ease; }
+    .masonry-card:hover .card-overlay { opacity: 1; }
+    .cat { display: inline-block; padding: 5px 12px; background: #7C3AED; color: #F8FAFC; font-size: 0.75rem; font-weight: 700; border-radius: 100px; margin-bottom: 8px; width: fit-content; }
+    .card-overlay h3 { font-size: 1.2rem; font-weight: 700; color: #1A1A1A; }
+    @media (max-width: 900px) { .masonry-grid { grid-template-columns: 1fr 1fr; } }
+    </style>
+    
+    <section class="portfolio-about-minimal" id="about">
+        <div class="minimal-container">
+            <div class="about-cols">
+                <div class="col-left">
+                    <span class="tag">About</span>
+                    <h2>I build things for the web</h2>
+                </div>
+                <div class="col-right">
+                    <p class="lead">A passionate developer focused on creating clean, user-friendly experiences that make a lasting impact.</p>
+                    <p>With over 5 years of experience in web development, I've had the privilege of working with startups and enterprises alike. My approach combines technical expertise with creative problem-solving.</p>
+                    <p>I believe great software is built through collaboration, attention to detail, and a deep understanding of user needs.</p>
+                    <a href="#contact" class="link">Get in touch →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .portfolio-about-minimal { padding: 120px 24px; background: #F8FAFC; }
+    .minimal-container { max-width: 1100px; margin: 0 auto; }
+    .about-cols { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; }
+    .tag { display: inline-block; padding: 10px 24px; background: #7C3AED15; color: #7C3AED; font-weight: 600; border-radius: 100px; margin-bottom: 20px; }
+    .col-left h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: #1A1A1A; line-height: 1.2; }
+    .lead { font-size: 1.4rem; color: #1A1A1A; font-weight: 500; line-height: 1.6; margin-bottom: 24px; }
+    .col-right p { color: #10B981; font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; }
+    .link { color: #7C3AED; text-decoration: none; font-weight: 700; font-size: 1.1rem; display: inline-block; margin-top: 16px; transition: transform 0.3s ease; }
+    .link:hover { transform: translateX(8px); }
+    @media (max-width: 900px) { .about-cols { grid-template-columns: 1fr; gap: 40px; } }
+    </style>
+    
+    <!-- Features Section -->
+    <section id="expertise" class="section">
+        <div class="container mx-auto px-6">
+            <!-- Header -->
+            <div class="animate-on-scroll text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">Features</span>
+                <h2 class="text-4xl md:text-5xl font-bold font-heading mb-4">Our Expertise</h2>
+                <p class="text-xl text-gray-500">We specialize in delivering high-quality graphic design solutions</p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+            <div class="animate-on-scroll bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                    📈
+                </div>
+                <h3 class="text-xl font-bold font-heading mb-3">Graphic Design</h3>
+                <p class="text-gray-600 leading-relaxed">From logos to brochures, we create visually stunning designs that capture the essence of your brand.</p>
+            </div>
+            <div class="animate-on-scroll bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                    📊
+                </div>
+                <h3 class="text-xl font-bold font-heading mb-3">Branding</h3>
+                <p class="text-gray-600 leading-relaxed">We develop comprehensive branding strategies that help you stand out in a crowded market.</p>
+            </div>
+            <div class="animate-on-scroll bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                    📁
+                </div>
+                <h3 class="text-xl font-bold font-heading mb-3">Web Design</h3>
+                <p class="text-gray-600 leading-relaxed">Our team creates responsive, user-friendly websites that drive results and enhance your online presence.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="connect" class="portfolio-contact-simple" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <span class="tag">Contact</span>
+                <h2>Let's Talk</h2>
+                <p>Have a project in mind? Let's create something amazing together.</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
+                    <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+                </div>
+                <div class="form-group"><label>Subject</label><input type="text" placeholder="Project inquiry"></div>
+                <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Tell me about your project..."></textarea></div>
+                <button type="submit" class="submit-btn">Send Message →</button>
+            </form>
+        </div>
+    </section>
+    
+    <style>
+    .portfolio-contact-simple { padding: 120px 24px; background: #F8FAFC; }
+    .contact-container { max-width: 700px; margin: 0 auto; }
+    .contact-header { text-align: center; margin-bottom: 48px; }
+    .tag { display: inline-block; padding: 10px 24px; background: #7C3AED15; color: #7C3AED; font-weight: 600; border-radius: 100px; margin-bottom: 20px; }
+    .contact-header h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: #1A1A1A; margin-bottom: 12px; }
+    .contact-header p { color: #10B981; font-size: 1.1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; color: #1A1A1A; font-weight: 600; margin-bottom: 8px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 16px; background: #1A1A1A05; border: 1px solid #1A1A1A15; border-radius: 12px; color: #1A1A1A; font-size: 1rem; transition: border-color 0.3s ease; }
+    .form-group input:focus, .form-group textarea:focus { border-color: #7C3AED; outline: none; }
+    .submit-btn { width: 100%; padding: 18px; background: #7C3AED; color: #F8FAFC; border: none; font-weight: 700; font-size: 1.1rem; border-radius: 12px; cursor: pointer; transition: all 0.3s ease; }
+    .submit-btn:hover { transform: translateY(-4px); box-shadow: 0 20px 40px #7C3AED40; }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    </style>
+    
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="faq-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Get answers to common questions about our services and expertise</p>
+                </div>
+                <div class="faq-list">
+            <div class="faq-item" data-faq="0">
+                <button class="faq-question" onclick="toggleFAQ(0)" aria-expanded="false">
+                    <span>What is your design process?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-0">
+                    <p>Our design process typically begins with a consultation to understand your needs and goals. From there, we develop a customized design strategy and provide regular updates throughout the project.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item" data-faq="1">
+                <button class="faq-question" onclick="toggleFAQ(1)" aria-expanded="false">
+                    <span>How long does a typical project take?</span>
+                    <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-1">
+                    <p>The duration of a project varies depending on the scope and complexity. We provide detailed timelines and milestones to ensure you're informed every step of the way.</p>
+                </div>
+            </div>
+            </div>
+                <div class="faq-cta">
+                    <p>Still have questions?</p>
+                    <a href="#contact" class="cta-link">Contact our support team →</a>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .faq-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, white 0%, #f9fafb 100%);
+        }
+        .faq-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .faq-header h2 {
+            font-size: 2.5rem;
+            color: #1A1A1A;
+            margin-bottom: 12px;
+        }
+        .faq-header p { color: #6b7280; font-size: 1.1rem; }
+        .faq-list { display: flex; flex-direction: column; gap: 16px; }
+        .faq-item {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .faq-item:hover { border-color: #7C3AED40; }
+        .faq-item.active {
+            border-color: #7C3AED;
+            box-shadow: 0 8px 30px #7C3AED15;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1A1A1A;
+            transition: color 0.3s;
+        }
+        .faq-question:hover { color: #7C3AED; }
+        .faq-icon {
+            flex-shrink: 0;
+            color: #7C3AED;
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-answer p {
+            padding: 0 24px 24px;
+            color: #6b7280;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .faq-item.active .faq-answer { max-height: 500px; }
+        .faq-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: #7C3AED08;
+            border-radius: 20px;
+        }
+        .faq-cta p { color: #6b7280; margin-bottom: 12px; }
+        .cta-link {
+            color: #7C3AED;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .cta-link:hover { text-decoration: underline; }
+        </style>
+        
+        <script>
+        function toggleFAQ(index) {
+            const item = document.querySelector(`[data-faq="${index}"]`);
+            const wasActive = item.classList.contains('active');
+            const btn = item.querySelector('.faq-question');
+            
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            
+            // Open clicked if wasn't active
+            if (!wasActive) {
+                item.classList.add('active');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+        
+        // Keyboard navigation
+        document.querySelectorAll('.faq-question').forEach((btn, i) => {
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleFAQ(i);
+                }
+            });
+        });
+        </script>
+        
+    </main>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="text-2xl font-bold text-white mb-4">Aditya</div>
+                    <p class="text-gray-400 leading-relaxed">Delivering high-quality graphic design solutions with precision and care</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    
+                <a href="#hero" class="text-gray-400 hover:text-white transition-colors block">
+                    Home
+                </a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors block">
+                    Projects
+                </a>
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors block">
+                    About
+                </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-4">Connect</h4>
+                <div class="space-y-3">
+                    
+                <a href="mailto:adi@gmail.com" class="text-gray-400 hover:text-white transition-colors block">
+                    Email
+                </a>
+                <a href="tel:+1 123 456 7890" class="text-gray-400 hover:text-white transition-colors block">
+                    Phone
+                </a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">2025 Aditya. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.animate-on-scroll').forEach((element, index) => {
+            gsap.fromTo(element, 
+                { opacity: 0, scale: 0.9, y: 30 },
+                { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: "back.out(1.7)",
+                  scrollTrigger: { trigger: element, start: "top 80%", toggleActions: "play none none reverse" },
+                  delay: index * 0.08
+                }
+            );
+        });
+        </script>
+    
+    <!-- Smooth scroll and active nav highlighting -->
+    <script>
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

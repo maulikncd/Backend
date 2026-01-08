@@ -8,6 +8,9 @@ from .products import EcommerceProductsTemplates
 from .categories import EcommerceCategoriesTemplates
 from .features import EcommerceFeaturesTemplates
 from .footer import EcommerceFooterTemplates
+from .navbar import EcommerceNavbarTemplates
+from .testimonials import EcommerceTestimonialsTemplates
+from .newsletter import EcommerceNewsletterTemplates
 
 
 class EcommerceTemplates:
@@ -17,12 +20,15 @@ class EcommerceTemplates:
     
     Home = EcommerceHeroTemplates
     Hero = EcommerceHeroTemplates
+    Navbar = EcommerceNavbarTemplates
     Products = EcommerceProductsTemplates
     Categories = EcommerceCategoriesTemplates
     Features = EcommerceFeaturesTemplates
+    Testimonials = EcommerceTestimonialsTemplates
+    Newsletter = EcommerceNewsletterTemplates
     Footer = EcommerceFooterTemplates
     
-    UNIQUE_SECTIONS = ["products", "categories", "cart", "deals", "features"]
+    UNIQUE_SECTIONS = ["products", "categories", "cart", "deals", "features", "testimonials", "newsletter"]
     
     COLOR_PALETTES = [
         {
@@ -45,16 +51,19 @@ class EcommerceTemplates:
         }
     ]
     
-    SECTIONS = ["hero", "products", "categories", "features", "testimonials", "footer"]
+    SECTIONS = ["navbar", "hero", "products", "categories", "features", "testimonials", "newsletter", "footer"]
     
     @classmethod
     def get_section(cls, section_type: str):
         section_map = {
             "hero": cls.Hero,
             "home": cls.Home,
+            "navbar": cls.Navbar,
             "products": cls.Products,
             "categories": cls.Categories,
             "features": cls.Features,
+            "testimonials": cls.Testimonials,
+            "newsletter": cls.Newsletter,
             "footer": cls.Footer,
         }
         return section_map.get(section_type.lower())

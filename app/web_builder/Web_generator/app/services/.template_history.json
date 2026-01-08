@@ -12,8 +12,6 @@
     "parallax"
   ],
   "Features": [
-    "icons",
-    "minimal",
     "grid-4",
     "alternating",
     "cards",
@@ -21,22 +19,23 @@
     "icons",
     "grid-3",
     "grid-3",
-    "minimal"
+    "minimal",
+    "grid-4",
+    "grid-4"
   ],
   "About": [
-    "story",
-    "centered",
-    "split-right",
     "cards",
     "story",
     "split-left",
     "cards",
     "centered",
     "timeline",
-    "timeline"
+    "timeline",
+    "centered",
+    "timeline",
+    "split-left"
   ],
   "Gallery": [
-    "lightbox",
     "minimal",
     "masonry",
     "masonry",
@@ -45,7 +44,8 @@
     "masonry",
     "carousel",
     "carousel",
-    "carousel"
+    "carousel",
+    "masonry"
   ],
   "Testimonials": [
     "carousel",
@@ -72,8 +72,6 @@
     "split"
   ],
   "Contact": [
-    "map-bg",
-    "form-only",
     "centered",
     "minimal",
     "form-only",
@@ -81,7 +79,9 @@
     "split",
     "form-only",
     "cards",
-    "map-bg"
+    "map-bg",
+    "map-bg",
+    "split"
   ],
   "Services": [
     "default",
@@ -96,19 +96,18 @@
     "default"
   ],
   "Header": [
-    "gradient",
-    "floating",
-    "gradient",
     "dark",
     "minimal",
     "gradient",
     "gradient",
     "floating",
     "gradient",
-    "minimal"
+    "minimal",
+    "centered",
+    "minimal",
+    "floating"
   ],
   "Menu": [
-    "minimal",
     "tabs",
     "cards",
     "tabs",
@@ -117,13 +116,13 @@
     "tabs",
     "minimal",
     "list",
-    "grid"
+    "grid",
+    "accordion"
   ],
   "Authentication": [
     "default"
   ],
   "FAQ": [
-    "minimal",
     "accordion",
     "tabs",
     "tabs",
@@ -132,7 +131,8 @@
     "tabs",
     "grid",
     "cards",
-    "expandable"
+    "expandable",
+    "accordion"
   ],
   "Games": [
     "default",
@@ -181,18 +181,20 @@
     "default"
   ],
   "Home": [
-    "parallax",
-    "minimal",
-    "centered",
     "video-bg",
     "video-bg",
     "split",
     "centered",
     "gradient",
     "video-bg",
-    "gradient"
+    "gradient",
+    "parallax",
+    "parallax",
+    "minimal"
   ],
   "Projects": [
+    "default",
+    "default",
     "default",
     "default"
   ],

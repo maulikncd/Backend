@@ -1,0 +1,970 @@
+{
+  "projectName": "Aditya",
+  "projectType": "portfolio",
+  "seo": {
+    "title": "Aditya Portfolio",
+    "description": "Explore Aditya's portfolio, showcasing expertise in graphic design and commitment to delivering high-quality results",
+    "keywords": [
+      "Graphic Design",
+      "Portfolio",
+      "Solutions",
+      "Expertise",
+      "Trust",
+      "Results",
+      "Partnership"
+    ]
+  },
+  "theme": {
+    "themeName": "Creative Professional",
+    "themeMood": "Clean & Creative",
+    "primaryColor": "#7C3AED",
+    "colorSchemeType": "Custom",
+    "colorPalette": {
+      "primary": "#7C3AED",
+      "secondary": "#10B981",
+      "accent": "#F59E0B",
+      "background": "#F8FAFC",
+      "surface": "#0F172A",
+      "text": "#1A1A1A"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #7C3AED 0%, #10B981 100%)",
+      "accent": "linear-gradient(135deg, #F59E0B 0%, #7C3AED 100%)"
+    }
+  },
+  "components": {
+    "comp-hero": {
+      "id": "hero",
+      "type": "Home",
+      "name": "Introduction",
+      "props": {
+        "layoutVariant": "centered-minimal",
+        "title": "Expert Graphic Design Solutions",
+        "subtitle": "Delivering high-quality results with precision and care",
+        "description": "At Aditya, we pride ourselves on our expertise in graphic design, providing tailored solutions that meet the unique needs of each client. With a focus on trust, results, and partnership, we strive to deliver exceptional outcomes that exceed expectations.",
+        "cta": "Get Started",
+        "backgroundStyle": "solid"
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-projects": {
+      "id": "projects",
+      "type": "Projects",
+      "name": "Recent Projects",
+      "props": {
+        "layoutVariant": "grid-cards",
+        "title": "Explore Our Recent Work",
+        "subtitle": "A selection of our latest projects, showcasing our expertise in graphic design",
+        "categories": [
+          "Graphic Design",
+          "Branding",
+          "Web Design"
+        ],
+        "images": [
+          "https://example.com/project1.jpg",
+          "https://example.com/project2.jpg",
+          "https://example.com/project3.jpg"
+        ]
+      },
+      "animation": {
+        "type": "stagger-fade",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-profile": {
+      "id": "about",
+      "type": "About",
+      "name": "Our Story",
+      "props": {
+        "layoutVariant": "asymmetric-split",
+        "title": "Our Story",
+        "story": "At Aditya, we believe that great design is the key to unlocking business success. With years of experience in the industry, our team has developed a passion for delivering high-quality solutions that meet the unique needs of each client. Our mission is to build long-term partnerships with our clients, founded on trust, expertise, and a commitment to exceptional results.",
+        "milestones": [
+          {
+            "year": "2020",
+            "title": "Founded",
+            "description": "Aditya was founded by a team of experienced designers with a shared vision for delivering exceptional graphic design solutions."
+          },
+          {
+            "year": "2022",
+            "title": "Expanded Services",
+            "description": "We expanded our services to include web design and branding, further cementing our position as a leading provider of graphic design solutions."
+          }
+        ],
+        "stats": [
+          {
+            "value": "50+",
+            "label": "Successful Projects"
+          },
+          {
+            "value": "20+",
+            "label": "Happy Clients"
+          }
+        ]
+      },
+      "animation": {
+        "type": "reveal-mask",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-expertise": {
+      "id": "expertise",
+      "type": "Features",
+      "name": "Our Expertise",
+      "props": {
+        "layoutVariant": "timeline",
+        "sectionTitle": "Our Expertise",
+        "sectionSubtitle": "We specialize in delivering high-quality graphic design solutions",
+        "featureList": [
+          {
+            "icon": "📈",
+            "title": "Graphic Design",
+            "description": "From logos to brochures, we create visually stunning designs that capture the essence of your brand."
+          },
+          {
+            "icon": "📊",
+            "title": "Branding",
+            "description": "We develop comprehensive branding strategies that help you stand out in a crowded market."
+          },
+          {
+            "icon": "📁",
+            "title": "Web Design",
+            "description": "Our team creates responsive, user-friendly websites that drive results and enhance your online presence."
+          }
+        ]
+      },
+      "animation": {
+        "type": "parallax",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-connect": {
+      "id": "connect",
+      "type": "Contact",
+      "name": "Get in Touch",
+      "props": {
+        "layoutVariant": "minimal-statement",
+        "title": "Get in Touch",
+        "subtitle": "We'd love to hear from you and discuss how we can help you achieve your design goals",
+        "email": "adi@gmail.com",
+        "phone": "+1 123 456 7890",
+        "address": "123 Main St, Anytown, USA",
+        "formFields": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "placeholder": "Your Message",
+            "required": true
+          }
+        ],
+        "ctaText": "Send Message"
+      },
+      "animation": {
+        "type": "scale-in",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    },
+    "comp-faq": {
+      "id": "faq",
+      "type": "FAQ",
+      "name": "Frequently Asked Questions",
+      "props": {
+        "layoutVariant": "carousel",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Get answers to common questions about our services and expertise",
+        "faqs": [
+          {
+            "question": "What is your design process?",
+            "answer": "Our design process typically begins with a consultation to understand your needs and goals. From there, we develop a customized design strategy and provide regular updates throughout the project."
+          },
+          {
+            "question": "How long does a typical project take?",
+            "answer": "The duration of a project varies depending on the scope and complexity. We provide detailed timelines and milestones to ensure you're informed every step of the way."
+          }
+        ]
+      },
+      "animation": {
+        "type": "fade-slide-up",
+        "duration": 600,
+        "delay": 0,
+        "stagger": 100,
+        "easing": "cubic-bezier(0.25, 1, 0.5, 1)"
+      }
+    }
+  },
+  "navigation": {
+    "header": {
+      "logo": {
+        "text": "Aditya",
+        "style": "modern"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "href": "#hero"
+        },
+        {
+          "text": "Projects",
+          "href": "#projects"
+        },
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Expertise",
+          "href": "#expertise"
+        },
+        {
+          "text": "Connect",
+          "href": "#connect"
+        }
+      ],
+      "cta": {
+        "text": "Get Started",
+        "href": "#connect",
+        "style": "primary"
+      },
+      "style": "transparent-fixed",
+      "scrollBehavior": {
+        "changeOnScroll": true,
+        "scrollThreshold": 100
+      }
+    },
+    "footer": {
+      "logo": "Aditya",
+      "tagline": "Delivering high-quality graphic design solutions with precision and care",
+      "sections": [
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "text": "Home",
+              "href": "#hero"
+            },
+            {
+              "text": "Projects",
+              "href": "#projects"
+            },
+            {
+              "text": "About",
+              "href": "#about"
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "text": "Email",
+              "href": "mailto:adi@gmail.com"
+            },
+            {
+              "text": "Phone",
+              "href": "tel:+1 123 456 7890"
+            }
+          ]
+        }
+      ],
+      "copyright": "2025 Aditya. All rights reserved."
+    }
+  },
+  "globalStyles": {
+    "typography": {
+      "headingFont": {
+        "family": "Space Grotesk",
+        "weights": [
+          400,
+          500,
+          700
+        ]
+      },
+      "bodyFont": {
+        "family": "Inter",
+        "weights": [
+          300,
+          400,
+          500
+        ]
+      },
+      "style": "clean & creative"
+    },
+    "spacing": {
+      "sectionGap": "100px",
+      "containerMaxWidth": "1280px"
+    },
+    "effects": {
+      "glassmorphism": true,
+      "gradients": true,
+      "shadows": "elevated",
+      "animations": "smooth-reveal"
+    }
+  },
+  "designVision": {
+    "design_theme": "Creative Professional",
+    "hero_concept": "A clean and modern hero section that showcases Aditya's expertise in graphic design, with a focus on trust, results, and partnership.",
+    "visual_personality": "A professional and solution-oriented visual style that reflects Aditya's commitment to delivering high-quality design solutions."
+  },
+  "projectId": "2198fa87-2b5b-4da3-b9fd-2eedc12abb95",
+  "session_id": "sess_cc08a3d2",
+  "created_at": "2026-01-08T15:15:58.125280",
+  "websiteType": "portfolio",
+  "metadata": {
+    "session_id": "sess_cc08a3d2",
+    "timestamp": "2026-01-08T15:15:51.179363",
+    "user_prompt": "Portfolio Website",
+    "business_name": "Aditya",
+    "prop_answers": {
+      "businessName": "Aditya",
+      "colorTheme": "Dark Mode - Dark backgrounds with light text",
+      "skills": [
+        "Graphic Design"
+      ],
+      "bio": "react ka code krta hu",
+      "name": "Adii",
+      "tagline": "i am best dev",
+      "ctaSecondary": "no",
+      "image": "Professional photo",
+      "email": "adi@gmail.com"
+    },
+    "user_hero": {
+      "title": "",
+      "subtitle": "",
+      "cta": "Get Started"
+    },
+    "user_services": [],
+    "cafe_data": {
+      "signature": "",
+      "cuisine": "",
+      "atmosphere": "",
+      "menu_items": [],
+      "hours": "",
+      "specialty": "",
+      "location": ""
+    },
+    "gaming_data": {
+      "game_name": "",
+      "genre": [],
+      "platforms": [],
+      "style": "",
+      "features": []
+    },
+    "portfolio_data": {
+      "profession": "",
+      "skills": [
+        "Graphic Design"
+      ],
+      "work_style": "",
+      "experience": ""
+    },
+    "ecommerce_data": {
+      "product_type": "",
+      "usp": "",
+      "shipping": []
+    },
+    "business_extracted_data": {
+      "business_type": "portfolio",
+      "industry": "portfolio",
+      "business_name": "Aditya",
+      "target_audience": "Aditya",
+      "goals": [
+        "Graphic Design"
+      ],
+      "services": [],
+      "style_preferences": [
+        "Adii",
+        "no navigation",
+        "adi@gmail.com fonts"
+      ],
+      "work_style": "",
+      "approach": "",
+      "story": "",
+      "signature_item": "",
+      "requires_ecommerce": false,
+      "requires_blog": false,
+      "requires_auth": false,
+      "highlight_feature": "Services"
+    },
+    "questionnaire": {
+      "questions": [
+        {
+          "id": "q1",
+          "type": "input",
+          "question": "",
+          "user_answer": "Aditya"
+        },
+        {
+          "id": "q2",
+          "type": "input",
+          "question": "",
+          "user_answer": "Dark Mode - Dark backgrounds with light text"
+        },
+        {
+          "id": "q3",
+          "type": "input",
+          "question": "",
+          "user_answer": [
+            "Graphic Design"
+          ]
+        },
+        {
+          "id": "q4",
+          "type": "input",
+          "question": "",
+          "user_answer": "react ka code krta hu"
+        },
+        {
+          "id": "q5",
+          "type": "input",
+          "question": "",
+          "user_answer": "Adii"
+        },
+        {
+          "id": "q6",
+          "type": "input",
+          "question": "",
+          "user_answer": "i am best dev"
+        },
+        {
+          "id": "q7",
+          "type": "input",
+          "question": "",
+          "user_answer": "no"
+        },
+        {
+          "id": "q8",
+          "type": "input",
+          "question": "",
+          "user_answer": "Professional photo"
+        },
+        {
+          "id": "q9",
+          "type": "input",
+          "question": "",
+          "user_answer": "adi@gmail.com"
+        }
+      ],
+      "raw_answers": {
+        "q1": {
+          "answer": "Aditya",
+          "question": ""
+        },
+        "q2": {
+          "answer": "Dark Mode - Dark backgrounds with light text",
+          "question": ""
+        },
+        "q3": {
+          "answer": [
+            "Graphic Design"
+          ],
+          "question": ""
+        },
+        "q4": {
+          "answer": "react ka code krta hu",
+          "question": ""
+        },
+        "q5": {
+          "answer": "Adii",
+          "question": ""
+        },
+        "q6": {
+          "answer": "i am best dev",
+          "question": ""
+        },
+        "q7": {
+          "answer": "no",
+          "question": ""
+        },
+        "q8": {
+          "answer": "Professional photo",
+          "question": ""
+        },
+        "q9": {
+          "answer": "adi@gmail.com",
+          "question": ""
+        }
+      },
+      "prop_answers": {
+        "businessName": "Aditya",
+        "colorTheme": "Dark Mode - Dark backgrounds with light text",
+        "skills": [
+          "Graphic Design"
+        ],
+        "bio": "react ka code krta hu",
+        "name": "Adii",
+        "tagline": "i am best dev",
+        "ctaSecondary": "no",
+        "image": "Professional photo",
+        "email": "adi@gmail.com"
+      }
+    },
+    "design": {
+      "selected_palette": {
+        "id": "custom",
+        "colors": [
+          "#7C3AED",
+          "#10B981",
+          "#F59E0B",
+          "#0F172A",
+          "#F8FAFC"
+        ]
+      },
+      "color_theme_text": "Dark Mode - Dark backgrounds with light text",
+      "font_style": "adi@gmail.com",
+      "navigation_style": "no"
+    },
+    "features": [
+      "Hero",
+      "Projects",
+      "Profile",
+      "Expertise",
+      "Connect",
+      "FAQ"
+    ],
+    "final_metadata_ready": true,
+    "original_session": {
+      "user_id": 4,
+      "session_id": "sess_cc08a3d2",
+      "project_id": 9,
+      "timestamp": "2026-01-08T09:45:51.087286Z",
+      "user_prompt": "Portfolio Website",
+      "questionnaire": {
+        "user_id": 4,
+        "prompt": "Portfolio Website",
+        "language": "English",
+        "business_type": "Based on the user's responses, I would classify the business/website as a: \n\n**Portfolio",
+        "answers": {
+          "q1": "Aditya",
+          "q2": "Dark Mode - Dark backgrounds with light text",
+          "q3": [
+            "Graphic Design"
+          ],
+          "q4": "react ka code krta hu",
+          "q5": "Adii",
+          "q6": "i am best dev",
+          "q7": "no",
+          "q8": "Professional photo",
+          "q9": "adi@gmail.com"
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "question": "What's your name?",
+            "type": "text",
+            "prop_key": "businessName",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q2",
+            "question": "Choose your color palette:",
+            "type": "radio",
+            "options": [
+              "Clean Minimal - Black, white, and one accent color",
+              "Bold Creative - Vibrant colors that pop",
+              "Professional - Navy and gray - trustworthy",
+              "Dark Mode - Dark backgrounds with light text"
+            ],
+            "prop_key": "colorTheme",
+            "section": "base",
+            "_mandatory": true
+          },
+          {
+            "id": "q3",
+            "question": "What do you specialize in?",
+            "type": "checkbox",
+            "prop_key": "skills",
+            "section": "about",
+            "options": [
+              "Web Development",
+              "Graphic Design",
+              "UI/UX Design",
+              "Mobile Apps",
+              "3D/Animation",
+              "Photography",
+              "Video/Motion",
+              "Marketing"
+            ]
+          },
+          {
+            "id": "q4",
+            "question": "Tell us more about your Bio for the about:",
+            "type": "text",
+            "prop_key": "bio",
+            "section": "about"
+          },
+          {
+            "id": "q5",
+            "question": "What would you like to say for 'Name'?",
+            "type": "text",
+            "prop_key": "name",
+            "section": "footer"
+          },
+          {
+            "id": "q6",
+            "question": "Tell us more about your Tagline for the hero:",
+            "type": "text",
+            "prop_key": "tagline",
+            "section": "hero"
+          },
+          {
+            "id": "q7",
+            "question": "Tell us more about your Ctasecondary for the hero:",
+            "type": "text",
+            "prop_key": "ctaSecondary",
+            "section": "hero"
+          },
+          {
+            "id": "q8",
+            "question": "Choose your hero visual style:",
+            "type": "radio",
+            "prop_key": "image",
+            "section": "hero",
+            "options": [
+              "Professional photo",
+              "Location/space",
+              "Team/people",
+              "Abstract/artistic",
+              "Product showcase",
+              "Auto-select for me"
+            ]
+          },
+          {
+            "id": "q9",
+            "question": "Tell us more about your Email for the contact:",
+            "type": "text",
+            "prop_key": "email",
+            "section": "contact"
+          },
+          {
+            "id": "q10",
+            "question": "If you had 5 seconds to impress, what would you say?",
+            "type": "text",
+            "prop_key": "subtitle",
+            "section": "hero"
+          }
+        ],
+        "max_questions": 10,
+        "completed": true,
+        "_generator_asked_props": [
+          "businessName",
+          "colorTheme",
+          "skills",
+          "bio",
+          "name",
+          "tagline",
+          "ctaSecondary",
+          "image",
+          "email",
+          "subtitle"
+        ],
+        "color_preferences": "Dark Mode - Dark backgrounds with light text",
+        "features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ],
+        "palettes": [
+          {
+            "id": "p1",
+            "colors": [
+              "#272A3F",
+              "#87A2B5",
+              "#4C6C90",
+              "#FFC107",
+              "#A8D6F5"
+            ],
+            "title": "Midnight Oasis",
+            "inspiration": "A tranquil escape beneath starry skies"
+          },
+          {
+            "id": "p2",
+            "colors": [
+              "#212121",
+              "#C7D2E7",
+              "#455A64",
+              "#F8B195",
+              "#B2FFFC"
+            ],
+            "title": "Shadow Dance",
+            "inspiration": "A mysterious dance of darkness and shadow"
+          },
+          {
+            "id": "p3",
+            "colors": [
+              "#03055B",
+              "#8C9445",
+              "#4C515F",
+              "#FDE1C6",
+              "#C7B8EA"
+            ],
+            "title": "Galactic Rift",
+            "inspiration": "An otherworldly journey through cosmic storms"
+          },
+          {
+            "id": "p4",
+            "colors": [
+              "#14161F",
+              "#5B6264",
+              "#788995",
+              "#FFC080",
+              "#87AFC0"
+            ],
+            "title": "Noir Eclipse",
+            "inspiration": "A dramatic fusion of dark mystery and elegance"
+          },
+          {
+            "id": "p5",
+            "colors": [
+              "#161923",
+              "#C5C6C7",
+              "#3B4049",
+              "#FFD700",
+              "#9AA8F6"
+            ],
+            "title": "Darkwater Depths",
+            "inspiration": "A journey into the unknown, where darkness reigns"
+          },
+          {
+            "id": "p6",
+            "colors": [
+              "#080D4A",
+              "#8DCBF5",
+              "#443D59",
+              "#F8F0B3",
+              "#7FF79F"
+            ],
+            "title": "Stellar Fall",
+            "inspiration": "A starry night sky that unfolds like a cosmic tapestry"
+          },
+          {
+            "id": "p7",
+            "colors": [
+              "#03055B",
+              "#9AB3C8",
+              "#5B6563",
+              "#C9C3BB",
+              "#3C3C3C"
+            ],
+            "title": "Raven's Rest",
+            "inspiration": "A dark and mystical haven, shrouded in mystery"
+          },
+          {
+            "id": "p8",
+            "colors": [
+              "#03055B",
+              "#5A8DEB",
+              "#454B59",
+              "#F4C5C9",
+              "#C6B3EA"
+            ],
+            "title": "Cosmic Nightfall",
+            "inspiration": "A celestial experience, where darkness meets wonder"
+          }
+        ],
+        "selected_palette": {
+          "id": "p1",
+          "colors": [
+            "#272A3F",
+            "#87A2B5",
+            "#4C6C90",
+            "#FFC107",
+            "#A8D6F5"
+          ],
+          "title": "Midnight Oasis",
+          "inspiration": "A tranquil escape beneath starry skies"
+        },
+        "selected_features": [
+          {
+            "id": "hero",
+            "name": "Hero",
+            "description": "Clean personal banner.",
+            "benefit": "Focus",
+            "priority": "High"
+          },
+          {
+            "id": "projects",
+            "name": "Projects",
+            "description": "Showcase of your best work.",
+            "benefit": "Proof",
+            "priority": "High"
+          },
+          {
+            "id": "about",
+            "name": "Profile",
+            "description": "Your skills and experience.",
+            "benefit": "Personal brand",
+            "priority": "High"
+          },
+          {
+            "id": "skills",
+            "name": "Expertise",
+            "description": "Specific tech stack or skills.",
+            "benefit": "Quick info",
+            "priority": "Medium"
+          },
+          {
+            "id": "contact",
+            "name": "Connect",
+            "description": "Contact form and links.",
+            "benefit": "Reachability",
+            "priority": "High"
+          }
+        ]
+      },
+      "features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "selected_features": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "description": "Clean personal banner.",
+          "benefit": "Focus",
+          "priority": "High"
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "description": "Showcase of your best work.",
+          "benefit": "Proof",
+          "priority": "High"
+        },
+        {
+          "id": "about",
+          "name": "Profile",
+          "description": "Your skills and experience.",
+          "benefit": "Personal brand",
+          "priority": "High"
+        },
+        {
+          "id": "skills",
+          "name": "Expertise",
+          "description": "Specific tech stack or skills.",
+          "benefit": "Quick info",
+          "priority": "Medium"
+        },
+        {
+          "id": "contact",
+          "name": "Connect",
+          "description": "Contact form and links.",
+          "benefit": "Reachability",
+          "priority": "High"
+        }
+      ],
+      "final_metadata_ready": true
+    }
+  },
+  "componentOrder": [
+    "comp-hero",
+    "comp-projects",
+    "comp-profile",
+    "comp-expertise",
+    "comp-connect",
+    "comp-faq"
+  ],
+  "quality": {
+    "score": 100,
+    "grade": "A+",
+    "issues_count": 0,
+    "suggestions_count": 0,
+    "generation_method": "hybrid_ai"
+  },
+  "blueprint_id": 62
+}

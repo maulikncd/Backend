@@ -1,0 +1,367 @@
+{
+  "user_id": 4,
+  "session_id": "sess_f712d3b7",
+  "project_id": 8,
+  "timestamp": "2026-01-08T08:59:18.720986Z",
+  "user_prompt": "Restaurant Site",
+  "questionnaire": {
+    "user_id": 4,
+    "prompt": "Restaurant Site",
+    "language": "English",
+    "business_type": "Based on the user's responses, the business type that they want to create appears to be an '",
+    "answers": {
+      "q1": "foodie",
+      "q2": "Elegant Gold - Black and gold - fine dining sophistication",
+      "q3": "taste",
+      "q4": "Foodie adda",
+      "q5": "View Menu",
+      "q6": "Professional photo",
+      "q7": "foodie@gmail.com",
+      "q8": "fsdafdsa",
+      "q9": "fdsafdsa"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Your restaurant's name:",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Which vibe matches your brand?",
+        "type": "radio",
+        "options": [
+          "Elegant Gold - Black and gold - fine dining sophistication",
+          "Fresh Garden - Greens and earth tones - farm to table vibe",
+          "Warm Terracotta - Warm oranges and browns - rustic comfort",
+          "Ocean Blue - Blues and whites - coastal fresh feel"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Your brand's promise in one sentence:",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q4",
+        "question": "Enter your information for 'Name':",
+        "type": "text",
+        "prop_key": "name",
+        "section": "footer"
+      },
+      {
+        "id": "q5",
+        "question": "Primary call-to-action:",
+        "type": "radio",
+        "prop_key": "cta",
+        "section": "hero",
+        "options": [
+          "View Menu",
+          "Learn More",
+          "Explore",
+          "Shop Now",
+          "Get Started",
+          "Contact Us",
+          "Book Now",
+          "Join Now"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "What should the background show?",
+        "type": "radio",
+        "prop_key": "image",
+        "section": "hero",
+        "options": [
+          "Professional photo",
+          "Team/people",
+          "Location/space",
+          "Abstract/artistic",
+          "Product showcase",
+          "Auto-select for me"
+        ]
+      },
+      {
+        "id": "q7",
+        "question": "Tell us more about your Email for the footer:",
+        "type": "text",
+        "prop_key": "email",
+        "section": "footer"
+      },
+      {
+        "id": "q8",
+        "question": "Tell us more about your Description for the about:",
+        "type": "text",
+        "prop_key": "description",
+        "section": "about"
+      },
+      {
+        "id": "q9",
+        "question": "Tell us more about your Gallery for the gallery:",
+        "type": "text",
+        "prop_key": "gallery",
+        "section": "gallery"
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Phone'?",
+        "type": "text",
+        "prop_key": "phone",
+        "section": "footer"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "subtitle",
+      "name",
+      "cta",
+      "image",
+      "email",
+      "description",
+      "gallery",
+      "phone"
+    ],
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#F7DC6F",
+          "#FFC107",
+          "#F44336",
+          "#8B9467",
+          "#964B00"
+        ],
+        "title": "Tasty Sunset",
+        "inspiration": "Inspired by juicy grilled foods at the end of a long day."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#98F5FF",
+          "#C6E2B5",
+          "#F5F5DC",
+          "#786C3B",
+          "#8F0A1A"
+        ],
+        "title": "Blossoming Sushi",
+        "inspiration": "Fresh flavors bursting from the delicate petals of an edible flower."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#F2C464",
+          "#E6B800",
+          "#FFA07A",
+          "#663300",
+          "#964B00"
+        ],
+        "title": "Marmalade Dream",
+        "inspiration": "Vibrant citrus flavors spreading through a warm breakfast morning."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#66CCCC",
+          "#C9E4CA",
+          "#F5DEB3",
+          "#786C3B",
+          "#2F4F7F"
+        ],
+        "title": "Café de la Mer",
+        "inspiration": "Sophisticated coastal flavors dancing at a French bistro."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#FFC5C5",
+          "#C9E4CA",
+          "#F7DC6F",
+          "#A52A2A",
+          "#6600CC"
+        ],
+        "title": "Candyland Oasis",
+        "inspiration": "Sugary pastel hues of childhood candy and summer memories."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#F5DEB3",
+          "#FFC107",
+          "#786C3B",
+          "#F2B4B4",
+          "#2F4F7F"
+        ],
+        "title": "Spice Route",
+        "inspiration": "Aromatic international flavors woven together in exotic markets."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#FF99CC",
+          "#C9E4CA",
+          "#F7DC6F",
+          "#663300",
+          "#8B9467"
+        ],
+        "title": "Berry Bliss",
+        "inspiration": "Juicy sweet summer flavors exploding in a vibrant berry patch."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#786C3B",
+          "#FFA07A",
+          "#F7DC6F",
+          "#A51A1A",
+          "#2F4F7F"
+        ],
+        "title": "Savory Spice",
+        "inspiration": "Hearty rustic flavors of traditional roasted vegetables at home."
+      }
+    ],
+    "selected_palette": {
+      "id": "p3",
+      "colors": [
+        "#F2C464",
+        "#E6B800",
+        "#FFA07A",
+        "#663300",
+        "#964B00"
+      ],
+      "title": "Marmalade Dream",
+      "inspiration": "Vibrant citrus flavors spreading through a warm breakfast morning."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Elegant restaurant hero.",
+        "benefit": "Ambiance",
+        "priority": "High"
+      },
+      {
+        "id": "menu",
+        "name": "Full Menu",
+        "description": "Interactive food and drink menu.",
+        "benefit": "Key information",
+        "priority": "High"
+      },
+      {
+        "id": "gallery",
+        "name": "Food Gallery",
+        "description": "High-quality food photography.",
+        "benefit": "Visual delight",
+        "priority": "Medium"
+      },
+      {
+        "id": "about",
+        "name": "Heritage",
+        "description": "Chef and restaurant history.",
+        "benefit": "Authenticity",
+        "priority": "Medium"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Elegant restaurant hero.",
+      "benefit": "Ambiance",
+      "priority": "High"
+    },
+    {
+      "id": "menu",
+      "name": "Full Menu",
+      "description": "Interactive food and drink menu.",
+      "benefit": "Key information",
+      "priority": "High"
+    },
+    {
+      "id": "gallery",
+      "name": "Food Gallery",
+      "description": "High-quality food photography.",
+      "benefit": "Visual delight",
+      "priority": "Medium"
+    },
+    {
+      "id": "about",
+      "name": "Heritage",
+      "description": "Chef and restaurant history.",
+      "benefit": "Authenticity",
+      "priority": "Medium"
+    }
+  ],
+  "final_metadata_ready": true
+}

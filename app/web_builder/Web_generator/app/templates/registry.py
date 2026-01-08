@@ -67,6 +67,13 @@ class TemplateRegistry:
             "games": "Games",
             "tournaments": "Tournaments",
             "community": "Community",
+            # Portfolio-specific sections
+            "expertise": "Skills",
+            "skills": "Skills",
+            "projects": "Projects",
+            "work": "Projects",
+            "profile": "About",
+            "connect": "Contact",
             # Common sections
             "faq": "FAQ",
             "cta": "CTA",
@@ -130,7 +137,7 @@ class TemplateRegistry:
                 SharedContactTemplates,
                 SharedTestimonialsTemplates,
                 SharedCTATemplates,
-                SharedFAQTemplates,
+                FAQPageTemplates,
             )
             
             shared_map = {
@@ -138,8 +145,9 @@ class TemplateRegistry:
                 "testimonials": SharedTestimonialsTemplates,
                 "reviews": SharedTestimonialsTemplates,
                 "cta": SharedCTATemplates,
-                "faq": SharedFAQTemplates,
+                "faq": FAQPageTemplates,
             }
+
             
             template_class = shared_map.get(section_type)
             if template_class and hasattr(template_class, 'render'):
@@ -157,14 +165,15 @@ class TemplateRegistry:
         description_lower = description.lower()
         
         keywords = {
-            "cafe": ["cafe", "coffee", "brew", "latte", "espresso", "bakery"],
-            "gaming": ["gaming", "game", "esports", "streamer", "twitch", "xbox", "playstation"],
-            "portfolio": ["portfolio", "personal", "developer", "designer", "freelance"],
-            "ecommerce": ["shop", "store", "ecommerce", "buy", "sell", "product", "cart"],
-            "restaurant": ["restaurant", "dining", "food", "chef", "menu", "reservation"],
-            "agency": ["agency", "business", "corporate", "company", "marketing", "consulting"],
-            "movie": ["movie", "cinema", "theater", "theatre", "film", "ticket", "showtime", "blockbuster", "premiere", "imax"],
+            "cafe": ["cafe", "coffee", "brew", "latte", "espresso", "bakery", "breakfast", "pastry"],
+            "gaming": ["gaming", "game", "esports", "streamer", "twitch", "xbox", "playstation", "match", "tournament"],
+            "portfolio": ["portfolio", "personal", "developer", "designer", "freelance", "cv", "resume", "photographer"],
+            "ecommerce": ["shop", "store", "ecommerce", "buy", "sell", "product", "cart", "retail", "clothing", "fashion"],
+            "restaurant": ["restaurant", "dining", "food", "chef", "menu", "reservation", "steakhouse", "bistro", "eatery"],
+            "agency": ["agency", "business", "corporate", "company", "marketing", "consulting", "branding", "creative"],
+            "movie": ["movie", "cinema", "theater", "theatre", "film", "ticket", "showtime", "blockbuster", "premiere", "imax", "screen"],
         }
+
         
         for website_type, type_keywords in keywords.items():
             for keyword in type_keywords:

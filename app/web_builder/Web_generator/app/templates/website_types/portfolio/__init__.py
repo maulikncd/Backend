@@ -22,9 +22,15 @@ class PortfolioTemplates:
     Projects = PortfolioProjectsTemplates
     Work = PortfolioProjectsTemplates
     Skills = PortfolioSkillsTemplates
+    Expertise = PortfolioSkillsTemplates
+    Features = PortfolioSkillsTemplates
+    Services = PortfolioSkillsTemplates
     About = PortfolioAboutTemplates
+    Profile = PortfolioAboutTemplates
     Contact = PortfolioContactTemplates
+    Connect = PortfolioContactTemplates
     Footer = PortfolioFooterTemplates
+
     
     # Sections available for portfolio websites
     SECTIONS = [

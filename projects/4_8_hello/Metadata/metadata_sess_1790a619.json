@@ -1,0 +1,378 @@
+{
+  "user_id": 4,
+  "session_id": "sess_1790a619",
+  "project_id": 8,
+  "timestamp": "2026-01-08T08:54:45.031654Z",
+  "user_prompt": "Portfolio Website",
+  "questionnaire": {
+    "user_id": 4,
+    "prompt": "Portfolio Website",
+    "language": "English",
+    "business_type": "Based on the user's responses, I can infer that the user wants to create a:\n\n**Portfolio",
+    "answers": {
+      "q1": "london",
+      "q2": "Dark Mode - Dark backgrounds with light text",
+      "q3": "i am a react developer",
+      "q4": "i am expert in react",
+      "q5": "explore",
+      "q6": "adi@gmail.com",
+      "q7": "react frontend is best",
+      "q8": "react, python, ai",
+      "q9": "2024"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "How should visitors address you?",
+        "type": "text",
+        "prop_key": "businessName",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q2",
+        "question": "Choose your color palette:",
+        "type": "radio",
+        "options": [
+          "Clean Minimal - Black, white, and one accent color",
+          "Bold Creative - Vibrant colors that pop",
+          "Professional - Navy and gray - trustworthy",
+          "Dark Mode - Dark backgrounds with light text"
+        ],
+        "prop_key": "colorTheme",
+        "section": "base",
+        "_mandatory": true
+      },
+      {
+        "id": "q3",
+        "question": "Enter your information for 'Bio':",
+        "type": "text",
+        "prop_key": "bio",
+        "section": "about"
+      },
+      {
+        "id": "q4",
+        "question": "If you had 5 seconds to impress, what would you say?",
+        "type": "text",
+        "prop_key": "subtitle",
+        "section": "hero"
+      },
+      {
+        "id": "q5",
+        "question": "Enter your information for 'Ctasecondary':",
+        "type": "text",
+        "prop_key": "ctaSecondary",
+        "section": "hero"
+      },
+      {
+        "id": "q6",
+        "question": "Tell us more about your Email for the footer:",
+        "type": "text",
+        "prop_key": "email",
+        "section": "footer"
+      },
+      {
+        "id": "q7",
+        "question": "Write your website's main headline:",
+        "type": "text",
+        "prop_key": "title",
+        "section": "hero"
+      },
+      {
+        "id": "q8",
+        "question": "Enter your information for 'Projects':",
+        "type": "text",
+        "prop_key": "projects",
+        "section": "projects"
+      },
+      {
+        "id": "q9",
+        "question": "What would you like to say for 'Year'?",
+        "type": "text",
+        "prop_key": "year",
+        "section": "footer"
+      },
+      {
+        "id": "q10",
+        "question": "What would you like to say for 'Tagline'?",
+        "type": "text",
+        "prop_key": "tagline",
+        "section": "hero"
+      }
+    ],
+    "max_questions": 10,
+    "completed": true,
+    "_generator_asked_props": [
+      "businessName",
+      "colorTheme",
+      "bio",
+      "subtitle",
+      "ctaSecondary",
+      "email",
+      "title",
+      "projects",
+      "year",
+      "tagline"
+    ],
+    "color_preferences": "Dark Mode - Dark backgrounds with light text",
+    "features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Clean personal banner.",
+        "benefit": "Focus",
+        "priority": "High"
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "description": "Showcase of your best work.",
+        "benefit": "Proof",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Profile",
+        "description": "Your skills and experience.",
+        "benefit": "Personal brand",
+        "priority": "High"
+      },
+      {
+        "id": "skills",
+        "name": "Expertise",
+        "description": "Specific tech stack or skills.",
+        "benefit": "Quick info",
+        "priority": "Medium"
+      },
+      {
+        "id": "contact",
+        "name": "Connect",
+        "description": "Contact form and links.",
+        "benefit": "Reachability",
+        "priority": "High"
+      }
+    ],
+    "palettes": [
+      {
+        "id": "p1",
+        "colors": [
+          "#2E3338",
+          "#F7F7F7",
+          "#C9E4CA",
+          "#3C3F41",
+          "#8B9467"
+        ],
+        "title": "Midnight Hush",
+        "inspiration": "Inspired by the quiet stillness of a dark night."
+      },
+      {
+        "id": "p2",
+        "colors": [
+          "#282828",
+          "#C5C3C4",
+          "#9AE9F4",
+          "#3F3F3F",
+          "#64B2B2"
+        ],
+        "title": "Dark Oasis",
+        "inspiration": "Finding refuge in the calm of a desert night."
+      },
+      {
+        "id": "p3",
+        "colors": [
+          "#333333",
+          "#F2F2F2",
+          "#A8D6F5",
+          "#444444",
+          "#969696"
+        ],
+        "title": "Shadow Weaver",
+        "inspiration": "A dark tapestry woven with subtle threads."
+      },
+      {
+        "id": "p4",
+        "colors": [
+          "#455A64",
+          "#F2F2F2",
+          "#B2E6CE",
+          "#5C6BC0",
+          "#A5A5A5"
+        ],
+        "title": "Dusky Evening",
+        "inspiration": "The soft hue of sunset gives way to night."
+      },
+      {
+        "id": "p5",
+        "colors": [
+          "#333333",
+          "#C4C4C4",
+          "#56B3FA",
+          "#444444",
+          "#999999"
+        ],
+        "title": "Silentium",
+        "inspiration": "Echoes of a dark and quiet world."
+      },
+      {
+        "id": "p6",
+        "colors": [
+          "#1A1D23",
+          "#E5E5E5",
+          "#C5E2F4",
+          "#242628",
+          "#646A6B"
+        ],
+        "title": "Blackout Bloom",
+        "inspiration": "A midnight garden blooms in the darkness."
+      },
+      {
+        "id": "p7",
+        "colors": [
+          "#232B3D",
+          "#FFFFFF",
+          "#7BC1F4",
+          "#464646",
+          "#737373"
+        ],
+        "title": "Darkstar Dreams",
+        "inspiration": "Exploring the infinite vastness of a dark universe."
+      },
+      {
+        "id": "p8",
+        "colors": [
+          "#2A2730",
+          "#D3D3D3",
+          "#9CEBFF",
+          "#3C3F41",
+          "#A7A7A7"
+        ],
+        "title": "Lost City Nights",
+        "inspiration": "Ancient secrets whisper in the darkness of an abandoned city."
+      }
+    ],
+    "selected_palette": {
+      "id": "p2",
+      "colors": [
+        "#282828",
+        "#C5C3C4",
+        "#9AE9F4",
+        "#3F3F3F",
+        "#64B2B2"
+      ],
+      "title": "Dark Oasis",
+      "inspiration": "Finding refuge in the calm of a desert night."
+    },
+    "selected_features": [
+      {
+        "id": "hero",
+        "name": "Hero",
+        "description": "Clean personal banner.",
+        "benefit": "Focus",
+        "priority": "High"
+      },
+      {
+        "id": "projects",
+        "name": "Projects",
+        "description": "Showcase of your best work.",
+        "benefit": "Proof",
+        "priority": "High"
+      },
+      {
+        "id": "about",
+        "name": "Profile",
+        "description": "Your skills and experience.",
+        "benefit": "Personal brand",
+        "priority": "High"
+      },
+      {
+        "id": "skills",
+        "name": "Expertise",
+        "description": "Specific tech stack or skills.",
+        "benefit": "Quick info",
+        "priority": "Medium"
+      },
+      {
+        "id": "contact",
+        "name": "Connect",
+        "description": "Contact form and links.",
+        "benefit": "Reachability",
+        "priority": "High"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Clean personal banner.",
+      "benefit": "Focus",
+      "priority": "High"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "description": "Showcase of your best work.",
+      "benefit": "Proof",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Profile",
+      "description": "Your skills and experience.",
+      "benefit": "Personal brand",
+      "priority": "High"
+    },
+    {
+      "id": "skills",
+      "name": "Expertise",
+      "description": "Specific tech stack or skills.",
+      "benefit": "Quick info",
+      "priority": "Medium"
+    },
+    {
+      "id": "contact",
+      "name": "Connect",
+      "description": "Contact form and links.",
+      "benefit": "Reachability",
+      "priority": "High"
+    }
+  ],
+  "selected_features": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "description": "Clean personal banner.",
+      "benefit": "Focus",
+      "priority": "High"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "description": "Showcase of your best work.",
+      "benefit": "Proof",
+      "priority": "High"
+    },
+    {
+      "id": "about",
+      "name": "Profile",
+      "description": "Your skills and experience.",
+      "benefit": "Personal brand",
+      "priority": "High"
+    },
+    {
+      "id": "skills",
+      "name": "Expertise",
+      "description": "Specific tech stack or skills.",
+      "benefit": "Quick info",
+      "priority": "Medium"
+    },
+    {
+      "id": "contact",
+      "name": "Connect",
+      "description": "Contact form and links.",
+      "benefit": "Reachability",
+      "priority": "High"
+    }
+  ],
+  "final_metadata_ready": true
+}

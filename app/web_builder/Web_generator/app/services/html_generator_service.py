@@ -72,7 +72,7 @@ class HTMLGeneratorService:
         navigation = blueprint.get("navigation", {})
         
         # Detect website type from blueprint or project description
-        website_type = blueprint.get("websiteType", "")
+        website_type = blueprint.get("websiteType", blueprint.get("projectType", ""))
         if not website_type:
             # Try to detect from project name or SEO keywords
             keywords = " ".join(seo.get("keywords", []) + [project_name, seo.get("description", "")])
@@ -245,7 +245,7 @@ class HTMLGeneratorService:
         navigation = blueprint.get("navigation", {})
         
         # Detect website type from blueprint or project description
-        website_type = blueprint.get("websiteType", "")
+        website_type = blueprint.get("websiteType", blueprint.get("projectType", ""))
         if not website_type:
             keywords = " ".join(seo.get("keywords", []) + [project_name, seo.get("description", "")])
             if HAS_TEMPLATE_REGISTRY:
@@ -1566,16 +1566,22 @@ class HTMLGeneratorService:
             history = self._load_template_history()
             recently_used = history.get(comp_type, [])
             
-            # Get IMPLEMENTED variants only
+            # Get available variants
             declared_variants = getattr(template_class, 'VARIANTS', ['default'])
             available_variants = []
+            
+            # Check for _variant_ methods (legacy)
             for v in declared_variants:
                 method_name = f"_variant_{v.replace('-', '_')}"
                 if hasattr(template_class, method_name):
                     available_variants.append(v)
             
+            # If no _variant_ methods, but class has render or get_variant, use declared_variants as is
+            if not available_variants and (hasattr(template_class, 'render') or hasattr(template_class, 'get_variant')):
+                available_variants = declared_variants
+            
             if not available_variants:
-                print(f"[HTMLGenerator] ⚠️ No variants for {comp_type}, using fallback")
+                print(f"[HTMLGenerator] ⚠️ No variants found for {comp_type}, using fallback")
                 return self._render_component_fallback(comp, colors)
             
             # Filter out recently used
@@ -1587,12 +1593,18 @@ class HTMLGeneratorService:
             print(f"[HTMLGenerator] 🎨 {comp_type}: Using generic variant '{selected_variant}'")
             
             try:
-                html = template_class.get_variant(selected_variant, props, colors)
+                # Try .render first (modern), then .get_variant (legacy)
+                if hasattr(template_class, 'render'):
+                    html = template_class.render(props, colors, selected_variant)
+                else:
+                    html = template_class.get_variant(selected_variant, props, colors)
+                    
                 self._save_template_history({comp_type: selected_variant})
                 return html
             except Exception as e:
-                print(f"[HTMLGenerator] Template render error: {e}")
+                print(f"[HTMLGenerator] Template render error for {comp_type}: {e}")
                 return self._render_component_fallback(comp, colors)
+
         
         return ""
     

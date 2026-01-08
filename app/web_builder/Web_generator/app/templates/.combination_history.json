@@ -492,6 +492,20 @@
         "about": "story",
         "features": "grid"
       }
+    },
+    {
+      "timestamp": "2026-01-08T14:24:54.495455",
+      "variants": {
+        "Home": "parallax",
+        "Projects": "default",
+        "About": "centered",
+        "Features": "grid-4",
+        "Contact": "map-bg",
+        "Header": "centered",
+        "home": "corporate-modern",
+        "about": "story",
+        "features": "grid"
+      }
     }
   ],
   "movie": [
@@ -882,28 +896,6 @@
   ],
   "restaurant": [
     {
-      "timestamp": "2026-01-05T17:53:51.077715",
-      "variants": {
-        "Home": "minimal",
-        "Menu": "tabs",
-        "About": "cards",
-        "Gallery": "grid",
-        "Features": "icons",
-        "Testimonials": "carousel",
-        "FAQ": "tabs",
-        "CTA": "gradient",
-        "Contact": "cards",
-        "Header": "minimal",
-        "home": "rustic-bistro",
-        "menu": "elegant-cards",
-        "about": "elegant",
-        "gallery": "food-grid",
-        "testimonials": "cards-grid",
-        "cta": "centered-cta",
-        "contact": "form"
-      }
-    },
-    {
       "timestamp": "2026-01-05T18:01:56.397787",
       "variants": {
         "Home": "centered",
@@ -1200,6 +1192,21 @@
         "home": "rustic-bistro",
         "about": "elegant"
       }
+    },
+    {
+      "timestamp": "2026-01-08T14:29:30.210060",
+      "variants": {
+        "Home": "parallax",
+        "About": "timeline",
+        "Menu": "accordion",
+        "Gallery": "masonry",
+        "Heritage": "default",
+        "Header": "minimal",
+        "home": "elegant-dining",
+        "about": "elegant",
+        "menu": "elegant-cards",
+        "gallery": "food-grid"
+      }
     }
   ],
   "ecommerce": [
@@ -1221,6 +1228,24 @@
         "Header": "gradient",
         "home": "aura-premium",
         "products": "grid"
+      }
+    }
+  ],
+  "portfolio": [
+    {
+      "timestamp": "2026-01-08T15:15:58.260370",
+      "variants": {
+        "Home": "minimal",
+        "Projects": "default",
+        "About": "split-left",
+        "Features": "grid-4",
+        "Contact": "split",
+        "FAQ": "accordion",
+        "Header": "floating",
+        "home": "bento",
+        "projects": "masonry",
+        "about": "minimal-text",
+        "contact": "simple-form"
       }
     }
   ]
