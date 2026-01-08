@@ -51,21 +51,4 @@ jobs:
         cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/fastapi-app:buildcache
         cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/fastapi-app:buildcache,mode=max
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Deploy to Worker Node via SSH
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.WORKER_HOST }}
-        username: ${{ secrets.WORKER_USERNAME }}
-        key: ${{ secrets.WORKER_SSH_KEY }}
-        script: |
-          docker pull ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest
-          docker stop fastapi-app || true
-          docker rm fastapi-app || true
-          docker run -d --name fastapi-app -p 8000:8000 \
-            -e DATABASE_URL=${{ secrets.DATABASE_URL }} \
-            -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
-            ${{ secrets.DOCKER_USERNAME }}/fastapi-app:latest
+
